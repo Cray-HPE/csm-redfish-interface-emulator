@@ -40,6 +40,10 @@ from flask_restful import reqparse, Api, Resource
 from threading import Thread
 from time import sleep
 
+from .event_generator import GenEvent, GenEventRecord
+from .event_service_api import send_event
+from .response import success_response, simple_error_response, error_404_response, error_not_allowed_response
+
 members = {}
 members_actions = {}
 members_reset_thread = {}
@@ -47,8 +51,6 @@ members_reset_thread = {}
 reboot_actions = {'GracefulRestart', 'ForceRestart', 'PushPowerButton'}
 off_actions = {'Off', 'ForceOff', 'GracefulShutdown', 'Nmi'}
 on_actions = {'On', 'ForceOn'}
-
-INTERNAL_ERROR = 500
 
 # ResetWorker
 #
@@ -62,9 +64,11 @@ class ResetWorker(Thread):
     def run(self):
         members[self.sys_id]['PowerState'] = 'Off'
         members[self.sys_id]['Status']['State'] = 'Disabled'
+        send_power_event(self.sys_id, 'Off')
         sleep(5)
         members[self.sys_id]['PowerState'] = 'PoweringOn'
         members[self.sys_id]['Status']['State'] = 'Starting'
+        send_power_event(self.sys_id, 'On')
         sleep(5)
         members[self.sys_id]['PowerState'] = 'On'
         members[self.sys_id]['Status']['State'] = 'Enabled'
@@ -81,9 +85,16 @@ class PowerOnWorker(Thread):
     def run(self):
         members[self.sys_id]['PowerState'] = 'PoweringOn'
         members[self.sys_id]['Status']['State'] = 'Starting'
+        send_power_event(self.sys_id, 'On')
         sleep(5)
         members[self.sys_id]['PowerState'] = 'On'
         members[self.sys_id]['Status']['State'] = 'Enabled'
+
+def send_power_event(id, power_state):
+    ooc = members[id]['@odata.id']
+    er = GenEventRecord('Power', powerState=power_state, OriginOfCondition=ooc)
+    e = GenEvent([er])
+    send_event(e, 'Alert')
 
 # ComputerSystemAPI
 #
@@ -94,6 +105,7 @@ class ComputerSystemAPI(Resource):
 
     def __init__(self, **kwargs):
         logging.info('ComputerSystemAPI init called')
+        self.allow = 'GET'
         try:
             global wildcards
             wildcards = kwargs
@@ -105,33 +117,61 @@ class ComputerSystemAPI(Resource):
         logging.info('ComputerSystemAPI GET called')
         try:
             # Find the entry with the correct value for Id
-            resp = 404
+            resp = error_404_response(request.path)
             if ident in members:
                 resp = members[ident], 200
         except Exception:
             traceback.print_exc()
-            resp = INTERNAL_ERROR
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
         return resp
 
     # HTTP PUT
     def put(self, ident):
         logging.info('ComputerSystemAPI PUT called')
-        return 'PUT is not supported', 405, {'Allow': 'GET'}
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(members[ident]['@odata.id'], request.method, {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
     # HTTP POST
     def post(self, ident):
         logging.info('ComputerSystemAPI POST called')
-        return 'POST is not supported', 405, {'Allow': 'GET'}
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(members[ident]['@odata.id'], request.method, {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
     # HTTP PATCH
     def patch(self, ident):
         logging.info('ComputerSystemAPI PATCH called')
-        return 'PATCH is not supported', 405, {'Allow': 'GET'}
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(members[ident]['@odata.id'], request.method, {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
     # HTTP DELETE
     def delete(self, ident):
         logging.info('ComputerSystemAPI DELETE called')
-        return 'DELETE is not supported', 405, {'Allow': 'GET'}
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(members[ident]['@odata.id'], request.method, {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
 # CreateComputerSystem
 #
@@ -166,11 +206,13 @@ class CreateComputerSystem(Resource):
 # ResetAction_API
 #
 # This services ResetAction POST requests to emulate computer system power actions.
+# POST requests that result in PowerState changes will generate Redfish events for
+# subscribers to the EventService.
 #
 class ResetAction_API(Resource):
 
     def __init__(self, **kwargs):
-        pass
+        self.allow = 'POST'
     
     # HTTP POST
     def post(self, ident):
@@ -178,7 +220,7 @@ class ResetAction_API(Resource):
         raw_dict = request.get_json(force=True)
         logging.info(raw_dict)
         try:
-            resp = 404
+            resp = error_404_response(request.path)
             if ident in members:
                 if 'ResetType' in raw_dict:
                     value = raw_dict['ResetType']
@@ -201,32 +243,61 @@ class ResetAction_API(Resource):
                             logging.info('Powering Off')
                             members[ident]['PowerState'] = 'Off'
                             members[ident]['Status']['State'] = 'Disabled'
+                            send_power_event(ident, 'Off')
                         elif value in on_actions:
                             logging.info('Starting reset thread')
                             members_reset_thread[ident] = PowerOnWorker(ident)
                             members_reset_thread[ident].start()
                         resp = members[ident], 200
                     else:
-                        resp = 'Invalid ResetType', 400
+                        resp = simple_error_response('Invalid ResetType', 400)
                 else:
-                    resp = 'Invalid setting for POST', 400
+                    resp = simple_error_response('Invalid setting for POST', 400)
         except Exception:
             traceback.print_exc()
             resp = INTERNAL_ERROR
         return resp
 
     # HTTP GET
-    def get(self,ident):
-        return 'GET is not supported', 405, {'Allow': 'POST'}
+    def get(self, ident):
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(request.path, request.method, {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
     # HTTP PATCH
-    def patch(self,ident):
-         return 'PATCH is not supported', 405, {'Allow': 'POST'}
+    def patch(self, ident):
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(request.path, request.method, {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
     # HTTP PUT
-    def put(self,ident):
-         return 'PUT is not supported', 405, {'Allow': 'POST'}
+    def put(self, ident):
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(request.path, request.method, {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
     # HTTP DELETE
-    def delete(self,ident):
-         return 'DELETE is not supported', 405, {'Allow': 'POST'}
+    def delete(self, ident):
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(request.path, request.method, {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp

@@ -40,12 +40,11 @@ from flask_restful import reqparse, Api, Resource
 from queue import Queue
 from threading import Thread
 from time import sleep
+from .response import success_response, simple_error_response, error_404_response, error_not_allowed_response
 
 members = {}
 configAPI = {}
 q = Queue(maxsize = 10)
-
-INTERNAL_ERROR = 500
 
 _CONFIG_TEMPLATE = \
 {
@@ -88,8 +87,8 @@ class firmware_update:
     def __init__(self, imageURI, target):
         self.imageURI = imageURI
         self.target = target
-        self.updateTime = configAPI['config']['CurrentValues']['UpdateTime']
-        if target in configAPI['config']['CurrentValues']['Fail']:
+        self.updateTime = configAPI['CurrentValues']['UpdateTime']
+        if target in configAPI['CurrentValues']['Fail']:
             self.fail = True
         else:
             self.fail = False
@@ -133,26 +132,27 @@ class UpdateServiceConfigAPI(Resource):
 
     def __init__(self, **kwargs):
         logging.info('UpdateServiceConfigAPI init called')
+        self.allow = 'GET, PATCH'
 
     # HTTP GET
     def get(self):
         logging.info('UpdateServiceConfigAPI GET called')
         try:
-            resp = configAPI['config'], 200
+            resp = configAPI, 200
         except Exception:
             traceback.print_exc()
-            resp = INTERNAL_ERROR
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
         return resp
 
     # HTTP PUT
-    def put(self, ident):
+    def put(self):
         logging.info('UpdateServiceConfigAPI PUT called')
-        return 'PUT is not supported', 405, {'Allow': 'GET, PATCH'}
+        return error_not_allowed_response(configAPI['@odata.id'], 'PUT', {'Allow': self.allow})
 
     # HTTP POST
     def post(self):
         logging.info('UpdateServiceConfigAPI POST called')
-        return 'POST is not supported', 405, {'Allow': 'GET, PATCH'}
+        return error_not_allowed_response(configAPI['@odata.id'], 'POST', {'Allow': self.allow})
 
     # HTTP PATCH
     def patch(self):
@@ -161,33 +161,33 @@ class UpdateServiceConfigAPI(Resource):
         logging.info(raw_dict)
         tempValues = {}
         try:
-            resp = configAPI['config']['CurrentValues'], 200
+            resp = configAPI['CurrentValues'], 200
             for setting in {'Fail', 'Hang', 'UpdateTime'}:
                 if setting in raw_dict:
                     value = raw_dict[setting]
                     if setting == 'Fail':
                         for target in value:
-                            if target not in configAPI['config']['Parameters'][0]['AllowableValues']:
-                                resp = 'Invalid target for Fail, %s' % target, 400
+                            if target not in configAPI['Parameters'][0]['AllowableValues']:
+                                resp = simple_error_response('Invalid target for Fail, %s' % target, 400)
                                 return resp
                     else:
                         if not isinstance(value, int):
-                            resp = 'Invalid value for %s, %s. Must be int.' % (setting, value), 400
+                            resp = simple_error_response('Invalid value for %s, %s. Must be int.' % (setting, value), 400)
                             return resp
                     tempValues[setting] = value
                 else:
-                    tempValues[setting] = configAPI['config']['CurrentValues'][setting]
-            configAPI['config']['CurrentValues'] = tempValues
-            resp = configAPI['config']['CurrentValues'], 200
+                    tempValues[setting] = configAPI['CurrentValues'][setting]
+            configAPI['CurrentValues'] = tempValues
+            resp = configAPI['CurrentValues'], 200
         except Exception:
             traceback.print_exc()
-            resp = INTERNAL_ERROR
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
         return resp
 
     # HTTP DELETE
     def delete(self):
         logging.info('UpdateServiceAPI DELETE called')
-        return 'DELETE is not supported', 405, {'Allow': 'GET, PATCH'}
+        return error_not_allowed_response(configAPI['@odata.id'], 'DELETE', {'Allow': self.allow})
 
 # UpdateServiceAPI
 #
@@ -198,6 +198,7 @@ class UpdateServiceAPI(Resource):
 
     def __init__(self, **kwargs):
         logging.info('UpdateServiceAPI init called')
+        self.allow = 'GET'
         try:
             global wildcards
             wildcards = kwargs
@@ -214,28 +215,56 @@ class UpdateServiceAPI(Resource):
                 resp = members[ident], 200
         except Exception:
             traceback.print_exc()
-            resp = INTERNAL_ERROR
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
         return resp
 
     # HTTP PUT
     def put(self, ident):
         logging.info('UpdateServiceAPI PUT called')
-        return 'PUT is not supported', 405, {'Allow': 'GET'}
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(members[ident]['@odata.id'], 'PUT', {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
     # HTTP POST
     def post(self, ident):
         logging.info('UpdateServiceAPI POST called')
-        return 'POST is not supported', 405, {'Allow': 'GET'}
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(members[ident]['@odata.id'], 'POST', {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
     # HTTP PATCH
     def patch(self, ident):
         logging.info('UpdateServiceAPI POST called')
-        return 'PATCH is not supported', 405, {'Allow': 'GET'}
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(members[ident]['@odata.id'], 'PATCH', {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
     # HTTP DELETE
     def delete(self, ident):
         logging.info('UpdateServiceAPI DELETE called')
-        return 'DELETE is not supported', 405, {'Allow': 'GET'}
+        try:
+            resp = error_404_response(request.path)
+            if ident in members:
+                resp = error_not_allowed_response(members[ident]['@odata.id'], 'DELETE', {'Allow': self.allow})
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
 
 # CreateFirmwareTarget
 #
@@ -252,19 +281,20 @@ class CreateFirmwareTarget(Resource):
 
     # PUT
     # - Create the resource (since URI variables are avaiable)
-    def put(self,target_id,config):
+    def put(self, target_id, config):
         logging.info('CreateFirmwareTarget put called')
         try:
             global wildcards
+            global configAPI
             logging.debug('added config for %s' % target_id)
             members[target_id]=config
-            configAPI['config'] = copy.deepcopy(_CONFIG_TEMPLATE)
+            configAPI = copy.deepcopy(_CONFIG_TEMPLATE)
             for member in members.keys():
-                configAPI['config']['Parameters'][0]['AllowableValues'].append(member)
+                configAPI['Parameters'][0]['AllowableValues'].append(member)
             resp = config, 200
         except Exception:
             traceback.print_exc()
-            resp = INTERNAL_ERROR
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
         return resp
 
 # SimpleUpdateAPI
@@ -274,6 +304,7 @@ class CreateFirmwareTarget(Resource):
 class SimpleUpdateAPI(Resource):
     def __init__(self, **kwargs):
         logging.info('SimpleUpdateAPI init called')
+        self.allow = 'POST'
         try:
             global wildcards
             wildcards = kwargs
@@ -282,12 +313,12 @@ class SimpleUpdateAPI(Resource):
 
     # HTTP GET
     def get(self):
-        return 'GET is not supported', 405, {'Allow': 'POST'}
+        return error_not_allowed_response(request.path, 'GET', {'Allow': self.allow})
 
     # HTTP PUT
     def put(self):
         logging.info('SimpleUpdateAPI PUT called')
-        return 'PUT is not supported', 405, {'Allow': 'POST'}
+        return error_not_allowed_response(request.path, 'PUT', {'Allow': self.allow})
 
     # HTTP POST
     def post(self):
@@ -298,27 +329,27 @@ class SimpleUpdateAPI(Resource):
         update_targets = []
         
         try:
-            if configAPI['config']['CurrentValues']['Hang'] > 0:
-                logging.info('Hanging for %d seconds' % configAPI['config']['CurrentValues']['Hang'])
-                sleep(configAPI['config']['CurrentValues']['Hang'])
+            if configAPI['CurrentValues']['Hang'] > 0:
+                logging.info('Hanging for %d seconds' % configAPI['CurrentValues']['Hang'])
+                sleep(configAPI['CurrentValues']['Hang'])
                 logging.info('Finished hanging')
-                return 'Hung', 500
+                return simple_error_response('Hung', 500)
             
             # Update specific portions of the identified object
             if 'ImageURI' in raw_dict:
                 imageURI = raw_dict['ImageURI']
             else:
-                return 'ImageURI is required', 400
+                return simple_error_response('ImageURI is required', 400)
             if 'Targets' in raw_dict:
                 targets = raw_dict['Targets']
                 for targetURL in targets:
                     target = targetURL.replace('/redfish/v1/UpdateService/FirmwareInventory/', '')
                     if target not in members:
-                        return 'Invalid target, %s' % target, 400
+                        return simple_error_response('Invalid target, %s' % target, 400)
                     if members[target]['Updateable'] == False:
-                        return 'Invalid target, %s. Not Updateable.' % target, 400
+                        return simple_error_response('Invalid target, %s. Not Updateable.' % target, 400)
                     if members[target]['Status'] == 'UPDATING':
-                        return 'Invalid target, %s. Target is updating.' % target, 400
+                        return simple_error_response('Invalid target, %s. Target is updating.' % target, 400)
                     update_targets.append(target)
             if len(update_targets) == 0:
                 update_targets.append('BMC')
@@ -326,18 +357,18 @@ class SimpleUpdateAPI(Resource):
                 update = firmware_update(imageURI, target)
                 q.put(update)
                 members[target]['Status']['Health'] = 'UPDATING'
-            resp = 'Request Secceeded', 200
+            resp = success_response('Request Secceeded', 200)
         except Exception:
             traceback.print_exc()
-            resp = INTERNAL_ERROR
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
         return resp
 
     # HTTP PATCH
     def patch(self):
         logging.info('SimpleUpdateAPI PATCH called')
-        return 'PATCH is not supported', 405, {'Allow': 'POST'}
+        return error_not_allowed_response(request.path, 'PATCH', {'Allow': self.allow})
 
     # HTTP DELETE
     def delete(self):
         logging.info('UpdateServiceAPI DELETE called')
-        return 'DELETE is not supported', 405, {'Allow': 'POST'}
+        return error_not_allowed_response(request.path, 'DELETE', {'Allow': self.allow})

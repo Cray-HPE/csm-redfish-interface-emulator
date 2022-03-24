@@ -18,6 +18,8 @@ New BMC types for emulation are created by loading a complete static mockup and 
 * [Creating a new BMC type for emulation](#creating-new-emulator)
     * [Creating a static mockup](#creating-static-mockup)
     * [Creating dynamic resources](#creating-dynamic-resources)
+        * [Behavior controls](behavior-controls)
+        * [Templates for dynamic resources](#templates-for-dynamic-resources)
 * [Existing static mockups](#existing-static-mockups)
 * [Existing dynamic resources](#existing-dynamic-resources)
 * [Existing emulators](#existing-emulators)
@@ -139,11 +141,15 @@ The static resource tree for a BMC type needs to be placed in csm-redfish-interf
 
 To create an emulator with dynamic resources for a new BMC type you will need to create a <BMC_type>_loader.py file where the functions for setting up the dynamic resources will live. The [bard_peak_loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/bard_peak_loader.py) file is an example of this.
 
-You will then need to add a call to the loader in [resource_manager.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/resource_manager.py). This is done for Bard Peak [here](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/resource_manager.py#L129)
+You will then need to add a call to the loader in [resource_manager.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/resource_manager.py). This is done for Bard Peak [here](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/resource_manager.py#L155)
 
 You need to either use existing python functions or make new ones for any resource URI that you want to have answer to more than just GET or be modifiable by other URIs such as '/redfish/v1/Systems/<system_id>' and '/redfish/v1/Systems/<system_id>/Actions/ComputerSystem.Reset'. If the new dynamic resources are specific to the BMC type, create a <BMC_type>_<resource_name>_api.py file for them. Otherwise, existing functions can be used. The computer systems functions used in the Bard Peak emulator that are generic for any BMC type that has the '/redfish/v1/Systems/<system_id>/ResetActionInfo' URI to get power actions. This code exists in [computer_systems_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/computer_systems_api.py).
 
 You can either use the [auto generator tool](https://github.com/DMTF/Redfish-Interface-Emulator/blob/master/README.md#auto-generate-the-api-file) that DMTF provides as part of their [Redfish Interface Emulator](https://github.com/DMTF/Redfish-Interface-Emulator) project to generate a template or use existing code as an example.
+
+<a name="behavior-controls"></a>
+
+#### Behavior controls
 
 A few of the existing dynamic resources have 'hidden' config URIs used for configuring response behavior for the dynamic resource on the fly. The [update_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py) file is an example of this. It provides a 'hidden' (not displayed in /redfish/v1/UpdateService/FirmwareInventory['Members']) URI. This URI is used to view (GET) currently configured behavior or set (PATCH) new behavior for the '/redfish/v1/UpdateService/SimpleUpdate' URI. For an emulated Bard Peak, this looks like:
 ```
@@ -195,6 +201,12 @@ A few of the existing dynamic resources have 'hidden' config URIs used for confi
 ```
 You may wish to create a resource such as this for each of your dynamic resource to make testing more configurable.
 
+<a name="templates-for-dynamic-resources"></a>
+
+#### Templates for dynamic resources
+
+Some dynamic resources such as the EventService generate responses (i.e. Redfish events) that are BMCType specific. Templates are used for these resources. The templates exist in the [src/api_emulator/redfish/templates/](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/redfish/templates) directory. The BardPeak emulator uses [cray_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/cray_events.py) and [cray_subscription.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/cray_subscription.py) for generating subscriptions and redfish events for the EventService. Which templates to use are generally set by the <BMC_type>_loader.py when response format can vary between BMC type.
+
 <a name="existing-static-mockups"></a>
 
 ## Existing static mockups:
@@ -205,6 +217,7 @@ You may wish to create a resource such as this for each of your dynamic resource
 ## Existing dynamic resources:
 - Olympus Power Capping - [./src/api_emulator/redfish/olympus_power_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/olympus_power_api.py)
     GET/PATCH /redfish/v1/Chassis/<system_id>/Controls/<control_id>
+    PATCH     /redfish/v1/Chassis/<system_id>/Controls.Deep
 - Computer System Power Actions - [./src/api_emulator/redfish/computer_systems_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/computer_systems_api.py)
     GET /redfish/v1/Systems/<system_id>
     POST /redfish/v1/Systems/<system_id>/Actions/ComputerSystem.Reset
@@ -212,6 +225,10 @@ You may wish to create a resource such as this for each of your dynamic resource
     GET /redfish/v1/UpdateService/FirmwareInventory/<target_id>
     POST /redfish/v1/UpdateService/SimpleUpdate
     GET/PATCH /redfish/v1/UpdateService/FirmwareInventory/Config
+- EventService - [./src/api_emulator/redfish/event_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py), [./src/api_emulator/redfish/event_generator.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py)
+    GET/PATCH        /redfish/v1/EventService
+    GET/POST         /redfish/v1/EventService/Subscriptions
+    GET/PATCH/DELETE /redfish/v1/EventService/Subscriptions/<id>
 
 <a name="existing-emulators"></a>
 
@@ -232,4 +249,9 @@ You may wish to create a resource such as this for each of your dynamic resource
         GET /redfish/v1/UpdateService/FirmwareInventory/<target_id>
         POST /redfish/v1/UpdateService/SimpleUpdate
         GET/PATCH /redfish/v1/UpdateService/FirmwareInventory/Config
+    - EventService - [./src/api_emulator/redfish/event_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py), [./src/api_emulator/redfish/event_generator.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py)
+        GET/PATCH        /redfish/v1/EventService
+        GET/POST         /redfish/v1/EventService/Subscriptions
+        GET/PATCH/DELETE /redfish/v1/EventService/Subscriptions/<id>
+    - EventService Templates - [./src/api_emulator/redfish/templates/cray_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/cray_events.py), [./src/api_emulator/redfish/templates/cray_subscription.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/cray_subscription.py)
 

@@ -24,11 +24,18 @@
 
 import g
 import logging
+import strgen
+import random
 
 # Resource and SubResource imports
-from .redfish.olympus_power_api import PowerAPI, CreatePower
+from .redfish.olympus_power_api import PowerAPI, CreatePower, ControlsDeepAPI
 from .redfish.computer_system_api import ComputerSystemAPI, CreateComputerSystem, ResetAction_API
 from .redfish.update_service_api import UpdateServiceAPI, CreateFirmwareTarget, SimpleUpdateAPI, UpdateServiceConfigAPI
+from .redfish.templates.cray_subscription import get_subscription_instance
+from .redfish.templates.cray_events import GetEventRecordTemplates
+from .redfish.event_generator import EventGenerator
+from .redfish.event_service_api import CreateEventService
+
 from .static_loader import load_static
 
 # BardPeak
@@ -59,17 +66,25 @@ class BardPeak:
         self.Root = load_static('BardPeak', 'redfish', mode, rest_base, resource_dictionary)
         self.BMC_Type = 'BardPeak'
 
+        self.randomize(resource_dictionary)
+
         # Add dynamic resources here. This will override any previously loaded static URL
         
         # Power Capping
-        g.api.add_resource(PowerAPI, '/redfish/v1/Chassis/Node0/Controls/<string:ident>',
+        g.api.add_resource(PowerAPI, '/redfish/v1/Chassis/<string:ch_id>/Controls/<string:ident>',
             resource_class_kwargs={'rb': g.rest_base})
-        pwrControls = resource_dictionary.get_resource('BardPeak/Chassis/Node0/Controls')
-        for pwrControl in pwrControls['Members']:
-            control_id = pwrControl['@odata.id']
-            control_id = control_id.replace('/redfish/v1/Chassis/Node0/Controls/', '')
-            config = resource_dictionary.get_resource('BardPeak/Chassis/Node0/Controls/' + control_id)
-            CreatePower(resource_class_kwargs={'rb': g.rest_base, 'ch_id': 'Node0', 'control_id': control_id}).put('Node0', control_id, config)
+        g.api.add_resource(ControlsDeepAPI, '/redfish/v1/Chassis/<string:ch_id>/Controls.Deep',
+            resource_class_kwargs={'rb': g.rest_base})
+        chassisCollection = resource_dictionary.get_resource('BardPeak/Chassis')
+        for chassis in chassisCollection['Members']:
+            ch_id = chassis['@odata.id'].replace('/redfish/v1/Chassis/', '')
+            ch_config = resource_dictionary.get_resource('BardPeak/Chassis/%s' % ch_id)
+            if 'Controls' in ch_config:
+                pwrControls = resource_dictionary.get_resource('BardPeak/Chassis/%s/Controls' % ch_id)
+                for pwrControl in pwrControls['Members']:
+                    control_id = pwrControl['@odata.id'].replace('/redfish/v1/Chassis/%s/Controls/' % ch_id, '')
+                    config = resource_dictionary.get_resource('BardPeak/Chassis/%s/Controls/%s' % (ch_id, control_id))
+                    CreatePower().put(ch_id, control_id, config)
 
         # System Reset Actions
         g.api.add_resource(ComputerSystemAPI, '/redfish/v1/Systems/<string:ident>',
@@ -78,11 +93,10 @@ class BardPeak:
                 resource_class_kwargs={'rb': g.rest_base})
         systems = resource_dictionary.get_resource('BardPeak/Systems')
         for system in systems['Members']:
-            sys_id = system['@odata.id']
-            sys_id = sys_id.replace('/redfish/v1/Systems/', '')
+            sys_id = system['@odata.id'].replace('/redfish/v1/Systems/', '')
             config = resource_dictionary.get_resource('BardPeak/Systems/' + sys_id)
             rst_actions = resource_dictionary.get_resource('BardPeak/Systems/%s/ResetActionInfo' % sys_id)
-            CreateComputerSystem(resource_class_kwargs={'rb': g.rest_base, 'sys_id': sys_id}).put(sys_id, config, rst_actions)
+            CreateComputerSystem().put(sys_id, config, rst_actions)
 
         # Firmware Update
         g.api.add_resource(UpdateServiceAPI, '/redfish/v1/UpdateService/FirmwareInventory/<string:ident>',
@@ -91,8 +105,7 @@ class BardPeak:
                 resource_class_kwargs={'rb': g.rest_base})
         updateService = resource_dictionary.get_resource('BardPeak/UpdateService/FirmwareInventory')
         for member in updateService['Members']:
-            target_id = member['@odata.id']
-            target_id = target_id.replace('/redfish/v1/UpdateService/FirmwareInventory/', '')
+            target_id = member['@odata.id'].replace('/redfish/v1/UpdateService/FirmwareInventory/', '')
             config = resource_dictionary.get_resource('BardPeak/UpdateService/FirmwareInventory/' + target_id)
             CreateFirmwareTarget(resource_class_kwargs={'rb': g.rest_base, 'target_id': target_id}).put(target_id, config)
 
@@ -100,6 +113,88 @@ class BardPeak:
         g.api.add_resource(UpdateServiceConfigAPI, '/redfish/v1/UpdateService/FirmwareInventory/Config',
                 resource_class_kwargs={'rb': g.rest_base})
 
+        # Event Service
+        event_config = resource_dictionary.get_resource('BardPeak/EventService')
+        sub_config = resource_dictionary.get_object('BardPeak/EventService/Subscriptions')
+        # Remove any existing subscriptions in our static mockup
+        for sub in sub_config.configuration['Members']:
+            url = sub['@odata.id']
+            url = url.replace('/redfish/v1', 'BardPeak')
+            resource_dictionary.delete_resource(url)
+        sub_config.configuration['Members'] = []
+        sub_config.configuration['Members@odata.count'] = 0
+        sub_generator = get_subscription_instance
+        CreateEventService(resource_class_kwargs={'rb': g.rest_base}).put(event_config, sub_config.configuration, sub_generator)
+
+        # Here we tell the event generator what templates to use for forming
+        # redfish events. Since not all BMC types form events the same way.
+        eventTemplates = GetEventRecordTemplates()
+        EventGenerator(eventTemplates)
+
     # Get the BMC type
     def get_type(self):
         return self.BMC_Type
+
+    # Randomize serial numbers and MAC addresses just in case multiple instances are created
+    def randomize(self, resource_dictionary):
+        # List of all of the paths with serial numbers we want to randomize
+        paths = {
+            'BardPeak/Chassis/Enclosure',
+            'BardPeak/Chassis/Mezz0',
+            'BardPeak/Chassis/Mezz1',
+            'BardPeak/Chassis/Node0/NetworkAdapters/HPCNet0',
+            'BardPeak/Chassis/Node0/NetworkAdapters/HPCNet1',
+            'BardPeak/Chassis/Node0/NetworkAdapters/HPCNet2',
+            'BardPeak/Chassis/Node0/NetworkAdapters/HPCNet3',
+            'BardPeak/Systems/Node0',
+            'BardPeak/Systems/Node0/Memory/DIMM0',
+            'BardPeak/Systems/Node0/Memory/DIMM1',
+            'BardPeak/Systems/Node0/Memory/DIMM2',
+            'BardPeak/Systems/Node0/Memory/DIMM3',
+            'BardPeak/Systems/Node0/Memory/DIMM4',
+            'BardPeak/Systems/Node0/Memory/DIMM5',
+            'BardPeak/Systems/Node0/Memory/DIMM6',
+            'BardPeak/Systems/Node0/Memory/DIMM7',
+            'BardPeak/Systems/Node0/Processors/CPU0',
+            'BardPeak/Systems/Node0/Processors/GPU0',
+            'BardPeak/Systems/Node0/Processors/GPU1',
+            'BardPeak/Systems/Node0/Processors/GPU2',
+            'BardPeak/Systems/Node0/Processors/GPU3',
+            'BardPeak/Systems/Node0/Processors/GPU4',
+            'BardPeak/Systems/Node0/Processors/GPU5',
+            'BardPeak/Systems/Node0/Processors/GPU6',
+            'BardPeak/Systems/Node0/Processors/GPU7'
+        }
+        foundSNs = {}
+        for path in paths:
+            page = resource_dictionary.get_object(path)
+            sn = page.configuration['SerialNumber']
+            # If they have the same SN as something else in our mockup,
+            # keep it that way. Except if the value is bogus.
+            if sn in foundSNs and sn != '00000000000000':
+                page.configuration['SerialNumber'] = foundSNs[sn]
+            else:
+                rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                foundSNs[sn] = rndSN
+                page.configuration['SerialNumber'] = rndSN
+
+        path = 'BardPeak/Chassis/Node0/Assembly'
+        page = resource_dictionary.get_object(path)
+        for assembly in page.configuration['Assemblies']:
+            sn = assembly['SerialNumber']
+            if sn in foundSNs and sn != '00000000000000':
+                assembly['SerialNumber'] = foundSNs[sn]
+            else:
+                rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                foundSNs[sn] = rndSN
+                assembly['SerialNumber'] = rndSN
+
+        path = 'BardPeak/Systems/Node0/EthernetInterfaces/ManagementEthernet'
+        page = resource_dictionary.get_object(path)
+        rndMAC = [ 0x00, 0x40, 0xa6,
+            random.randint(0x00, 0x7f),
+            random.randint(0x00, 0xff),
+            random.randint(0x00, 0xff)]
+        newMAC = ':'.join(map(lambda x: "%02x" % x, rndMAC))
+        page.configuration['MACAddress'] = newMAC
+        page.configuration['PermanentMACAddress'] = newMAC

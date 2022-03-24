@@ -24,6 +24,19 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [0.2.0] - 2022-03-24
+
+### Added
+
+- Support for Deep PATCH for Olympus power limiting.
+- Support for changing the 'ControlMode' field for Olympus power controls.
+- Dynamic resources for the EventService allowing for subscribing to redfish events.
+- Support for sending redfish events when compute system PowerState is affected.
+
+### Changed
+
+- Responses from dynamic resources are now all valid json.
+
 ## [0.1.0] - 2022-03-18
 
 ### Added
