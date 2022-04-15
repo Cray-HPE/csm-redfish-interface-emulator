@@ -28,7 +28,7 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-FROM arti.dev.cray.com/baseos-docker-master-local/alpine:3.13 AS base
+FROM FROM artifactory.algol60.net/docker.io/library/golang:1.16-alpine AS build-base
 
 # Insert our emulator extentions
 COPY src /app
