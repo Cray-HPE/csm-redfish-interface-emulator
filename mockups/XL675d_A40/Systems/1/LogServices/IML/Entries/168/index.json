@@ -1,0 +1,32 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"64C42EA8\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/168",
+    "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+    "Id": "168",
+    "Created": "2022-01-20T16:02:59Z",
+    "EntryType": "Oem",
+    "Message": "System Power Supply: Input Power Loss or Unplugged Power Cord, Verify Power Supply Input (Power Supply 2)",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_3_0.HpeLogEntry",
+            "Categories": [
+                "Power"
+            ],
+            "Class": 11,
+            "ClassDescription": "Power",
+            "Code": 82,
+            "Count": 1,
+            "EventNumber": 201,
+            "LearnMoreLink": "http://www.hpe.com/support/class0x000bcode0x0052-gen10",
+            "RecommendedAction": "Check the power source, then test and replace any failed power supplies.",
+            "Repaired": true,
+            "Severity": "Repaired",
+            "Updated": "2022-01-20T16:53:26Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "OK"
+}

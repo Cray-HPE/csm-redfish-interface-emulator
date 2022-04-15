@@ -1,0 +1,5 @@
+{
+    "@odata.etag": "W/\"1649952711\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Oem/CrayVoltageMargins/VDR",
+    "@odata.type": "#CrayVoltageMargins.VoltageRailsCollection"
+}

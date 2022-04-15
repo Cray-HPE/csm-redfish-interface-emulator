@@ -1,0 +1,1115 @@
+{
+    "@Redfish.Copyright": "Copyright 2021 HPE Inc. All rights reserved.",
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Registries/HPECDUAlarms.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_0_0.MessageRegistry",
+    "Description": "HPE CDU alarm messages",
+    "Id": "HPECDUAlarms.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "ActuatorDeviationWarning": {
+            "Description": "Detected valve actuator position is different than desired control position.",
+            "Message": "Valve actuator deviation warning",
+            "NumberOfArgs": 0,
+            "Resolution": "Inspect valve actuators for proper operation.",
+            "Severity": "Warning"
+        },
+        "ActuatorDeviationWarningCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "ActuatorDeviationWarning"
+                ]
+            },
+            "Description": "Detected valve actuator position is no longer different than desired control position.",
+            "Message": "Valve actuator deviation warning cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "BackupAC3PhFault": {
+            "Description": "Backup 3 phase AC power supply alarm",
+            "Message": "Backup 3 phase AC fault alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check backup AC power supply to CDU.",
+            "Severity": "Warning"
+        },
+        "BackupAC3PhFaultCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "BackupAC3PhFault"
+                ]
+            },
+            "Description": " cleared.",
+            "Message": " cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "BackupACOffT2Or24VACFault": {
+            "Description": "Fault indicates either the backup AC power supply is off, an issue with transformer 2, or an issue with the backup 24 VAC supply.",
+            "Message": "Backup AC power supply off, transformer 2, or backup 24 VAC fault alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check backup AC power supply to CDU.",
+            "Severity": "Warning"
+        },
+        "BackupACOffT2Or24VACFaultCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "BackupACOffT2Or24VACFault"
+                ]
+            },
+            "Description": "Fault cleared that indicated either the backup AC power supply was off, an issue with transformer 2, or an issue with the backup 24 VAC supply..",
+            "Message": "Backup AC power supply off, transformer 2, or backup 24 VAC fault alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "DualHighDewPointAlarm": {
+            "Description": "Dew point is near coolant temperature. Coolant temperature control mode changed to avoid condensation.",
+            "Message": "Dual High dew point alarm",
+            "NumberOfArgs": 0,
+            "Resolution": "Take actions to reduce humidity near cabinets",
+            "Severity": "Critical"
+        },
+        "DualHighDewPointAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "DualHighDewPointAlarm"
+                ]
+            },
+            "Description": "Dew point is no longer near coolant temperature. Coolant temperature control mode returned to normal operation.",
+            "Message": "Dual High dew point alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "EU3PS1BPressureProbeAlarm": {
+            "Description": "Filter inlet pressure probe PS1B is in a failed or disconnected state.",
+            "Message": "Filter inlet pressure probe PS1B failure (Exp Universal IO 3)",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "EU3PS1BPressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "EU3PS1BPressureProbeAlarm"
+                ]
+            },
+            "Description": "Filter inlet pressure probe PS1B is no longer in a failed or disconnected state.",
+            "Message": "Filter inlet pressure probe PS1B failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "EU4PS4BPressureProbeAlarm": {
+            "Description": "Process return pressure probe PS4B is in a failed or disconnected state.",
+            "Message": "Process return pressure probe PS4B failure (Exp Universal IO 4)",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "EU4PS4BPressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "EU4PS4BPressureProbeAlarm"
+                ]
+            },
+            "Description": "Process return pressure probe PS4B is no longer in a failed or disconnected state.",
+            "Message": "Process return pressure probe PS4B failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "EU5PS2BPressureAlarm": {
+            "Description": "Filter outlet pressure probe PS2B is in a failed or disconnected state.",
+            "Message": "Filter outlet pressure probe PS2B failure (Exp Universal IO 5)",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "EU5PS2BPressureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "EU5PS2BPressureAlarm"
+                ]
+            },
+            "Description": "Filter outlet pressure probe PS2B is no longer in a failed or disconnected state.",
+            "Message": "Filter outlet pressure probe PS2B failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "EU6PS4APressureAlarm": {
+            "Description": "Process return pressure probe PS4A is in a failed or disconnected state.",
+            "Message": "Process return pressure probe PS4A failure (Exp Universal IO 4).",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "EU6PS4APressureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "EU6PS4APressureAlarm"
+                ]
+            },
+            "Description": "Process return pressure probe PS4A is no longer in a failed or disconnected state.",
+            "Message": "Process return pressure probe PS4A failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "EU9T1BTemperatureProbeAlarm": {
+            "Description": "Supply temperature probe T1B is in a failed or disconnected state.",
+            "Message": "Supply temperature probe T1B failure (Exp Universal IO 9)",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "EU9T1BTemperatureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "EU9T1BTemperatureProbeAlarm"
+                ]
+            },
+            "Description": "Supply temperature probe T1B is no longer in a failed or disconnected state.",
+            "Message": "Supply temperature probe T1B failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "EWSButtonActiveAlarm": {
+            "Description": "An Emergency Water Shutoff (EWS) button has been pressed, causing valves to close.",
+            "Message": "Emergency Water Shutoff (EWS) button pressed.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check both EWS buttons on front and back of cabinet.",
+            "Severity": "Critical"
+        },
+        "EWSButtonActiveAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "EWSButtonActiveAlarm"
+                ]
+            },
+            "Description": "An Emergency Water Shutoff (EWS) button is no longer pressed",
+            "Message": "Emergency Water Shutoff (EWS) button no longer pressed.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "ExpBoardProbeAlarm": {
+            "Description": "One or more probes on the expansion board are indicating an alarm condition.",
+            "Message": "Expansion board probe alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check for additional active alarms. Check CDU panel.",
+            "Severity": "Warning"
+        },
+        "ExpBoardProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "ExpBoardProbeAlarm"
+                ]
+            },
+            "Description": "Expansion board probes are no longer indicating an alarm condition.",
+            "Message": "Expansion board probe alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "GeneralAlarm": {
+            "Description": "Indicates the general CDU alarm triggered.",
+            "Message": "General CDU alarm engaged",
+            "NumberOfArgs": 0,
+            "Resolution": "Check for other active alarms. Check CDU Panel.",
+            "Severity": "Warning"
+        },
+        "GeneralAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "GeneralAlarm"
+                ]
+            },
+            "Description": "Indicates the general CDU alarm cleared.",
+            "Message": "General CDU alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "HighDewPointAlarm": {
+            "Description": "Dew point is near coolant temperature. Coolant temperature control mode changed to avoid condensation.",
+            "Message": "High dew point alarm",
+            "NumberOfArgs": 0,
+            "Resolution": "Take actions to reduce humidity near cabinets",
+            "Severity": "Critical"
+        },
+        "HighDewPointAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "HighDewPointAlarm"
+                ]
+            },
+            "Description": "Dew point is no longer near coolant temperature. Coolant temperature control mode returned to normal operation.",
+            "Message": "High dew point alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "HighDewPointWarning": {
+            "Description": "Dew point is approaching coolant temperature.",
+            "Message": "High dew point warning.",
+            "NumberOfArgs": 0,
+            "Resolution": "Eliminate sources of humidity near cabinets.",
+            "Severity": "Warning"
+        },
+        "HighDewPointWarningCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "HighDewPointWarning"
+                ]
+            },
+            "Description": "Dew point is no longer approaching coolant temperature.",
+            "Message": "High dew point warning cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "HighFilterDpAlarm": {
+            "Description": "Sensors detect a high change in pressure across the coolant filter.",
+            "Message": "High Filter Differential Pressure Alarm",
+            "NumberOfArgs": 0,
+            "Resolution": "Check coolant filter. Clean or replace as needed.",
+            "Severity": "Warning"
+        },
+        "HighFilterDpAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "HighFilterDpAlarm"
+                ]
+            },
+            "Description": "Sensors no longer detect a high change in pressure across the coolant filter.",
+            "Message": "High Filter Differential Pressure Alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "HighHxpInTempAlarm": {
+            "Description": "High coolant temperature detected on the primary side of the heat exchanger in the coolant supplied to the CDU.",
+            "Message": "Heat exchanger primary side high temperature alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check primary coolant temperature and flow. Check valve position.",
+            "Severity": "Warning"
+        },
+        "HighHxpInTempAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "HighHxpInTempAlarm"
+                ]
+            },
+            "Description": "High coolant temperature no longer detected on the primary side of the heat exchanger in the coolant supplied to the CDU.",
+            "Message": "Heat exchanger primary side high temperature alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "HighHxsTemperatureAlarm": {
+            "Description": "High coolant temperature detected on the secondary side of the heat exchanger.",
+            "Message": "Heat exchanger secondary side high temperature alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check primary HX inlet temp, cooling valve actuator position, pressures in both primary and secondary loop.",
+            "Severity": "Warning"
+        },
+        "HighHxsTemperatureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "HighHxsTemperatureAlarm"
+                ]
+            },
+            "Description": "High coolant temperature no longer detected on the secondary side of the heat exchanger.",
+            "Message": "Heat exchanger secondary side high temperature alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "HighPressureShutdownAlarm": {
+            "Description": "High coolant pressure has triggered a system shutdown.",
+            "Message": "High pressure shutdown alarm",
+            "NumberOfArgs": 0,
+            "Resolution": "Check secondary side pressure sensors. Check for pump deadhead. Check expansion tank.",
+            "Severity": "Critical"
+        },
+        "HighPressureShutdownAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "HighPressureShutdownAlarm"
+                ]
+            },
+            "Description": "High coolant pressure no longer detected.",
+            "Message": "High pressure shutdown alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "HighProcessInTempAlarm": {
+            "Description": "Temperature of the supplied process coolant is higher than the alarm setpoint.",
+            "Message": "High process coolant inlet temperature alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check supplied chilled coolant temperature and flow.",
+            "Severity": "Critical"
+        },
+        "HighProcessInTempAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "HighProcessInTempAlarm"
+                ]
+            },
+            "Description": "Temperature of the supplied process coolant is no longer higher than the alarm setpoint.",
+            "Message": "High process coolant inlet temperature alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LeakSensor1Alarm": {
+            "Description": "The presence of water is detected by sensor 1.",
+            "Message": "Leak sensor 1 alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check for leak or open circuit to leak sensor 1.",
+            "Severity": "Warning"
+        },
+        "LeakSensor1AlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LeakSensor1Alarm"
+                ]
+            },
+            "Description": " cleared.",
+            "Message": " cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LeakSensor2Alarm": {
+            "Description": "The presence of water is detected by sensor 2.",
+            "Message": "Leak sensor 2 alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check for leak or open circuit to leak sensor 2.",
+            "Severity": "Warning"
+        },
+        "LeakSensor2AlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LeakSensor2Alarm"
+                ]
+            },
+            "Description": " cleared.",
+            "Message": " cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LowFlowP1Alarm": {
+            "Description": "Low coolant flow alarm 1 indicated by pressure sensors.",
+            "Message": "Low coolant flow alarm 1.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check coolant level, pressure values, and pump operation at CDU panel.",
+            "Severity": "Warning"
+        },
+        "LowFlowP1AlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LowFlowP1Alarm"
+                ]
+            },
+            "Description": "Low coolant flow alarm 1 no longer indicated by pressure sensors.",
+            "Message": "Low coolant flow alarm 1 cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LowFlowP2Alarm": {
+            "Description": "Low coolant flow alarm 2 indicated by pressure sensors.",
+            "Message": "Low coolant flow alarm 2.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check coolant level, pressure values, and pump operation at CDU panel.",
+            "Severity": "Warning"
+        },
+        "LowFlowP2AlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LowFlowP2Alarm"
+                ]
+            },
+            "Description": "Low coolant flow alarm 2 no longer indicated by pressure sensors.",
+            "Message": "Low coolant flow alarm 2 cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LowHxsTemperatureAlarm": {
+            "Description": "Low coolant temperature detected on the secondary side of the heat exchanger.",
+            "Message": "Heat exchanger secondary side low temperature alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check actuator value position. Check probe accuracy.",
+            "Severity": "Warning"
+        },
+        "LowHxsTemperatureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LowHxsTemperatureAlarm"
+                ]
+            },
+            "Description": "Low coolant temperature detected on the secondary side of the heat exchanger.",
+            "Message": "Heat exchanger secondary side low temperature alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LowProcessInTempAlarm": {
+            "Description": "Temperature of the supplied process coolant is lower than the alarm setpoint.",
+            "Message": "Low process coolant inlet temperature alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check supplied chilled coolant temperature and flow.",
+            "Severity": "Warning"
+        },
+        "LowProcessInTempAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LowProcessInTempAlarm"
+                ]
+            },
+            "Description": "Temperature of the supplied process coolant is no longer lower than the alarm setpoint.",
+            "Message": "Low process coolant inlet temperature alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LowSuctionPressureAlarm": {
+            "Description": "One or more pump inlet pressure sensors indicate low suction pressure conditions.",
+            "Message": "Low pump suction pressure alarm",
+            "NumberOfArgs": 0,
+            "Resolution": "Check for loss or pressure, leak, or air in system. Check for closed suction isolation valve.",
+            "Severity": "Warning"
+        },
+        "LowSuctionPressureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LowSuctionPressureAlarm"
+                ]
+            },
+            "Description": "Pump inlet pressure sensors no longer indicate low suction pressure conditions.",
+            "Message": "Low pump suction pressure alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LowSystemPressureAlarm": {
+            "Description": "Low system coolant pressure detected.",
+            "Message": "Low system pressure alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check status of Cooling coolant supply system.",
+            "Severity": "Warning"
+        },
+        "LowSystemPressureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LowSystemPressureAlarm"
+                ]
+            },
+            "Description": "Low system coolant pressure cleared.",
+            "Message": "Low system pressure alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "Main115VACLossAlarm": {
+            "Description": "Power loss alarm for the main 125 VAC power source.",
+            "Message": "Main power 115 VAC loss alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check main AC power supply to CDU.",
+            "Severity": "Warning"
+        },
+        "Main115VACLossAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "Main115VACLossAlarm"
+                ]
+            },
+            "Description": "Power loss alarm cleared for the main 125 VAC power source.",
+            "Message": "Main power 115 VAC loss alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "Main24VACLossAlarm": {
+            "Description": "Power loss alarm for the main 24 VAC power source.",
+            "Message": "Main 24 VAC power loss alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check for loss of main 115 VAC supply. Check main transformer.",
+            "Severity": "Warning"
+        },
+        "Main24VACLossAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "Main24VACLossAlarm"
+                ]
+            },
+            "Description": "Power loss alarm cleared for the main 24 VAC power source.",
+            "Message": "Main 24 VAC power loss alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "MainACOffOrT1FaultAlarm": {
+            "Description": "Fault indicates either the main AC power supply is off or an issue with transformer 1.",
+            "Message": "Main AC power supply off or transformer 1 fault alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check main AC power supply to CDU.",
+            "Severity": "Warning"
+        },
+        "MainACOffOrT1FaultAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "MainACOffOrT1FaultAlarm"
+                ]
+            },
+            "Description": "Fault cleared that indicated either the main AC power supply is off or an issue with transformer 1.",
+            "Message": "Main AC power supply off or transformer 1 fault alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "RTCClockBoardAlarm": {
+            "Description": "Issue detected on real time clock board.",
+            "Message": "Real time clock board alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check PLC.",
+            "Severity": "Warning"
+        },
+        "RTCClockBoardAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RTCClockBoardAlarm"
+                ]
+            },
+            "Description": "Issue cleared on real time clock board.",
+            "Message": "Real time clock board alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "RhHumidityProbe1Alarm": {
+            "Description": "Humidity probe on relative humidity board 1 is in a failed or disconnected state.",
+            "Message": "Relative humidity board 1 humidity probe failure.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check probe wiring and connections. Replace sensor unit if necessary.",
+            "Severity": "Warning"
+        },
+        "RhHumidityProbe1AlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RhHumidityProbe1Alarm"
+                ]
+            },
+            "Description": "Humidity probe on relative humidity board 1 no longer in a failed or disconnected state.",
+            "Message": "Relative humidity board 1 humidity probe failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "RhHumidityProbe2Alarm": {
+            "Description": "Humidity probe on relative humidity board 2 is in a failed or disconnected state.",
+            "Message": "Relative humidity board 2 humidity probe failure.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check probe wiring and connections. Replace sensor unit if necessary.",
+            "Severity": "Warning"
+        },
+        "RhHumidityProbe2AlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RhHumidityProbe2Alarm"
+                ]
+            },
+            "Description": "Humidity probe on relative humidity board 2 no longer in a failed or disconnected state.",
+            "Message": "Relative humidity board 2 humidity probe failure cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "RhTemperatureProbe1Alarm": {
+            "Description": "Temperature probe on relative humidity board 1 is in a failed or disconnected state.",
+            "Message": "Relative humidity board 1 temperature probe failure.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check probe wiring and connections. Replace sensor unit if necessary.",
+            "Severity": "Warning"
+        },
+        "RhTemperatureProbe1AlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RhTemperatureProbe1Alarm"
+                ]
+            },
+            "Description": "Temperature probe on relative humidity board 1 no longer in a failed or disconnected state.",
+            "Message": "Relative humidity board 1 temperature probe failure cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "RhTemperatureProbe2Alarm": {
+            "Description": "Temperature probe on relative humidity board 2 is in a failed or disconnected state.",
+            "Message": "Relative humidity board 2 temperature probe failure.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check probe wiring and connections. Replace sensor unit if necessary.",
+            "Severity": "Warning"
+        },
+        "RhTemperatureProbe2AlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RhTemperatureProbe2Alarm"
+                ]
+            },
+            "Description": "Temperature probe on relative humidity board 2 no longer in a failed or disconnected state.",
+            "Message": "Relative humidity board 2 temperature probe failure cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U10PS2APressureProbeAlarm": {
+            "Description": "Filter outlet pressure probe PS2A is in a failed or disconnected state.",
+            "Message": "Filter outlet pressure probe PS2A failure (Universal IO 10).",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U10PS2APressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U10PS2APressureProbeAlarm"
+                ]
+            },
+            "Description": "Filter outlet pressure probe PS2A is no longer in a failed or disconnected state.",
+            "Message": "Filter outlet pressure probe PS2A failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U10SSP2PressureProbeAlarm": {
+            "Description": "Pressure probe 2 on the secondary side pump inlet is in a failed or disconnected state.",
+            "Message": "Secondary side pump inlet pressure probe 2 (SSP2) failed (Universal IO 10)",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U10SSP2PressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U10SSP2PressureProbeAlarm"
+                ]
+            },
+            "Description": "Pressure probe 2 on the secondary side pump inlet no longer is in a failed or disconnected state.",
+            "Message": "Secondary side pump inlet pressure probe 2 (SSP2) alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U1PS3APressureProbeAlarm": {
+            "Description": "Process supply pressure probe PS3A is in a failed or disconnected state.",
+            "Message": "Process supply pressure probe PS3A failure (Universal IO 1).",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U1PS3APressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U1PS3APressureProbeAlarm"
+                ]
+            },
+            "Description": "Process supply pressure probe PS3A is no longer in a failed or disconnected state.",
+            "Message": "Process supply pressure probe PS3A failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U1SPS1PressureProbeAlarm": {
+            "Description": "Pressure probe 1 on the secondary side coolant supply line is in a failed or disconnected state.",
+            "Message": "Secondary side coolant supply pressure probe 1 (SPS1) failed (Universal IO 1)",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U1SPS1PressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U1SPS1PressureProbeAlarm"
+                ]
+            },
+            "Description": "Pressure probe 1 on the secondary side coolant supply line no longer in a failed or disconnected state.",
+            "Message": "Secondary side coolant supply pressure probe 1 (SPS1) alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U2PS5PressureProbeAlarm": {
+            "Description": "Cooling water return pressure probe PS5 is in a failed or disconnected state.",
+            "Message": "Cooling water return pressure probe PS5 failure (Universal IO 2).",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U2PS5PressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U2PS5PressureProbeAlarm"
+                ]
+            },
+            "Description": "Cooling water return pressure probe PS5 is no longer in a failed or disconnected state.",
+            "Message": "Cooling water return pressure probe PS5 failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U2SSP1PressureProbeAlarm": {
+            "Description": "Pressure probe 1 on the secondary side pump inlet is in a failed or disconnected state.",
+            "Message": "Secondary side pump inlet pressure probe 1 (SSP1) failed (Universal IO 2)",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U2SSP1PressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U2SSP1PressureProbeAlarm"
+                ]
+            },
+            "Description": "Pressure probe 1 on the secondary side pump inlet no longer in a failed or disconnected state.",
+            "Message": "Secondary side coolant supply pressure probe 1 (SSP1) alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U3PS6PressureProbeAlarm": {
+            "Description": "Cooling water supply pressure probe PS6 is in a failed or disconnected state.",
+            "Message": "Cooling water supply pressure probe PS6 failure (Universal IO 3).",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U3PS6PressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U3PS6PressureProbeAlarm"
+                ]
+            },
+            "Description": "Cooling water supply pressure probe PS6 is no longer in a failed or disconnected state.",
+            "Message": "Cooling water supply pressure probe PS6 failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U3SST1TemperatureProbeAlarm": {
+            "Description": "Temperature probe 1 on the secondary side coolant supply line is in a failed or disconnected state.",
+            "Message": "Secondary side coolant supply temperature probe 1 (SST1) failed (Universal IO 3).",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U3SST1TemperatureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U3SST1TemperatureProbeAlarm"
+                ]
+            },
+            "Description": "Temperature probe 1 on the secondary side coolant supply line no longer in a failed or disconnected state.",
+            "Message": "Secondary side coolant supply temperature probe 1 (SST1) alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U3T1ATemperatureProbeAlarm": {
+            "Description": "Supply temperature probe T1A is in a failed or disconnected state.",
+            "Message": "Supply temperature probe T1A failure (Universal IO 3)",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U3T1ATemperatureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U3T1ATemperatureProbeAlarm"
+                ]
+            },
+            "Description": "Supply temperature probe T1A is no longer in a failed or disconnected state.",
+            "Message": "Supply Temperature probe T1A failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U6ProbePS1AAlarm": {
+            "Description": "Filter inlet pressure probe PS1A is in a failed or disconnected state.",
+            "Message": "Filter inlet pressure probe PS1A failure (Universal IO 6).",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U6ProbePS1AAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U6ProbePS1AAlarm"
+                ]
+            },
+            "Description": "Filter inlet pressure probe PS1A is no longer in a failed or disconnected state.",
+            "Message": "Filter inlet pressure probe PS1A failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U6SSFPressureProbeAlarm": {
+            "Description": "Pressure probe for the supply side filter is in a failed or disconnected state.",
+            "Message": "Secondary side filter pressure probe (SSF) failed (Universal IO 6).",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U6SSFPressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U6SSFPressureProbeAlarm"
+                ]
+            },
+            "Description": "Pressure probe for the supply side filter no longer in a failed or disconnected state.",
+            "Message": "Secondary side filter pressure probe (SSF) alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U9PS3BPressureProbeAlarm": {
+            "Description": "Process supply pressure probe PS3B is in a failed or disconnected state.",
+            "Message": "Process supply pressure probe PS3B failure (Universal IO 9).",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U9PS3BPressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U9PS3BPressureProbeAlarm"
+                ]
+            },
+            "Description": "Process supply pressure probe PS3B is no longer in a failed or disconnected state.",
+            "Message": "Process supply pressure probe PS3B failure cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "U9SPS2PressureProbeAlarm": {
+            "Description": "Pressure probe 2 on the secondary side coolant supply line is in a failed or disconnected state.",
+            "Message": "Secondary side coolant supply pressure probe 2 (SPS2) failed (Universal IO 9)",
+            "NumberOfArgs": 0,
+            "Resolution": "Check wiring connection at PLC or sensor. Replace probe if necessary.",
+            "Severity": "Warning"
+        },
+        "U9SPS2PressureProbeAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "U9SPS2PressureProbeAlarm"
+                ]
+            },
+            "Description": "Pressure probe 2 on the secondary side coolant supply line no longer in a failed or disconnected state.",
+            "Message": "Secondary side coolant supply pressure probe 2 (SPS2) alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "VFD1AlarmMB": {
+            "Description": "One or more alarms active on Pump 1 Variable Frequency Drive (VFD).",
+            "Message": "Pump 1 Variable Frequency Drive (VFD) alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check Pump 1 Variable Frequency Drive.",
+            "Severity": "Critical"
+        },
+        "VFD1AlarmMBCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "VFD1AlarmMB"
+                ]
+            },
+            "Description": "Alarms cleared on Pump 1 Variable Frequency Drive (VFD).",
+            "Message": "Pump 1 Variable Frequency Drive (VFD) alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "VFD2AlarmMB": {
+            "Description": "One or more alarms active on Pump 2 Variable Frequency Drive (VFD).",
+            "Message": "Pump 2 Variable Frequency Drive (VFD) alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check Pump 2 Variable Frequency Drive.",
+            "Severity": "Critical"
+        },
+        "VFD2AlarmMBCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "VFD2AlarmMB"
+                ]
+            },
+            "Description": "Alarms cleared on Pump 2 Variable Frequency Drive (VFD).",
+            "Message": "Pump 2 Variable Frequency Drive (VFD) alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "VFDPump1FaultAlarm": {
+            "Description": "A fault from the Pump 1 Variable Frequency Drive (VFD) has triggered an alarm state.",
+            "Message": "Pump 1 Variable Frequency Drive (VFD) fault alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check Pump 1 Variable Frequency Drive.",
+            "Severity": "Warning"
+        },
+        "VFDPump1FaultAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "VFDPump1FaultAlarm"
+                ]
+            },
+            "Description": "The fault cleared from the Pump 1 Variable Frequency Drive (VFD).",
+            "Message": "Pump 1 Variable Frequency Drive (VFD) fault alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "VFDPump2FaultAlarm": {
+            "Description": "A fault from the Pump 2 Variable Frequency Drive (VFD) has triggered an alarm state.",
+            "Message": "Pump 2 Variable Frequency Drive (VFD) fault alarm",
+            "NumberOfArgs": 0,
+            "Resolution": "Check Pump 2 Variable Frequency Drive.",
+            "Severity": "Warning"
+        },
+        "VFDPump2FaultAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "VFDPump2FaultAlarm"
+                ]
+            },
+            "Description": "The fault cleared from the Pump 2 Variable Frequency Drive (VFD).",
+            "Message": "Pump 2 Variable Frequency Drive (VFD) fault alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "WDS1SensorAlarm": {
+            "Description": "Water ",
+            "Message": "Water detection sensor 1 alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check for leak or open circuit to water detection sensor 1.",
+            "Severity": "Warning"
+        },
+        "WDS1SensorAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "WDS1SensorAlarm"
+                ]
+            },
+            "Description": "Water no longer detected by sensor 1",
+            "Message": "Water detection sensor 1 alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "WDS2SensorAlarm": {
+            "Description": "The presence of water is detected by sensor 2",
+            "Message": "Water detection sensor 2 alarm.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check for leak or open circuit to water detection sensor 2.",
+            "Severity": "Warning"
+        },
+        "WDS2SensorAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "WDS2SensorAlarm"
+                ]
+            },
+            "Description": "Water no longer detected by sensor 2",
+            "Message": "Water detection sensor 2 alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "WaterDetectionAlarm": {
+            "Description": "Two water detection sensors have detected a leak.",
+            "Message": "Water Detection Alarm - 2 sensors detected water.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check CDU for coolant leak or condensation.",
+            "Severity": "Critical"
+        },
+        "WaterDetectionAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "WaterDetectionAlarm"
+                ]
+            },
+            "Description": "Water detection sensors no longer detect a leak.",
+            "Message": "Water Detection Alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        }
+    },
+    "Name": "HPE CDU Alarms Message Registry",
+    "OwningEntity": "HPE Inc.",
+    "RegistryPrefix": "HPE_CDUAlarms",
+    "RegistryVersion": "1.0.0"
+}

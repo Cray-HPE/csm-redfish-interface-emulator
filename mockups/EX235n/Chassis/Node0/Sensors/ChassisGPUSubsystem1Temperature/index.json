@@ -1,0 +1,16 @@
+{
+    "@odata.etag": "W/\"1649953624\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisGPUSubsystem1Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisGPUSubsystem1Temperature",
+    "Name": "gpubrd1",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "Chassis"
+    },
+    "PhysicalContext": "GPUSubsystem",
+    "Reading": 25,
+    "ReadingTime": "2022-04-14T16:27:21.423398594Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

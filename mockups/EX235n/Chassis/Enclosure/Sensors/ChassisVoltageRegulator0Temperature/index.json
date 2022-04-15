@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1649953624\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator0Temperature",
+    "Name": "12V_HSS ECB",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Chassis",
+        "ReferenceDesignator": "U4"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 30,
+    "ReadingTime": "2022-04-14T16:27:38.070814721Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

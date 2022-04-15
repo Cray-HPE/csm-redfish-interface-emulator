@@ -1,0 +1,41 @@
+{
+    "@odata.etag": "W/\"1649953581\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/MemorySubsystem0VoltageRegulator8InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "MemorySubsystem0VoltageRegulator8InputVoltage",
+    "Name": "CPU0 VDR EFGH",
+    "Oem": {
+        "Index": 8,
+        "ParentalContext": "MemorySubsystem",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U3010"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 11.777,
+    "ReadingTime": "2022-04-14T16:26:43.786026744Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 11.4
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 11.16
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 12.6
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 12.84
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 15.16
+        }
+    }
+}

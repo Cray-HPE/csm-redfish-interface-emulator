@@ -1,0 +1,24 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeBaseNetworkAdapter.HpeBaseNetworkAdapter",
+    "@odata.etag": "W/\"E4CE49DB\"",
+    "@odata.id": "/redfish/v1/Systems/1/BaseNetworkAdapters/4",
+    "@odata.type": "#HpeBaseNetworkAdapter.v2_0_0.HpeBaseNetworkAdapter",
+    "Id": "4",
+    "FcPorts": [],
+    "Firmware": {
+        "Current": {
+            "VersionString": "1.5.23"
+        }
+    },
+    "Location": "PCI-E Slot 21",
+    "Name": "SS11 200Gb 1P NIC PCIE",
+    "PartNumber": "P41345-001",
+    "PhysicalPorts": [],
+    "SerialNumber": "EJ21490065",
+    "Status": {
+        "Health": null,
+        "State": null
+    },
+    "StructuredName": "NIC.Slot.21.1",
+    "UEFIDevicePath": "PciRoot(0x6)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)"
+}

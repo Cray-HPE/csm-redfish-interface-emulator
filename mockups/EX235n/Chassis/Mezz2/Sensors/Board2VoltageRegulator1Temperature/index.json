@@ -1,0 +1,33 @@
+{
+    "@odata.etag": "W/\"1649426286\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator1Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Board2VoltageRegulator1Temperature",
+    "Name": "0.9V S0 VR Temperature",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "Board",
+        "ParentalIndex": 2
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 41,
+    "ReadingRangeMax": 150,
+    "ReadingRangeMin": -50,
+    "ReadingTime": "2022-04-14T16:26:03.451833904Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 100
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 130
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 150
+        }
+    }
+}

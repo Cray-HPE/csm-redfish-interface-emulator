@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator6InputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "MemorySubsystem0VoltageRegulator6InputPower",
+    "Name": "CPU0 VDR EFGH",
+    "Oem": {
+        "Index": 6,
+        "ParentalContext": "MemorySubsystem",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U1010"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 61,
+    "ReadingTime": "2022-04-14T16:21:34.148958658Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

@@ -1,0 +1,29 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"EF222F0C\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/41",
+    "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+    "Id": "41",
+    "Created": "2021-08-26T21:15:52Z",
+    "EntryType": "Oem",
+    "Message": "Firmware flashed (System BIOS - A47 v2.40 (02/23/2021))",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_3_0.HpeLogEntry",
+            "Categories": [
+                "Administration"
+            ],
+            "Class": 32,
+            "ClassDescription": "System Revision",
+            "Code": 2,
+            "Count": 1,
+            "EventNumber": 74,
+            "Severity": "Informational",
+            "Updated": "2021-08-26T21:15:52Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "OK"
+}

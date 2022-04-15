@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1649953624\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator0Temperature",
+    "Name": "SIVOC48",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Chassis",
+        "ReferenceDesignator": "J6000"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 37,
+    "ReadingTime": "2022-04-14T16:27:16.854504816Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

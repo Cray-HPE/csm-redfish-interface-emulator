@@ -1,0 +1,19 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeComponentCollection.HpeComponentCollection",
+    "@odata.etag": "W/\"AC303DD3\"",
+    "@odata.id": "/redfish/v1/UpdateService/ComponentRepository",
+    "@odata.type": "#HpeComponentCollection.HpeComponentCollection",
+    "Description": "Component Collection",
+    "Name": "Component Collection",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeComponentRepositoryInformation.HpeComponentRepositoryInformation",
+            "@odata.type": "#HpeComponentRepositoryInformation.v2_0_0.HpeComponentRepositoryInformation",
+            "ComponentCount": 0,
+            "FreeSizeBytes": 1073086464,
+            "TotalSizeBytes": 1073168384
+        }
+    },
+    "Members": [],
+    "Members@odata.count": 0
+}

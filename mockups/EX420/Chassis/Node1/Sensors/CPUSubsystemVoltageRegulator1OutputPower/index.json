@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPUSubsystemVoltageRegulator1OutputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPUSubsystemVoltageRegulator1OutputPower",
+    "Name": "CPUS VDD_3V3_S0",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "CPUSubsystem",
+        "ReferenceDesignator": "U7008"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 3.312,
+    "ReadingTime": "2022-04-14T16:12:47.595988181Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

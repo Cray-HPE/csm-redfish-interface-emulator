@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPU1VoltageRegulator4OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU1VoltageRegulator4OutputCurrent",
+    "Name": "CPU1 VPP_HBM S0",
+    "Oem": {
+        "Index": 4,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U4010"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 0,
+    "ReadingTime": "2022-04-14T16:11:37.999246184Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A"
+}

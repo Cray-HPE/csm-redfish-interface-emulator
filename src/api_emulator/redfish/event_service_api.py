@@ -1,24 +1,32 @@
-# MIT License
+# BSD 3-Clause License
 #
-# (C) Copyright [2022] Hewlett Packard Enterprise Development LP
+# Copyright 2022 Hewlett Packard Enterprise Development LP
 #
-# Permission is hereby granted, free of charge, to any person obtaining a
-# copy of this software and associated documentation files (the "Software"),
-# to deal in the Software without restriction, including without limitation
-# the rights to use, copy, modify, merge, publish, distribute, sublicense,
-# and/or sell copies of the Software, and to permit persons to whom the
-# Software is furnished to do so, subject to the following conditions:
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
 #
-# The above copyright notice and this permission notice shall be included
-# in all copies or substantial portions of the Software.
+# 1. Redistributions of source code must retain the above copyright notice,
+# this list of conditions and the following disclaimer.
 #
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-# OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-# ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-# OTHER DEALINGS IN THE SOFTWARE.
+# 2. Redistributions in binary form must reproduce the above copyright
+# notice, this list of conditions and the following disclaimer in the
+# documentation and/or other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its
+# contributors may be used to endorse or promote products derived from this
+# software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
 
 # EventService API File
 
@@ -42,6 +50,7 @@ import urllib.request
 from flask import Flask, request, make_response, render_template
 from flask_restful import reqparse, Api, Resource
 
+from .redfish_auth import auth, Privilege
 from .response import success_response, simple_error_response, error_404_response, error_not_allowed_response
 
 from threading import Thread
@@ -109,6 +118,13 @@ def send_event(event, type):
 #
 # Services GET and PATCH requests for the EventService resource.
 class EventServiceAPI(Resource):
+    # Set authorization levels here. You can either list all of the
+    # privileges needed for access or just the highest one.
+    method_decorators = {'get':    [auth.auth_required(priv={Privilege.Login})],
+                         'post':   [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'put':    [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'patch':  [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'delete': [auth.auth_required(priv={Privilege.ConfigureComponents})]}
 
     def __init__(self, **kwargs):
         logging.info('EventServiceAPI init called')
@@ -160,6 +176,13 @@ class EventServiceAPI(Resource):
 # Services GET and POST requests for the subscriptions collection.
 # POST requests will add new subscriptions.
 class SubscriptionCollectionAPI(Resource):
+    # Set authorization levels here. You can either list all of the
+    # privileges needed for access or just the highest one.
+    method_decorators = {'get':    [auth.auth_required(priv={Privilege.Login})],
+                         'post':   [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'put':    [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'patch':  [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'delete': [auth.auth_required(priv={Privilege.ConfigureComponents})]}
 
     def __init__(self, **kwargs):
         logging.info('SubscriptionCollectionAPI init called')
@@ -189,7 +212,6 @@ class SubscriptionCollectionAPI(Resource):
             if field not in raw_dict:
                 return simple_error_response('%s is required' % (field) , 400)
         ident = '%d' % id
-        id += 1
         
         destination = raw_dict['Destination']
         event_types = raw_dict['EventTypes']
@@ -204,7 +226,8 @@ class SubscriptionCollectionAPI(Resource):
             registry_prefixes = raw_dict['RegistryPrefixes']
         else:
             registry_prefixes = None
-        CreateSubscription().put(ident, destination, event_types, context, registry_prefixes)
+        CreateSubscription(ident, destination, event_types, context, registry_prefixes)
+        id += 1
         return success_response('/redfish/v1/EventService/Subscriptions/%s' % ident, 201)
 
     # HTTP PATCH
@@ -222,6 +245,13 @@ class SubscriptionCollectionAPI(Resource):
 # Services GET, PATCH, and DELETE requests for managing Redfish event subscriptions.
 # DELETE requests will remove the subscription from the subscription collection.
 class SubscriptionAPI(Resource):
+# Set authorization levels here. You can either list all of the
+    # privileges needed for access or just the highest one.
+    method_decorators = {'get':    [auth.auth_required(priv={Privilege.Login})],
+                         'post':   [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'put':    [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'patch':  [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'delete': [auth.auth_required(priv={Privilege.ConfigureComponents})]}
 
     def __init__(self, **kwargs):
         logging.info('SubscriptionAPI init called')
@@ -293,6 +323,7 @@ class SubscriptionAPI(Resource):
             if ident in members:
                 s_config['Members'].remove(members[ident]['@odata.id'])
                 del members[ident]
+                s_config['Members@odata.count'] -= 1
                 resp = success_response('Resource deleted', 200)
         except Exception:
             traceback.print_exc()
@@ -305,57 +336,45 @@ class SubscriptionAPI(Resource):
 # adds '/redfish/v1/EventService', '/redfish/v1/EventService/Subscriptions', and
 # '/redfish/v1/EventService/Subscriptions/<string:ident>' resources to flask. These resources are
 # affected by EventServiceAPI(), SubscriptionCollectionAPI(), and SubscriptionAPI()
-class CreateEventService(Resource):
-
-    def __init__(self, **kwargs):
-        logging.info('CreateEventService init called')
-
-    # Attach APIs for subordinate resource(s). Attach the APIs for
-    # a resource collection and its singletons.
-    def put(self, event_config, sub_config, sub_generator):
-        logging.info('CreateEventService put called')
-        try:
-            global e_config
-            global s_config
-            global s_generator
-            e_config = event_config
-            s_config = sub_config
-            s_generator = sub_generator
-            g.api.add_resource(EventServiceAPI,             '/redfish/v1/EventService')
-            g.api.add_resource(SubscriptionCollectionAPI,   '/redfish/v1/EventService/Subscriptions')
-            g.api.add_resource(SubscriptionAPI,             '/redfish/v1/EventService/Subscriptions/<string:ident>')
-            resp = e_config, 200
-        except Exception:
-            traceback.print_exc()
-            resp = simple_error_response('Server encountered an unexpected Error', 500)
-        return resp
+def CreateEventService(event_config, sub_config, sub_generator):
+    logging.info('CreateEventService put called')
+    try:
+        global e_config
+        global s_config
+        global s_generator
+        e_config = event_config
+        s_config = sub_config
+        s_generator = sub_generator
+        g.api.add_resource(EventServiceAPI,             '/redfish/v1/EventService')
+        g.api.add_resource(SubscriptionCollectionAPI,   '/redfish/v1/EventService/Subscriptions')
+        g.api.add_resource(SubscriptionAPI,             '/redfish/v1/EventService/Subscriptions/<string:ident>')
+        resp = e_config, 200
+    except Exception:
+        traceback.print_exc()
+        resp = simple_error_response('Server encountered an unexpected Error', 500)
+    return resp
 
 # CreateSubscription
 #
 # Called internally to create an instance of an event subscription resource for the EventService.
 # This resource is affected by SubscriptionCollectionAPI() and SubscriptionAPI().
-class CreateSubscription(Resource):
-
-    def __init__(self, **kwargs):
-        logging.info('CreateSubscription init called')
-
-    # Attach APIs for subordinate resource(s). Attach the APIs for
-    # a resource collection and its singletons.
-    def put(self, ident, destination, event_types, context=None, registry_prefixes=None):
-        logging.info('CreateSubscription put called')
-        try:
-            wildcards['id'] = ident
-            config = s_generator(wildcards)
-            config['Destination'] = destination
-            config['EventTypes'] = event_types
-            if context is not None:
-                config['Context'] = context
-            if registry_prefixes is not None:
-                config['RegistryPrefixes'] = registry_prefixes
-            members[ident] = config
-            s_config['Members'].append(config['@odata.id'])
-            resp = config, 200
-        except Exception:
-            traceback.print_exc()
-            resp = simple_error_response('Server encountered an unexpected Error', 500)
-        return resp
+def CreateSubscription(ident, destination, event_types, context=None, registry_prefixes=None):
+    logging.info('CreateSubscription called')
+    wildcards = {}
+    try:
+        wildcards['id'] = ident
+        config = s_generator(wildcards)
+        config['Destination'] = destination
+        config['EventTypes'] = event_types
+        if context is not None:
+            config['Context'] = context
+        if registry_prefixes is not None:
+            config['RegistryPrefixes'] = registry_prefixes
+        members[ident] = config
+        s_config['Members'].append({'@odata.id': config['@odata.id']})
+        s_config['Members@odata.count'] += 1
+        resp = config, 200
+    except Exception:
+        traceback.print_exc()
+        resp = simple_error_response('Server encountered an unexpected Error', 500)
+    return resp

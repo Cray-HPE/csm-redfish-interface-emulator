@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Processors/CPU1",
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "Id": "CPU1",
+    "Manufacturer": "Advanced Micro Devices, Inc.",
+    "MaxSpeedMHz": 3525,
+    "MaxTDPWatts": 280,
+    "Model": "AMD EPYC 7763 64-Core Processor",
+    "Name": "Processor",
+    "ProcessorId": {
+        "EffectiveFamily": "0x19",
+        "EffectiveModel": "0x01",
+        "Step": "0x1",
+        "VendorId": "AuthenticAMD"
+    },
+    "ProcessorType": "CPU",
+    "SerialNumber": "9JG1197W00014",
+    "Socket": "CPU 1",
+    "Status": {
+        "Health": "OK"
+    },
+    "TDPWatts": 280,
+    "TotalCores": 64,
+    "TotalThreads": 128
+}

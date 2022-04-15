@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1649953581\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPU0VoltageRegulator4InputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU0VoltageRegulator4InputCurrent",
+    "Name": "CPU0 VCORE",
+    "Oem": {
+        "Index": 4,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U3001"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 0.3125,
+    "ReadingTime": "2022-04-14T16:26:24.000659976Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A"
+}

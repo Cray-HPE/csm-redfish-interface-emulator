@@ -1,0 +1,30 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"9262DDD0\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/62",
+    "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+    "Id": "62",
+    "Created": "2021-09-01T13:50:57Z",
+    "EntryType": "Oem",
+    "Message": "At least one of the links is up in adapter HPE Eth 10/25Gb 2p 621SFP28 Adptr in slot 19",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_3_0.HpeLogEntry",
+            "Categories": [
+                "Hardware"
+            ],
+            "Class": 17,
+            "ClassDescription": "Network",
+            "Code": 14,
+            "Count": 1,
+            "EventNumber": 95,
+            "Repaired": true,
+            "Severity": "Repaired",
+            "Updated": "2021-11-17T23:06:15Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "OK"
+}

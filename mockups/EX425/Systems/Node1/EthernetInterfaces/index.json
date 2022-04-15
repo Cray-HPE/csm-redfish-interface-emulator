@@ -1,0 +1,16 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/EthernetInterfaces",
+    "@odata.type": "#EthernetInterfaceCollection.EthernetInterfaceCollection",
+    "Description": "Collection of ethernet interfaces for this system",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/EthernetInterfaces/ManagementEthernet"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/EthernetInterfaces/HPCNet0"
+        }
+    ],
+    "Members@odata.count": 2,
+    "Name": "Ethernet Interface Collection"
+}

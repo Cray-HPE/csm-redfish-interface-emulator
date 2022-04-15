@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerDevice.HpeServerDevice",
+    "@odata.etag": "W/\"731BE9FA\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Devices/4",
+    "@odata.type": "#HpeServerDevice.v2_0_0.HpeServerDevice",
+    "Id": "4",
+    "DeviceInstances": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/PCIDevices/12"
+        }
+    ],
+    "DeviceType": "LOM/NIC",
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "08.50.76"
+        }
+    },
+    "Links": {
+        "PCISlot": {
+            "@odata.id": "/redfish/v1/Systems/1/PCISlots/20"
+        }
+    },
+    "Location": "PCI-E Slot 20",
+    "MCTPProtocolDisabled": false,
+    "Manufacturer": "",
+    "Name": "Marvell FastLinQ 41000 Series - 2P 25GbE SFP28 QL41232HLCU-HC MD2 Adapter - NIC",
+    "PartNumber": "",
+    "ProductPartNumber": "AH2010406-38  B",
+    "ProductVersion": "",
+    "SerialNumber": "REE2028K55581",
+    "Status": {
+        "Health": null,
+        "State": null
+    }
+}

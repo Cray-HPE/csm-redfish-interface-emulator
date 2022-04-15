@@ -1,0 +1,29 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz2",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "Assembly": {
+        "@odata.id": "/redfish/v1/Chassis/Mezz2/Assembly"
+    },
+    "ChassisType": "Card",
+    "Description": "",
+    "Id": "Mezz2",
+    "Manufacturer": "HPE",
+    "Model": "",
+    "Name": "Mezz2",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Mezz2/NetworkAdapters"
+    },
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Mezz2/Power"
+    },
+    "PowerState": "On",
+    "Sensors": {
+        "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors"
+    },
+    "SerialNumber": "",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

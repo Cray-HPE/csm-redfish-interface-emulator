@@ -1,0 +1,20 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#NetworkInterface.NetworkInterface",
+    "@odata.etag": "W/\"04BD8289\"",
+    "@odata.id": "/redfish/v1/Systems/1/NetworkInterfaces/DC092000",
+    "@odata.type": "#NetworkInterface.v1_1_1.NetworkInterface",
+    "Id": "DC092000",
+    "Description": "Resources assigned to this advanced network communication interface",
+    "Links": {
+        "NetworkAdapter": {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000"
+        }
+    },
+    "Name": "Advanced network communication device, logical instance viewpoint",
+    "NetworkDeviceFunctions": {
+        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/"
+    },
+    "NetworkPorts": {
+        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/"
+    }
+}

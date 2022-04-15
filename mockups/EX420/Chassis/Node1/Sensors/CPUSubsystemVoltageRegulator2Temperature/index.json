@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPUSubsystemVoltageRegulator2Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPUSubsystemVoltageRegulator2Temperature",
+    "Name": "CPUS VDD_3V3_S5",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "CPUSubsystem",
+        "ReferenceDesignator": "U7010"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 52,
+    "ReadingTime": "2022-04-14T16:11:36.373487033Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 85
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 105
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 125
+        }
+    }
+}

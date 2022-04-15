@@ -1,0 +1,36 @@
+{
+    "@odata.etag": "W/\"1649715154\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "AssetTag": "",
+    "ChassisType": "Enclosure",
+    "Description": "CNC",
+    "Id": "Enclosure",
+    "Manufacturer": "HPE",
+    "Model": "CNC",
+    "Name": "Enclosure",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters"
+    },
+    "Oem": {
+        "Alarms": {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Oem/Alarms"
+        },
+        "TriggeredAlarms": []
+    },
+    "PartNumber": "P40731-002.B",
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Power"
+    },
+    "Sensors": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors"
+    },
+    "SerialNumber": "EW21460041",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Thermal": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal"
+    }
+}

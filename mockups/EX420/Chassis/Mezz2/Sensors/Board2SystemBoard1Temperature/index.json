@@ -1,0 +1,33 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2SystemBoard1Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Board2SystemBoard1Temperature",
+    "Name": "uC Temperature",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "Board",
+        "ParentalIndex": 2
+    },
+    "PhysicalContext": "SystemBoard",
+    "Reading": 37,
+    "ReadingRangeMax": 150,
+    "ReadingRangeMin": -50,
+    "ReadingTime": "2022-04-14T16:12:46.837029550Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 100
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 130
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 150
+        }
+    }
+}

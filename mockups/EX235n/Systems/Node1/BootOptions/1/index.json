@@ -1,0 +1,12 @@
+{
+    "@odata.etag": "W/\"1649953624\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/BootOptions/1",
+    "@odata.type": "#BootOption.v1_0_0.BootOption",
+    "Alias": "None",
+    "BootOptionEnabled": true,
+    "BootOptionReference": "HSN0-PXE-IP4",
+    "DisplayName": "High Speed NIC0 PXE IPv4",
+    "Id": "1",
+    "Name": "HSN0-PXE-IP4",
+    "UefiDevicePath": "PciRoot(0x3)/Pci(0x3,0x1)/Pci(0x0,0x0)/MAC(5CBA2CB00723,0x0)/IPv4(0.0.0.0,0x0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0)"
+}

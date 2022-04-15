@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU1",
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "Id": "GPU1",
+    "Manufacturer": "NVIDIA",
+    "Model": "NVIDIA_A100-SXM4-40GB",
+    "Name": "GPU 1",
+    "PartNumber": "692-2G506-0202-000",
+    "ProcessorType": "GPU",
+    "SerialNumber": "1322520068159",
+    "Status": {
+        "Health": "OK"
+    }
+}

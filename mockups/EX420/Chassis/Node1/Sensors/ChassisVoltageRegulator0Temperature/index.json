@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/ChassisVoltageRegulator0Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator0Temperature",
+    "Name": "48V ECB",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Chassis",
+        "ReferenceDesignator": "U7009"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 39.2,
+    "ReadingTime": "2022-04-14T16:12:30.964911806Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

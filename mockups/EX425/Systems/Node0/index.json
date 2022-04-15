@@ -1,0 +1,57 @@
+{
+    "@odata.etag": "W/\"1649173417\"",
+    "@odata.id": "/redfish/v1/Systems/Node0",
+    "@odata.type": "#ComputerSystem.v1_5_0.ComputerSystem",
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Node0/ResetActionInfo",
+            "target": "/redfish/v1/Systems/Node0/Actions/ComputerSystem.Reset"
+        },
+        "#ComputerSystem.SetDefaultBootOrder": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Node0/SetDefaultBootOrderActionInfo",
+            "target": "/redfish/v1/Systems/Node0/Actions/ComputerSystem.SetDefaultBootOrder"
+        }
+    },
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/Node0/Bios"
+    },
+    "BiosVersion": "ex425.bios-1.6.3",
+    "Boot": {
+        "BootOptions": {
+            "@odata.id": "/redfish/v1/Systems/Node0/BootOptions"
+        },
+        "BootOrder": [
+            "ME0-PXE-IP4",
+            "HSN0-PXE-IP4"
+        ]
+    },
+    "Description": "WNC",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/Node0/EthernetInterfaces"
+    },
+    "Id": "Node0",
+    "Manufacturer": "HPE",
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/Node0/Memory"
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 256
+    },
+    "Model": "HPE CRAY EX425 (MILAN)",
+    "Name": "Node0",
+    "PartNumber": "101920703.D",
+    "PowerState": "On",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "AMD EPYC 7763 64-Core Processor"
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/Node0/Processors"
+    },
+    "SerialNumber": "HA19340017",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "SystemType": "Physical"
+}

@@ -1,0 +1,225 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#NetworkPort.NetworkPort",
+    "@odata.etag": "W/\"6C122485\"",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/2/",
+    "@odata.type": "#NetworkPort.v1_2_5.NetworkPort",
+    "Id": "2",
+    "ActiveLinkTechnology": "Ethernet",
+    "AssociatedNetworkAddresses": [
+        "94:40:C9:6A:42:DB"
+    ],
+    "CurrentLinkSpeedMbps": 25000,
+    "Description": "Port status and active configuration data",
+    "EEEEnabled": false,
+    "FlowControlConfiguration": "None",
+    "FlowControlStatus": "None",
+    "LinkStatus": "Up",
+    "Name": "Network adapter port",
+    "NetDevFuncMaxBWAlloc": [
+        {
+            "MaxBWAllocPercent": 100,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/2/"
+            }
+        },
+        {
+            "MaxBWAllocPercent": 1,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/4/"
+            }
+        },
+        {
+            "MaxBWAllocPercent": 1,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/6/"
+            }
+        },
+        {
+            "MaxBWAllocPercent": 1,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/8/"
+            }
+        },
+        {
+            "MaxBWAllocPercent": 1,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/10/"
+            }
+        },
+        {
+            "MaxBWAllocPercent": 1,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/12/"
+            }
+        },
+        {
+            "MaxBWAllocPercent": 1,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/14/"
+            }
+        },
+        {
+            "MaxBWAllocPercent": 1,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/16/"
+            }
+        }
+    ],
+    "NetDevFuncMinBWAlloc": [
+        {
+            "MinBWAllocPercent": 3,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/2/"
+            }
+        },
+        {
+            "MinBWAllocPercent": 0,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/4/"
+            }
+        },
+        {
+            "MinBWAllocPercent": 0,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/6/"
+            }
+        },
+        {
+            "MinBWAllocPercent": 0,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/8/"
+            }
+        },
+        {
+            "MinBWAllocPercent": 0,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/10/"
+            }
+        },
+        {
+            "MinBWAllocPercent": 0,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/12/"
+            }
+        },
+        {
+            "MinBWAllocPercent": 0,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/14/"
+            }
+        },
+        {
+            "MinBWAllocPercent": 0,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/NetworkDeviceFunctions/16/"
+            }
+        }
+    ],
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeNetworkPort.HpeNetworkPort",
+            "@odata.type": "#HpeNetworkPort.v1_3_0.HpeNetworkPort",
+            "Actions": {
+                "#HpeNetworkPort.DiagnosticsReset": {
+                    "target": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/2/Actions/Oem/Hpe/HpeNetworkPort.DiagnosticsReset/",
+                    "title": "Reset diagnostic capabilities on this port to an inactive state."
+                },
+                "#NetworkPort.DiagnosticsReset": {
+                    "target": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/2/Actions/Oem/Hpe/NetworkPort.DiagnosticsReset/",
+                    "title": "NOTE: Deprecated, will be removed in a future release. Replaced by HpeNetworkPort.DiagnosticsReset. Reset diagnostic capabilities on this port to an inactive state."
+                }
+            },
+            "AutoNegotiationCapable": true,
+            "ConfiguredNetworkLinks": [
+                {
+                    "ConfiguredLinkSpeedGbps": 10
+                },
+                {
+                    "ConfiguredLinkSpeedGbps": 25
+                }
+            ],
+            "Evb": {
+                "odataId": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/2/HpeEVB/"
+            },
+            "EvbData": {},
+            "Lldp": {
+                "odataId": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/2/HpeLLDP/"
+            },
+            "LldpData": {},
+            "PortDiagnosticEnableLocalLoopback": false,
+            "PortDiagnosticEnableRemoteLoopback": false,
+            "PortDiagnosticLocalLoopbackCapable": false,
+            "PortDiagnosticRemoteLoopbackCapable": false,
+            "PortDiagnosticsEnabled": false,
+            "VirtualFunctionAllocations": [
+                {
+                    "NetworkDeviceFunction": {
+                        "odataId": "/NetworkDeviceFunctions/2/"
+                    },
+                    "VirtualFunctionsAllocated": 96
+                },
+                {
+                    "NetworkDeviceFunction": {
+                        "odataId": "/NetworkDeviceFunctions/4/"
+                    },
+                    "VirtualFunctionsAllocated": 0
+                },
+                {
+                    "NetworkDeviceFunction": {
+                        "odataId": "/NetworkDeviceFunctions/6/"
+                    },
+                    "VirtualFunctionsAllocated": 0
+                },
+                {
+                    "NetworkDeviceFunction": {
+                        "odataId": "/NetworkDeviceFunctions/8/"
+                    },
+                    "VirtualFunctionsAllocated": 0
+                },
+                {
+                    "NetworkDeviceFunction": {
+                        "odataId": "/NetworkDeviceFunctions/10/"
+                    },
+                    "VirtualFunctionsAllocated": 0
+                },
+                {
+                    "NetworkDeviceFunction": {
+                        "odataId": "/NetworkDeviceFunctions/12/"
+                    },
+                    "VirtualFunctionsAllocated": 0
+                },
+                {
+                    "NetworkDeviceFunction": {
+                        "odataId": "/NetworkDeviceFunctions/14/"
+                    },
+                    "VirtualFunctionsAllocated": 0
+                },
+                {
+                    "NetworkDeviceFunction": {
+                        "odataId": "/NetworkDeviceFunctions/16/"
+                    },
+                    "VirtualFunctionsAllocated": 0
+                }
+            ]
+        }
+    },
+    "PhysicalPortNumber": "2",
+    "PortMaximumMTU": 9600,
+    "Settings": {
+        "href": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/2/Settings/"
+    },
+    "SignalDetected": true,
+    "SupportedEthernetCapabilities": [
+        "WakeOnLAN",
+        "EEE"
+    ],
+    "SupportedLinkCapabilities": [
+        {
+            "CapableLinkSpeedMbps": [
+                10000,
+                25000
+            ],
+            "LinkNetworkTechnology": "Ethernet"
+        }
+    ]
+}

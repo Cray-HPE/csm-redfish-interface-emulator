@@ -1,0 +1,59 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#NetworkDeviceFunctionCollection.NetworkDeviceFunctionCollection",
+    "@odata.etag": "W/\"6F98904F\"",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/",
+    "@odata.type": "#NetworkDeviceFunctionCollection.NetworkDeviceFunctionCollection",
+    "Description": "The collection of device functions available on this network controller.",
+    "Name": "Network Device Functions Collection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/1/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/2/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/3/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/4/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/5/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/6/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/7/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/8/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/9/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/10/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/11/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/12/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/13/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/14/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/15/"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/16/"
+        }
+    ],
+    "Members@odata.count": 16
+}

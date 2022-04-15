@@ -1,0 +1,33 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"A68E5AFE\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/137",
+    "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+    "Id": "137",
+    "Created": "2022-01-05T16:20:21Z",
+    "EntryType": "Oem",
+    "Message": "System Power Supply: General Failure (Power Supply 3)",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_3_0.HpeLogEntry",
+            "Categories": [
+                "Hardware",
+                "Power"
+            ],
+            "Class": 11,
+            "ClassDescription": "Power",
+            "Code": 40,
+            "Count": 1,
+            "EventNumber": 170,
+            "LearnMoreLink": "http://www.hpe.com/support/class0x000bcode0x0028-gen10",
+            "RecommendedAction": "Replace the power supply.",
+            "Repaired": false,
+            "Severity": "Caution",
+            "Updated": "2022-01-05T16:20:21Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "Warning"
+}

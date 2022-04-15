@@ -1,0 +1,14 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerAccPowerZone.HpeServerAccPowerZone",
+    "@odata.etag": "W/\"347FE7D8\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/Zone",
+    "@odata.type": "#HpeServerAccPowerZone.v1_0_0.HpeServerAccPowerZone",
+    "Id": "Zone",
+    "Actions": {
+        "#HpeServerAccPowerZone.ConfigureZone": {
+            "target": "/redfish/v1/Chassis/1/Power/AccPowerService/Zone/Actions/HpeServerAccPowerZone.ConfigureZone"
+        }
+    },
+    "Name": "Zone Resource for AccPowerService",
+    "ZoneConfiguration": {}
+}

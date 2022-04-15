@@ -1,0 +1,45 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator0OutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "MemorySubsystem1VoltageRegulator0OutputVoltage",
+    "Name": "CPU1 DIMM VDD_VPP_ABCD_S0",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "MemorySubsystem",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U2015"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 2.613,
+    "ReadingTime": "2022-04-14T16:21:16.344523946Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 2.3994
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 2.322
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 2.193
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 2.7606
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 2.838
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 2.967
+        }
+    }
+}

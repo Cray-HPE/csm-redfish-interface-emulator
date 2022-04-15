@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisCPUSubsystem0OutputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisCPUSubsystem0OutputPower",
+    "Name": "Aggregate CPU",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Chassis"
+    },
+    "PhysicalContext": "CPUSubsystem",
+    "PhysicalSubContext": "Output",
+    "Reading": 49,
+    "ReadingTime": "2022-04-14T16:21:29.041246179Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

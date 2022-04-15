@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU0Temperature",
+    "Name": "CPU0",
+    "Oem": {
+        "Index": 0
+    },
+    "PhysicalContext": "CPU",
+    "Reading": 33.25,
+    "ReadingTime": "2022-04-14T16:21:10.995065835Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

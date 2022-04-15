@@ -1,0 +1,178 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Bios",
+    "@odata.type": "#Bios.v1_0_2.Bios",
+    "Actions": {
+        "#Bios.ChangePassword": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Node0/Bios/ChangePasswordActionInfo",
+            "target": "/redfish/v1/Systems/Node0/Bios/Actions/Bios.ChangePassword"
+        },
+        "#Bios.ResetBios": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Node0/Bios/ResetBiosActionInfo",
+            "target": "/redfish/v1/Systems/Node0/Bios/Actions/Bios.ResetBios"
+        }
+    },
+    "AttributeRegistry": "BiosAttributeRegistry_v1_0_0",
+    "Attributes": {
+        "Continue On Error": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Disabled",
+            "default_value": "Disabled",
+            "menu_type": "User",
+            "reset_type": "None"
+        },
+        "Core Performance Boost": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Enabled",
+            "default_value": "Enabled",
+            "menu_type": "User",
+            "reset_type": "Cold"
+        },
+        "HT Control": {
+            "AllowableValues": [
+                "All",
+                "Single"
+            ],
+            "DataType": "string",
+            "current_value": "All",
+            "default_value": "All",
+            "menu_type": "User",
+            "reset_type": "Cold"
+        },
+        "Max UPI Link Speed": {
+            "AllowableValues": [
+                "12.8",
+                "14.4",
+                "16",
+                "Auto"
+            ],
+            "DataType": "string",
+            "current_value": "Auto",
+            "default_value": "Auto",
+            "menu_type": "Dev",
+            "reset_type": "Cold"
+        },
+        "Memory Data Scrambling": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Enabled",
+            "default_value": "Enabled",
+            "menu_type": "Debug",
+            "reset_type": "Cold"
+        },
+        "Memory ECC": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Enabled",
+            "default_value": "Enabled",
+            "menu_type": "Debug",
+            "reset_type": "Cold"
+        },
+        "Memory Frequency Limit": {
+            "AllowableValues": [
+                "Auto",
+                "3200",
+                "4800"
+            ],
+            "DataType": "string",
+            "current_value": "Auto",
+            "default_value": "Auto",
+            "menu_type": "Debug",
+            "reset_type": "Cold"
+        },
+        "NUMA": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Enabled",
+            "default_value": "Enabled",
+            "menu_type": "Debug",
+            "reset_type": "Cold"
+        },
+        "PCIE Link Speed": {
+            "AllowableValues": [
+                "Auto",
+                "Gen1",
+                "Gen2",
+                "Gen3",
+                "Gen4",
+                "Gen5"
+            ],
+            "DataType": "string",
+            "current_value": "Auto",
+            "default_value": "Auto",
+            "menu_type": "Debug",
+            "reset_type": "Cold"
+        },
+        "Package Cstates Control": {
+            "AllowableValues": [
+                "C0",
+                "C2",
+                "C6",
+                "C6R",
+                "NoLimit",
+                "Auto"
+            ],
+            "DataType": "string",
+            "current_value": "Auto",
+            "default_value": "Auto",
+            "menu_type": "Dev",
+            "reset_type": "Cold"
+        },
+        "Post Output Level": {
+            "AllowableValues": [
+                "Minimal",
+                "Informational",
+                "Verbose"
+            ],
+            "DataType": "string",
+            "current_value": "Informational",
+            "default_value": "Informational",
+            "menu_type": "Debug",
+            "reset_type": "None"
+        },
+        "Report Runtime Errors": {
+            "AllowableValues": [
+                "Disabled",
+                "Correctable",
+                "Uncorrectable",
+                "All"
+            ],
+            "DataType": "string",
+            "current_value": "Disabled",
+            "default_value": "Disabled",
+            "menu_type": "Debug",
+            "reset_type": "None"
+        },
+        "TBT Control": {
+            "AllowableValues": [
+                "Disabled",
+                "Auto"
+            ],
+            "DataType": "string",
+            "current_value": "Auto",
+            "default_value": "Auto",
+            "menu_type": "Dev",
+            "reset_type": "Cold"
+        }
+    },
+    "Description": "Current BIOS Settings",
+    "Id": "Bios",
+    "Name": "Current BIOS Settings"
+}

@@ -1,0 +1,32 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"8A75B819\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/92",
+    "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+    "Id": "92",
+    "Created": "2021-09-30T11:13:13Z",
+    "EntryType": "Oem",
+    "Message": "Server Critical Fault (Service Information: Runtime Fault, Processor(AMD),  Processor 1 (01h))  ",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_3_0.HpeLogEntry",
+            "Categories": [
+                "Other"
+            ],
+            "Class": 20,
+            "ClassDescription": "System Error",
+            "Code": 7,
+            "Count": 1,
+            "EventNumber": 125,
+            "LearnMoreLink": "http://www.hpe.com/support/class0x0014code0x0007-gen10",
+            "RecommendedAction": "Gather Active Health System logs and create a support case.",
+            "Repaired": false,
+            "Severity": "Critical",
+            "Updated": "2021-09-30T11:13:13Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "Critical"
+}

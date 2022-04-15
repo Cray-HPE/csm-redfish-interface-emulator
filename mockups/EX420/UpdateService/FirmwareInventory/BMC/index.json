@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1649715154\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/BMC",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "Baseboard Management Controller",
+    "Id": "BMC",
+    "Name": "BMC",
+    "SoftwareId": "nc:*:*:*",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": true,
+    "Version": "nc.1.7.5-32-prod-master.arm.2022-04-05T01:42:50+00:00.af3a406"
+}

@@ -1,0 +1,22 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/16",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2022-04-12T15:29:45+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2022-04-12T15:29:45+00:00",
+    "Id": "16",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/"
+        }
+    },
+    "Message": "The CPU1 VDR ABCD Voltage resource has detected a fatal fault indicating that it went below its allowed operating conditions.",
+    "MessageArgs": [
+        "below",
+        "CPU1 VDR ABCD Voltage"
+    ],
+    "MessageId": "CrayAlerts.HardwareFatalFaultDetected",
+    "Name": "Log entry 16",
+    "Severity": "Critical"
+}

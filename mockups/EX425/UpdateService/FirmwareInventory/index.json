@@ -1,0 +1,43 @@
+{
+    "@odata.etag": "W/\"1648753388\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory",
+    "@odata.type": "#SoftwareInventoryCollection.SoftwareInventoryCollection",
+    "Description": "Collection of Firmware Inventory resources available to the UpdateService",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.HPCNet0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/BMC"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.ManagementEthernet"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/FPGA0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.HPCNet0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.BIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Bootloader"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.BIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/FPGA1"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Recovery"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.ManagementEthernet"
+        }
+    ],
+    "Members@odata.count": 11,
+    "Name": "Firmware Inventory Collection"
+}

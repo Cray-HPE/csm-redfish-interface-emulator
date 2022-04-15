@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU14ReportedPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "ElectricalContext": "Reported",
+    "Id": "CPU14ReportedPower",
+    "Name": "CPU1 VDR ABCD/EFGH",
+    "Oem": {
+        "Index": 4,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 1
+    },
+    "Reading": 118,
+    "ReadingTime": "2022-04-14T16:21:35.038224379Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

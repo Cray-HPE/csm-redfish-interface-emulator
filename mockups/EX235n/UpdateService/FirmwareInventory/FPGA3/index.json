@@ -1,0 +1,14 @@
+{
+    "@odata.etag": "W/\"1648753556\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/FPGA3",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "Cray mFPGA-SAW2 Logic Device - Network Mezzanine HSN",
+    "Id": "FPGA3",
+    "Name": "mFPGA2",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": false,
+    "Version": "2.02"
+}

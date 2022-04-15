@@ -1,0 +1,36 @@
+{
+    "@odata.etag": "W/\"1648753388\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "AssetTag": "",
+    "ChassisType": "Enclosure",
+    "Description": "WNC",
+    "Id": "Enclosure",
+    "Manufacturer": "HPE",
+    "Model": "WNC",
+    "Name": "Enclosure",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters"
+    },
+    "Oem": {
+        "Alarms": {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Oem/Alarms"
+        },
+        "TriggeredAlarms": []
+    },
+    "PartNumber": "101920703.D",
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Power"
+    },
+    "Sensors": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors"
+    },
+    "SerialNumber": "HA19340017",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Thermal": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal"
+    }
+}

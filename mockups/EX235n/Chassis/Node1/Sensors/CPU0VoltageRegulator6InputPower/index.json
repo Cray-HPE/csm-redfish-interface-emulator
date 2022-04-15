@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1649953581\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPU0VoltageRegulator6InputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU0VoltageRegulator6InputPower",
+    "Name": "CPU0 SOC_S0",
+    "Oem": {
+        "Index": 6,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U3007"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 35,
+    "ReadingTime": "2022-04-14T16:26:32.884356533Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

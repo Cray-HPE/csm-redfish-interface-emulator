@@ -1,0 +1,100 @@
+{
+    "@odata.etag": "W/\"1648753556\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory",
+    "@odata.type": "#SoftwareInventoryCollection.SoftwareInventoryCollection",
+    "Description": "Collection of Firmware Inventory resources available to the UpdateService",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.HPCNet2"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.BIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.Acc2.VBIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/FPGA3"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/FPGA1"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.ManagementEthernet"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.HPCNet2"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/FPGA4"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Recovery"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.Acc2.VBIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.AccFPGA0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.Acc3.VBIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.HPCNet0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.HPCNet3"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/FPGA2"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.Acc1.VBIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.Acc1.VBIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.HPCNet1"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.Acc0.VBIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.HPCNet1"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.Acc0.VBIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.HPCNet0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.ManagementEthernet"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.HPCNet3"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.Acc3.VBIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Bootloader"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/BMC"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/FPGA0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.AccFPGA0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.BIOS"
+        }
+    ],
+    "Members@odata.count": 30,
+    "Name": "Firmware Inventory Collection"
+}

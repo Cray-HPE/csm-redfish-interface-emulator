@@ -1,0 +1,20 @@
+{
+    "@odata.etag": "W/\"1649173417\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz0/Assembly",
+    "@odata.type": "#Assembly.v1_3_0.Assembly",
+    "Assemblies": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz0/Assembly#/Assemblies/0",
+            "MemberId": "0",
+            "PartNumber": "P43012-001",
+            "ProductionDate": "2021-11-12",
+            "Status": {
+                "Health": "OK"
+            },
+            "Vendor": "HPE-PRM",
+            "Version": "E "
+        }
+    ],
+    "Id": "Assembly",
+    "Name": "System-related Assembly data"
+}

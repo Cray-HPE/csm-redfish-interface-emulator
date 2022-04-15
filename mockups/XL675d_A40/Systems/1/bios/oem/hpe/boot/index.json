@@ -1,0 +1,152 @@
+{
+    "@Redfish.Settings": {
+        "@odata.type": "#Settings.v1_0_0.Settings",
+        "ETag": "",
+        "Messages": [
+            {
+                "MessageId": "Base.1.0.Success"
+            }
+        ],
+        "SettingsObject": {
+            "@odata.id": "/redfish/v1/systems/1/bios/oem/hpe/boot/settings/"
+        },
+        "Time": null
+    },
+    "@odata.context": "/redfish/v1/$metadata#HpeServerBootSettings.HpeServerBootSettings",
+    "@odata.etag": "W/\"8276F4F8ABD2ABABABDBAC8738067FAA\"",
+    "@odata.id": "/redfish/v1/systems/1/bios/oem/hpe/boot/",
+    "@odata.type": "#HpeServerBootSettings.v2_0_0.HpeServerBootSettings",
+    "BootSources": [
+        {
+            "BootOptionNumber": "000E",
+            "BootString": "Generic USB Boot",
+            "CorrelatableID": "UsbClass(0xFFFF,0xFFFF,0xFF,0xFF,0xFF)",
+            "StructuredBootString": "Generic.USB.1.1",
+            "UEFIDevicePath": "UsbClass(0xFFFF,0xFFFF,0xFF,0xFF,0xFF)"
+        },
+        {
+            "BootOptionNumber": "0015",
+            "BootString": "Slot 19 Port 1 : HPE Eth 10/25Gb 2p 621SFP28 Adptr - HPE Eth 10/25Gb 2p 621SFP28 Adptr - NIC (HTTP(S) IPv4)",
+            "CorrelatableID": "PciRoot(0x7)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.19.1.Httpv4",
+            "UEFIDevicePath": "PciRoot(0x7)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/MAC(9440C96A42DA,0x1)/IPv4(0.0.0.0)/Uri()"
+        },
+        {
+            "BootOptionNumber": "0016",
+            "BootString": "Slot 19 Port 1 : HPE Eth 10/25Gb 2p 621SFP28 Adptr - HPE Eth 10/25Gb 2p 621SFP28 Adptr - NIC (PXE IPv4)",
+            "CorrelatableID": "PciRoot(0x7)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.19.1.IPv4",
+            "UEFIDevicePath": "PciRoot(0x7)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/MAC(9440C96A42DA,0x1)/IPv4(0.0.0.0)"
+        },
+        {
+            "BootOptionNumber": "0011",
+            "BootString": "Slot 20 Port 1 : Marvell FastLinQ 41000 Series - 2P 25GbE SFP28 QL41232HLCU-HC MD2 Adapter - NIC - Marvell FastLinQ 41000 Series - 2P 25GbE SFP28 QL41232HLCU-HC MD2 Adapter - PXE (HTTP(S) IPv4)",
+            "CorrelatableID": "PciRoot(0x5)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.20.1.Httpv4",
+            "UEFIDevicePath": "PciRoot(0x5)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/MAC(B47AF112FB70,0x1)/IPv4(0.0.0.0)/Uri()"
+        },
+        {
+            "BootOptionNumber": "0012",
+            "BootString": "Slot 20 Port 1 : Marvell FastLinQ 41000 Series - 2P 25GbE SFP28 QL41232HLCU-HC MD2 Adapter - NIC - Marvell FastLinQ 41000 Series - 2P 25GbE SFP28 QL41232HLCU-HC MD2 Adapter - PXE (PXE IPv4)",
+            "CorrelatableID": "PciRoot(0x5)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.20.1.IPv4",
+            "UEFIDevicePath": "PciRoot(0x5)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/MAC(B47AF112FB70,0x1)/IPv4(0.0.0.0)"
+        },
+        {
+            "BootOptionNumber": "0013",
+            "BootString": "Slot 19 Port 1 : HPE Eth 10/25Gb 2p 621SFP28 Adptr - HPE Eth 10/25Gb 2p 621SFP28 Adptr - NIC (PXE IPv6)",
+            "CorrelatableID": "PciRoot(0x7)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.19.1.IPv6",
+            "UEFIDevicePath": "PciRoot(0x7)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/MAC(9440C96A42DA,0x1)/IPv6(0000:0000:0000:0000:0000:0000:0000:0000)"
+        },
+        {
+            "BootOptionNumber": "0014",
+            "BootString": "Slot 19 Port 1 : HPE Eth 10/25Gb 2p 621SFP28 Adptr - HPE Eth 10/25Gb 2p 621SFP28 Adptr - NIC (HTTP(S) IPv6)",
+            "CorrelatableID": "PciRoot(0x7)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.19.1.Httpv6",
+            "UEFIDevicePath": "PciRoot(0x7)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/MAC(9440C96A42DA,0x1)/IPv6(0000:0000:0000:0000:0000:0000:0000:0000)/Uri()"
+        },
+        {
+            "BootOptionNumber": "000F",
+            "BootString": "Slot 20 Port 1 : Marvell FastLinQ 41000 Series - 2P 25GbE SFP28 QL41232HLCU-HC MD2 Adapter - NIC - Marvell FastLinQ 41000 Series - 2P 25GbE SFP28 QL41232HLCU-HC MD2 Adapter - PXE (PXE IPv6)",
+            "CorrelatableID": "PciRoot(0x5)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.20.1.IPv6",
+            "UEFIDevicePath": "PciRoot(0x5)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/MAC(B47AF112FB70,0x1)/IPv6(0000:0000:0000:0000:0000:0000:0000:0000)"
+        },
+        {
+            "BootOptionNumber": "0010",
+            "BootString": "Slot 20 Port 1 : Marvell FastLinQ 41000 Series - 2P 25GbE SFP28 QL41232HLCU-HC MD2 Adapter - NIC - Marvell FastLinQ 41000 Series - 2P 25GbE SFP28 QL41232HLCU-HC MD2 Adapter - PXE (HTTP(S) IPv6)",
+            "CorrelatableID": "PciRoot(0x5)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.20.1.Httpv6",
+            "UEFIDevicePath": "PciRoot(0x5)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/MAC(B47AF112FB70,0x1)/IPv6(0000:0000:0000:0000:0000:0000:0000:0000)/Uri()"
+        }
+    ],
+    "DefaultBootOrder": [
+        "Cd",
+        "Usb",
+        "EmbeddedStorage",
+        "PcieSlotStorage",
+        "EmbeddedFlexLOM",
+        "PcieSlotNic",
+        "UefiShell",
+        "iPXE"
+    ],
+    "DesiredBootDevices": [
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        },
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        },
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        },
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        },
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        }
+    ],
+    "Id": "boot",
+    "Name": "Boot Order Current Settings",
+    "Oem": {
+        "Hpe": {
+            "@odata.type": "#HpeBiosExt.v2_0_0.HpeBiosExt",
+            "Links": {
+                "BaseConfigs": {
+                    "@odata.id": "/redfish/v1/systems/1/bios/oem/hpe/boot/baseconfigs/"
+                }
+            },
+            "SettingsObject": {
+                "UnmodifiedETag": "W/\"5827A5EFADFC373737DF03941C063254\""
+            }
+        }
+    },
+    "PersistentBootConfigOrder": [
+        "Generic.USB.1.1",
+        "NIC.Slot.19.1.Httpv4",
+        "NIC.Slot.19.1.IPv4",
+        "NIC.Slot.20.1.Httpv4",
+        "NIC.Slot.20.1.IPv4",
+        "NIC.Slot.19.1.IPv6",
+        "NIC.Slot.19.1.Httpv6",
+        "NIC.Slot.20.1.IPv6",
+        "NIC.Slot.20.1.Httpv6"
+    ]
+}

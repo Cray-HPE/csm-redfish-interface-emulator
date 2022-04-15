@@ -1,0 +1,25 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Processors",
+    "@odata.type": "#ProcessorCollection.ProcessorCollection",
+    "Description": "Collection of processors",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Processors/CPU0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU3"
+        }
+    ],
+    "Members@odata.count": 5,
+    "Name": "Processors Collection"
+}

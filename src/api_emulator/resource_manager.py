@@ -4,81 +4,55 @@
 #
 # The original DMTF contents of this file have been modified to support
 # The CSM Redfish Interface Emulator. These modifications are subject to the following:
+# Copyright 2022 Hewlett Packard Enterprise Development LP
 #
-# MIT License
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
 #
-# (C) Copyright [2022] Hewlett Packard Enterprise Development LP
+# 1. Redistributions of source code must retain the above copyright notice,
+# this list of conditions and the following disclaimer.
 #
-# Permission is hereby granted, free of charge, to any person obtaining a
-# copy of this software and associated documentation files (the "Software"),
-# to deal in the Software without restriction, including without limitation
-# the rights to use, copy, modify, merge, publish, distribute, sublicense,
-# and/or sell copies of the Software, and to permit persons to whom the
-# Software is furnished to do so, subject to the following conditions:
+# 2. Redistributions in binary form must reproduce the above copyright
+# notice, this list of conditions and the following disclaimer in the
+# documentation and/or other materials provided with the distribution.
 #
-# The above copyright notice and this permission notice shall be included
-# in all copies or substantial portions of the Software.
+# 3. Neither the name of the copyright holder nor the names of its
+# contributors may be used to endorse or promote products derived from this
+# software without specific prior written permission.
 #
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-# OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-# ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-# OTHER DEALINGS IN THE SOFTWARE.
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
 
 # Resource Manager Module
 
 # External imports
 import os
 import json
-import urllib3
 from uuid import uuid4
-from threading import Thread
 import logging
 import copy
+import traceback
 # Local imports
 import g
 from . import utils
 from .resource_dictionary import ResourceDictionary
 from .static_loader import load_static
-# Local imports (special case)
-from .redfish.computer_system import ComputerSystem
-from .redfish.computer_systems import ComputerSystemCollection
-from .exceptions import CreatePooledNodeError, RemovePooledNodeError, EventSubscriptionError
-from .redfish.event_service import EventService, Subscriptions
-from .redfish.event import Event
-# EventService imports
-from .redfish.EventService_api import EventServiceAPI, CreateEventService
-from .redfish.Subscriptions_api import SubscriptionCollectionAPI, SubscriptionAPI, CreateSubscription
-# Chassis imports
-from .redfish.Chassis_api import ChassisCollectionAPI, ChassisAPI, CreateChassis
-from .redfish.power_api import PowerAPI, CreatePower
-from .redfish.thermal_api import ThermalAPI, CreateThermal
-# Manager imports
-from .redfish.Manager_api import ManagerCollectionAPI, ManagerAPI, CreateManager
-# EgResource imports
-from .redfish.eg_resource_api import EgResourceCollectionAPI, EgResourceAPI, CreateEgResource
-from .redfish.eg_subresource_api import EgSubResourceCollectionAPI, EgSubResourceAPI, CreateEgSubResource
-# ComputerSystem imports
-from .redfish.ComputerSystem_api import ComputerSystemCollectionAPI, ComputerSystemAPI, CreateComputerSystem
-from .redfish.processor import Processor, Processors
-from .redfish.memory import Memory, MemoryCollection
-from .redfish.simplestorage import SimpleStorage, SimpleStorageCollection
-from .redfish.ethernetinterface import EthernetInterfaceCollection, EthernetInterface
-from .redfish.ResetActionInfo_api import ResetActionInfo_API
-from .redfish.ResetAction_api import ResetAction_API
-# PCIe Switch imports
-from .redfish.pcie_switch_api import PCIeSwitchesAPI, PCIeSwitchAPI
-# CompositionService imports
-from .redfish.CompositionService_api import CompositionServiceAPI
-from .redfish.ResourceBlock_api import ResourceBlockCollectionAPI, ResourceBlockAPI, CreateResourceBlock
-from .redfish.ResourceZone_api import ResourceZoneCollectionAPI, ResourceZoneAPI, CreateResourceZone
-# BMC mockup imports
-from .generic_custom_loader import GenericCustom
-from .bard_peak_loader import BardPeak
 
-mockupfolders = []
+from .redfish.redfish_auth import auth
+from .redfish.redfish_api import RedfishAPI, RedfishBaseAPI, CreateRedfishBase
+
+# BMC mockup imports
+from .loader import Loader
+from .ex235a_loader import EX235a
 
 # The ResourceManager __init__ method sets up the static and dynamic
 # resources.
@@ -125,13 +99,11 @@ class ResourceManager(object):
     Defines ServiceRoot
     """
 
-    def __init__(self, rest_base, spec, mode, trays=None):
+    def __init__(self, rest_base, spec, mode, config_data):
         """
         Arguments:
             rest_base - Base URL for the REST interface
-            spec      - Which spec to use, Redfish or Chinook
-            trays     - (Optional) List of trays to initially load into the
-                        resource manager
+            spec      - Which spec to use, Redfish
         When a resource is accessed, the resource is sought in the following order
         1. Dynamic resource for specific URI
         2. Static resource dictionary
@@ -144,337 +116,41 @@ class ResourceManager(object):
         self.modified = utils.timestamp()
         self.uuid = str(uuid4())
         self.time = self.modified
-        self.cs_puid_count = 0
-        self.BMC = None
 
         # Load the static resources into the dictionary
 
         self.resource_dictionary = ResourceDictionary()
-        mockupfolders = copy.copy(g.staticfolders)
+        mockupfolder = copy.copy(g.staticfolder)
 
-        if 'BardPeak' == mockupfolders[0]:
-            self.BMC = BardPeak(self.spec, self.mode, rest_base, self.resource_dictionary)
-        elif "Redfish" in mockupfolders:
-            # DMTF's generic emulator files. This creates dynamic resources but does not populate the members
-            logging.info('Loading Redfish static resources')
-            self.AccountService =   load_static('AccountService', 'redfish', mode, rest_base, self.resource_dictionary)
-            self.Registries =       load_static('Registries', 'redfish', mode, rest_base, self.resource_dictionary)
-            self.SessionService =   load_static('SessionService', 'redfish', mode, rest_base, self.resource_dictionary)
-            self.TaskService =      load_static('TaskService', 'redfish', mode, rest_base, self.resource_dictionary)
+        self.Root = load_static(mockupfolder, 'redfish', mode, rest_base, self.resource_dictionary)
 
-#            if "Swordfish" in mockupfolders:
-#                self.StorageServices = load_static('StorageServices', 'redfish', mode, rest_base, self.resource_dictionary)
-#                self.StorageSystems = load_static('StorageSystems', 'redfish', mode, rest_base, self.resource_dictionary)
-            # Attach APIs for dynamic resources
+        # Sync auth with the Mockup's Account Service
+        # This will add accounts that were specified via ENV or the default accounts
+        auth.sync_with_account_service(self.resource_dictionary)
 
-            # EventService Resources
-            g.api.add_resource(EventServiceAPI, '/redfish/v1/EventService',
-                    resource_class_kwargs={'rb': g.rest_base, 'id': "EventService"})
-            # EventService SubResources
-            g.api.add_resource(SubscriptionCollectionAPI, '/redfish/v1/EventService/Subscriptions')
-            g.api.add_resource(SubscriptionAPI, '/redfish/v1/EventService/Subscriptions/<string:ident>',
-                    resource_class_kwargs={'rb': g.rest_base})
+        # Add the base resource
+        g.api.add_resource(RedfishBaseAPI, '/redfish/v1/')
+        # This is a catch all for any static resource defined above by the Mockup that is not defined below as a dynamic resource.
+        g.api.add_resource(RedfishAPI, '/redfish/v1/<path:path>')
+        CreateRedfishBase(self)
 
-            # Chassis Resources
-            g.api.add_resource(ChassisCollectionAPI, '/redfish/v1/Chassis')
-            g.api.add_resource(ChassisAPI, '/redfish/v1/Chassis/<string:ident>',
-                    resource_class_kwargs={'rb': g.rest_base})
-            # Chassis SubResources
-            g.api.add_resource(ThermalAPI, '/redfish/v1/Chassis/<string:ident>/Thermal',
-                    resource_class_kwargs={'rb': g.rest_base})
-            # Chassis SubResources
-            g.api.add_resource(PowerAPI, '/redfish/v1/Chassis/<string:ident>/Power',
-                    resource_class_kwargs={'rb': g.rest_base})
-
-            # Manager Resources
-            g.api.add_resource(ManagerCollectionAPI, '/redfish/v1/Managers')
-            g.api.add_resource(ManagerAPI, '/redfish/v1/Managers/<string:ident>', resource_class_kwargs={'rb': g.rest_base})
-
-            # EgResource Resources (Example entries for attaching APIs)
-            # g.api.add_resource(EgResourceCollectionAPI,
-            #     '/redfish/v1/EgResources')
-            # g.api.add_resource(EgResourceAPI,
-            #     '/redfish/v1/EgResources/<string:ident>',
-            #     resource_class_kwargs={'rb': g.rest_base})
-            #
-            # EgResource SubResources (Example entries for attaching APIs)
-            # g.api.add_resource(EgSubResourceCollection,
-            #     '/redfish/v1/EgResources/<string:ident>/EgSubResources',
-            #     resource_class_kwargs={'rb': g.rest_base})
-            # g.api.add_resource(EgSubResource,
-            #     '/redfish/v1/EgResources/<string:ident1>/EgSubResources/<string:ident2>',
-            #     resource_class_kwargs={'rb': g.rest_base})
-
-            # System Resources
-            g.api.add_resource(ComputerSystemCollectionAPI, '/redfish/v1/Systems')
-            g.api.add_resource(ComputerSystemAPI, '/redfish/v1/Systems/<string:ident>',
-                    resource_class_kwargs={'rb': g.rest_base})
-            # System SubResources
-            g.api.add_resource(Processors, '/redfish/v1/Systems/<string:ident>/Processors',
-                    resource_class_kwargs={'rb': g.rest_base,'suffix':'Systems'})
-            g.api.add_resource(Processor, '/redfish/v1/Systems/<string:ident1>/Processors/<string:ident2>',
-                    '/redfish/v1/CompositionService/ResourceBlocks/<string:ident1>/Processors/<string:ident2>')
-            # System SubResources
-            g.api.add_resource(MemoryCollection, '/redfish/v1/Systems/<string:ident>/Memory',
-                     resource_class_kwargs={'rb': g.rest_base,'suffix':'Systems'})
-            g.api.add_resource(Memory, '/redfish/v1/Systems/<string:ident1>/Memory/<string:ident2>',
-                    '/redfish/v1/CompositionService/ResourceBlocks/<string:ident1>/Memory/<string:ident2>')
-            # System SubResources
-            g.api.add_resource(SimpleStorageCollection, '/redfish/v1/Systems/<string:ident>/SimpleStorage',
-                    resource_class_kwargs={'rb': g.rest_base,'suffix':'Systems'})
-            g.api.add_resource(SimpleStorage, '/redfish/v1/Systems/<string:ident1>/SimpleStorage/<string:ident2>',
-                    '/redfish/v1/CompositionService/ResourceBlocks/<string:ident1>/SimpleStorage/<string:ident2>')
-            # System SubResources
-            g.api.add_resource(EthernetInterfaceCollection, '/redfish/v1/Systems/<string:ident>/EthernetInterfaces',
-                    resource_class_kwargs={'rb': g.rest_base,'suffix':'Systems'})
-            g.api.add_resource(EthernetInterface, '/redfish/v1/Systems/<string:ident1>/EthernetInterfaces/<string:ident2>',
-                    '/redfish/v1/CompositionService/ResourceBlocks/<string:ident1>/EthernetInterfaces/<string:ident2>')
-            # System SubResources
-            g.api.add_resource(ResetActionInfo_API, '/redfish/v1/Systems/<string:ident>/ResetActionInfo',
-                    resource_class_kwargs={'rb': g.rest_base})
-            g.api.add_resource(ResetAction_API, '/redfish/v1/Systems/<string:ident>/Actions/ComputerSystem.Reset',
-                    resource_class_kwargs={'rb': g.rest_base})
-
-            # PCIe Switch Resources
-            g.api.add_resource(PCIeSwitchesAPI, '/redfish/v1/PCIeSwitches')
-            g.api.add_resource(PCIeSwitchAPI, '/redfish/v1/PCIeSwitches/<string:ident>',
-                    resource_class_kwargs={'rb': g.rest_base})
-
-            # Composition Service Resources
-            g.api.add_resource(CompositionServiceAPI, '/redfish/v1/CompositionService',
-                    resource_class_kwargs={'rb': g.rest_base, 'id': "CompositionService"})
-            # Composition Service SubResources
-            g.api.add_resource(ResourceBlockCollectionAPI, '/redfish/v1/CompositionService/ResourceBlocks')
-            g.api.add_resource(ResourceBlockAPI, '/redfish/v1/CompositionService/ResourceBlocks/<string:ident>',
-                    resource_class_kwargs={'rb': g.rest_base})
-            # Composition Service SubResources
-            g.api.add_resource(ResourceZoneCollectionAPI, '/redfish/v1/CompositionService/ResourceZones')
-            g.api.add_resource(ResourceZoneAPI, '/redfish/v1/CompositionService/ResourceZones/<string:ident>',
-                    resource_class_kwargs={'rb': g.rest_base})
+        if 'EX235a' == mockupfolder:
+            self.BMC = EX235a(self.resource_dictionary, config_data)
         else:
-            # Try to load a custom static only BMC
-            self.BMC = GenericCustom(mockupfolders[0], self.spec, self.mode, rest_base, self.resource_dictionary)
+            self.BMC = Loader(self.resource_dictionary, config_data, mockupfolder)
 
     @property
     def configuration(self):
         """
         Configuration property - Service Root
         """
-
-        if self.BMC is not None:
-            config = self.get_resource(None)
-        else:
-            config = {
-                '@odata.context': self.rest_base + '$metadata#ServiceRoot',
-                '@odata.type': '#ServiceRoot.1.0.0.ServiceRoot',
-                '@odata.id': self.rest_base,
-                'Id': 'RootService',
-                'Name': 'Root Service',
-                'RedfishVersion': '1.0.0',
-                'UUID': self.uuid,
-                'Chassis': {'@odata.id': self.rest_base + 'Chassis'},
-                # 'EgResources': {'@odata.id': self.rest_base + 'EgResources'},
-                'Managers': {'@odata.id': self.rest_base + 'Managers'},
-                'TaskService': {'@odata.id': self.rest_base + 'TaskService'},
-                'SessionService': {'@odata.id': self.rest_base + 'SessionService'},
-                'AccountService': {'@odata.id': self.rest_base + 'AccountService'},
-                'EventService': {'@odata.id': self.rest_base + 'EventService'},
-                'Registries': {'@odata.id': self.rest_base + 'Registries'},
-                'Systems': {'@odata.id': self.rest_base + 'Systems'},
-                'CompositionService': {'@odata.id': self.rest_base + 'CompositionService'}
-            }
+        config = self.get_resource('')
 
         return config
-
-    @property
-    def available_procs(self):
-        return self.max_procs - self.used_procs
-
-    @property
-    def available_mem(self):
-        return self.max_memory - self.used_memory
-
-    @property
-    def available_storage(self):
-        return self.max_storage - self.used_storage
-
-    @property
-    def available_network(self):
-        return self.max_network - self.used_network
-
-    @property
-    def num_pooled_nodes(self):
-        if self.spec == 'Chinook':
-            return self.PooledNodes.count
-        else:
-            return self.Systems.count
-
-    def _create_redfish(self, rs, action):
-        """
-        Private method for creating a Redfish based pooled node
-
-        Arguments:
-            rs  - The requested pooled node
-        """
-        try:
-            pn = ComputerSystem(rs, self.cs_puid_count + 1, self.rest_base, 'Systems')
-            self.Systems.add_computer_system(pn)
-        except KeyError as e:
-            raise CreatePooledNodeError(
-                'Configuration missing key: ' + e.message)
-        try:
-            # Verifying resources
-            assert pn.processor_count <= self.available_procs, self.err_str.format('CPUs')
-            assert pn.storage_gb <= self.available_storage, self.err_str.format('storage')
-            assert pn.network_ports <= self.available_network, self.err_str.format('network ports')
-            assert pn.total_memory_gb <= self.available_mem, self.err_str.format('memory')
-
-            self.used_procs += pn.processor_count
-            self.used_storage += pn.storage_gb
-            self.used_network += pn.network_ports
-            self.used_memory += pn.total_memory_gb
-        except AssertionError as e:
-            self._remove_redfish(pn.cs_puid)
-            raise CreatePooledNodeError(e.message)
-        except KeyError as e:
-            self._remove_redfish(pn.cs_puid)
-            raise CreatePooledNodeError(
-                'Requested system missing key: ' + e.message)
-
-        self.resource_dictionary.add_resource('Systems/{0}'.format(pn.cs_puid), pn)
-        self.cs_puid_count += 1
-        return pn.configuration
-
-    def _remove_redfish(self, cs_puid):
-        """
-        Private method for removing a Redfish based pooled node
-
-        Arguments:
-            cs_puid - CS_PUID of the pooled node to remove
-        """
-        try:
-            pn = self.Systems[cs_puid]
-
-            # Adding back in used resources
-            self.used_procs -= pn.processor_count
-            self.used_storage -= pn.storage_gb
-            self.used_network -= pn.network_ports
-            self.used_memory -= pn.total_memory_gb
-
-            self.Systems.remove_computer_system(pn)
-            self.resource_dictionary.delete_resource('Systems/{0}'.format(cs_puid))
-
-            if self.Systems.count == 0:
-                self.cs_puid_count = 0
-        except IndexError:
-            raise RemovePooledNodeError(
-                'No pooled node with CS_PUID: {0}, exists'.format(cs_puid))
 
     def get_resource(self, path):
         """
         Call Resource_Dictionary's get_resource
         """
-        if self.BMC is not None:
-            if path is None:
-                path = self.BMC.get_type()
-            else:
-                path = self.BMC.get_type() + '/' + path
         obj = self.resource_dictionary.get_resource(path)
         return obj
-
-
-'''
-    def remove_pooled_node(self, cs_puid):
-        """
-        Delete the specified pooled node and free its resources.
-
-        Throws a RemovePooledNodeError Exception if a problem is encountered.
-
-        Arguments:
-            cs_puid - CS_PUID of the pooed node to remove
-        """
-        self.remove_method(cs_puid)
-
-    def update_cs(self,cs_puid,rs):
-        """
-            Updates the power metrics of Systems/1
-        """
-        cs=self.Systems[cs_puid]
-        cs.reboot(rs)
-        return cs.configuration
-
-    def update_system(self,rs,c_id):
-        """
-            Updates selected System
-        """
-        self.Systems[c_id].update_config(rs)
-
-        event = Event(eventType='ResourceUpdated', severity='Notification', message='System updated',
-                      messageID='ResourceUpdated.1.0.System', originOfCondition='/redfish/v1/System/{0}'.format(c_id))
-        self.push_event(event, 'ResourceUpdated')
-        return self.Systems[c_id].configuration
-
-    def add_event_subscription(self, rs):
-        destination = rs['Destination']
-        types = rs['Types']
-        context = rs['Context']
-
-        allowedTypes = ['StatusChange',
-                        'ResourceUpdated',
-                        'ResourceAdded',
-                        'ResourceRemoved',
-                        'Alert']
-
-        for type in types:
-            match = False
-            for allowedType in allowedTypes:
-                if type == allowedType:
-                    match = True
-
-            if not match:
-                raise EventSubscriptionError('Some of types are not allowed')
-
-        es = self.EventSubscriptions.add_subscription(destination, types, context)
-        es_id = es.configuration['Id']
-        self.resource_dictionary.add_resource('EventService/Subscriptions/{0}'.format(es_id), es)
-        event = Event()
-        self.push_event(event, 'Alert')
-        return es.configuration
-
-    def push_event(self, event, type):
-        # Retreive subscription list
-        subscriptions = self.EventSubscriptions.configuration['Members']
-        for sub in subscriptions:
-            # Get event subscription
-            event_channel = self.resource_dictionary.get_object(sub.replace('/redfish/v1/', ''))
-            event_types = event_channel.configuration['EventTypes']
-            dest_uri = event_channel.configuration['Destination']
-
-            # Check if client subscribes for event type
-            match = False
-            for event_type in event_types:
-                if event_type == type:
-                    match = True
-
-            if match:
-                # Sending event response
-                EventWorker(dest_uri, event).start()
-
-
-class EventWorker(Thread):
-    """
-    Worker class for sending event messages to clients
-    """
-    def __init__(self, dest_uri, event):
-        super(EventWorker, self).__init__()
-        self.dest_uri = dest_uri
-        self.event = event
-
-    def run(self):
-        try:
-            request = urllib2.Request(self.dest_uri)
-            request.add_header('Content-Type', 'application/json')
-            urllib2.urlopen(request, json.dumps(self.event.configuration), 15)
-        except Exception:
-            pass
-'''

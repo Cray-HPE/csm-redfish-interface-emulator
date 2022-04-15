@@ -1,0 +1,83 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "@odata.id": "HpeComponentUpdateEntry",
+    "additionalProperties": false,
+    "copyright": "Copyright 2021 Hewlett Packard Enterprise Development, LP.  Portions Copyright 2021 Distributed Management Task Force. All rights reserved.",
+    "description": "The HpeComponentUpdateEntry resource describes a software or firmware component information and update status.",
+    "properties": {
+        "@odata.context": {
+            "$ref": "Resource.json#/definitions/odatacontext"
+        },
+        "@odata.etag": {
+            "$ref": "Resource.json#/definitions/odataetag"
+        },
+        "@odata.id": {
+            "$ref": "Resource.json#/definitions/odataid"
+        },
+        "@odata.type": {
+            "$ref": "Resource.json#/definitions/odatatype"
+        },
+        "DependencyStatus": {
+            "description": "DependencyStatus",
+            "readonly": true,
+            "type": "boolean"
+        },
+        "ComponentStatus": {
+            "description": "Status",
+            "enum": [
+                "PENDING",
+                "RUNNING",
+                "SUSPENDED",
+                "COMPLETED",
+                "EXCEPTION",
+                "KILLED",
+                "NEW",
+                "INTERRUPTED",
+                "STOPPING",
+                "SERVICE"
+            ],
+            "enumDescriptions": {
+                "PENDING": "Update is pending and has not started.",
+                "RUNNING": "Update Service in Progress.",
+                "SUSPENDED": "Update has been suspended.",
+                "COMPLETED": "Update completed successfully",
+                "EXCEPTION": "Update has stopped due to an exception condition.",
+                "KILLED": "Update was terminated.",
+                "NEW": "A new update.",
+                "INTERRUPTED": "Update has been interrupted.",
+                "STOPPING": "Update is in the process of stopping.",
+                "SERVICE": "Update has been suspended."
+            },
+            "enumLongDescriptions": {
+                "PENDING": "This value shall represent that the update is pending some condition and has not yet begun to execute.",
+                "RUNNING": "This value shall represent that the update is ongoing.",
+                "SUSPENDED": "This value shall represent that the update has been suspended but is expected to restart and is therefore not complete.",
+                "COMPLETED": "This value shall represent that the update completed successfully or with warnings.",
+                "EXCEPTION": "This value shall represent that the update completed with errors.",
+                "KILLED": "This value shall represent that the update is complete because an operator killed it.",
+                "NEW": "This value shall represent that the update is newly created, but has not started.",
+                "INTERRUPTED": "This value shall represent that the update has been interrupted but is expected to restart and is therefore not complete.",
+                "STOPPING": "This value shall represent that the update is stopping but is not yet complete.",
+                "SERVICE": "This value shall represent that the update is now running as a service and expected to continue operation until stopped or killed."
+            },
+            "readonly": true,
+            "type": [
+                "string"
+            ]
+        },
+        "Name": {
+            "description": "Name of the component.",
+            "maxLength": 64,
+            "readonly": true,
+            "type": "string"
+        },
+        "Version": {
+            "description": "Version of the component.",
+            "readonly": true,
+            "type": "string"
+        }
+    },
+    "readonly": true,
+    "title": "#HpeComponentUpdateEntry.v1_0_1.HpeComponentUpdateEntry",
+    "type": "object"
+}

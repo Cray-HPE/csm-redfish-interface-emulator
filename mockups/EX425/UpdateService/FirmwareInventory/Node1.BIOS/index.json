@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1648753388\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.BIOS",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "Node1.BIOS",
+    "Id": "Node1.BIOS",
+    "Name": "Node1.BIOS",
+    "SoftwareId": "bios.ex425.*.*",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": true,
+    "Version": "ex425.bios-1.6.3"
+}

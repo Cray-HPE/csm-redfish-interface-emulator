@@ -1,0 +1,32 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"2FDEA5D4\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/91",
+    "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+    "Id": "91",
+    "Created": "2021-09-04T11:08:25Z",
+    "EntryType": "Oem",
+    "Message": " All links are down in adapter HPE Eth 10/25Gb 2p 621SFP28 Adptr in slot 19",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_3_0.HpeLogEntry",
+            "Categories": [
+                "Hardware"
+            ],
+            "Class": 17,
+            "ClassDescription": "Network",
+            "Code": 13,
+            "Count": 1,
+            "EventNumber": 124,
+            "LearnMoreLink": "http://www.hpe.com/support/class0x0011code0x000d-gen10",
+            "RecommendedAction": "Check the connection to the adapter and validate the connectivity from the server to any external device, including the cabling. If no problems are found, the adapter or other connectivity device may need replacement.",
+            "Repaired": false,
+            "Severity": "Critical",
+            "Updated": "2021-09-04T11:08:25Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "Critical"
+}

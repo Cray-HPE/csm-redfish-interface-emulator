@@ -1,0 +1,23 @@
+{
+    "@odata.etag": "W/\"1649713072\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM15",
+    "@odata.type": "#Memory.v1_5_0.Memory",
+    "BaseModuleType": "RDIMM",
+    "BusWidthBits": 80,
+    "CapacityMiB": 16384,
+    "DataWidthBits": 64,
+    "ErrorCorrection": "Single-bit ECC",
+    "Id": "DIMM15",
+    "Manufacturer": "Samsung",
+    "MemoryDeviceType": "DDR5",
+    "MemoryLocation": {
+        "Slot": 7,
+        "Socket": 1
+    },
+    "MemoryType": "DRAM",
+    "Name": "CPU1_DIMM_H1",
+    "OperatingSpeedMhz": 9600,
+    "PartNumber": "M321R2GA3BB0-CQKDG",
+    "RankCount": 1,
+    "SerialNumber": "02189598"
+}

@@ -1,0 +1,22 @@
+{
+    "@odata.etag": "W/\"1649953624\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/4",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2022-04-04T19:10:23+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2022-04-04T19:10:23+00:00",
+    "Id": "4",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/"
+        }
+    },
+    "Message": "The gpu1 Power resource has detected a fatal fault indicating that it went outside its allowed operating conditions.",
+    "MessageArgs": [
+        "outside",
+        "gpu1 Power"
+    ],
+    "MessageId": "CrayAlerts.HardwareFatalFaultDetected",
+    "Name": "Log entry 4",
+    "Severity": "Critical"
+}

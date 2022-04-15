@@ -1,0 +1,33 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator1Power",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Board2VoltageRegulator1Power",
+    "Name": "0.9V S0 Power",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "Board",
+        "ParentalIndex": 2
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 6,
+    "ReadingRangeMax": 32767,
+    "ReadingRangeMin": 0,
+    "ReadingTime": "2022-04-14T16:12:48.593409688Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 11
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 12
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 13
+        }
+    }
+}

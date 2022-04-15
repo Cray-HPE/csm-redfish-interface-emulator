@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Assembly",
+    "@odata.type": "#Assembly.v1_3_0.Assembly",
+    "Assemblies": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Assembly#/Assemblies/0",
+            "Description": "The Nvidia baseboard assembly that houses the node's GPUs.",
+            "EngineeringChangeLevel": "A00",
+            "MemberId": "0",
+            "Model": "NVIDIA HGX A100 4 GPU",
+            "Name": "NVIDIA Redstone",
+            "Oem": {
+                "PCBSerialNumber": "1571120530071"
+            },
+            "PartNumber": "935-22687-3830-000",
+            "PhysicalContext": "GPUSubsystem",
+            "Producer": "NVIDIA",
+            "ProductionDate": "2020/04/03-18:17:00",
+            "SerialNumber": "1571420000056",
+            "Version": "538980400"
+        }
+    ],
+    "Id": "Assembly",
+    "Name": "System-related Assembly data"
+}

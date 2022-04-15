@@ -1,0 +1,23 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM7",
+    "@odata.type": "#Memory.v1_5_0.Memory",
+    "BaseModuleType": "RDIMM",
+    "BusWidthBits": 72,
+    "CapacityMiB": 32768,
+    "DataWidthBits": 64,
+    "ErrorCorrection": "Multi-bit ECC",
+    "Id": "DIMM7",
+    "Manufacturer": "Samsung",
+    "MemoryDeviceType": "DDR4",
+    "MemoryLocation": {
+        "Slot": 7,
+        "Socket": 0
+    },
+    "MemoryType": "DRAM",
+    "Name": "DIMM 7",
+    "OperatingSpeedMhz": 3200,
+    "PartNumber": "M393A4K40DB3-CWE",
+    "RankCount": 2,
+    "SerialNumber": "156374C8"
+}

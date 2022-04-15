@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1649953624\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors",
+    "@odata.type": "#SensorCollection.SensorCollection",
+    "Description": "Sensor Collection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Chassis0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisSystemBoard0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0InputPower"
+        }
+    ],
+    "Members@odata.count": 7,
+    "Name": "Sensor Collection"
+}

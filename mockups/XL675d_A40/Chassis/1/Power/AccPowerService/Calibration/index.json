@@ -1,0 +1,47 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerAccPowerCalibration.HpeServerAccPowerCalibration",
+    "@odata.etag": "W/\"B33CD40E\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/Calibration",
+    "@odata.type": "#HpeServerAccPowerCalibration.v1_0_0.HpeServerAccPowerCalibration",
+    "Id": "Calibration",
+    "Actions": {
+        "#HpeServerAccPowerCalibration.Calibrate": {
+            "ActionType@Redfish.AllowableValues": [
+                "Start",
+                "Stop"
+            ],
+            "target": "/redfish/v1/Chassis/1/Power/AccPowerService/Calibration/Actions/HpeServerAccPowerCalibration.Calibrate"
+        }
+    },
+    "CalibrationData": {
+        "EndTime": "2021-06-30T19:34:17",
+        "StartTime": "2021-06-30T19:33:17",
+        "State": true,
+        "ThrottlePeakPower": {
+            "Percent_000": 5043,
+            "Percent_005": 5040,
+            "Percent_010": 5042,
+            "Percent_015": 5039,
+            "Percent_020": 5038,
+            "Percent_025": 5041,
+            "Percent_030": 5040,
+            "Percent_035": 5042,
+            "Percent_040": 5038,
+            "Percent_045": 5039,
+            "Percent_050": 5039,
+            "Percent_055": 5056,
+            "Percent_060": 5042,
+            "Percent_065": 5039,
+            "Percent_070": 5036,
+            "Percent_075": 5044,
+            "Percent_080": 5050,
+            "Percent_085": 5039,
+            "Percent_090": 5052,
+            "Percent_095": 5055,
+            "Percent_100": 5041
+        },
+        "ZoneNumber": 0
+    },
+    "CalibrationInProgress": false,
+    "Name": "Calibration Resource for AccPowerService"
+}

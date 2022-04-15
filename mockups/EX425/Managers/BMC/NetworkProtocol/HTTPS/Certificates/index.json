@@ -1,0 +1,14 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol/HTTPS/Certificates",
+    "Description": "The collection for Certificates",
+    "Members": {
+        "Certificates": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol/HTTPS/Certificates/1"
+            }
+        ]
+    },
+    "Members@odata.count": 1,
+    "Name": "Certificates Collection"
+}

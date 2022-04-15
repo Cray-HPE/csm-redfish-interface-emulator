@@ -1,0 +1,16 @@
+{
+    "@odata.etag": "W/\"1649715154\"",
+    "@odata.id": "/redfish/v1/Systems",
+    "@odata.type": "#ComputerSystemCollection.ComputerSystemCollection",
+    "Description": "Collection of Computer Systems",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1"
+        }
+    ],
+    "Members@odata.count": 2,
+    "Name": "Systems Collection"
+}

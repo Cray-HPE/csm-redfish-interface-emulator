@@ -1,0 +1,27 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerPCISlot.HpeServerPCISlot",
+    "@odata.etag": "W/\"AD7A0571\"",
+    "@odata.id": "/redfish/v1/Systems/1/PCISlots/8",
+    "@odata.type": "#HpeServerPCISlot.v2_1_0.HpeServerPCISlot",
+    "Id": "8",
+    "BusNumber": 77,
+    "Characteristics": {
+        "Provides3_3Volts": true,
+        "SupportsPowerManagementEventSignal": true
+    },
+    "DeviceNumber": 0,
+    "FunctionNumber": 0,
+    "Length": "Long",
+    "LinkLanes": "x16",
+    "Name": "PCI-E Slot 8",
+    "Status": {
+        "OperationalStatus": [
+            {
+                "Status": "Empty"
+            }
+        ]
+    },
+    "SupportsHotPlug": false,
+    "Technology": "PCIExpressGen4",
+    "UEFIDevicePath": "PciRoot(0x1)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)"
+}

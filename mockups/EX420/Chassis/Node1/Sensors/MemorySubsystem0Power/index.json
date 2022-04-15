@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/MemorySubsystem0Power",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "MemorySubsystem0Power",
+    "Name": "CPU0Memory",
+    "Oem": {
+        "Index": 0
+    },
+    "PhysicalContext": "MemorySubsystem",
+    "Reading": 7,
+    "ReadingTime": "2022-04-14T16:12:25.454391079Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

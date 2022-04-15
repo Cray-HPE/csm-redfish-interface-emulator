@@ -1,0 +1,16 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/BootOptions",
+    "@odata.type": "#BootOptionCollection.BootOptionCollection",
+    "Description": "Collection of BootOption for this system",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/BootOptions/0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/BootOptions/1"
+        }
+    ],
+    "Members@odata.count": 2,
+    "Name": "BootOption Collection"
+}

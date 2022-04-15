@@ -1,0 +1,37 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal",
+    "@odata.type": "#Thermal.v1_3_1.Thermal",
+    "Description": "Thermal sensor readings",
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Temperatures": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/4",
+            "Name": "NC TEMP SENSOR controller Temperature",
+            "PhysicalContext": "SystemBoard",
+            "ReadingCelsius": 37,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 90,
+            "UpperThresholdFatal": 105,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/5",
+            "Name": "12V_HSS ECB Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 31,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/3",
+            "Name": "NC TEMP SENSOR ambient Temperature",
+            "PhysicalContext": "Chassis",
+            "ReadingCelsius": 36,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 85,
+            "UpperThresholdNonCritical": 60
+        }
+    ]
+}

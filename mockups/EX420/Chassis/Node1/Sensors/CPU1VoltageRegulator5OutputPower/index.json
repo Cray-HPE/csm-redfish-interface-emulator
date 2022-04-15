@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPU1VoltageRegulator5OutputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU1VoltageRegulator5OutputPower",
+    "Name": "CPU1 VCCINFAON S0",
+    "Oem": {
+        "Index": 5,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U4016"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 19,
+    "ReadingTime": "2022-04-14T16:12:38.974175275Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

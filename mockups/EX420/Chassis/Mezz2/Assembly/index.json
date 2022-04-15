@@ -1,0 +1,20 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz2/Assembly",
+    "@odata.type": "#Assembly.v1_3_0.Assembly",
+    "Assemblies": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Assembly#/Assemblies/0",
+            "MemberId": "0",
+            "PartNumber": "",
+            "ProductionDate": "",
+            "Status": {
+                "Health": "OK"
+            },
+            "Vendor": "",
+            "Version": ""
+        }
+    ],
+    "Id": "Assembly",
+    "Name": "System-related Assembly data"
+}

@@ -1,0 +1,21 @@
+{
+    "@odata.etag": "W/\"1649953624\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/159",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2022-04-10T13:17:43+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2022-04-10T13:17:43+00:00",
+    "Id": "159",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/"
+        }
+    },
+    "Message": "All hardware reported fatal faults have been cleared for 12V_HSS ECB Temperature.",
+    "MessageArgs": [
+        "12V_HSS ECB Temperature"
+    ],
+    "MessageId": "CrayAlerts.HardwareFatalFaultCleared",
+    "Name": "Log entry 159",
+    "Severity": "OK"
+}

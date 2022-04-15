@@ -1,0 +1,22 @@
+{
+    "@odata.etag": "W/\"1649953624\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/153",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2022-04-08T14:06:03+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2022-04-08T14:06:03+00:00",
+    "Id": "153",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/"
+        }
+    },
+    "Message": "The resource property gpu3 Power has corrected errors of type SensorReadError.",
+    "MessageArgs": [
+        "gpu3 Power",
+        "SensorReadError"
+    ],
+    "MessageId": "ResourceEvent.ResourceErrorsCorrected",
+    "Name": "Log entry 153",
+    "Severity": "OK"
+}

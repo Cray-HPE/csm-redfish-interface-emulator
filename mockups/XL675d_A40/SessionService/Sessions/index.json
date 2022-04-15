@@ -1,0 +1,67 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SessionCollection.SessionCollection",
+    "@odata.etag": "W/\"53BCFBD0\"",
+    "@odata.id": "/redfish/v1/SessionService/Sessions",
+    "@odata.type": "#SessionCollection.SessionCollection",
+    "Description": "Manager User Sessions",
+    "Name": "Sessions",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeiLOSessionsSummary.HpeiLOSessionsSummary",
+            "@odata.type": "#HpeiLOSessionsSummary.v2_0_0.HpeiLOSessionsSummary",
+            "Links": {
+                "MySession": {
+                    "@odata.id": "/redfish/v1/SessionService/Sessions/root00000000625858f71a7075f9"
+                }
+            }
+        }
+    },
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root00000000625857226dbec075"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root0000000061de0e334f18c8cf"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/administrator0000000061de3c1648a1b030"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root0000000061e08fb15b43cbe9"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root0000000061e98f97676718e7"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/system%20administrator0000000061e9beaddea0182d"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/system%20administrator0000000061eb1051147f25f1"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root0000000061eea1dd523eeb81"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/system%20administrator0000000061f07e1028e122f4"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root0000000061f95b8c108940b4"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root0000000061f95d010587346b"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root0000000061f969e5747d63e3"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root0000000061f990142b7d8e50"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root0000000062583c9791985d6d"
+        },
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/root00000000625858f71a7075f9"
+        }
+    ],
+    "Members@odata.count": 15
+}

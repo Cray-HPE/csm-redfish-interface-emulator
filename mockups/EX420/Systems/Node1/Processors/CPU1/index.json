@@ -1,0 +1,25 @@
+{
+    "@odata.etag": "W/\"1649713072\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/Processors/CPU1",
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "Id": "CPU1",
+    "Manufacturer": "Intel(R) Corporation",
+    "MaxSpeedMHz": 4000,
+    "MaxTDPWatts": 350,
+    "Model": "Genuine Intel(R) CPU 0000%@",
+    "Name": "Processor",
+    "ProcessorId": {
+        "EffectiveFamily": "0x06",
+        "EffectiveModel": "0x8F",
+        "Step": "0x3",
+        "VendorId": "GenuineIntel"
+    },
+    "ProcessorType": "CPU",
+    "SerialNumber": "N0FK0CQM011626",
+    "Socket": "CPU 1",
+    "Status": {
+        "Health": "OK"
+    },
+    "TotalCores": 52,
+    "TotalThreads": 104
+}

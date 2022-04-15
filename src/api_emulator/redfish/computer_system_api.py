@@ -1,24 +1,32 @@
-# MIT License
+# BSD 3-Clause License
 #
-# (C) Copyright [2022] Hewlett Packard Enterprise Development LP
+# Copyright 2022 Hewlett Packard Enterprise Development LP
 #
-# Permission is hereby granted, free of charge, to any person obtaining a
-# copy of this software and associated documentation files (the "Software"),
-# to deal in the Software without restriction, including without limitation
-# the rights to use, copy, modify, merge, publish, distribute, sublicense,
-# and/or sell copies of the Software, and to permit persons to whom the
-# Software is furnished to do so, subject to the following conditions:
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
 #
-# The above copyright notice and this permission notice shall be included
-# in all copies or substantial portions of the Software.
+# 1. Redistributions of source code must retain the above copyright notice,
+# this list of conditions and the following disclaimer.
 #
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-# OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-# ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-# OTHER DEALINGS IN THE SOFTWARE.
+# 2. Redistributions in binary form must reproduce the above copyright
+# notice, this list of conditions and the following disclaimer in the
+# documentation and/or other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its
+# contributors may be used to endorse or promote products derived from this
+# software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
 
 # ComputerSystem API File
 
@@ -40,6 +48,7 @@ from flask_restful import reqparse, Api, Resource
 from threading import Thread
 from time import sleep
 
+from .redfish_auth import auth, Privilege
 from .event_generator import GenEvent, GenEventRecord
 from .event_service_api import send_event
 from .response import success_response, simple_error_response, error_404_response, error_not_allowed_response
@@ -102,6 +111,13 @@ def send_power_event(id, power_state):
 # POST requests to ResetAction_API()
 #
 class ComputerSystemAPI(Resource):
+    # Set authorization levels here. You can either list all of the
+    # privileges needed for access or just the highest one.
+    method_decorators = {'get':    [auth.auth_required(priv={Privilege.Login})],
+                         'post':   [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'put':    [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'patch':  [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'delete': [auth.auth_required(priv={Privilege.ConfigureComponents})]}
 
     def __init__(self, **kwargs):
         logging.info('ComputerSystemAPI init called')
@@ -178,30 +194,22 @@ class ComputerSystemAPI(Resource):
 # Called internally to create instances of a ComputerSystem. These
 # resources are affected by ResetAction_API()
 #
-class CreateComputerSystem(Resource):
-    def __init__(self, **kwargs):
-        logging.info('CreateComputerSystem init called')
-        if 'resource_class_kwargs' in kwargs:
-            global wildcards
-            wildcards = copy.deepcopy(kwargs['resource_class_kwargs'])
+def CreateComputerSystem(ident, config, rst_actions):
+    logging.info('CreateComputerSystem put called')
+    try:
+        # global config
+        global wildcards
+        logging.debug('added config for Systems/%s' % ident)
+        members[ident] = config
+        members_actions[ident] = rst_actions
+        members_reset_thread[ident] = None
 
-    # Create instance
-    def put(self, ident, config, rst_actions):
-        logging.info('CreateComputerSystem put called')
-        try:
-            # global config
-            global wildcards
-            logging.debug('added config for Systems/%s' % ident)
-            members[ident] = config
-            members_actions[ident] = rst_actions
-            members_reset_thread[ident] = None
-
-            resp = config, 200
-        except Exception:
-            traceback.print_exc()
-            resp = INTERNAL_ERROR
-        logging.info('CreateComputerSystem init exit')
-        return resp
+        resp = config, 200
+    except Exception:
+        traceback.print_exc()
+        resp = INTERNAL_ERROR
+    logging.info('CreateComputerSystem init exit')
+    return resp
 
 # ResetAction_API
 #
@@ -210,6 +218,13 @@ class CreateComputerSystem(Resource):
 # subscribers to the EventService.
 #
 class ResetAction_API(Resource):
+    # Set authorization levels here. You can either list all of the
+    # privileges needed for access or just the highest one.
+    method_decorators = {'get':    [auth.auth_required(priv={Privilege.Login})],
+                         'post':   [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'put':    [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'patch':  [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'delete': [auth.auth_required(priv={Privilege.ConfigureComponents})]}
 
     def __init__(self, **kwargs):
         self.allow = 'POST'
@@ -224,7 +239,7 @@ class ResetAction_API(Resource):
             if ident in members:
                 if 'ResetType' in raw_dict:
                     value = raw_dict['ResetType']
-                    if value in members_actions[ident]['Parameters'][0]['AllowableValues']:
+                    if value in members_actions[ident]:
                         state = members[ident]['PowerState']
                         
                         if members_reset_thread[ident] is not None and members_reset_thread[ident].is_alive():

@@ -1,0 +1,275 @@
+{
+    "@odata.etag": "W/\"1649952711\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Thermal",
+    "@odata.type": "#Thermal.v1_3_1.Thermal",
+    "Description": "Thermal sensor readings",
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Temperatures": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/73",
+            "Name": "CPU0 NBM TSNS ADC Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": -58.2,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/80",
+            "Name": "CPU1 NBM TSNS ADC Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": -59.9,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/66",
+            "Name": "CPU1dimm2 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/86",
+            "Name": "48V ECB Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 36.8,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/62",
+            "Name": "CPU0dimm7 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/77",
+            "Name": "CPU0 VCCINFAON S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 34,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/72",
+            "Name": "CPU0 VCCD Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 41,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/57",
+            "Name": "CPU0dimm2 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/65",
+            "Name": "CPU1dimm1 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/64",
+            "Name": "CPU1dimm0 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/1",
+            "Name": "",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/68",
+            "Name": "CPU1dimm4 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/61",
+            "Name": "CPU0dimm6 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/69",
+            "Name": "CPU1dimm5 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/74",
+            "Name": "CPU0 VCCIN Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 46,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/85",
+            "Name": "CPU1 VCCFA S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 32,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/87",
+            "Name": "SIVOC CTLR Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 37,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/59",
+            "Name": "CPU0dimm4 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/91",
+            "Name": "CPUS VDD_5V0_S5 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 38,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/58",
+            "Name": "CPU0dimm3 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/89",
+            "Name": "CPUS VDD_3V3_S5 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 44,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/55",
+            "Name": "CPU0dimm0 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/71",
+            "Name": "CPU1dimm7 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/78",
+            "Name": "CPU0 VCCFA S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 32,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/82",
+            "Name": "CPU1 FIVRA S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 42,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/67",
+            "Name": "CPU1dimm3 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/60",
+            "Name": "CPU0dimm5 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/83",
+            "Name": "CPU1 VPP_HBM S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 38,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/76",
+            "Name": "CPU0 VPP_HBM S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 38,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/90",
+            "Name": "CPUS VDD_1V05_S5 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 43,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/54",
+            "Name": "CPU0 Temperature",
+            "PhysicalContext": "CPU",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/88",
+            "Name": "CPUS VDD_3V3_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 45,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/75",
+            "Name": "CPU0 FIVRA S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 42,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/56",
+            "Name": "CPU0dimm1 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/84",
+            "Name": "CPU1 VCCINFAON S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 36,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/63",
+            "Name": "CPU1 Temperature",
+            "PhysicalContext": "CPU",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/81",
+            "Name": "CPU1 VCCIN Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 44,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/70",
+            "Name": "CPU1dimm6 Temperature",
+            "PhysicalContext": "Memory",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Thermal#/Temperatures/79",
+            "Name": "CPU1 VCCD Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 45,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        }
+    ]
+}

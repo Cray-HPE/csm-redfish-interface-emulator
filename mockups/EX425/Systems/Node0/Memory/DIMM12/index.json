@@ -1,0 +1,23 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Memory/DIMM12",
+    "@odata.type": "#Memory.v1_5_0.Memory",
+    "BaseModuleType": "RDIMM",
+    "BusWidthBits": 72,
+    "CapacityMiB": 16384,
+    "DataWidthBits": 64,
+    "ErrorCorrection": "Multi-bit ECC",
+    "Id": "DIMM12",
+    "Manufacturer": "SK Hynix",
+    "MemoryDeviceType": "DDR4",
+    "MemoryLocation": {
+        "Slot": 4,
+        "Socket": 1
+    },
+    "MemoryType": "DRAM",
+    "Name": "DIMM 12",
+    "OperatingSpeedMhz": 3200,
+    "PartNumber": "HMA82GR7CJR8N-XN",
+    "RankCount": 2,
+    "SerialNumber": "5339403C"
+}

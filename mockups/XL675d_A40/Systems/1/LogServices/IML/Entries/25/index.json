@@ -1,0 +1,30 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"64355F45\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/25",
+    "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+    "Id": "25",
+    "Created": "2021-08-19T15:39:37Z",
+    "EntryType": "Oem",
+    "Message": "At least one of the links is up in adapter Network Controller in slot 21",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_3_0.HpeLogEntry",
+            "Categories": [
+                "Hardware"
+            ],
+            "Class": 17,
+            "ClassDescription": "Network",
+            "Code": 14,
+            "Count": 1,
+            "EventNumber": 58,
+            "Repaired": true,
+            "Severity": "Repaired",
+            "Updated": "2021-08-19T15:39:53Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "OK"
+}

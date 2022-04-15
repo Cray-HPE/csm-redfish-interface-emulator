@@ -1,0 +1,32 @@
+{
+    "@odata.etag": "W/\"1649952711\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator2OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPUSubsystemVoltageRegulator2OutputCurrent",
+    "Name": "CPUS VDD_3V3_S0",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "CPUSubsystem",
+        "ReferenceDesignator": "U6008"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 1.0625,
+    "ReadingTime": "2022-04-14T16:11:36.007593823Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 4.815
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 4.95
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 5.175
+        }
+    }
+}

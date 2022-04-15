@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerDevice.HpeServerDevice",
+    "@odata.etag": "W/\"CEDA3609\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Devices/3",
+    "@odata.type": "#HpeServerDevice.v2_0_0.HpeServerDevice",
+    "Id": "3",
+    "DeviceInstances": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/PCIDevices/11"
+        }
+    ],
+    "DeviceType": "Converged Network Adapter",
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "08.35.43"
+        }
+    },
+    "Links": {
+        "PCISlot": {
+            "@odata.id": "/redfish/v1/Systems/1/PCISlots/19"
+        }
+    },
+    "Location": "PCI-E Slot 19",
+    "MCTPProtocolDisabled": false,
+    "Manufacturer": "HPE",
+    "Name": "HPE Eth 10/25Gb 2p 621SFP28 Adptr",
+    "PartNumber": "869570-001",
+    "ProductPartNumber": "867326-001",
+    "ProductVersion": "",
+    "SerialNumber": "MY50050V5K",
+    "Status": {
+        "Health": "Warning",
+        "State": "Enabled"
+    }
+}

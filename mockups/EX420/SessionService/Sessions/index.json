@@ -1,0 +1,9 @@
+{
+    "@odata.etag": "W/\"1649715154\"",
+    "@odata.id": "/redfish/v1/SessionService/Sessions",
+    "@odata.type": "#SessionCollection.SessionCollection",
+    "Description": "Colection of Sessions",
+    "Members": [],
+    "Members@odata.count": 0,
+    "Name": "Session Collection"
+}

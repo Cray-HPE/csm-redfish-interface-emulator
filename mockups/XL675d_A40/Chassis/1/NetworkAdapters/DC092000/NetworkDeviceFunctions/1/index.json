@@ -1,0 +1,51 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#NetworkDeviceFunction.NetworkDeviceFunction",
+    "@odata.etag": "W/\"5FE6B381\"",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/1",
+    "@odata.type": "#NetworkDeviceFunction.v1_3_0.NetworkDeviceFunction",
+    "Id": "1",
+    "AssignablePhysicalPorts": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/1/"
+        }
+    ],
+    "BootMode": "PXE",
+    "Description": "PCIe function status and active configuration data",
+    "DeviceEnabled": true,
+    "Ethernet": {
+        "MACAddress": "94:40:C9:6A:42:DA",
+        "PermanentMACAddress": "94:40:C9:6A:42:DA"
+    },
+    "Links": {
+        "PhysicalPortAssignment": {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/1"
+        }
+    },
+    "MaxVirtualFunctions": 96,
+    "Name": "Network adapter PCIe function",
+    "NetDevFuncCapabilities": [
+        "Ethernet"
+    ],
+    "NetDevFuncType": "Ethernet",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeNetworkDeviceFunction.HpeNetworkDeviceFunction",
+            "@odata.type": "#HpeNetworkDeviceFunction.v1_2_1.HpeNetworkDeviceFunction",
+            "BootTargetSource": "UEFI",
+            "ConnectionID": "00000000-0000-0000-0000-000000000000",
+            "NetDevFuncCapabilities": [
+                "Ethernet"
+            ],
+            "NetDevFuncType": "Ethernet",
+            "VirtualLinkStatus": "NoChannel",
+            "WakeOnLANEnabled": false
+        }
+    },
+    "PhysicalPortAssignment": {
+        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/1/"
+    },
+    "Settings": {
+        "href": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/1/Settings/"
+    },
+    "VirtualFunctionsEnabled": true
+}

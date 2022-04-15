@@ -1,0 +1,21 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/17",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2022-04-12T15:29:55+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2022-04-12T15:29:55+00:00",
+    "Id": "17",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/"
+        }
+    },
+    "Message": "All hardware reported fatal faults have been cleared for CPU1 VDR ABCD Voltage.",
+    "MessageArgs": [
+        "CPU1 VDR ABCD Voltage"
+    ],
+    "MessageId": "CrayAlerts.HardwareFatalFaultCleared",
+    "Name": "Log entry 17",
+    "Severity": "OK"
+}

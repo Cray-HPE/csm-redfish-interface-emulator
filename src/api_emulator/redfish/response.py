@@ -1,13 +1,13 @@
 import json
 
-def success_response(msg, status, jsonify=False):
+def success_response(msg, status, headers={}, jsonify=False):
     data = {
         'code': status,
         'message': '{}'.format(msg)
     }
     if jsonify:
         data = json.dumps(data, indent=4)
-    return data, status
+    return data, status, headers
 
 def simple_error_response(msg, status, jsonify=False):
     data = {
@@ -40,8 +40,7 @@ def error_404_response(path, jsonify=False):
     if jsonify:
         data = json.dumps(data, indent=4)
     return data, 404
-    
-    
+
 def error_not_allowed_response(path, method, headers, jsonify=False):
     data = {
         'error': {
@@ -65,3 +64,26 @@ def error_not_allowed_response(path, method, headers, jsonify=False):
     if jsonify:
         data = json.dumps(data, indent=4)
     return data, 405, headers
+
+def error_unauthorized_response(path, headers, jsonify=False):
+    data = {
+        "error": {
+            "@Message.ExtendedInfo": [
+                {
+                    "@odata.type": "#Message.v1_0_5.Message",
+                    "Message": "While attempting to establish a connection to {}, the service was denied access.".format(path),
+                    "MessageArgs": [
+                        '{}'.format(path)
+                    ],
+                    "MessageId": "Security.1.0.AccessDenied",
+                    "Resolution": "Attempt to ensure that the URI is correct and that the service has the appropriate credentials.",
+                    "Severity": "Critical"
+                }
+            ],
+            "code": "Security.1.0.AccessDenied",
+            "message": "While attempting to establish a connection to {}, the service was denied access.".format(path)
+        }
+    }
+    if jsonify:
+        data = json.dumps(data, indent=4)
+    return data, 401, headers

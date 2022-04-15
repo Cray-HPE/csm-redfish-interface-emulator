@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Processors/CPU0",
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "Id": "CPU0",
+    "Manufacturer": "Advanced Micro Devices, Inc.",
+    "MaxSpeedMHz": 3700,
+    "MaxTDPWatts": 240,
+    "Model": "AMD EPYC 7713 64-Core Processor",
+    "Name": "Processor",
+    "ProcessorId": {
+        "EffectiveFamily": "0x19",
+        "EffectiveModel": "0x01",
+        "Step": "0x1",
+        "VendorId": "AuthenticAMD"
+    },
+    "ProcessorType": "CPU",
+    "SerialNumber": "YP06343W00118",
+    "Socket": "CPU 0",
+    "Status": {
+        "Health": "OK"
+    },
+    "TDPWatts": 240,
+    "TotalCores": 64,
+    "TotalThreads": 128
+}

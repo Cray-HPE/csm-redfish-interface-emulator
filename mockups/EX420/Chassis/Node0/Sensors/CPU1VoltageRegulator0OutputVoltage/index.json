@@ -1,0 +1,45 @@
+{
+    "@odata.etag": "W/\"1649952711\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator0OutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU1VoltageRegulator0OutputVoltage",
+    "Name": "CPU1 VCCD",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U2020"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 1.141,
+    "ReadingTime": "2022-04-14T16:11:35.981828986Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 1.0317
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 0.9774
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 0.9231
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 1.2516
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 1.3112
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 1.4304
+        }
+    }
+}

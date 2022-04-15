@@ -1,0 +1,14 @@
+{
+    "@odata.etag": "W/\"1648753556\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node1.Acc1.VBIOS",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "Nvidia GPU vBIOS",
+    "Id": "Node1.Acc1.VBIOS",
+    "Name": "Node1.Acc1.VBIOS",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": false,
+    "Version": "92.00.19.00.13"
+}

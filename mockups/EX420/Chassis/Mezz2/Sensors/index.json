@@ -1,0 +1,70 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors",
+    "@odata.type": "#SensorCollection.SensorCollection",
+    "Description": "Sensor Collection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator0Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2SystemBoard1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2SystemBoard3Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2DCBus1Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator1Power"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2SystemBoard4Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2SystemBoard0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2SystemBoard2Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2ASIC0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator0Current"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator1Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2DCBus0Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2SystemBoard6Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2ASIC1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator1Current"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2SystemBoard5Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator0Power"
+        }
+    ],
+    "Members@odata.count": 20,
+    "Name": "Sensor Collection"
+}

@@ -24,6 +24,24 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [1.0.0] - 2022-04-15
+
+### Added
+
+- Dynamic resources for the AccountService allowing for adding/removing/editing authorization accounts.
+- Dynamic resources for the SessionService allowing for token authorization.
+- Added a default loader that attempts to apply known dynamic resources to a mockup depending on URIs available in the static mockup.
+- Added mockups for EX420, EX425, EX235n, DL325, and XL675d_A40
+- Added docker-compose that stands up a CSM environment and loads HSM with references to the emulator.
+- Github workflow for building and releasing the image.
+
+### Changed
+
+- Bard Peak references have been replaced with EX235a.
+- Refactored files and directories so all required emulator code is source controlled in this repo.
+- Refactored how loaders work. All <BMC_type>_loader.py files will create subclasses of the Loader class in loader.py.
+- The generic loader (loader.py) handles generically applying dynamic resources to Mockups. This makes it no longer required to create a <BMC_type>_loader.py per emulated type unless further customizations are needed.
+
 ## [0.2.0] - 2022-03-24
 
 ### Added

@@ -8,7 +8,7 @@ Static resources are emulated by simply copying a redfish mockup into the ./mock
 
 Dynamic emulation is accomplished by creating custom python files for each dynamic resource. You can use the [Update Service API](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py) as an example when creating a new dynamic resources.
 
-New BMC types for emulation are created by loading a complete static mockup and overriding the resource URIs that you want to be dynamic. This is done by creating a <BMC_type>-loader.py file and adding the load() call to [resource_manager.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/resource_manager.py). For example [bard_peak_loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/bard_peak_loader.py). <BMC_type>-loader.py is where you will specify which resource URIs will be dynamic.
+New BMC types for emulation are created by loading a complete static mockup and overriding the resource URIs that you want to be dynamic.
 
 ## Topics:
 
@@ -18,12 +18,14 @@ New BMC types for emulation are created by loading a complete static mockup and 
 * [Creating a new BMC type for emulation](#creating-new-emulator)
     * [Creating a static mockup](#creating-static-mockup)
     * [Creating dynamic resources](#creating-dynamic-resources)
-        * [Behavior controls](behavior-controls)
+        * [Default Loader](#default-loader)
+        * [Creating a New Loader](#creating-new-loader)
+        * [Dynamic Resources](#dynamic-resources)
+        * [Behavior controls](#behavior-controls)
         * [Templates for dynamic resources](#templates-for-dynamic-resources)
 * [Existing static mockups](#existing-static-mockups)
 * [Existing dynamic resources](#existing-dynamic-resources)
-* [Existing emulators](#existing-emulators)
-    * [Bard Peak](#bard-peak)
+* [Emulator to Loader Map](#emulator-loader-map)
 
 <a name="running-the-emulator"></a>
 
@@ -35,26 +37,15 @@ This emulator can be run locally or as a docker image.
 
 ### Docker
 
-You can either run a predefined emulator using their Dockerfile.<BMC_type> file or configure a custom docker image by editing the 'MOCKUPFOLDERS' field in [emulator-config.json](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/emulator-config.json) to specify which BMC mockup you want to use, delete the 'STATIC' field, and use the generic Dockerfile.
-```
-{
-  "MODE": "Local",
-  "HTTPS": "Enable",
-  "TRAYS": [],
-  "SPEC": "Redfish",
-  "MOCKUPFOLDERS": ["<MyBMC>"]
-}
-```
+You can run a predefined emulator using ./Dockerfile and setting the MOCKUPFOLDER environment variable, their ./mockups/<BMC_type>/Dockerfile (i.e. ./mockups/EX325a/Dockerfile), or create a ./mockups/<BMC_type>/Dockerfile in your custom mockup directory.
 
 **NOTE:** 'Dockerfile' assumes your custom static files are in place in the ./mockups/<MyBMC> directory.
 
-**NOTE:** The 'MOCKUPFOLDERS' field is an array but only one is used.
-
-**NOTE:** With 'emulator-config.json' as is, building with 'Dockerfile' will create a static only emulator using DMTF's generic static mockup.
+**NOTE:** When using the emulator with a custom mockup that does not have a loader specified for it in ./src/api_emulator/resource_manager.py, the generic loader will be used to generate a best guess mockup using known dynamic resources.
 
 Build the docker image.
 ```
-docker build -t csm-redfish-interface-emulator:latest -f Dockerfile.<BMC_type> .
+docker build -t csm-rie:latest -f ./Dockerfile .
 ```
 
 Set a local port for your BMC
@@ -64,28 +55,16 @@ BMC_PORT=5000
 
 Run the docker image.
 ```
-docker run -p ${BMC_PORT}:5000 --rm csm-redfish-interface-emulator:latest
+docker run -p ${BMC_PORT}:5000 -e MOCKUPFOLDER=<BMC_type> --rm csm-rie:latest
 ```
 
 <a name="locally"></a>
 
 ### Locally
 
-Editing the 'MOCKUPFOLDERS' field in [emulator-config.json](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/emulator-config.json) to specify which BMC mockup you want to use and delete the 'STATIC' field.
+This method runs setup.sh which will copy the resources into a new directory, create a virtual environment, install the required packages, and run the emulator.
 
-```
-{
-  "MODE": "Local",
-  "HTTPS": "Enable",
-  "TRAYS": [],
-  "SPEC": "Redfish",
-  "MOCKUPFOLDERS": ["<MyBMC>"]
-}
-```
-
-**NOTE:** The 'MOCKUPFOLDERS' field is an array but only one is used.
-
-**NOTE:** With 'emulator-config.json' as is, running setup.sh will create a static only emulator using DMTF's generic static mockup.
+**NOTE:** When using the emulator with a custom mockup that does not have a loader specified for it in ./src/api_emulator/resource_manager.py, the generic loader will be used to generate a best guess mockup using known dynamic resources.
 
 Set a local port for your BMC
 ```
@@ -94,10 +73,10 @@ BMC_PORT=5000
 
 Run the setup.sh script.
 ```
-./setup.sh -p ${BMC_PORT} -w ../<WORK_DIR>
+./setup.sh -p ${BMC_PORT} -m <BMC_type> -w ../<WORK_DIR>
 ```
 
-This will create a <WORK_DIR> directory outside of your csm-redfish-interface-emulator directory, pull in DMTF's Redfish Interface Emulator to the specified workspace directory, copy the local csm-redfish-interface-emulator files and directories into the specified workspace directory, and run the emulator. Any conflicting files will be replaced by the local csm-redfish-interface-emulator files. All static mockups in csm-redfish-interface-emulator/mockups will be copied into <WORK_DIR>/api_emulator/redfish/static.
+This will create a <WORK_DIR> directory outside of your csm-redfish-interface-emulator directory, copy the local csm-redfish-interface-emulator files and directories into the specified workspace directory, and run the emulator. All static mockups in csm-redfish-interface-emulator/mockups will be copied into <WORK_DIR>/api_emulator/redfish/static.
 
 The setup.sh script can also be run without starting the emulator to just prepare the emulator files.
 ```
@@ -118,7 +97,7 @@ New BMC types can be added for emulation. This can be done by using a completely
 
 A static mockup is a directory tree that is an exact copy of the desired BMC type's redfish tree starting at the service base, /redfish/v1. Each directory has an index.json file that contains a copy of what is returned by a GET to that resource in the redfish tree. For example:
 ```
-BardPeak:
+EX235a:
 - Systems
 -- Node0
 ...
@@ -129,7 +108,19 @@ BardPeak:
 
 DMTF has a tool that can be run against a real BMC to walk the entire redfish tree and create a mockup, the [Redfish Mockup Creator](https://github.com/DMTF/Redfish-Mockup-Creator).
 
-**NOTE:** DMTF's Redfish Mockup Creator only follows "@odata.id", "Uri", or "Members@odata.nextLink" links to go deeper. Because of this "@Redfish.ActionInfo" URIs need to be manually copied to complete the static mockup if you expect these to be queried. For the Bard Peak mockup, the following URIs had to be manually copied:
+The Redfish Mockup Creator can be run locally. For example, to create the EX325a mockup I used x9000c3s3b0 on loki by:
+
+- Opening a ssh tunnel to x9000c3s3b0
+```
+> ssh -L 7443:x3000c0s24b0:443 -N root@loki-ncn-m001.us.cray.com
+```
+
+- In another window, run the Redfish Mockup Creator
+```
+Redfish-Mockup-Creator> python ./redfishMockupCreator.py --u root --p initial0 --A basic --r localhost:7443 -S -D ./EX325a
+```
+
+**NOTE:** DMTF's Redfish Mockup Creator only follows "@odata.id", "Uri", or "Members@odata.nextLink" links to go deeper. Because of this "@Redfish.ActionInfo" URIs need to be manually copied to complete the static mockup if you expect these to be queried. For the EX325a mockup, the following URIs had to be manually copied:
 - /redfish/v1/Systems/Node0/ResetActionInfo
 - /redfish/v1/UpdateService/SimpleUpdateActionInfo
 
@@ -139,19 +130,131 @@ The static resource tree for a BMC type needs to be placed in csm-redfish-interf
 
 ### Creating dynamic resources
 
-To create an emulator with dynamic resources for a new BMC type you will need to create a <BMC_type>_loader.py file where the functions for setting up the dynamic resources will live. The [bard_peak_loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/bard_peak_loader.py) file is an example of this.
+To create an emulator with dynamic resources for a new BMC type you can either:
+1) Create no new files and let the default loader, [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/loader.py), use its best guess at selecting the correct dynamic resources for your mockup.
+2) Create a <BMC_type>_loader.py file where the functions for setting up the dynamic resources will live. The [hpe_cray_ex235a_loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/hpe_cray_ex235a_loader.py) is an example of this.
 
-You will then need to add a call to the loader in [resource_manager.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/resource_manager.py). This is done for Bard Peak [here](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/resource_manager.py#L155)
+A new loader and dynamic resource files may be required if your mockup requires any non-standard modifications that are not handled by the default loader.
 
-You need to either use existing python functions or make new ones for any resource URI that you want to have answer to more than just GET or be modifiable by other URIs such as '/redfish/v1/Systems/<system_id>' and '/redfish/v1/Systems/<system_id>/Actions/ComputerSystem.Reset'. If the new dynamic resources are specific to the BMC type, create a <BMC_type>_<resource_name>_api.py file for them. Otherwise, existing functions can be used. The computer systems functions used in the Bard Peak emulator that are generic for any BMC type that has the '/redfish/v1/Systems/<system_id>/ResetActionInfo' URI to get power actions. This code exists in [computer_systems_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/computer_systems_api.py).
+<a name="default-loader"></a>
 
-You can either use the [auto generator tool](https://github.com/DMTF/Redfish-Interface-Emulator/blob/master/README.md#auto-generate-the-api-file) that DMTF provides as part of their [Redfish Interface Emulator](https://github.com/DMTF/Redfish-Interface-Emulator) project to generate a template or use existing code as an example.
+#### Default Loader
+
+The [default loader](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/loader.py) will automatically be used for <BMC_type> not matched in [resource_manager.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/resource_manager.py#L137). It uses a best guess approach to determine which known dynamic resources to use for the mockup depending on which URI's are available in the static mockup. If the default loader can't determine which dynamic resource to use, it will not set one up and that set of URI's will continue to be Static, GET only, resources.
+
+The default loader is the parent Loader python class that is used as the base for all <bmc_type>_loaders.
+
+The Loader class currently sets up dynamic resources for:
+- Power Limit (init_power_limit())
+    - Generic Power Limit Schema
+        GET/PATCH /redfish/v1/Chassis/{sys_id}/Power
+    - HPE Cray EX Power Limit Schema
+        GET/PATCH /redfish/v1/Chassis/{sys_id}/Controls/{control_id}
+        PATCH     /redfish/v1/Chassis/{sys_id}/Controls.Deep
+    - Apollo 6500 Power Limit Schema
+        GET  /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit
+        POST /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit
+- System Power Actions (init_system_reset())
+    - Generic
+        GET      /redfish/v1/Systems/{sys_id}
+        GET/POST /redfish/v1/Systems/{sys_id}/Actions/ComputerSystem.Reset
+- Update Service (init_update_service())
+    - Generic
+        GET       /redfish/v1/UpdateService/FirmwareInventory/{target_id}
+        POST      /redfish/v1/UpdateService/SimpleUpdate
+        GET/PATCH /redfish/v1/UpdateService/FirmwareInventory/Config
+- Account Service (init_account_service())
+    - Generic
+        GET/POST         /redfish/v1/AccountService/Accounts
+        GET/PATCH/DELETE /redfish/v1/AccountService/Accounts/{id}
+- Session Service (init_session_service())
+    - Generic
+        GET/POST   /redfish/v1/SessionService/Sessions
+        GET/DELETE /redfish/v1/AccountService/Sessions/{id}
+- Event Service (init_event_service())
+    - Generic
+        GET/PATCH        /redfish/v1/EventService
+        GET/POST         /redfish/v1/EventService/Subscriptions
+        GET/PATCH/DELETE /redfish/v1/EventService/Subscriptions/{sub_id}
+- Redfish Event Generation Schemas (get_event_template())
+    - Generic
+    - Intel
+    - Gigabyte
+    - HPE Cray
+    - Proliant iLO
+
+The Loader class also tries to search the static mockup for serial numbers to randomize them with randomize(). MAC addresses are also modified either with a random MAC or using the Mountain scheme based on the given xname.
+
+<a name="creating-new-loader"></a>
+
+#### Creating a New Loader
+
+A new loader file may be required if your mockup requires any non-standard modifications that are not handled by the default loader. This file is usually named <BMC_type>_loader.py that lives in the ./src/api_emulator directory and contains code to create a subclass of [Loader](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/loader.py).
+
+You can override any of the methods in the Loader class or create new ones to add customizations. [hpe_cray_ex325a_loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/hpe_cray_ex325a_loader.py) is an example of this.
+
+Add a call to your new loader in [resource_manager.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/resource_manager.py#L137)
+
+If you have customizations needed for your new <BMC_type>, you'll likely also need to create new [dynamic resources](#dynamic-resources)
+
+<a name="dynamic-resources"></a>
+
+#### Dynamic Resources
+
+Dynamic resources are the backend handlers for any URI you want to answer to more than just GET requests. They are generally named <resource>_api.py and live in the ./src/api_emulator/redfish directory. For example the generic power control resource is [power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/power_control_api.py) and the HPE Cray EX variant is [hpe_cray_ex_power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/hpe_cray_ex_power_control_api.py).
+
+Your new dynamic resource files should contain classes for the collection (if it isn't a singleton) and members. These classes should be subclasses of flask_restful.Resource to be attached to a URI.
+
+These new subclass should define methods for get(), put(), post(), patch(), and delete(). The 'request' variable comes from flask and contains all of the information about the request (method, payload, path, etc) and can be used within the method.
+```
+    # HTTP GET
+    def get(self, ch_id):
+        logging.info('%s %s called' % (self.apiName, request.method))
+        try:
+            # Find the entry with the correct value for Id
+            resp = error_404_response(request.path)
+            if ch_id in members:
+                resp = members[ch_id], 200
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
+
+    # HTTP PATCH
+    #
+    # Apply power limit to the specified Control
+    def patch(self, ch_id):
+        logging.info('%s %s called' % (self.apiName, request.method))
+        raw_dict = request.get_json(force=True)
+        try:
+            resp = error_404_response(request.path)
+            if ch_id in members:
+                if 'PowerControl' in raw_dict and 'PowerControl' in members[ch_id] and \
+                   raw_dict['PowerControl'] == len(members[ch_id]['PowerControl']):
+                    resp = applyPatch(raw_dict['PowerControl'], ch_id)
+                else:
+                    resp = simple_error_response('Invalid paramters for PATCH', 400)
+        except Exception:
+            traceback.print_exc()
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
+        return resp
+```
+
+For authorization, define method_decorators with entries for each http method specifying auth.auth_required(priv=<required_privilages>) as the decorator. Specify the required redfish privileges that a user would need to perform that type of request on your resource. You can either list all required privileges, 'priv={Privilege.Login, Privilege.ConfigureComponents}' or just the highest one needed, 'priv={Privilege.ConfigureComponents}'. Generally, GETs require 'Privilege.Login' and all others require 'Privilege.ConfigureComponents'. The privileges are listed in [redfish_auth.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/redfish_auth.py) and are those defined in the redfish spec.
+```
+method_decorators = {'get':    [auth.auth_required(priv={Privilege.Login})],
+                     'post':   [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                     'put':    [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                     'patch':  [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                     'delete': [auth.auth_required(priv={Privilege.ConfigureComponents})]}
+```
+
 
 <a name="behavior-controls"></a>
 
 #### Behavior controls
 
-A few of the existing dynamic resources have 'hidden' config URIs used for configuring response behavior for the dynamic resource on the fly. The [update_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py) file is an example of this. It provides a 'hidden' (not displayed in /redfish/v1/UpdateService/FirmwareInventory['Members']) URI. This URI is used to view (GET) currently configured behavior or set (PATCH) new behavior for the '/redfish/v1/UpdateService/SimpleUpdate' URI. For an emulated Bard Peak, this looks like:
+A few of the existing dynamic resources have 'hidden' config URIs used for configuring response behavior for the dynamic resource on the fly. The [update_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py) file is an example of this. It provides a 'hidden' (not displayed in /redfish/v1/UpdateService/FirmwareInventory['Members']) URI. This URI is used to view (GET) currently configured behavior or set (PATCH) new behavior for the '/redfish/v1/UpdateService/SimpleUpdate' URI. For an emulated EX235a, this looks like:
 ```
 {
   "Id": "UpdateServiceConfigInfo",
@@ -205,53 +308,63 @@ You may wish to create a resource such as this for each of your dynamic resource
 
 #### Templates for dynamic resources
 
-Some dynamic resources such as the EventService generate responses (i.e. Redfish events) that are BMCType specific. Templates are used for these resources. The templates exist in the [src/api_emulator/redfish/templates/](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/redfish/templates) directory. The BardPeak emulator uses [cray_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/cray_events.py) and [cray_subscription.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/cray_subscription.py) for generating subscriptions and redfish events for the EventService. Which templates to use are generally set by the <BMC_type>_loader.py when response format can vary between BMC type.
+Some dynamic resources such as the EventService generate responses (i.e. Redfish events) that are BMCType specific. Templates are used for these resources. The templates exist in the [src/api_emulator/redfish/templates/](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/redfish/templates) directory. The EX235a emulator uses [hpe_cray_ex_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/cray_events.py) for generating redfish events for the EventService. Which templates to use are generally set by the <BMC_type>_loader.py when response format can vary between BMC type.
 
 <a name="existing-static-mockups"></a>
 
-## Existing static mockups:
-- Bard Peak - [./mockups/BardPeak](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/BardPeak)
+## Existing static mockup files:
+- Generic [public-rackmount1](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/public-rackmount1)
+- [EX235a](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX235a) (Bard Peak)
+- [EX235n](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX235n) (Grizzly Peak)
+- [EX420](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX420) (Castle)
+- [EX425](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX425) (Windom)
+- [DL325](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/DL325) (ProLiant DL325 Gen10 Plus)
+- [XL675d_A40](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/XL675d_A40) (Apollo 6500 A40)
 
 <a name="existing-dynamic-resources"></a>
 
 ## Existing dynamic resources:
-- Olympus Power Capping - [./src/api_emulator/redfish/olympus_power_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/olympus_power_api.py)
-    GET/PATCH /redfish/v1/Chassis/<system_id>/Controls/<control_id>
-    PATCH     /redfish/v1/Chassis/<system_id>/Controls.Deep
-- Computer System Power Actions - [./src/api_emulator/redfish/computer_systems_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/computer_systems_api.py)
+- Power Control
+    - Generic -  [power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/power_control_api.py)
+        GET/PATCH /redfish/v1/Chassis/{sys_id}/Power
+    - HPE Cray EX - [hpe_cray_ex_power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/hpe_cray_ex_power_control_api.py)
+        GET/PATCH /redfish/v1/Chassis/<system_id>/Controls/<control_id>
+        PATCH     /redfish/v1/Chassis/<system_id>/Controls.Deep
+    - Proliant iLO - [proliant_ilo_power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/proliant_ilo_power_control_api.py)
+        GET  /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit
+        POST /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit
+- Computer System Power Actions - [computer_systems_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/computer_systems_api.py)
     GET /redfish/v1/Systems/<system_id>
     POST /redfish/v1/Systems/<system_id>/Actions/ComputerSystem.Reset
-- Firmware Update - [./src/api_emulator/redfish/update_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py)
+- Firmware Update - [update_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py)
     GET /redfish/v1/UpdateService/FirmwareInventory/<target_id>
     POST /redfish/v1/UpdateService/SimpleUpdate
     GET/PATCH /redfish/v1/UpdateService/FirmwareInventory/Config
-- EventService - [./src/api_emulator/redfish/event_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py), [./src/api_emulator/redfish/event_generator.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py)
+- EventService - [event_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py), [event_generator.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_generator.py)
     GET/PATCH        /redfish/v1/EventService
     GET/POST         /redfish/v1/EventService/Subscriptions
     GET/PATCH/DELETE /redfish/v1/EventService/Subscriptions/<id>
+- Event templates
+    - Generic - [events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/events.py)
+    - Intel - [intel_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/intel_events.py)
+    - Gigabyte - [gigabyte_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/gigabyte_events.py)
+    - HPE Cray - [hpe_cray_ex_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/hpe_cray_ex_events.py)
+    - Proliant iLO - [proliant_ilo_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/proliant_ilo_events.py)
+- Account Service - [account_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/account_service_api.py)
+    GET/POST         /redfish/v1/AccountService/Accounts
+    GET/PATCH/DELETE /redfish/v1/AccountService/Accounts/{id}
+- Session Service - [session_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/session_service_api.py)
+    GET/POST   /redfish/v1/SessionService/Sessions
+    GET/DELETE /redfish/v1/AccountService/Sessions/{id}
 
-<a name="existing-emulators"></a>
+<a name="emulator-loader-map"></a>
 
-## Existing emulators
+## Emulator to Loader Map
 
-<a name="bard-peak"></a>
-
-### Bard Peak:
-- Loader - [./src/api_emulator/bard_peak_loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/bard_peak_loader.py)
-- Static Mockup Files - [./mockups/BardPeak](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/BardPeak)
-- Dynamic Resources
-    - Olympus Power Capping - [./src/api_emulator/redfish/olympus_power_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/olympus_power_api.py)
-        GET/PATCH /redfish/v1/Chassis/<system_id>/Controls/<control_id>
-    - Computer System Power Actions - [./src/api_emulator/redfish/computer_systems_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/computer_systems_api.py)
-        GET /redfish/v1/Systems/<system_id>
-        POST /redfish/v1/Systems/<system_id>/Actions/ComputerSystem.Reset
-    - Firmware Update - [./src/api_emulator/redfish/update_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py)
-        GET /redfish/v1/UpdateService/FirmwareInventory/<target_id>
-        POST /redfish/v1/UpdateService/SimpleUpdate
-        GET/PATCH /redfish/v1/UpdateService/FirmwareInventory/Config
-    - EventService - [./src/api_emulator/redfish/event_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py), [./src/api_emulator/redfish/event_generator.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py)
-        GET/PATCH        /redfish/v1/EventService
-        GET/POST         /redfish/v1/EventService/Subscriptions
-        GET/PATCH/DELETE /redfish/v1/EventService/Subscriptions/<id>
-    - EventService Templates - [./src/api_emulator/redfish/templates/cray_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/cray_events.py), [./src/api_emulator/redfish/templates/cray_subscription.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/cray_subscription.py)
-
+- public-rackmount1 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- EX235a - [ex235a_loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/ex235a_loader.py)
+- EX235n - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- EX420 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- EX425 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- DL325 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- XL675d_A40 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)

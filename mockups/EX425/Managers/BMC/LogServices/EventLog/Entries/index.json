@@ -1,0 +1,385 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "Collection of entries for this log service",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/1",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-04T19:10:21+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-04T19:10:21+00:00",
+            "Id": "1",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node0"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node0 has changed to type On.",
+            "MessageArgs": [
+                "/redfish/v1/Systems/Node0",
+                "On"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 1",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/2",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-04T19:10:21+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-04T19:10:21+00:00",
+            "Id": "2",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node1"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node1 has changed to type On.",
+            "MessageArgs": [
+                "On",
+                "/redfish/v1/Systems/Node1"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 2",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/3",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-05T15:34:04+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-05T15:34:04+00:00",
+            "Id": "3",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node1"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node1 has changed to type Off.",
+            "MessageArgs": [
+                "Off",
+                "/redfish/v1/Systems/Node1"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 3",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/4",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-05T15:34:06+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-05T15:34:06+00:00",
+            "Id": "4",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node0"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node0 has changed to type Off.",
+            "MessageArgs": [
+                "Off",
+                "/redfish/v1/Systems/Node0"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 4",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/5",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-05T15:34:42+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-05T15:34:42+00:00",
+            "Id": "5",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node0"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node0 has changed to type On.",
+            "MessageArgs": [
+                "/redfish/v1/Systems/Node0",
+                "On"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 5",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/6",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-05T15:34:42+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-05T15:34:42+00:00",
+            "Id": "6",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node1"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node1 has changed to type On.",
+            "MessageArgs": [
+                "On",
+                "/redfish/v1/Systems/Node1"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 6",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/7",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-05T15:38:04+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-05T15:38:04+00:00",
+            "Id": "7",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node0"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node0 has changed to type Off.",
+            "MessageArgs": [
+                "Off",
+                "/redfish/v1/Systems/Node0"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 7",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/8",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-05T15:38:04+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-05T15:38:04+00:00",
+            "Id": "8",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node1"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node1 has changed to type Off.",
+            "MessageArgs": [
+                "Off",
+                "/redfish/v1/Systems/Node1"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 8",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/9",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-05T15:44:02+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-05T15:44:02+00:00",
+            "Id": "9",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node1"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node1 has changed to type On.",
+            "MessageArgs": [
+                "On",
+                "/redfish/v1/Systems/Node1"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 9",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/10",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-05T15:44:04+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-05T15:44:04+00:00",
+            "Id": "10",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Node0"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Systems/Node0 has changed to type On.",
+            "MessageArgs": [
+                "/redfish/v1/Systems/Node0",
+                "On"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 10",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/11",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-09T22:06:03+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-09T22:06:03+00:00",
+            "Id": "11",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0Temperature"
+                }
+            },
+            "Message": "The 12V_HSS ECB Temperature resource has detected a fatal fault indicating that it went above its allowed operating conditions.",
+            "MessageArgs": [
+                "above",
+                "12V_HSS ECB Temperature"
+            ],
+            "MessageId": "CrayAlerts.HardwareFatalFaultDetected",
+            "Name": "Log entry 11",
+            "Severity": "Critical"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/12",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-09T22:06:13+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-09T22:06:13+00:00",
+            "Id": "12",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0Temperature"
+                }
+            },
+            "Message": "All hardware reported fatal faults have been cleared for 12V_HSS ECB Temperature.",
+            "MessageArgs": [
+                "12V_HSS ECB Temperature"
+            ],
+            "MessageId": "CrayAlerts.HardwareFatalFaultCleared",
+            "Name": "Log entry 12",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/13",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-09T22:06:13+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-09T22:06:13+00:00",
+            "Id": "13",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0Temperature"
+                }
+            },
+            "Message": "All hardware reported faults have been cleared for 12V_HSS ECB Temperature.",
+            "MessageArgs": [
+                "12V_HSS ECB Temperature"
+            ],
+            "MessageId": "CrayAlerts.HardwareFaultsCleared",
+            "Name": "Log entry 13",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/14",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-11T08:40:27+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-11T08:40:27+00:00",
+            "Id": "14",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator5OutputPower"
+                }
+            },
+            "Message": "The resource property CPU0 VDR ABCD Power has detected errors of type SensorReadError.",
+            "MessageArgs": [
+                "CPU0 VDR ABCD Power",
+                "SensorReadError"
+            ],
+            "MessageId": "ResourceEvent.ResourceErrorsDetected",
+            "Name": "Log entry 14",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/15",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-11T08:40:27+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-11T08:40:27+00:00",
+            "Id": "15",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator5OutputPower"
+                }
+            },
+            "Message": "The resource property CPU0 VDR ABCD Power has corrected errors of type SensorReadError.",
+            "MessageArgs": [
+                "CPU0 VDR ABCD Power",
+                "SensorReadError"
+            ],
+            "MessageId": "ResourceEvent.ResourceErrorsCorrected",
+            "Name": "Log entry 15",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/16",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-12T15:29:45+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-12T15:29:45+00:00",
+            "Id": "16",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/MemorySubsystem1VoltageRegulator5OutputVoltage"
+                }
+            },
+            "Message": "The CPU1 VDR ABCD Voltage resource has detected a fatal fault indicating that it went below its allowed operating conditions.",
+            "MessageArgs": [
+                "below",
+                "CPU1 VDR ABCD Voltage"
+            ],
+            "MessageId": "CrayAlerts.HardwareFatalFaultDetected",
+            "Name": "Log entry 16",
+            "Severity": "Critical"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/17",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-12T15:29:55+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-12T15:29:55+00:00",
+            "Id": "17",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/MemorySubsystem1VoltageRegulator5OutputVoltage"
+                }
+            },
+            "Message": "All hardware reported fatal faults have been cleared for CPU1 VDR ABCD Voltage.",
+            "MessageArgs": [
+                "CPU1 VDR ABCD Voltage"
+            ],
+            "MessageId": "CrayAlerts.HardwareFatalFaultCleared",
+            "Name": "Log entry 17",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/18",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-12T15:29:55+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-12T15:29:55+00:00",
+            "Id": "18",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/MemorySubsystem1VoltageRegulator5OutputVoltage"
+                }
+            },
+            "Message": "The resource property CPU1 VDR ABCD Voltage has cleared the warning threshold of value 1.116.",
+            "MessageArgs": [
+                "-1348490916",
+                "CPU1 VDR ABCD Voltage"
+            ],
+            "MessageId": "ResourceEvent.ResourceWarningThresholdCleared",
+            "Name": "Log entry 18",
+            "Severity": "OK"
+        }
+    ],
+    "Members@odata.count": 18,
+    "Name": "Log Service Entries Collection"
+}

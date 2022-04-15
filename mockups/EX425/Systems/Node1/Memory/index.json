@@ -1,0 +1,58 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/Memory",
+    "@odata.type": "#MemoryCollection.MemoryCollection",
+    "Description": "Collection of Memories for this system",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM11"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM10"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM9"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM7"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM15"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM12"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM13"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM14"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM8"
+        }
+    ],
+    "Members@odata.count": 16,
+    "Name": "Memory Collection"
+}

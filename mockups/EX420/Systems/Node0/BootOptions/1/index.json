@@ -1,0 +1,12 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/BootOptions/1",
+    "@odata.type": "#BootOption.v1_0_0.BootOption",
+    "Alias": "None",
+    "BootOptionEnabled": true,
+    "BootOptionReference": "Boot0002",
+    "DisplayName": "UEFI: PXE IPv4 HPE Cassini High Speed Network NIC",
+    "Id": "1",
+    "Name": "Boot0002",
+    "UefiDevicePath": "PciRoot(0x2)/Pci(0x1,0x0)/Pci(0x0,0x0)/MAC(0040A6851487,0x0)/IPv4(0.0.0.0,0x0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0)"
+}

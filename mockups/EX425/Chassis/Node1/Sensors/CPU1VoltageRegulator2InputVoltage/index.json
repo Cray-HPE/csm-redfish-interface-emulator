@@ -1,0 +1,41 @@
+{
+    "@odata.etag": "W/\"1649953210\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPU1VoltageRegulator2InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU1VoltageRegulator2InputVoltage",
+    "Name": "CPU1 VCORE",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U4001"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 47.5,
+    "ReadingTime": "2022-04-14T16:20:16.727216572Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 37.2
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 36
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 58.85
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 60.5
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 63.25
+        }
+    }
+}

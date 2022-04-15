@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1649952741\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPU0Memory5Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU0Memory5Temperature",
+    "Name": "CPU0dimm5",
+    "Oem": {
+        "Index": 5,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 0
+    },
+    "PhysicalContext": "Memory",
+    "Reading": 28,
+    "ReadingTime": "2022-04-14T16:12:28.358116458Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

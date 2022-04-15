@@ -1,24 +1,32 @@
-# MIT License
+# BSD 3-Clause License
 #
-# (C) Copyright [2022] Hewlett Packard Enterprise Development LP
+# Copyright 2022 Hewlett Packard Enterprise Development LP
 #
-# Permission is hereby granted, free of charge, to any person obtaining a
-# copy of this software and associated documentation files (the "Software"),
-# to deal in the Software without restriction, including without limitation
-# the rights to use, copy, modify, merge, publish, distribute, sublicense,
-# and/or sell copies of the Software, and to permit persons to whom the
-# Software is furnished to do so, subject to the following conditions:
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
 #
-# The above copyright notice and this permission notice shall be included
-# in all copies or substantial portions of the Software.
+# 1. Redistributions of source code must retain the above copyright notice,
+# this list of conditions and the following disclaimer.
 #
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-# OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-# ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-# OTHER DEALINGS IN THE SOFTWARE.
+# 2. Redistributions in binary form must reproduce the above copyright
+# notice, this list of conditions and the following disclaimer in the
+# documentation and/or other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its
+# contributors may be used to endorse or promote products derived from this
+# software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
 
 # Update Service API File
 
@@ -41,6 +49,7 @@ from queue import Queue
 from threading import Thread
 from time import sleep
 from .response import success_response, simple_error_response, error_404_response, error_not_allowed_response
+from .redfish_auth import auth, Privilege
 
 members = {}
 configAPI = {}
@@ -129,6 +138,13 @@ worker = UpdateWorker().start()
 # changing the update time or simulating failures.
 #
 class UpdateServiceConfigAPI(Resource):
+    # Set authorization levels here. You can either list all of the
+    # privileges needed for access or just the highest one.
+    method_decorators = {'get':    [auth.auth_required(priv={Privilege.Login})],
+                         'post':   [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'put':    [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'patch':  [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'delete': [auth.auth_required(priv={Privilege.ConfigureComponents})]}
 
     def __init__(self, **kwargs):
         logging.info('UpdateServiceConfigAPI init called')
@@ -195,6 +211,13 @@ class UpdateServiceConfigAPI(Resource):
 # POST requests to SimpleUpdateAPI()
 #
 class UpdateServiceAPI(Resource):
+    # Set authorization levels here. You can either list all of the
+    # privileges needed for access or just the highest one.
+    method_decorators = {'get':    [auth.auth_required(priv={Privilege.Login})],
+                         'post':   [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'put':    [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'patch':  [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'delete': [auth.auth_required(priv={Privilege.ConfigureComponents})]}
 
     def __init__(self, **kwargs):
         logging.info('UpdateServiceAPI init called')
@@ -271,37 +294,35 @@ class UpdateServiceAPI(Resource):
 # Called internally to create instances of a FirmwareTarget. These
 # resources are affected by SimpleUpdateAPI()
 #
-class CreateFirmwareTarget(Resource):
-
-    def __init__(self, **kwargs):
-        logging.info('CreateFirmwareTarget init called')
-        if 'resource_class_kwargs' in kwargs:
-            global wildcards
-            wildcards = copy.deepcopy(kwargs['resource_class_kwargs'])
-
-    # PUT
-    # - Create the resource (since URI variables are avaiable)
-    def put(self, target_id, config):
-        logging.info('CreateFirmwareTarget put called')
-        try:
-            global wildcards
-            global configAPI
-            logging.debug('added config for %s' % target_id)
-            members[target_id]=config
-            configAPI = copy.deepcopy(_CONFIG_TEMPLATE)
-            for member in members.keys():
-                configAPI['Parameters'][0]['AllowableValues'].append(member)
-            resp = config, 200
-        except Exception:
-            traceback.print_exc()
-            resp = simple_error_response('Server encountered an unexpected Error', 500)
-        return resp
+def CreateFirmwareTarget(target_id, config):
+    logging.info('CreateFirmwareTarget put called')
+    try:
+        global wildcards
+        global configAPI
+        logging.debug('added config for %s' % target_id)
+        members[target_id]=config
+        configAPI = copy.deepcopy(_CONFIG_TEMPLATE)
+        for member in members.keys():
+            configAPI['Parameters'][0]['AllowableValues'].append(member)
+        resp = config, 200
+    except Exception:
+        traceback.print_exc()
+        resp = simple_error_response('Server encountered an unexpected Error', 500)
+    return resp
 
 # SimpleUpdateAPI
 #
 # This services SimpleUpdate POST requests to emulate firmware updates.
 #
 class SimpleUpdateAPI(Resource):
+    # Set authorization levels here. You can either list all of the
+    # privileges needed for access or just the highest one.
+    method_decorators = {'get':    [auth.auth_required(priv={Privilege.Login})],
+                         'post':   [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'put':    [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'patch':  [auth.auth_required(priv={Privilege.ConfigureComponents})],
+                         'delete': [auth.auth_required(priv={Privilege.ConfigureComponents})]}
+
     def __init__(self, **kwargs):
         logging.info('SimpleUpdateAPI init called')
         self.allow = 'POST'

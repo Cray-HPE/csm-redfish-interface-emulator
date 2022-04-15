@@ -1,0 +1,14 @@
+{
+    "@odata.etag": "W/\"1649953210\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Oem/CrayVoltageMargins/VDR",
+    "@odata.type": "#CrayVoltageMargins.VoltageRailsCollection",
+    "CPU0 VDR ABCD Voltage Output": "1.200",
+    "CPU0 VDR EFGH Voltage Output": "1.200",
+    "CPU1 VDR ABCD Voltage Output": "1.200",
+    "CPU1 VDR EFGH Voltage Output": "1.200",
+    "Name": "Voltage Margins",
+    "NominalValue": "1.2",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "Volts",
+    "SetValue": "1.2"
+}

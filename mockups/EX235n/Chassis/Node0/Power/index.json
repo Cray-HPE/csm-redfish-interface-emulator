@@ -1,0 +1,233 @@
+{
+    "@odata.etag": "W/\"1649099394\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Power",
+    "@odata.type": "#Power.v1_4_0.Power",
+    "Description": "Power sensor readings",
+    "Id": "Power",
+    "Name": "Power",
+    "Voltages": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/68",
+            "Name": "CPU0 VDD_3V3_S5 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 3.387,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/83",
+            "Name": "SIVOC48 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 382.7,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/72",
+            "LowerThresholdCritical": 2.322,
+            "LowerThresholdFatal": 2.193,
+            "LowerThresholdNonCritical": 2.3994,
+            "Name": "CPU0 DIMM VDD_VPP_EFGH_S0 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 2.598,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 2.838,
+            "UpperThresholdFatal": 2.967,
+            "UpperThresholdNonCritical": 2.7606
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/75",
+            "LowerThresholdCritical": 11.16,
+            "LowerThresholdNonCritical": 11.4,
+            "Name": "CPU0 VDD_1V8_S0 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.812,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/66",
+            "Name": "CPU0 VDD_3V3_S0 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 3.395,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/69",
+            "LowerThresholdCritical": 11.16,
+            "LowerThresholdNonCritical": 11.4,
+            "Name": "CPU0 DIMM VDD_VPP_ABCD_S0 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.656,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/71",
+            "LowerThresholdCritical": 11.16,
+            "LowerThresholdNonCritical": 11.4,
+            "Name": "CPU0 DIMM VDD_VPP_EFGH_S0 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.844,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/77",
+            "LowerThresholdCritical": 11.16,
+            "LowerThresholdNonCritical": 11.4,
+            "Name": "CPU0 SOC_S0 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.67,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/73",
+            "LowerThresholdCritical": 36,
+            "LowerThresholdNonCritical": 37.2,
+            "Name": "CPU0 VCORE Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 48,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 60.5,
+            "UpperThresholdFatal": 63.25,
+            "UpperThresholdNonCritical": 58.85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/78",
+            "LowerThresholdCritical": 0.46863,
+            "LowerThresholdFatal": 0.442595,
+            "LowerThresholdNonCritical": 0.484251,
+            "Name": "CPU0 SOC_S0 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.022,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 1.3475,
+            "UpperThresholdFatal": 1.40875,
+            "UpperThresholdNonCritical": 1.31075
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/67",
+            "Name": "CPU0 VDD_3V3_S5 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.906,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/76",
+            "LowerThresholdCritical": 1.62,
+            "LowerThresholdFatal": 1.53,
+            "LowerThresholdNonCritical": 1.674,
+            "Name": "CPU0 VDD_1V8_S0 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.832,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 1.98,
+            "UpperThresholdFatal": 2.07,
+            "UpperThresholdNonCritical": 1.926
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/1",
+            "Name": "",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/84",
+            "Name": "SIVOC48 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 47.74,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/79",
+            "LowerThresholdCritical": 11.16,
+            "LowerThresholdNonCritical": 11.4,
+            "Name": "CPU0 VDR ABCD Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.786,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/81",
+            "LowerThresholdCritical": 11.16,
+            "LowerThresholdNonCritical": 11.4,
+            "Name": "CPU0 VDR EFGH Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.765,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/70",
+            "LowerThresholdCritical": 2.322,
+            "LowerThresholdFatal": 2.193,
+            "LowerThresholdNonCritical": 2.3994,
+            "Name": "CPU0 DIMM VDD_VPP_ABCD_S0 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 2.562,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 2.838,
+            "UpperThresholdFatal": 2.967,
+            "UpperThresholdNonCritical": 2.7606
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/80",
+            "LowerThresholdCritical": 1.08,
+            "LowerThresholdFatal": 1.02,
+            "LowerThresholdNonCritical": 1.116,
+            "Name": "CPU0 VDR ABCD Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.2,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 1.32,
+            "UpperThresholdFatal": 1.38,
+            "UpperThresholdNonCritical": 1.284
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/74",
+            "LowerThresholdCritical": 0.46863,
+            "LowerThresholdFatal": 0.442595,
+            "LowerThresholdNonCritical": 0.484251,
+            "Name": "CPU0 VCORE Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 0.762,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 1.3475,
+            "UpperThresholdFatal": 1.40875,
+            "UpperThresholdNonCritical": 1.31075
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/65",
+            "Name": "CPU0 VDD_3V3_S0 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.75,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Power#/Voltages/82",
+            "LowerThresholdCritical": 1.08,
+            "LowerThresholdFatal": 1.02,
+            "LowerThresholdNonCritical": 1.116,
+            "Name": "CPU0 VDR EFGH Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.2,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 1.32,
+            "UpperThresholdFatal": 1.38,
+            "UpperThresholdNonCritical": 1.284
+        }
+    ],
+    "Voltages@odata.count": 21
+}

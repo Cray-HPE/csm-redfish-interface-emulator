@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1649953210\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/ChassisVoltageRegulator2Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator2Temperature",
+    "Name": "48-12V TMP ADC",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "Chassis",
+        "ReferenceDesignator": "J7013"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 45.8,
+    "ReadingTime": "2022-04-14T16:20:34.501561254Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

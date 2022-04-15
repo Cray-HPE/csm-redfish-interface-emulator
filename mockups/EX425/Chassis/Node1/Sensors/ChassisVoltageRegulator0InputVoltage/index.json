@@ -1,0 +1,44 @@
+{
+    "@odata.etag": "W/\"1649953210\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/ChassisVoltageRegulator0InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator0InputVoltage",
+    "Name": "IVOC48",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Chassis",
+        "ReferenceDesignator": "J7000"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 383.5,
+    "ReadingTime": "2022-04-14T16:20:45.291719708Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 360
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 320
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 305
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 400
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 420
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 425
+        }
+    }
+}

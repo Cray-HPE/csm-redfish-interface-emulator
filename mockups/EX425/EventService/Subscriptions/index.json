@@ -1,0 +1,28 @@
+{
+    "@odata.etag": "W/\"1648753388\"",
+    "@odata.id": "/redfish/v1/EventService/Subscriptions",
+    "@odata.type": "#EventDestinationCollection.EventDestinationCollection",
+    "Description": "Collection for Event Subscriptions",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions/4"
+        },
+        {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions/6"
+        },
+        {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions/7"
+        },
+        {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions/5"
+        },
+        {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions/2"
+        }
+    ],
+    "Members@odata.count": 6,
+    "Name": "Event Subscriptions Collection"
+}

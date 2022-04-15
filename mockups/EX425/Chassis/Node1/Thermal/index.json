@@ -1,0 +1,203 @@
+{
+    "@odata.etag": "W/\"1649953210\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Thermal",
+    "@odata.type": "#Thermal.v1_3_1.Thermal",
+    "Description": "Thermal sensor readings",
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Temperatures": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/76",
+            "Name": "CPU1 DIMM VDD_VPP_ABCD_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 41,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/1",
+            "Name": "",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/84",
+            "Name": "48-12V TMP ADC Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 45.8,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/81",
+            "Name": "CPU1 VDR ABCD Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 38,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/79",
+            "Name": "CPU1 VDD_1V8_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 39,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/83",
+            "Name": "IVOC48 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 51.1,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 111
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/69",
+            "Name": "CPU0 DIMM VDD_VPP_ABCD_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 44,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/72",
+            "Name": "CPU0 VDD_1V8_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 41,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/70",
+            "Name": "CPU0 DIMM VDD_VPP_EFGH_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 44,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/82",
+            "Name": "CPU1 VDR EFGH Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 36,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/77",
+            "Name": "CPU1 DIMM VDD_VPP_EFGH_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 43,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/68",
+            "Name": "CPU1 Temperature",
+            "PhysicalContext": "CPU",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/74",
+            "Name": "CPU0 VDR ABCD Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 37,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/67",
+            "Name": "CPU0 Temperature",
+            "PhysicalContext": "CPU",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/78",
+            "Name": "CPU1 VCORE Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 24,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/75",
+            "Name": "CPU0 VDR EFGH Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 38,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/71",
+            "Name": "CPU0 VCORE Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 31,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/85",
+            "Name": "CPUS VDD_3V3_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 42,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/73",
+            "Name": "CPU0 SOC_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 41,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/80",
+            "Name": "CPU1 SOC_S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 38,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Thermal#/Temperatures/86",
+            "Name": "CPUS VDD_3V3_S5 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 37,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 105,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 85
+        }
+    ]
+}

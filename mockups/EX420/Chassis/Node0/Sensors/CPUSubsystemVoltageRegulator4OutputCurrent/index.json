@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1649952711\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator4OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPUSubsystemVoltageRegulator4OutputCurrent",
+    "Name": "CPUS VDD_1V05_S5",
+    "Oem": {
+        "Index": 4,
+        "ParentalContext": "CPUSubsystem",
+        "ReferenceDesignator": "U6002"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 1.125,
+    "ReadingTime": "2022-04-14T16:11:39.378889894Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A"
+}

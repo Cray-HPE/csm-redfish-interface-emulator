@@ -1,0 +1,268 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#NetworkAdapter.NetworkAdapter",
+    "@odata.etag": "W/\"5A7BEB89\"",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000",
+    "@odata.type": "#NetworkAdapter.v1_4_0.NetworkAdapter",
+    "Id": "DC092000",
+    "Actions": {
+        "#NetworkAdapter.ResetSettingsToDefault": {
+            "target": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/Actions/NetworkAdapter.ResetSettingsToDefault",
+            "title": "Reset network adapter configuration to factory default values."
+        }
+    },
+    "Controllers": [
+        {
+            "ControllerCapabilities": {
+                "DataCenterBridging": {
+                    "Capable": true
+                },
+                "NetworkDeviceFunctionCount": 16,
+                "NetworkPortCount": 2,
+                "VirtualizationOffload": {
+                    "SRIOV": {
+                        "SRIOVVEPACapable": false
+                    },
+                    "VirtualFunction": {
+                        "DeviceMaxCount": 192,
+                        "MinAssignmentGroupSize": 8,
+                        "NetworkPortMaxCount": 192
+                    }
+                }
+            },
+            "FirmwarePackageVersion": "8.35.43",
+            "Links": {
+                "NetworkDeviceFunctions": [
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/1"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/2"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/3"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/4"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/5"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/6"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/7"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/8"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/9"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/10"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/11"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/12"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/13"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/14"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/15"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/16"
+                    }
+                ],
+                "NetworkPorts": [
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/1"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/2"
+                    }
+                ]
+            },
+            "Location": {
+                "PartLocation": {
+                    "LocationOrdinalValue": 19,
+                    "LocationType": "Slot",
+                    "ServiceLabel": "PCI-E Slot 19"
+                }
+            }
+        }
+    ],
+    "Description": "Device capabilities and characteristics with active configuration status",
+    "Manufacturer": "Hewlett Packard Enterprise",
+    "Model": "HPE Eth 10/25Gb 2p 621SFP28 Adptr",
+    "Name": "HPE Eth 10/25Gb 2p 621SFP28 Adptr",
+    "NetworkDeviceFunctions": {
+        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkDeviceFunctions/"
+    },
+    "NetworkPorts": {
+        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/NetworkPorts/"
+    },
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeNetworkAdapter.HpeNetworkAdapter",
+            "@odata.type": "#HpeNetworkAdapter.v1_3_0.HpeNetworkAdapter",
+            "Actions": {
+                "#HpeNetworkAdapter.FlushConfigurationToNVM": {
+                    "target": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/Actions/Oem/Hpe/HpeNetworkAdapter.FlushConfigurationToNVM",
+                    "title": "Force a save of current network adapter configuration to non-volatile storage."
+                },
+                "#NetworkAdapter.FlushConfigurationToNVM": {
+                    "target": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/Actions/Oem/Hpe/NetworkAdapter.FlushConfigurationToNVM",
+                    "title": "NOTE: Deprecated, will be removed in a future release. Replaced by HpeNetworkAdapter.FlushConfigurationToNVM. Force a save of current network adapter configuration to non-volatile storage."
+                }
+            },
+            "CLPVersion": "",
+            "Controllers": [
+                {
+                    "ConfigurationStatus": {
+                        "Detail": [
+                            {
+                                "Group": 8,
+                                "SubGroup": 1,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 8,
+                                "SubGroup": 2,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 0,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 1,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 2,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 3,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 4,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 5,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 6,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 7,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 8,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 9,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 10,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 11,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 12,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 13,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 14,
+                                "Summary": 0
+                            },
+                            {
+                                "Group": 15,
+                                "SubGroup": 15,
+                                "Summary": 0
+                            }
+                        ],
+                        "Summary": 34109470
+                    },
+                    "DeviceLimitationsBitmap": 2,
+                    "EdgeVirtualBridging": {
+                        "ChannelDescriptionTLVCapable": true,
+                        "ChannelLinkControlTLVCapable": true
+                    },
+                    "FunctionTypeLimits": [
+                        {
+                            "ConstraintDescription": "PCI",
+                            "EthernetResourcesConsumed": 1,
+                            "FCoEResourcesConsumed": 1,
+                            "RDMAResourcesConsumed": 1,
+                            "TotalSharedResourcesAvailable": 8,
+                            "iSCSIResourcesConsumed": 1
+                        },
+                        {
+                            "ConstraintDescription": "SAN",
+                            "EthernetResourcesConsumed": 0,
+                            "FCoEResourcesConsumed": 1,
+                            "RDMAResourcesConsumed": 0,
+                            "TotalSharedResourcesAvailable": 0,
+                            "iSCSIResourcesConsumed": 1
+                        }
+                    ],
+                    "FunctionTypes": [
+                        "Ethernet"
+                    ],
+                    "MostRecentConfigurationChangeSource": "None",
+                    "RDMASupport": [
+                        "None"
+                    ],
+                    "UnderlyingDataSource": "DCi"
+                }
+            ],
+            "FactoryDefaultsActuationBehavior": "Immediate",
+            "PCAVersion": "867326-001",
+            "RedfishConfiguration": "Disabled"
+        }
+    },
+    "PartNumber": "867328-B21",
+    "SKU": "621SFP28",
+    "SerialNumber": "MY50050V5K",
+    "Settings": {
+        "href": "/redfish/v1/Chassis/1/NetworkAdapters/DC092000/Settings/"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"98B252FC\"",
+    "@odata.id": "/redfish/v1/Managers/1/LogServices/IEL/Entries/88",
+    "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+    "Id": "88",
+    "Created": "2022-04-14T16:19:59Z",
+    "EntryType": "Oem",
+    "Message": "iLO clock has been synchronized with 10.254.1.14.",
+    "Name": "iLO Event Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_3_0.HpeLogEntry",
+            "Categories": [
+                "Configuration"
+            ],
+            "Class": 35,
+            "ClassDescription": "iLO 5",
+            "Code": 1030,
+            "Count": 1,
+            "EventNumber": 1253255,
+            "Severity": "Informational",
+            "Updated": "2022-04-14T16:19:59Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-iLOEventLog",
+    "Severity": "OK"
+}

@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerDevice.HpeServerDevice",
+    "@odata.etag": "W/\"13C3707D\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Devices/17",
+    "@odata.type": "#HpeServerDevice.v2_0_0.HpeServerDevice",
+    "Id": "17",
+    "DeviceInstances": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/PCIDevices/8"
+        }
+    ],
+    "DeviceType": "GPU",
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "94.02.4B.00.01"
+        }
+    },
+    "Links": {
+        "PCISlot": {
+            "@odata.id": "/redfish/v1/Systems/1/PCISlots/11"
+        }
+    },
+    "Location": "PCI-E Slot 11",
+    "MCTPProtocolDisabled": false,
+    "Manufacturer": "NVIDIA",
+    "Name": "NVIDIA A40",
+    "PartNumber": "",
+    "ProductPartNumber": "699-2G133-0200-QS1",
+    "ProductVersion": "",
+    "SerialNumber": "1334520060358",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

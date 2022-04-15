@@ -1,0 +1,59 @@
+{
+    "@odata.etag": "W/\"1649715154\"",
+    "@odata.id": "/redfish/v1/Systems/Node0",
+    "@odata.type": "#ComputerSystem.v1_5_0.ComputerSystem",
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Node0/ResetActionInfo",
+            "target": "/redfish/v1/Systems/Node0/Actions/ComputerSystem.Reset"
+        },
+        "#ComputerSystem.SetDefaultBootOrder": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Node0/SetDefaultBootOrderActionInfo",
+            "target": "/redfish/v1/Systems/Node0/Actions/ComputerSystem.SetDefaultBootOrder"
+        }
+    },
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/Node0/Bios"
+    },
+    "BiosVersion": "ex420.bios-0.3.0",
+    "Boot": {
+        "BootOptions": {
+            "@odata.id": "/redfish/v1/Systems/Node0/BootOptions"
+        },
+        "BootOrder": [
+            "ME0-PXE-IP4",
+            "Boot0002",
+            "Boot0003",
+            "Boot0004"
+        ]
+    },
+    "Description": "CNC",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/Node0/EthernetInterfaces"
+    },
+    "Id": "Node0",
+    "Manufacturer": "HPE",
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/Node0/Memory"
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 256
+    },
+    "Model": "HPE Cray EX420",
+    "Name": "Node0",
+    "PartNumber": "P40731-002.B",
+    "PowerState": "On",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "Genuine Intel(R) CPU 0000%@"
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/Node0/Processors"
+    },
+    "SerialNumber": "EW21460041",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "SystemType": "Physical"
+}

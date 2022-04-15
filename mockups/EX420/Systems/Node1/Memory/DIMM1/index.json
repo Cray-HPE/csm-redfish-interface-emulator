@@ -1,0 +1,23 @@
+{
+    "@odata.etag": "W/\"1649713072\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/Memory/DIMM1",
+    "@odata.type": "#Memory.v1_5_0.Memory",
+    "BaseModuleType": "RDIMM",
+    "BusWidthBits": 80,
+    "CapacityMiB": 16384,
+    "DataWidthBits": 64,
+    "ErrorCorrection": "Single-bit ECC",
+    "Id": "DIMM1",
+    "Manufacturer": "Samsung",
+    "MemoryDeviceType": "DDR5",
+    "MemoryLocation": {
+        "Slot": 1,
+        "Socket": 0
+    },
+    "MemoryType": "DRAM",
+    "Name": "CPU0_DIMM_B1",
+    "OperatingSpeedMhz": 9600,
+    "PartNumber": "M321R2GA3BB0-CQKDG",
+    "RankCount": 1,
+    "SerialNumber": "021876FC"
+}

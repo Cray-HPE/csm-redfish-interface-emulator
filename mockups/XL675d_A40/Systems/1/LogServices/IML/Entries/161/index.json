@@ -1,0 +1,30 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"3D18AFB9\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/161",
+    "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+    "Id": "161",
+    "Created": "2022-01-11T19:26:48Z",
+    "EntryType": "Oem",
+    "Message": "Default configuration settings have been restored at the request of the user.",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_3_0.HpeLogEntry",
+            "Categories": [
+                "Administration"
+            ],
+            "Class": 10,
+            "ClassDescription": "UEFI",
+            "Code": 615,
+            "Count": 1,
+            "EventNumber": 194,
+            "RecommendedAction": "Restore any desired configuration settings which differ from defaults.",
+            "Severity": "Informational",
+            "Updated": "2022-01-11T19:26:48Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "OK"
+}

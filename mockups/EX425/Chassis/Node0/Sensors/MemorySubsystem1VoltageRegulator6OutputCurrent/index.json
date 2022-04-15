@@ -1,0 +1,33 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator6OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "MemorySubsystem1VoltageRegulator6OutputCurrent",
+    "Name": "CPU1 VDR EFGH",
+    "Oem": {
+        "Index": 6,
+        "ParentalContext": "MemorySubsystem",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U2010"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 23.7,
+    "ReadingTime": "2022-04-14T16:21:16.250846515Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 80.25
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 82.5
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 86.25
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "@odata.etag": "W/\"1649715154\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol",
+    "@odata.type": "#ManagerNetworkProtocol.v1_2_0.ManagerNetworkProtocol",
+    "Description": "Network Protocol Details",
+    "Id": "NetworkProtocol",
+    "NTP": {
+        "NTPServers": [
+            "10.254.1.14"
+        ],
+        "Port": 123,
+        "ProtocolEnabled": true
+    },
+    "Name": "Manager Network Protocol",
+    "Oem": {
+        "HTTPS": {
+            "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol/HTTPS"
+        },
+        "Resolv": {
+            "NameServers": [],
+            "ProtocolEnabled": false,
+            "SearchList": []
+        },
+        "SSHAdmin": {
+            "AuthorizedKeys": "ecdsa-sha2-nistp384 AAAAE2VjZHNhLXNoYTItbmlzdHAzODQAAAAIbmlzdHAzODQAAABhBA7UdMJcAYfLJcfClmMgQmkwhkdVPxa97KMsTLoJssKwlJP5L3amlFakn3apore1oZ+b4O9bGoi5hn3maKfVW+PO4YXbRrwMy/Yhv+erzwGjOeLNadjXRX8s/7ehXi99LQ==\n\necdsa-sha2-nistp384 AAAAE2VjZHNhLXNoYTItbmlzdHAzODQAAAAIbmlzdHAzODQAAABhBA7UdMJcAYfLJcfClmMgQmkwhkdVPxa97KMsTLoJssKwlJP5L3amlFakn3apore1oZ+b4O9bGoi5hn3maKfVW+PO4YXbRrwMy/Yhv+erzwGjOeLNadjXRX8s/7ehXi99LQ==\n\n"
+        },
+        "SSHConsole": {
+            "AuthorizedKeys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJXUKwlt37w7gwTfqhze5z38F+/qAinPg68UX4u9LEak0MhvXD0thuNUU9eAu4jeR7RiegtZUS29iNk4OHd5dCiH76Y/tlQLjSSICpxqv8WuYXRPSQn2AUTP7c3YXvPnuBTH8C62zJzx5LAP2XVpu+FLs847oMQrwFQtaNYLgt7pnrsHEZBnI0BGvseRkEtT6mN5Ib4my/XvgwlVCioa/ErDr3OoYxAD2VWFi9+Tq4UdDJAHPhUly8xsyurAGhS0Ru/o+s9bfpWY2peRwVeL1uS7WOOgjArvLBV6A3TrH2rHWByRb6GNBezFMjJwVq+5UBUubPpp6RWmzbFTACQMIr\n"
+        },
+        "Syslog": {
+            "Port": 514,
+            "ProtocolEnabled": true,
+            "SyslogServers": [
+                "rsyslog-aggregator.hmnlb"
+            ],
+            "Transport": "udp"
+        }
+    },
+    "SSH": {
+        "Port": 22,
+        "ProtocolEnabled": true
+    },
+    "Status": {
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.etag": "W/\"0539D502\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/12",
+    "@odata.type": "#SoftwareInventory.v1_2_0.SoftwareInventory",
+    "Id": "12",
+    "Description": "107780701590021d",
+    "Name": "HPE Eth 10/25Gb 2p 621SFP28 Adptr",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeiLOSoftwareInventory.HpeiLOSoftwareInventory",
+            "@odata.type": "#HpeiLOSoftwareInventory.v2_0_0.HpeiLOSoftwareInventory",
+            "DeviceClass": null,
+            "DeviceContext": "PCI-E Slot 19",
+            "DeviceInstance": "PciRoot(0x7)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+            "Targets": [
+                "a6b1a447-382a-5a4f-1077-80701590021d"
+            ]
+        }
+    },
+    "Updateable": false,
+    "Version": "08.35.43"
+}

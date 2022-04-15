@@ -1,0 +1,370 @@
+{
+    "@odata.etag": "W/\"1649953259\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors",
+    "@odata.type": "#SensorCollection.SensorCollection",
+    "Description": "Sensor Collection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator6OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU10SynthesizedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator0OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator4InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator6Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator4InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator6InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator4OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU01SynthesizedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator3OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator5InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator2Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator3Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator5OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator6Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU01SynthesizedEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU03ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator3OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator6InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator4Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator4InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisMemorySubsystem0OutputEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0InputEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator6OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator3OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator1InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU00SynthesizedEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator2InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator4InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator4OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU02ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator0OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator6OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator4OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator5InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator4OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator2Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator3Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator4OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator5Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator4OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator4InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator2OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator6InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator4OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU00SynthesizedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator2InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator5OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU11SynthesizedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator1OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator4OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator2Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator5InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator6OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisCPUSubsystem0OutputEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU04ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator5InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator6OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator4Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisCPUSubsystem0OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator6OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator6InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator4InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU13ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU11SynthesizedEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU12ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator5InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator5OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisMemorySubsystem0OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator4OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator5OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU14ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator6InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator5OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU10SynthesizedEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator6InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem1VoltageRegulator5InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator5OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator1OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator3Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator4InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/MemorySubsystem0VoltageRegulator5Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1VoltageRegulator2OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPUSubsystemVoltageRegulator4Temperature"
+        }
+    ],
+    "Members@odata.count": 120,
+    "Name": "Sensor Collection"
+}
