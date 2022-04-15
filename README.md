@@ -15,6 +15,7 @@ New BMC types for emulation are created by loading a complete static mockup and 
 * [Running the emulator](#running-the-emulator)
     * [Docker](#docker)
     * [Locally](#locally)
+    * [Redfish Authorization](#redfish-auth)
 * [Creating a new BMC type for emulation](#creating-new-emulator)
     * [Creating a static mockup](#creating-static-mockup)
     * [Creating dynamic resources](#creating-dynamic-resources)
@@ -85,6 +86,38 @@ The setup.sh script can also be run without starting the emulator to just prepar
 
 **NOTE:** If <WORK_DIR> already exists before running the setup.sh script, it will first get deleted.
 
+<a name="redfish-auth"></a>
+
+### Redfish Authorization
+
+The emulator supports Basic and session authorization (X-Auth-Token). Initial accounts can be created by setting the AUTH_CONFIG environment variable. The expected format is <username>:<password>:<role> where <role> is one of Administrator, Operator, or ReadOnly as defined by DMTF as required default redfish roles.
+
+These roles carry the following redfish privileges as defined by DMTF:
+- Administrator
+   - Login
+   - ConfigureManager
+   - ConfigureUsers
+   - ConfigureSelf
+   - ConfigureComponents
+- Operator
+   - Login
+   - ConfigureSelf
+   - ConfigureComponents
+- ReadOnly
+   - Login
+   - ConfigureSelf
+
+Access to the emulators URIs are privilege based and are set per HTTP method for dynamic resources. Static resources (GET only) require Login privileges for access.
+
+Any account specified by AUTH_CONFIG will be also added under the AccountService in the emulated redfish server and, if using the dynamic resource, can be manipulated (Add/Delete/Patch) using the AccountService. Actions under the AccountService will affect the emulator's authorization accounts.
+
+Similarly session tokens can be created with SessionService actions if the emulator is using the dynamic resource. No sessions exist by default.
+
+By default, if AUTH_CONFIG is empty or an invalid format, the emulator will have 3 accounts created:
+- root:root_password:Administrator
+- operator:operator_password:Operator
+- guest:guest_password:ReadOnly
+
 <a name="creating-new-emulator"></a>
 
 ## Creating a new BMC type for emulation
@@ -147,35 +180,35 @@ The default loader is the parent Loader python class that is used as the base fo
 The Loader class currently sets up dynamic resources for:
 - Power Limit (init_power_limit())
     - Generic Power Limit Schema
-        GET/PATCH /redfish/v1/Chassis/{sys_id}/Power
+        - GET/PATCH /redfish/v1/Chassis/{sys_id}/Power
     - HPE Cray EX Power Limit Schema
-        GET/PATCH /redfish/v1/Chassis/{sys_id}/Controls/{control_id}
-        PATCH     /redfish/v1/Chassis/{sys_id}/Controls.Deep
+        - GET/PATCH /redfish/v1/Chassis/{sys_id}/Controls/{control_id}
+        - PATCH     /redfish/v1/Chassis/{sys_id}/Controls.Deep
     - Apollo 6500 Power Limit Schema
-        GET  /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit
-        POST /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit
+        - GET  /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit
+        - POST /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit
 - System Power Actions (init_system_reset())
     - Generic
-        GET      /redfish/v1/Systems/{sys_id}
-        GET/POST /redfish/v1/Systems/{sys_id}/Actions/ComputerSystem.Reset
+        - GET      /redfish/v1/Systems/{sys_id}
+        - GET/POST /redfish/v1/Systems/{sys_id}/Actions/ComputerSystem.Reset
 - Update Service (init_update_service())
     - Generic
-        GET       /redfish/v1/UpdateService/FirmwareInventory/{target_id}
-        POST      /redfish/v1/UpdateService/SimpleUpdate
-        GET/PATCH /redfish/v1/UpdateService/FirmwareInventory/Config
+        - GET       /redfish/v1/UpdateService/FirmwareInventory/{target_id}
+        - POST      /redfish/v1/UpdateService/SimpleUpdate
+        - GET/PATCH /redfish/v1/UpdateService/FirmwareInventory/Config
 - Account Service (init_account_service())
     - Generic
-        GET/POST         /redfish/v1/AccountService/Accounts
-        GET/PATCH/DELETE /redfish/v1/AccountService/Accounts/{id}
+        - GET/POST         /redfish/v1/AccountService/Accounts
+        - GET/PATCH/DELETE /redfish/v1/AccountService/Accounts/{id}
 - Session Service (init_session_service())
     - Generic
-        GET/POST   /redfish/v1/SessionService/Sessions
-        GET/DELETE /redfish/v1/AccountService/Sessions/{id}
+        - GET/POST   /redfish/v1/SessionService/Sessions
+        - GET/DELETE /redfish/v1/AccountService/Sessions/{id}
 - Event Service (init_event_service())
     - Generic
-        GET/PATCH        /redfish/v1/EventService
-        GET/POST         /redfish/v1/EventService/Subscriptions
-        GET/PATCH/DELETE /redfish/v1/EventService/Subscriptions/{sub_id}
+        - GET/PATCH        /redfish/v1/EventService
+        - GET/POST         /redfish/v1/EventService/Subscriptions
+        - GET/PATCH/DELETE /redfish/v1/EventService/Subscriptions/{sub_id}
 - Redfish Event Generation Schemas (get_event_template())
     - Generic
     - Intel
@@ -326,24 +359,24 @@ Some dynamic resources such as the EventService generate responses (i.e. Redfish
 ## Existing dynamic resources:
 - Power Control
     - Generic -  [power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/power_control_api.py)
-        GET/PATCH /redfish/v1/Chassis/{sys_id}/Power
+        - GET/PATCH /redfish/v1/Chassis/{sys_id}/Power
     - HPE Cray EX - [hpe_cray_ex_power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/hpe_cray_ex_power_control_api.py)
-        GET/PATCH /redfish/v1/Chassis/<system_id>/Controls/<control_id>
-        PATCH     /redfish/v1/Chassis/<system_id>/Controls.Deep
+        - GET/PATCH /redfish/v1/Chassis/<system_id>/Controls/<control_id>
+        - PATCH     /redfish/v1/Chassis/<system_id>/Controls.Deep
     - Proliant iLO - [proliant_ilo_power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/proliant_ilo_power_control_api.py)
-        GET  /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit
-        POST /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit
+        - GET  /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit
+        - POST /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit
 - Computer System Power Actions - [computer_systems_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/computer_systems_api.py)
-    GET /redfish/v1/Systems/<system_id>
-    POST /redfish/v1/Systems/<system_id>/Actions/ComputerSystem.Reset
+    - GET /redfish/v1/Systems/<system_id>
+    - POST /redfish/v1/Systems/<system_id>/Actions/ComputerSystem.Reset
 - Firmware Update - [update_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py)
-    GET /redfish/v1/UpdateService/FirmwareInventory/<target_id>
-    POST /redfish/v1/UpdateService/SimpleUpdate
-    GET/PATCH /redfish/v1/UpdateService/FirmwareInventory/Config
+    - GET /redfish/v1/UpdateService/FirmwareInventory/<target_id>
+    - POST /redfish/v1/UpdateService/SimpleUpdate
+    - GET/PATCH /redfish/v1/UpdateService/FirmwareInventory/Config
 - EventService - [event_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_service_api.py), [event_generator.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/event_generator.py)
-    GET/PATCH        /redfish/v1/EventService
-    GET/POST         /redfish/v1/EventService/Subscriptions
-    GET/PATCH/DELETE /redfish/v1/EventService/Subscriptions/<id>
+    - GET/PATCH        /redfish/v1/EventService
+    - GET/POST         /redfish/v1/EventService/Subscriptions
+    - GET/PATCH/DELETE /redfish/v1/EventService/Subscriptions/<id>
 - Event templates
     - Generic - [events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/events.py)
     - Intel - [intel_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/intel_events.py)
@@ -351,11 +384,11 @@ Some dynamic resources such as the EventService generate responses (i.e. Redfish
     - HPE Cray - [hpe_cray_ex_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/hpe_cray_ex_events.py)
     - Proliant iLO - [proliant_ilo_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/proliant_ilo_events.py)
 - Account Service - [account_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/account_service_api.py)
-    GET/POST         /redfish/v1/AccountService/Accounts
-    GET/PATCH/DELETE /redfish/v1/AccountService/Accounts/{id}
+    - GET/POST         /redfish/v1/AccountService/Accounts
+    - GET/PATCH/DELETE /redfish/v1/AccountService/Accounts/{id}
 - Session Service - [session_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/session_service_api.py)
-    GET/POST   /redfish/v1/SessionService/Sessions
-    GET/DELETE /redfish/v1/AccountService/Sessions/{id}
+    - GET/POST   /redfish/v1/SessionService/Sessions
+    - GET/DELETE /redfish/v1/AccountService/Sessions/{id}
 
 <a name="emulator-loader-map"></a>
 
