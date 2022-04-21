@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Processor.Processor",
+    "@odata.id": "/redfish/v1/Systems/QSBP74100021/Processors/CPU2",
+    "@odata.type": "#Processor.v1_2_0.Processor",
+    "Name": "Processor 2",
+    "Id": "CPU2",
+    "Socket": "CPU 2",
+    "ProcessorType": "CPU",
+    "ProcessorArchitecture": "x86",
+    "InstructionSet": "x86-64",
+    "Manufacturer": "Intel(R) Corporation",
+    "Model": "Intel Xeon processor",
+    "ProcessorId": {
+        "VendorId": "Intel(R) Xeon(R) Silver 4112 CPU @ 2.60GHz",
+        "IdentificationRegisters": "50-65-4",
+        "EffectiveFamily": "0xb3",
+        "EffectiveModel": "0x3"
+    },
+    "MaxSpeedMHz": 4000,
+    "TotalCores": 4,
+    "TotalThreads": 4,
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "Oem": {
+        "Intel_RackScale": {
+            "@odata.type": "#Intel.Oem.Processor",
+            "Metrics": {
+                "@odata.id": "/redfish/v1/Systems/QSBP74100021/Processors/CPU2/ProcessorMetrics"
+            }
+        }
+    }
+}

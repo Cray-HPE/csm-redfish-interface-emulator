@@ -1,0 +1,40 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1OutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator1OutputVoltage",
+    "Name": "VDD 3v3 S0",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "U39"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 3.37,
+    "ReadingTime": "2022-04-20T15:35:54.031852739Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 3.135
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 2.97
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 3.465
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 3.63
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 3.874
+        }
+    }
+}

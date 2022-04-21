@@ -1,0 +1,175 @@
+{
+    "$ref": "#/definitions/GBTFanprofile",
+    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema.v1_1_0.json",
+    "definitions": {
+        "GBTFanprofile": {
+            "anyOf": [
+                {
+                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                },
+                {
+                    "additionalProperties": false,
+                    "patternProperties": {
+                        "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message|Privileges)\\.[a-zA-Z_][a-zA-Z0-9_.]+$": {
+                            "description": "This property shall specify a valid odata or Redfish property.",
+                            "type": [
+                                "array",
+                                "boolean",
+                                "number",
+                                "null",
+                                "object",
+                                "string"
+                            ]
+                        }
+                    },
+                    "properties": {
+                        "@odata.context": {
+                            "$ref": "http://redfish.dmtf.org/schemas/v1/odata.4.0.0.json#/definitions/context"
+                        },
+                        "@odata.id": {
+                            "$ref": "http://redfish.dmtf.org/schemas/v1/odata.4.0.0.json#/definitions/id"
+                        },
+                        "@odata.type": {
+                            "$ref": "http://redfish.dmtf.org/schemas/v1/odata.4.0.0.json#/definitions/type"
+                        },
+                        "Id": {
+                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id"
+                        },
+                        "Name": {
+                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name"
+                        },
+                        "arrProfile": {
+                            "$ref": "#/definitions/arrProfile"
+                        },
+                        "strMode": {
+                            "$ref": "#/definitions/strMode"
+                        },
+                        "strVersion": {
+                            "$ref": "#/definitions/strVersion"
+                        }
+                    },
+                    "readonly": false,
+                    "type": "object"
+                }
+            ],
+            "deletable": false,
+            "insertable": false,
+            "updatable": true,
+            "uris": [
+                "/redfish/v1/Chassis/{ChassisId}/Thermal/FanprofileService/Fanprofile"
+            ]
+        },
+        "Hex": {
+            "pattern": "(0x[0-9a-fA-F]{1,4})",
+            "type": "string"
+        },
+        "Policy": {
+            "properties": {
+                "arrDuty": {
+                    "items": {
+                        "type": "number"
+                    },
+                    "type": "array"
+                },
+                "arrFanSensor": {
+                    "items": {
+                        "type": "number"
+                    },
+                    "type": "array"
+                },
+                "arrHexDeviceID": {
+                    "items": {
+                        "$ref": "#/definitions/Hex"
+                    },
+                    "type": "array"
+                },
+                "arrHexVendorID": {
+                    "items": {
+                        "$ref": "#/definitions/Hex"
+                    },
+                    "type": "array"
+                },
+                "arrRef": {
+                    "items": {
+                        "type": "number"
+                    },
+                    "type": "array"
+                },
+                "arrSensor": {
+                    "items": {
+                        "type": "number"
+                    },
+                    "type": "array"
+                },
+                "iAmbientSensor": {
+                    "type": "number"
+                },
+                "iAmbientSensorTemp": {
+                    "type": "number"
+                },
+                "iCpuTdp": {
+                    "type": "number"
+                },
+                "iHysteresis": {
+                    "type": "number"
+                },
+                "iInSDR": {
+                    "type": "number"
+                },
+                "iInitDuty": {
+                    "type": "number"
+                },
+                "iPCIEDeviceEnable": {
+                    "type": "number"
+                },
+                "iPolicyType": {
+                    "type": "number"
+                },
+                "iSensorCode": {
+                    "type": "number"
+                }
+            },
+            "readonly": false,
+            "type": "object"
+        },
+        "Profile": {
+            "properties": {
+                "arrPolicy": {
+                    "$ref": "#/definitions/arrPolicy"
+                },
+                "strName": {
+                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name"
+                },
+                "strVersion": {
+                    "$ref": "#/definitions/strVersion"
+                }
+            },
+            "readonly": false,
+            "type": "object"
+        },
+        "arrPolicy": {
+            "items": {
+                "$ref": "#/definitions/Policy"
+            },
+            "readonly": false,
+            "type": "array"
+        },
+        "arrProfile": {
+            "items": {
+                "$ref": "#/definitions/Profile"
+            },
+            "readonly": false,
+            "type": "array"
+        },
+        "strMode": {
+            "readonly": false,
+            "type": "string"
+        },
+        "strVersion": {
+            "readonly": false,
+            "type": "string"
+        }
+    },
+    "owningEntity": "GBT",
+    "title": "#GBTFanprofile.v1_0_0.GBTFanprofile"
+}

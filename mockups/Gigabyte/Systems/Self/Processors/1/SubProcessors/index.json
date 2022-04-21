@@ -1,0 +1,10 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ProcessorCollection.ProcessorCollection",
+    "@odata.etag": "W/\"1616690423\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Processors/1/SubProcessors",
+    "@odata.type": "#ProcessorCollection.ProcessorCollection",
+    "Description": "Collection of processors",
+    "Members": [],
+    "Members@odata.count": 0,
+    "Name": "Processors Collection"
+}

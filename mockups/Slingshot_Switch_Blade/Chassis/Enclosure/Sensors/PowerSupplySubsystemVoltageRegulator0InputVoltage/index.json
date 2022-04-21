@@ -1,0 +1,40 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/PowerSupplySubsystemVoltageRegulator0InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "PowerSupplySubsystemVoltageRegulator0InputVoltage",
+    "Name": "VCC 12v0 HSS",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "PowerSupplySubsystem",
+        "ReferenceDesignator": "U5"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 11.957,
+    "ReadingTime": "2022-04-20T15:35:54.038135440Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 11.4
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 11.16
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 12.6
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 12.84
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 15.16
+        }
+    }
+}

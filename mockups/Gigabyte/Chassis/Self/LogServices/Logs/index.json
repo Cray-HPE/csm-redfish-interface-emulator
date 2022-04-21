@@ -1,0 +1,28 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+    "@odata.etag": "W/\"1649357921\"",
+    "@odata.id": "/redfish/v1/Chassis/Self/LogServices/Logs",
+    "@odata.type": "#LogService.v1_1_2.LogService",
+    "Actions": {
+        "#LogService.ClearLog": {
+            "@Redfish.ActionInfo": "/redfish/v1/Chassis/Self/LogServices/Logs/ClearlogActionInfo",
+            "target": "/redfish/v1/Chassis/Self/LogServices/Logs/Actions/LogService.ClearLog"
+        }
+    },
+    "DateTime": "2022-04-20T18:41:54+00:00",
+    "DateTimeLocalOffset": "+00:00",
+    "Description": "IPMI SEL events for this manager",
+    "Entries": {
+        "@odata.id": "/redfish/v1/Chassis/Self/LogServices/Logs/Entries"
+    },
+    "Id": "Logs",
+    "LogEntryType": "SEL",
+    "MaxNumberOfRecords": 150,
+    "Name": "IPMI Chassis Logs",
+    "OverWritePolicy": "WrapsWhenFull",
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

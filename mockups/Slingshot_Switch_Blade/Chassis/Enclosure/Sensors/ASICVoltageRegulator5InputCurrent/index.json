@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator5InputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator5InputCurrent",
+    "Name": "VDD 0v85 S0",
+    "Oem": {
+        "Index": 5,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "U5004"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 7.09,
+    "ReadingTime": "2022-04-20T15:35:50.009974456Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A"
+}

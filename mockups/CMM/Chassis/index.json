@@ -1,0 +1,61 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis",
+    "@odata.type": "#ChassisCollection.ChassisCollection",
+    "Description": "The Collection for Chassis",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Blade7"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Perif2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Perif0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Blade5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Blade0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Perif3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Blade2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Blade3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Blade4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Perif5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Perif1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Perif4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Blade6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Perif6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Blade1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Perif7"
+        }
+    ],
+    "Members@odata.count": 17,
+    "Name": "Chassis Collection"
+}

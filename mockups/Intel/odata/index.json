@@ -1,0 +1,65 @@
+{
+    "@odata.context": "/redfish/v1/$metadata",
+    "value": [
+        {
+            "name": "$metadata",
+            "kind": "Singleton",
+            "url": "/redfish/v1/$metadata"
+        },
+        {
+            "name": "odata",
+            "kind": "Singleton",
+            "url": "/redfish/v1/odata"
+        },
+        {
+            "name": "Service",
+            "kind": "Singleton",
+            "url": "/redfish/v1/"
+        },
+        {
+            "name": "ServiceRoot",
+            "kind": "Singleton",
+            "url": "/redfish/v1/ServiceRoot"
+        },
+        {
+            "name": "Systems",
+            "kind": "Singleton",
+            "url": "/redfish/v1/Systems"
+        },
+        {
+            "name": "Chassis",
+            "kind": "Singleton",
+            "url": "/redfish/v1/Chassis"
+        },
+        {
+            "name": "Managers",
+            "kind": "Singleton",
+            "url": "/redfish/v1/Managers"
+        },
+        {
+            "name": "SessionService",
+            "kind": "Singleton",
+            "url": "/redfish/v1/SessionService"
+        },
+        {
+            "name": "AccountService",
+            "kind": "Singleton",
+            "url": "/redfish/v1/AccountService"
+        },
+        {
+            "name": "UpdateService",
+            "kind": "Singleton",
+            "url": "/redfish/v1/UpdateService"
+        },
+        {
+            "name": "EventService",
+            "kind": "Singleton",
+            "url": "/redfish/v1/EventService"
+        },
+        {
+            "name": "Registries",
+            "kind": "Singleton",
+            "url": "/redfish/v1/Registries"
+        }
+    ]
+}

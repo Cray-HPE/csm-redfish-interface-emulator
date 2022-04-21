@@ -1,0 +1,39 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ResourceBlock.ResourceBlock",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/DrivesBlock",
+    "@odata.type": "#ResourceBlock.v1_3_1.ResourceBlock",
+    "CompositionStatus": {
+        "CompositionState": "Unused",
+        "Reserved": false
+    },
+    "Description": "DrivesBlock",
+    "Drives": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/1"
+        }
+    ],
+    "Drives@odata.count": 1,
+    "Id": "DrivesBlock",
+    "Name": "DrivesBlock",
+    "ResourceBlockType": [
+        "Storage"
+    ],
+    "SimpleStorage": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/SimpleStorage/1"
+        }
+    ],
+    "SimpleStorage@odata.count": 1,
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Storage": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Storage/1"
+        }
+    ],
+    "Storage@odata.count": 1
+}

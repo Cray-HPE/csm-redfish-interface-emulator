@@ -1,0 +1,52 @@
+{
+    "@odata.etag": "W/\"946641626\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "Actions": {
+        "#Chassis.Reset": {
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "Off"
+            ],
+            "target": "/redfish/v1/Chassis/Enclosure/Actions/Chassis.Reset"
+        },
+        "Oem": {
+            "#Chassis.EmergencyPower": {
+                "ResetType@Redfish.AllowableValues": [
+                    "ForceOff"
+                ],
+                "target": "/redfish/v1/Chassis/Enclosure/Actions/Oem/Chassis.EmergencyPower"
+            }
+        }
+    },
+    "AssetTag": "",
+    "ChassisType": "Enclosure",
+    "Description": "CMM",
+    "Id": "Enclosure",
+    "Manufacturer": "HPE",
+    "Model": "CMM",
+    "Name": "Enclosure",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters"
+    },
+    "Oem": {
+        "Alarms": {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Oem/Alarms"
+        },
+        "TriggeredAlarms": []
+    },
+    "PartNumber": "101426404.D",
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Power"
+    },
+    "PowerState": "On",
+    "Sensors": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors"
+    },
+    "SerialNumber": "HX21070007",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

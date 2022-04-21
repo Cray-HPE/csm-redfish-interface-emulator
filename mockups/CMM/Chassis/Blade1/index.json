@@ -1,0 +1,28 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Blade1",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "Actions": {
+        "#Chassis.Reset": {
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "Off"
+            ],
+            "target": "/redfish/v1/Chassis/Blade1/Actions/Chassis.Reset"
+        }
+    },
+    "AssetTag": "",
+    "ChassisType": "Blade",
+    "Id": "Blade1",
+    "Manufacturer": "HPE",
+    "Name": "Blade1",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Blade1/NetworkAdapters"
+    },
+    "PowerState": "On",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

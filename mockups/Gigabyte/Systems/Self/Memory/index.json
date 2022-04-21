@@ -1,0 +1,59 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#MemoryCollection.MemoryCollection",
+    "@odata.etag": "W/\"1613499757\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Memory",
+    "@odata.type": "#MemoryCollection.MemoryCollection",
+    "Description": "Collection of Memories for this system",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/7"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/8"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/9"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/10"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/11"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/12"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/13"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/14"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/15"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/16"
+        }
+    ],
+    "Members@odata.count": 16,
+    "Name": "Memory Collection"
+}

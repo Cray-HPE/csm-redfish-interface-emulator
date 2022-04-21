@@ -1,0 +1,16 @@
+{
+    "@odata.id": "/redfish/v1/Systems/QSBP74100021/LogServices/SEL/Entries/5",
+    "Id": "5",
+    "Name": "SEL Log Entry 5",
+    "EntryType": "SEL",
+    "Severity": "OK",
+    "Created": "2020-08-12T19:07:33+00:00",
+    "EntryCode": "Assert",
+    "SensorType": "Session Audit",
+    "SensorNumber": 215,
+    "MessageId": "Bad User PWD",
+    "Message": "Invalid Username or Password - User ID 0x3",
+    "MessageArgs": [],
+    "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry"
+}

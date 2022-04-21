@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisLiquidOutlet0OutputTemperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisLiquidOutlet0OutputTemperature",
+    "Name": "cabinet_return_water",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Chassis"
+    },
+    "PhysicalContext": "LiquidOutlet",
+    "PhysicalSubContext": "Output",
+    "Reading": 25.37,
+    "ReadingTime": "2022-04-20T15:28:32.200076614Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

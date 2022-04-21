@@ -1,0 +1,22 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/BMC",
+    "@odata.type": "#SoftwareInventory.v1_1_1.SoftwareInventory",
+    "Id": "BMC",
+    "Name": "Software Inventory",
+    "Description": "Software Version and Inventory Information",
+    "Version": "1.93.870cf4f0",
+    "Status": {
+        "Oem": {
+            "UpdateState": "Idle",
+            "Progress": 0
+        }
+    },
+    "Actions": {
+        "Oem": {
+            "#Intel.Oem.UpdateBMC": {
+                "target": "/redfish/v1/UpdateService/SoftwareInventory/BMC/Actions/Oem/Intel.Oem.UpdateBMC"
+            }
+        }
+    }
+}

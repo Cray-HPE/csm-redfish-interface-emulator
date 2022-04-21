@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Registries",
+    "@odata.type": "#MessageRegistryFileCollection.MessageRegistryFileCollection",
+    "Description": "Registry Repository",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Registries/EventLog.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/Base.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/IPC.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/CrayHMS.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/HttpStatus.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/AmiOem.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/Security.1.0.0"
+        }
+    ],
+    "Members@odata.count": 7,
+    "Name": "Registry Repository"
+}

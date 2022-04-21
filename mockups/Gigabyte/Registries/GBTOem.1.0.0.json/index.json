@@ -1,0 +1,23 @@
+{
+    "@Redfish.Copyright": "Copyright Gigabyte 2018",
+    "@odata.context": "/redfish/v1/$metadata#MessageRegistryFile.MessageRegistryFile",
+    "@odata.etag": "W/\"1650480133\"",
+    "@odata.id": "/redfish/v1/Registries/GBTOem.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_3_0.MessageRegistry",
+    "Description": "This registry defines messages for representing Gigabyte OEM errors in Redfish",
+    "Id": "GBTOem.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "FirmwareInUpdate": {
+            "Description": "Indicates that the request was rejected due to the firmware being in update.",
+            "Message": "Request was rejected due to the firmware being in update, please wait ...",
+            "NumberOfArgs": 0,
+            "Resolution": "Wait update finish.",
+            "Severity": "Critical"
+        }
+    },
+    "Name": "Gigabyte OEM Message Registry",
+    "OwningEntity": "GBT",
+    "RegistryPrefix": "GBTOem",
+    "RegistryVersion": "1.0.0"
+}

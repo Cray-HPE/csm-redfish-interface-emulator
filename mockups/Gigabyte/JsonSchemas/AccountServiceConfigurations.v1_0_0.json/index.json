@@ -1,0 +1,59 @@
+{
+    "$ref": "#/definitions/AccountServiceConfigurations",
+    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema.v1_1_0.json",
+    "definitions": {
+        "AccountServiceConfigurations": {
+            "additionalProperties": false,
+            "description": "This allows additional configuring of the Redfish AccountService.",
+            "longDescription": "This allows additional configuring of the Redfish AccountService.",
+            "patternProperties": {
+                "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message|Privileges)\\.[a-zA-Z_][a-zA-Z0-9_.]+$": {
+                    "description": "This property shall specify a valid odata or Redfish property.",
+                    "type": [
+                        "array",
+                        "boolean",
+                        "number",
+                        "null",
+                        "object",
+                        "string"
+                    ]
+                }
+            },
+            "properties": {
+                "@odata.context": {
+                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata.4.0.0.json#/definitions/context"
+                },
+                "@odata.id": {
+                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata.4.0.0.json#/definitions/id"
+                },
+                "@odata.type": {
+                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata.4.0.0.json#/definitions/type"
+                },
+                "Id": {
+                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id"
+                },
+                "Name": {
+                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name"
+                },
+                "PAMEnabled": {
+                    "description": "Indicates whether or not PAM authentication should be used when authenticating Redfish requests.",
+                    "longDescription": "Indicates whether or not PAM authentication should be used when authenticating Redfish requests.",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "PAMOrder": {
+                    "description": "Array that represents the order the PAM modules will be checked for authentication.",
+                    "longDescription": "Array that represents the order the PAM modules will be checked for authentication.",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object"
+        }
+    },
+    "title": "#AccountServiceConfigurations.v1_0_0.AccountServiceConfigurations"
+}

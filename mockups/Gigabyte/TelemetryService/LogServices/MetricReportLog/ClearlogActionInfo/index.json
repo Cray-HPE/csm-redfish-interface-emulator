@@ -1,0 +1,19 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+  "@odata.etag": "W/\"1650564782\"",
+  "@odata.id": "/redfish/v1/TelemetryService/LogServices/MetricReportLog/ClearlogActionInfo",
+  "@odata.type": "#ActionInfo.v1_1_1.ActionInfo",
+  "Description": "This action is used to clear all the log for this Log Service. ",
+  "Id": "Clearlog",
+  "Name": "Clearlog",
+  "Parameters": [
+    {
+      "AllowableValues": [
+        "ClearAll"
+      ],
+      "DataType": "String",
+      "Name": "ClearType",
+      "Required": true
+    }
+  ]
+}

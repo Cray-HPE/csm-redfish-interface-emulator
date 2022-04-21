@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator2OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "VoltageRegulator2OutputCurrent",
+    "Name": "VDDCORE 1.0V",
+    "Oem": {
+        "Index": 2,
+        "ReferenceDesignator": "U133"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 2.375,
+    "ReadingTime": "2022-04-20T15:28:38.020368895Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 8
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 9
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 14.9
+        }
+    }
+}

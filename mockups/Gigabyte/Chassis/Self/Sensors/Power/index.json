@@ -1,0 +1,12 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Sensor.Sensor",
+    "@odata.etag": "W/\"1616690423\"",
+    "@odata.id": "/redfish/v1/Chassis/Self/Sensors/Power",
+    "@odata.type": "#Sensor.v1_0_0.Sensor",
+    "Id": "Power Consumption Monitor",
+    "Name": "Power Consumption Monitor",
+    "PeakReading": 736,
+    "PeakReadingTime": "2022-03-09T19:58:03+00:00",
+    "Reading": 196,
+    "ReadingType": "Power"
+}

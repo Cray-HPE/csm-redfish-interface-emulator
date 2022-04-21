@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---->
+<!--################################################################################       -->
+<!--# Redfish Schema:  AMIUpdateService  v1.0.0                                            -->
+<!--#                                                                                      -->
+<!--# Copyright American Megatrends, Inc. (AMI).                                           -->
+<!--################################################################################       -->
+<!---->
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+
+  <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/csd01/complete/vocabularies/Org.OData.Core.V1.xml">
+    <edmx:Include Namespace="Org.OData.Core.V1" Alias="OData"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/csd01/complete/vocabularies/Org.OData.Capabilities.V1.xml">
+    <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="http://redfish.dmtf.org/schemas/v1/Resource_v1.xml">
+    <edmx:Include Namespace="Resource"/>
+    <edmx:Include Namespace="Resource.v1_0_0"/>
+  </edmx:Reference>
+  
+<edmx:DataServices>
+
+ <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="AMIUpdateService">
+      <EntityType Name="Ami" BaseType="Resource.v1_0_0.Resource">
+        <Annotation Term="OData.Description" String="This is the schema definition for the Update Service. It represents the properties for the service itself and has links to collections of firmware and software inventory."/>
+        <Annotation Term="OData.LongDescription" String="This resource shall be used to represent an Update Service for a Redfish implementation. It represents the properties that affect the service itself."/>
+        <Annotation Term="Capabilities.InsertRestrictions">
+          <Record>
+            <PropertyValue Property="Insertable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.UpdateRestrictions">
+          <Record>
+            <PropertyValue Property="Updatable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="Capabilities.DeleteRestrictions">
+          <Record>
+            <PropertyValue Property="Deletable" Bool="false"/>
+          </Record>
+        </Annotation>
+      </EntityType>
+
+      <Action Name="BMCUpdate" IsBound="true">
+        <Annotation Term="OData.Description" String="This action is used to update software components."/>
+        <Annotation Term="OData.LongDescription" String="This action shall perform an update of installed software component(s) as contained within a software image file located at a URI referenced by the ImageURI parameter."/>
+        <Parameter Name="AMIUpdateService" Type="AMIUpdateService.v1_0_0.Actions"/>
+		  <Parameter Name="ImageURI" Type="Edm.String" Nullable="false">
+          <Annotation Term="OData.Description" String="The URI of the software image to be installed."/>
+          <Annotation Term="OData.LongDescription" String="This parameter shall contain a URI referencing a software image to be retreived by the UpdateService for the purpose of installing software contained within the image."/>
+        </Parameter>
+        <Parameter Name="TransferProtocol" Type="AMIUpdateService.v1_0_0.TransferProtocolType">
+          <Annotation Term="OData.Description" String="The network protocol used by the Update Service to retrieve the software image file located at the URI provided in ImageURI, if the URI does not contain a scheme."/>
+          <Annotation Term="OData.LongDescription" String="This parameter shall contain the network protocol that the Update Service shall use to retreive the software image located at the ImageURI.  If this parameter is not provided (or supported), and a transfer protocol is not specified by a scheme contained within ImageURI, the Update Service shall use HTTP to retrieve the image."/>
+        </Parameter>
+        <Parameter Name="Targets" Type="Collection(Edm.String)">
+          <Annotation Term="OData.Description" String="The array of URIs indicating where the update image is to be applied."/>
+          <Annotation Term="OData.LongDescription" String="This array property shall contain zero or more URIs indicating where the update image is to be applied."/>
+          <Annotation Term="OData.IsURL"/>
+        </Parameter>
+      </Action>
+    </Schema>
+	<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="AMIUpdateService.v1_0_0">
+      <Annotation Term="Redfish.OwningEntity" String="DMTF"/>
+
+      <EntityType Name="AMIUpdateService" BaseType="AMIUpdateService.AMIUpdateService">
+        <Annotation Term="OData.Description" String="This is the schema definition for the Update Service. It represents the properties for the service itself and has links to collections of firmware and software inventory."/>
+        <Annotation Term="OData.LongDescription" String="This resource shall be used to represent an Update Service for a Redfish implementation. It represents the properties that affect the service itself."/>
+        <Property Name="Actions" Type="AMIUpdateService.v1_0_0.Actions" Nullable="false">
+          	<Annotation Term="OData.Description" String="The Actions object contains the available custom actions on this resource."/>
+        </Property>	
+	<Property Name="UpdateInformation" Type="AMIUpdateService.v1_0_0.UpdateInformation" Nullable="false">
+		<Annotation Term="OData.Description" String="The information about the updated firmware."/>
+	</Property>
+      </EntityType>
+
+      <ComplexType Name="Actions">
+        <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+        <Annotation Term="OData.Description" String="The available actions for this resource."/>
+        <Annotation Term="OData.LongDescription" String="This type shall contain the available actions for this resource."/>
+      </ComplexType>
+
+      <ComplexType Name="UpdateInformation">
+        <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+        <Annotation Term="OData.Description" String="The available actions for this resource."/>
+        <Annotation Term="OData.LongDescription" String="This type shall contain the available actions for this resource."/>
+        <Property Name="UpdateComponent" Type="Edm.String" Nullable="true">
+                <Annotation Term="OData.Description" String="The information about the updated firmware."/>
+        </Property>
+        <Property Name="UpdateStatus" Type="Edm.String" Nullable="true">
+                <Annotation Term="OData.Description" String="This property shall specify UpdateStatusn."/>
+        </Property>
+        <Property Name="UpdateTarget" Type="Edm.String" Nullable="true">
+                <Annotation Term="OData.Description" String="This property shall specify UpdateTarget."/>
+        </Property>
+        <Property Name="FlashPercentage" Type="Edm.String" Nullable="true">
+                <Annotation Term="OData.Description" String="This property shall specify FlashPercentage."/>
+        </Property>
+      </ComplexType>
+
+      <EnumType Name="TransferProtocolType">
+        <Member Name="CIFS">
+          <Annotation Term="OData.Description" String="Common Internet File System protocol."/>
+        </Member>
+        <Member Name="FTP">
+          <Annotation Term="OData.Description" String="File Transfer Protocol."/>
+        </Member>
+        <Member Name="SFTP">
+          <Annotation Term="OData.Description" String="Secure File Transfer Protocol."/>
+        </Member>
+        <Member Name="HTTP">
+          <Annotation Term="OData.Description" String="Hypertext Transfer Protocol."/>
+        </Member>
+        <Member Name="HTTPS">
+          <Annotation Term="OData.Description" String="HTTP Secure protocol."/>
+        </Member>
+        <Member Name="NSF">
+          <Annotation Term="OData.Description" String="Network File System protocol."/>
+        </Member>
+        <Member Name="SCP">
+          <Annotation Term="OData.Description" String="Secure File Copy protocol."/>
+        </Member>
+        <Member Name="TFTP">
+          <Annotation Term="OData.Description" String="Trivial File Transfer Protocol."/>
+        </Member>
+        <Member Name="OEM">
+          <Annotation Term="OData.Description" String="A protocol defined by the manufacturer."/>
+        </Member>
+      </EnumType>
+    </Schema>
+	
+</edmx:DataServices>
+</edmx:Edmx>

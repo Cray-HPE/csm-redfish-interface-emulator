@@ -1,0 +1,27 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogService.LogService(MaxNumberOfRecords,Entries,ServiceEnabled,Id,Status,OverWritePolicy,Name,Description,Actions)",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/DynamicExtension/LogServices/AuditLog",
+    "@odata.type": "#LogService.v1_1_2.LogService",
+    "Actions": {
+        "#LogService.ClearLog": {
+            "ClearType@Redfish.AllowableValues": [
+                "ClearAll"
+            ],
+            "target": "/redfish/v1/DynamicExtension/LogServices/AuditLog/Actions/LogService.ClearLog"
+        }
+    },
+    "Description": "Log of changes in the dynamic extension",
+    "Entries": {
+        "@odata.id": "/redfish/v1/DynamicExtension/LogServices/AuditLog/Entries"
+    },
+    "Id": "AuditLog",
+    "MaxNumberOfRecords": 100,
+    "Name": "Dynamic Extension Audit Log",
+    "OverWritePolicy": "WrapsWhenFull",
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

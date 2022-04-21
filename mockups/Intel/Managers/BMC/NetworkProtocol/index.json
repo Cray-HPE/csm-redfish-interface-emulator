@@ -1,0 +1,34 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ManagerNetworkProtocol.ManagerNetworkProtocol",
+    "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol",
+    "@odata.type": "#ManagerNetworkProtocol.v1_2_0.ManagerNetworkProtocol",
+    "Id": "NetworkProtocol",
+    "Name": "Manager Network Protocol",
+    "Description": "Manager Network Service",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "HostName": "BMCA4BF012890AA",
+    "HTTPS": {
+        "ProtocolEnabled": true,
+        "Port": 443
+    },
+    "SSH": {
+        "ProtocolEnabled": false,
+        "Port": 66
+    },
+    "KVMIP": {
+        "ProtocolEnabled": false,
+        "Port": 5902
+    },
+    "VirtualMedia": {
+        "ProtocolEnabled": false,
+        "Port": 627
+    },
+    "SSDP": {
+        "ProtocolEnabled": false,
+        "Port": 1900
+    }
+}

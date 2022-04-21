@@ -1,0 +1,24 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/Oem/NetworkCables/j9",
+    "@odata.type": "#NetworkCable.v1_0_0.NetworkCable",
+    "DataPathPortMappings": {
+        "p0": 28,
+        "p1": 29
+    },
+    "HeadshellID": "B",
+    "Id": "j9",
+    "LengthMeters": 1.4,
+    "MediaType": "Electrical",
+    "OEMCompany": "CRAY",
+    "OEMPartNumber": "102234303A",
+    "PartNumber": "2333532-3",
+    "ProductionDate": "200910",
+    "SerialNumber": "0910206177",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Vendor": "TE Connectivity",
+    "Version": "A"
+}

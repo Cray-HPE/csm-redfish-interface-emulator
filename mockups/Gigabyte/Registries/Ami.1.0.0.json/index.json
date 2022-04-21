@@ -1,0 +1,320 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2018 DMTF. All rights reserved.",
+    "@odata.context": "/redfish/v1/$metadata#MessageRegistryFile.MessageRegistryFile",
+    "@odata.etag": "W/\"1650480133\"",
+    "@odata.id": "/redfish/v1/Registries/Ami.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_3_0.MessageRegistry",
+    "Description": "This registry defines the base messages for Redfish",
+    "Id": "Ami.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "ActionExist": {
+            "Description": "InsertMedia Action is already Issued or InProgress, so action Post call is Restricted",
+            "Message": "InsertMedia Action is already Issued or InProgress",
+            "NumberOfArgs": 0,
+            "Resolution": "Execute EjectMedia action for this VMedia Instance.",
+            "Severity": "OK"
+        },
+        "ActionNotExist": {
+            "Description": "No Redirection is going on for the given media instance, so action Post call is Restricted",
+            "Message": "No Redirection is going on for the given media",
+            "NumberOfArgs": 0,
+            "Resolution": "Execute InsertMedia action for this VMedia Instance.",
+            "Severity": "OK"
+        },
+        "ActionRequiresFile": {
+            "Description": "Indicates that the action needs a file to be uploaded before proceeding this action.",
+            "Message": "It needs a mandatory file to be uploaded before proceeding the action.",
+            "NumberOfArgs": 0,
+            "Resolution": "Upload the required file using the appropriate action and resubmit the request with proper request body.",
+            "Severity": "Warning"
+        },
+        "AlreadyScheduledTask": {
+            "Description": "Indicates that the task has already been scheduled at the same time.",
+            "Message": "The task has already been scheduled at the time %1.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Reschedule the task at different time and resubmit the request.",
+            "Severity": "Warning"
+        },
+        "AuthenticationDisabled": {
+            "Description": "Indicates that the Authentication support for this interface is disabled.",
+            "Message": "The operation failed because the %1 Authentication for this Interface is Disabled",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Enable the %1 Authentication and resubmit the request.",
+            "Severity": "Critical"
+        },
+        "DelayInActionCompletion": {
+            "Description": "Action has been initiated successfully.Allow upto 4-5 seconds for the action to complete",
+            "Message": "%1 action has been initiated successfully.Please allow upto 4-5 secs and verify the value of %2 property in %3 instance",
+            "NumberOfArgs": 3,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Check the property value update after 4-5 seconds",
+            "Severity": "OK"
+        },
+        "DuplicateOffsetFound": {
+            "Description": "Indicates that the properties were given might be correct but different offset are not supported.",
+            "Message": "The value %1(with Offset) of property %2 and value %3 of property %4 are different, can't be accept at a time.",
+            "NumberOfArgs": 4,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Correct the value for the properties in the request body and resubmit the request if the operation failed.",
+            "Severity": "Warning"
+        },
+        "EmptyObjectOrArrayInRequest": {
+            "Description": "Indicates that the value for the given JSON request parameter is empty",
+            "Message": "The value for the given property is either an empty Object or Array. Please specify a valid value for this property.",
+            "NumberOfArgs": 0,
+            "Resolution": "Ensure that the value for the given request body parameter is not empty and resubmit the request.",
+            "Severity": "Critical"
+        },
+        "HostInterfaceStatus": {
+            "Description": "Indicates that Request was given through normal interface, not through Host Interface.",
+            "Message": "Request was given through normal interface, not through Host Interface.",
+            "NumberOfArgs": 0,
+            "Resolution": "Ensure that patch operation is sent through hostinterface.",
+            "Severity": "Critical"
+        },
+        "InsufficientStorageForResponse": {
+            "Description": "Indicates that the service is unable to return the payload due to its size",
+            "Message": "The server is unable to build the response for the client due to the size of the response.",
+            "NumberOfArgs": 0,
+            "Resolution": "Remove the $expand query parameter from the request and resubmit.",
+            "Severity": "Critical"
+        },
+        "InventoryDataIncomplete": {
+            "Description": "Indicates that the BIOS Inventory data is not completely transfered to BMC.",
+            "Message": "The BIOS Inventory data was partially populated due to CONf space limitation or due to timeout between BIOS, BMC communication",
+            "NumberOfArgs": 0,
+            "Resolution": "Clean up Redfish/BMC data",
+            "Severity": "Critical"
+        },
+        "LastExistingAccount": {
+            "Description": "Indicates that the modification was requested on only existing account with sufficient privileges",
+            "Message": "Cannot modify/Disable the property %1 of the only %2 account.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "The modification may have failed due to non availability of another account with sufficient privileges.",
+            "Severity": "Warning"
+        },
+        "MaintenanceWindowIncorrectTime": {
+            "Description": "Indicates that the time is in the past.",
+            "Message": "The time value %1 for the property %2 is in the past.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Change the time value to the upcoming or future time and resubmit the request.",
+            "Severity": "Warning"
+        },
+        "ModifyingValues": {
+            "Description": "Indicates that the values are being modified in the Interface",
+            "Message": "Modifying the values. It may take a few seconds for the changes to reflect",
+            "NumberOfArgs": 0,
+            "Resolution": "Wait a few seconds before sending additional requests to this resource.",
+            "Severity": "OK"
+        },
+        "OffsetValueFormatError": {
+            "Description": "Indicates that a property was given the correct value type but the value of that offset was not supported. This is an invalid offset.",
+            "Message": "The offset value %1 for the property %2 is of a different format than the property can accept. Accepts the minutes which are divisible by 15.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Correct the value for the property in the request body and resubmit the request if the operation failed.",
+            "Severity": "Warning"
+        },
+        "PasswordChangeRequired": {
+            "Description": "Indicates that the password for the account provided must be changed before accessing the service.  The password can be changed with a PATCH to the 'Password' property in the ManagerAccount resource instance.  Implementations that provide a default password for an account may require a password change prior to first access to the service.",
+            "Message": "The password provided for this account must be changed before access is granted.  PATCH the 'Password' property for this account located at the target URI '%1' to complete this process.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Change the password for this account using a PATCH to the 'Password' property at the URI provided.",
+            "Severity": "Critical"
+        },
+        "PasswordResetFailed": {
+            "Description": "Old Password Not Accepted",
+            "Message": "Last password cannot be used to reset the redfish account password. Please change the password value and resubmit the request.",
+            "NumberOfArgs": 0,
+            "Resolution": "Change the password value and resubmit the request.",
+            "Severity": "Critical"
+        },
+        "PreconditionHeaderMissing": {
+            "Description": "Indicates that the server requires the request to be conditional for PUT/PATCH.",
+            "Message": "The request did not provide the required precondition, such as an If-Match or If-None-Match header.",
+            "NumberOfArgs": 0,
+            "Resolution": "Include the required precondition header in the request",
+            "Severity": "Critical"
+        },
+        "PropertiesMustHaveSameValue": {
+            "Description": "Indicates that the values Properties must be Equal",
+            "Message": "The values provided for %1 and %2 must be same",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Provide same values for both the properties and try again",
+            "Severity": "OK"
+        },
+        "PropertyOutOfRange": {
+            "Description": "Indicates that a property supplied was out of range. This can happen with values that are too low or beyond that possible for the supplied resource.",
+            "Message": "The value %1 for the property %2 is out of range %3.",
+            "NumberOfArgs": 3,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Make sure the value is inside the range for the property and resubmit the request",
+            "Severity": "Warning"
+        },
+        "PropertyValueMismatch": {
+            "Description": "Indicates that a dependent property was given wrong value.",
+            "Message": "The property %1 must have value %2 to complete this opertaion",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Correct the value for the property in the request body and resubmit the request if the operation failed.",
+            "Severity": "Warning"
+        },
+        "PropertyValueNotEqual": {
+            "Description": "Indicates that property value is not equal ",
+            "Message": "The value %1 for the property %2 is different from the value %3 for the property %4",
+            "NumberOfArgs": 4,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Make Sure both the properties have same value in the request body and resubmit the request",
+            "Severity": "Warning"
+        },
+        "PropertyValueSizeExceeded": {
+            "Description": "Indicates that the size of the property value exceeded the maximum allowable size.",
+            "Message": "The value %1 for the property %2 have exceeded the maximum allowable string size.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Reduce the size of the property value or increase the size of default allowable string size and resubmit the request.",
+            "Severity": "Warning"
+        },
+        "PropertyValueSizeNotMatched": {
+            "Description": "Indicates that a property was given the wrong number of value[s], such as more or less number of arguments are supplied for a property.",
+            "Message": "The value %1 for the property %2 is of a different number of argument[s] than the property can accept.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Correct the value for the property in the request body and resubmit the request if the operation failed.",
+            "Severity": "Warning"
+        },
+        "QueryParameterFailed": {
+            "Description": "Indicates that the Request with Query parameter failed as the Querry Expression is invalid",
+            "Message": "%1 query parameter for %2 failed as the query expression is invalid or cannot be processed",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Correct the Query Expression and resubmit the request.",
+            "Severity": "OK"
+        },
+        "QueryParameterFormatError": {
+            "Description": "Indicates that a query parameter was given in a wrong format, such as when the value is not supplied or missing '=' or '$'or when the query parameter itself is missing.",
+            "Message": "The format of the query parameter request %1 is wrong. General format is url followed by ?$query1=value1&$query2=value2&..",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Correct the format of the query parameter in the request and resubmit the request if the operation failed.",
+            "Severity": "Warning"
+        },
+        "QueryParameterIgnored": {
+            "Description": "Indicates that the Query parameter is ignored as the Querry Expression is invalid",
+            "Message": "%1 query parameter for %2 is ignored as the query expression is invalid or cannot be processed",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Correct the Query Expression and resubmit the request.",
+            "Severity": "OK"
+        },
+        "RequestBodySizeExceeded": {
+            "Description": "Indicates that request body size exceeds the allowable size.",
+            "Message": "Request Body size exceeds the default allowable size %1KB.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Reduce the size of the request body and resubmmit the request.",
+            "Severity": "Critical"
+        },
+        "RoleGroupLimitExceeded": {
+            "Description": "Unable to process the request as the given LDAP Role Group size exceeds the maximum allowed value",
+            "Message": "Maximum %1 Role Groups can be created, in which %2 Role Groups have been already allocated. Please change the value of the property as per the available slots and resubmit the request.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Change the value of the property as per the available slots and resubmit the request.",
+            "Severity": "Warning"
+        },
+        "ServiceDisabled": {
+            "Description": "Indicates that the operation failed because this particular service is disabled and cannot accept additional requests.",
+            "Message": "The operation failed because this service is disabled and can no longer take incoming requests.",
+            "NumberOfArgs": 0,
+            "Resolution": "Enable the service and resubmit the request.",
+            "Severity": "Critical"
+        },
+        "ServiceEnabled": {
+            "Description": "Indicates that the operation failed because %1 service is enabled and cannot accept additional requests.",
+            "Message": "The operation failed because %1 service is enabled and can no longer take incoming requests.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Disable the service and resubmit the request.",
+            "Severity": "Critical"
+        },
+        "UserNameAlreadyExists": {
+            "Description": "Indicates that modification was requested with a UserName which already exists.",
+            "Message": "The requested UserName already exists.",
+            "NumberOfArgs": 0,
+            "Resolution": "Change the UserName and resubmmit the request.",
+            "Severity": "Critical"
+        }
+    },
+    "Name": "Ami Message Registry",
+    "OwningEntity": "DMTF",
+    "RegistryPrefix": "Ami",
+    "RegistryVersion": "1.0.0"
+}

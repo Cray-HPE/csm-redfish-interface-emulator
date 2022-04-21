@@ -1,0 +1,11 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Settings.Settings",
+    "@odata.id": "/redfish/v1/Systems/QSBP74100021/Bios/Settings",
+    "@odata.type": "#Settings.v1_1_0.Settings",
+    "Id": "Settings",
+    "Name": "BIOS Configuration Settings",
+    "Time": "Tue Feb 22 13:03:50 2022",
+    "SettingsObject": {
+        "@odata.id": "/redfish/v1/Systems/QSBP74100021/Bios/Settings"
+    }
+}

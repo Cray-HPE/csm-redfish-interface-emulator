@@ -1,0 +1,40 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator4OutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator4OutputVoltage",
+    "Name": "AVDD 0v90 S0",
+    "Oem": {
+        "Index": 4,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "U5001"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 0.892,
+    "ReadingTime": "2022-04-20T15:35:54.019389931Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 0.855
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 0.81
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 0.945
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 0.99
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 1.057
+        }
+    }
+}

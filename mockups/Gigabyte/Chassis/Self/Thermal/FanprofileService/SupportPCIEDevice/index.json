@@ -1,0 +1,271 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#GBTFanprofileSupportPCIEDevice.GBTFanprofileSupportPCIEDevice",
+    "@odata.etag": "W/\"1616690423\"",
+    "@odata.id": "/redfish/v1/Chassis/Self/Thermal/FanprofileService/SupportPCIEDevice",
+    "@odata.type": "#GBTFanprofileSupportPCIEDevice.v1_0_0.GBTFanprofileSupportPCIEDevice",
+    "Id": "SupportPCIEDevice",
+    "Name": "SupportPCIEDevice",
+    "arrPCIEDevices": [
+        {
+            "hexDeviceID": "0xffff",
+            "hexVendorID": "0xffff",
+            "strName": "default"
+        },
+        {
+            "hexDeviceID": "0x102d",
+            "hexVendorID": "0x10de",
+            "strName": "K80"
+        },
+        {
+            "hexDeviceID": "0x13f2",
+            "hexVendorID": "0x10de",
+            "strName": "M60"
+        },
+        {
+            "hexDeviceID": "0x15f7",
+            "hexVendorID": "0x10de",
+            "strName": "P100_12GB"
+        },
+        {
+            "hexDeviceID": "0x15f8",
+            "hexVendorID": "0x10de",
+            "strName": "P100_16GB"
+        },
+        {
+            "hexDeviceID": "0x15f9",
+            "hexVendorID": "0x10de",
+            "strName": "P100_SXM2"
+        },
+        {
+            "hexDeviceID": "0x1bb3",
+            "hexVendorID": "0x10de",
+            "strName": "P4"
+        },
+        {
+            "hexDeviceID": "0x1b38",
+            "hexVendorID": "0x10de",
+            "strName": "P40"
+        },
+        {
+            "hexDeviceID": "0x17fd",
+            "hexVendorID": "0x10de",
+            "strName": "M40"
+        },
+        {
+            "hexDeviceID": "0x1431",
+            "hexVendorID": "0x10de",
+            "strName": "M4"
+        },
+        {
+            "hexDeviceID": "0x13bd",
+            "hexVendorID": "0x10de",
+            "strName": "M10"
+        },
+        {
+            "hexDeviceID": "0x1023",
+            "hexVendorID": "0x10de",
+            "strName": "K40m"
+        },
+        {
+            "hexDeviceID": "0x1b02",
+            "hexVendorID": "0x10de",
+            "strName": "Titan_XP"
+        },
+        {
+            "hexDeviceID": "0x1b00",
+            "hexVendorID": "0x10de",
+            "strName": "Titan_X"
+        },
+        {
+            "hexDeviceID": "0x1b06",
+            "hexVendorID": "0x10de",
+            "strName": "GTX1080_Ti"
+        },
+        {
+            "hexDeviceID": "0x1b80",
+            "hexVendorID": "0x10de",
+            "strName": "GTX_1080"
+        },
+        {
+            "hexDeviceID": "0x1b81",
+            "hexVendorID": "0x10de",
+            "strName": "GTX_1070"
+        },
+        {
+            "hexDeviceID": "0x1c02",
+            "hexVendorID": "0x10de",
+            "strName": "GTX1060_3GB"
+        },
+        {
+            "hexDeviceID": "0x1c03",
+            "hexVendorID": "0x10de",
+            "strName": "GTX1060_6GB"
+        },
+        {
+            "hexDeviceID": "0x1430",
+            "hexVendorID": "0x10de",
+            "strName": "M2000"
+        },
+        {
+            "hexDeviceID": "0x13f1",
+            "hexVendorID": "0x10de",
+            "strName": "M4000"
+        },
+        {
+            "hexDeviceID": "0x0ffe",
+            "hexVendorID": "0x10de",
+            "strName": "K2000"
+        },
+        {
+            "hexDeviceID": "0x13ba",
+            "hexVendorID": "0x10de",
+            "strName": "K2200"
+        },
+        {
+            "hexDeviceID": "0x15f0",
+            "hexVendorID": "0x10de",
+            "strName": "GP100"
+        },
+        {
+            "hexDeviceID": "0x225c",
+            "hexVendorID": "0x8086",
+            "strName": "7120P_7220P"
+        },
+        {
+            "hexDeviceID": "0x67b0",
+            "hexVendorID": "0x1002",
+            "strName": "AMD_R9_390_1"
+        },
+        {
+            "hexDeviceID": "0x67b1",
+            "hexVendorID": "0x1002",
+            "strName": "AMD_R9_390_2"
+        },
+        {
+            "hexDeviceID": "0x67df",
+            "hexVendorID": "0x1002",
+            "strName": "AMD_RX_480"
+        },
+        {
+            "hexDeviceID": "0x1db4",
+            "hexVendorID": "0x10de",
+            "strName": "V100"
+        },
+        {
+            "hexDeviceID": "0x1b82",
+            "hexVendorID": "0x10de",
+            "strName": "GTX_1070_Ti"
+        },
+        {
+            "hexDeviceID": "0x17c2",
+            "hexVendorID": "0x10de",
+            "strName": "TITAN_V"
+        },
+        {
+            "hexDeviceID": "0x1dba",
+            "hexVendorID": "0x10de",
+            "strName": "GV100"
+        },
+        {
+            "hexDeviceID": "0x6860",
+            "hexVendorID": "0x1002",
+            "strName": "MI25"
+        },
+        {
+            "hexDeviceID": "0x1bb1",
+            "hexVendorID": "0x10de",
+            "strName": "P4000"
+        },
+        {
+            "hexDeviceID": "0x687f",
+            "hexVendorID": "0x1002",
+            "strName": "Vega_64"
+        },
+        {
+            "hexDeviceID": "0x1e82",
+            "hexVendorID": "0x10de",
+            "strName": "Leadtek_RTX_2080"
+        },
+        {
+            "hexDeviceID": "0x1eb8",
+            "hexVendorID": "0x10de",
+            "strName": "Tesla_T4"
+        },
+        {
+            "hexDeviceID": "0x1e87",
+            "hexVendorID": "0x10de",
+            "strName": "ZOTAC_RTX_2080"
+        },
+        {
+            "hexDeviceID": "0x1e04",
+            "hexVendorID": "0x10de",
+            "strName": "ZOTAC_RTX_2080_Ti"
+        },
+        {
+            "hexDeviceID": "0x1e07",
+            "hexVendorID": "0x10de",
+            "strName": "ZOTAC_RTX_2080_Ti_Rev_A"
+        },
+        {
+            "hexDeviceID": "0x1db6",
+            "hexVendorID": "0x10de",
+            "strName": "V100_32G"
+        },
+        {
+            "hexDeviceID": "0x1eb1",
+            "hexVendorID": "0x10de",
+            "strName": "RTX4000"
+        },
+        {
+            "hexDeviceID": "0x1db1",
+            "hexVendorID": "0x10de",
+            "strName": "sxm2v100"
+        },
+        {
+            "hexDeviceID": "0x1b30",
+            "hexVendorID": "0x10de",
+            "strName": "P6000"
+        },
+        {
+            "hexDeviceID": "0x686c",
+            "hexVendorID": "0x1002",
+            "strName": "mi25_Mxgpu"
+        },
+        {
+            "hexDeviceID": "0x1bb0",
+            "hexVendorID": "0x10de",
+            "strName": "P5000"
+        },
+        {
+            "hexDeviceID": "0x1eb0",
+            "hexVendorID": "0x10de",
+            "strName": "RTX5000"
+        },
+        {
+            "hexDeviceID": "0x2952",
+            "hexVendorID": "0x8086",
+            "strName": "Intel_VCA2"
+        },
+        {
+            "hexDeviceID": "0x1e30",
+            "hexVendorID": "0x10de",
+            "strName": "RTX6000"
+        },
+        {
+            "hexDeviceID": "0x66a1",
+            "hexVendorID": "0x1002",
+            "strName": "MI50_32G"
+        },
+        {
+            "hexDeviceID": "0x1df6",
+            "hexVendorID": "0x10de",
+            "strName": "V100_SUPER"
+        },
+        {
+            "hexDeviceID": "0x1e78",
+            "hexVendorID": "0x10de",
+            "strName": "RTX6000_RTX8000_passive"
+        }
+    ],
+    "strVersion": "1.00"
+}

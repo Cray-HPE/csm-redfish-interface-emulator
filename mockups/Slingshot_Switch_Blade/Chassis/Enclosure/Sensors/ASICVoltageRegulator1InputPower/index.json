@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1InputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator1InputPower",
+    "Name": "VDD 3v3 S0",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "U39"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 0,
+    "ReadingTime": "2022-04-20T15:35:53.041426569Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

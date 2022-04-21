@@ -1,0 +1,22 @@
+{
+    "@Redfish.Copyright": "Copyright AMI 2016",
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Registries/AmiOem.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_1_0.MessageRegistry",
+    "Description": "This registry defines messages for representing AmiOem errors in Redfish",
+    "Id": "AmiOem.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "WebServerRestarting": {
+            "Description": "Indicates that the web server is restarting, so it will be unreachable for a few seconds.",
+            "Message": "Web server is being restarted. It will be unreachable for a few seconds.",
+            "NumberOfArgs": 0,
+            "Resolution": "Wait a few seconds before sending additional requests.",
+            "Severity": "OK"
+        }
+    },
+    "Name": "AmiOem Message Registry",
+    "OwningEntity": "AMI",
+    "RegistryPrefix": "AmiOem",
+    "RegistryVersion": "1.0.0"
+}

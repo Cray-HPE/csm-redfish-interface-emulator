@@ -1,0 +1,25 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/22",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2022-04-19T20:06:47+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2022-04-19T20:06:47+00:00",
+    "Id": "22",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/"
+        }
+    },
+    "Message": "The link j102p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:47 due to a PORT_DOWN. The headshell temperature was 0.",
+    "MessageArgs": [
+        "2022/04/19 20:06:42",
+        "2022/04/19 20:06:47",
+        "j102p1",
+        "PORT_DOWN",
+        "0"
+    ],
+    "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+    "Name": "Log entry 22",
+    "Severity": "Warning"
+}

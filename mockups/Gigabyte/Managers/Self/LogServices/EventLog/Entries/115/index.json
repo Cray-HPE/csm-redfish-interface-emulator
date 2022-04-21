@@ -1,0 +1,26 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/EventLog/Entries/115",
+    "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+    "Created": "2021-07-15T18:35:24+00:00",
+    "Description": "The power state of resource /redfish/v1/Systems/Self has changed to type On",
+    "EntryCode": "Informational",
+    "EntryType": "Event",
+    "EventTimestamp": "2021-07-15T18:35:24+00:00",
+    "EventType": "Alert",
+    "Id": "115",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Systems/Self"
+        }
+    },
+    "Message": "The power state of resource /redfish/v1/Systems/Self has changed to type On",
+    "MessageArgs": [
+        "/redfish/v1/Systems/Self",
+        "On"
+    ],
+    "MessageId": "EventLog.1.0.PowerStatusChange",
+    "Name": "Log entry 115",
+    "Severity": "OK"
+}

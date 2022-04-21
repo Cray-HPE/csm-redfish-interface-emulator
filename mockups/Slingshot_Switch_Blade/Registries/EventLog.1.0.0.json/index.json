@@ -1,0 +1,65 @@
+{
+    "@Redfish.Copyright": "Copyright AMI 2015",
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Registries/EventLog.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_1_0.MessageRegistry",
+    "Description": "This registry defines the EventLog messages for Redfish",
+    "Id": "EventLog.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "Alert": {
+            "Description": "Indicates that a condition exists which requires attention",
+            "Message": "A condition exists on the resource at %1 which requires attention",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "ResourceAdded": {
+            "Description": "Indicates that a resource was added successfully.",
+            "Message": "The resource at %1 was successfully added.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "ResourceRemoved": {
+            "Description": "Indicates that a resource was successfully removed.",
+            "Message": "The resource at %1 was successfully removed.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "ResourceUpdated": {
+            "Description": "Indicates that a resource was successfully updated.",
+            "Message": "The resource at %1 was successfully updated.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "StatusChange": {
+            "Description": "Indicates that the status of a resource has changed.",
+            "Message": "The status of resource at %1 has changed",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        }
+    },
+    "Name": "EventLog Message Registry",
+    "OwningEntity": "AMI",
+    "RegistryPrefix": "EventLog",
+    "RegistryVersion": "1.0.0"
+}

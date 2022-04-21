@@ -1,0 +1,22 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#AccountService.AccountService",
+    "@odata.id": "/redfish/v1/AccountService",
+    "@odata.type": "#AccountService.v1_2_2.AccountService",
+    "Id": "AccountService",
+    "Name": "Account Service",
+    "Description": "BMC User Accounts",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "ServiceEnabled": true,
+    "MinPasswordLength": 1,
+    "MaxPasswordLength": 20,
+    "Accounts": {
+        "@odata.id": "/redfish/v1/AccountService/Accounts"
+    },
+    "Roles": {
+        "@odata.id": "/redfish/v1/AccountService/Roles"
+    }
+}

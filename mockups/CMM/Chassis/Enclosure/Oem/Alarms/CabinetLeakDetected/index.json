@@ -1,0 +1,11 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Oem/Alarms/CabinetLeakDetected",
+    "@odata.type": "#Alarm.v0_9_0.Alarm",
+    "AlarmState": "Armed",
+    "AutomaticReArm": true,
+    "Description": "Indicates that a single leak sensor, in a reductant sensor cluster, has detected a wet state, has faulted, or is disconnected.",
+    "Id": "CabinetLeakDetected",
+    "Name": "Enclosure CabinetLeakDetected Alarm",
+    "Severity": "Warning"
+}

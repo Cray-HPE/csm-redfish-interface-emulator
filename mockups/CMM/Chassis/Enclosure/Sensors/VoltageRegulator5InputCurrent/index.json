@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator5InputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "VoltageRegulator5InputCurrent",
+    "Name": "12V AUX ECB",
+    "Oem": {
+        "Index": 5,
+        "ReferenceDesignator": "U14"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 0.572,
+    "ReadingTime": "2022-04-20T15:28:38.016097685Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 4.5
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 5.5
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 6.5
+        }
+    }
+}

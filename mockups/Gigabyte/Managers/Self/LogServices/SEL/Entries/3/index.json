@@ -1,0 +1,24 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/3",
+    "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+    "Created": "2022-03-09T20:02:23+00:00",
+    "Description": "Log Entry",
+    "EntryCode": "Assert",
+    "EntryType": "SEL",
+    "EventTimestamp": "2021-02-16T18:38:29+00:00",
+    "EventType": "Alert",
+    "Id": "3",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Managers/Self"
+        }
+    },
+    "Message": "0x010C54",
+    "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+    "Name": "SEL 3",
+    "SensorNumber": 0,
+    "SensorType": "Version Change",
+    "Severity": "OK"
+}

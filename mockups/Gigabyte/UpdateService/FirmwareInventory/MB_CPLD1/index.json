@@ -1,0 +1,11 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.etag": "W/\"1613575452\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/MB_CPLD1",
+    "@odata.type": "#SoftwareInventory.v1_2_1.SoftwareInventory",
+    "Description": "CPLD Firmware Inventory",
+    "Id": "MB_CPLD1",
+    "Name": "MB_CPLD1",
+    "Updateable": true,
+    "Version": "ff"
+}

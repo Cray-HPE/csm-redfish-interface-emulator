@@ -1,0 +1,30 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Chassis.Chassis",
+    "@odata.id": "/redfish/v1/Chassis/RackMount/PCIeRiser2",
+    "@odata.type": "#Chassis.v1_6_0.Chassis",
+    "Id": "PCIeRiser2",
+    "Name": "Computer System Card",
+    "ChassisType": "Card",
+    "Manufacturer": "Intel Corporation",
+    "Model": "AHW1UM2RISER2  ",
+    "SerialNumber": "QSBP73804197",
+    "PartNumber": "H94856-350",
+    "PowerState": "On",
+    "Links": {
+        "ComputerSystems": [
+            {
+                "@odata.id": "/redfish/v1/Systems/QSBP74100021"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC"
+            }
+        ],
+        "ContainedBy": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/RackMount"
+            }
+        ]
+    }
+}

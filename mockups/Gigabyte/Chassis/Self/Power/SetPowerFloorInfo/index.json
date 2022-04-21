@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+  "@odata.etag": "W/\"1650562971\"",
+  "@odata.id": "/redfish/v1/Chassis/Self/Power/SetPowerFloorInfo",
+  "@odata.type": "#ActionInfo.v1_1_1.ActionInfo",
+  "Description": "This action will explain how to set Power floor value.",
+  "Id": "PowerFloorTargetInfo",
+  "Name": "PowerFloorTargetInfo",
+  "Parameters": [
+    {
+      "DataType": "number",
+      "Name": "PowerFloorTarget",
+      "Required": true
+    }
+  ]
+}

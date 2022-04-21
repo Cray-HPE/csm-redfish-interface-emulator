@@ -1,0 +1,225 @@
+{
+    "@Redfish.Copyright": "Copyright \u00a9 2015-2017 Insyde Software Corp. All rights reserved.",
+    "@odata.type": "#MessageRegistry.v1_0_3.MessageRegistry",
+    "Id": "Alert.1.0.0",
+    "Name": "Alert Message Registry",
+    "Language": "en",
+    "Description": "This registry defines the alert messages for Redfish",
+    "RegistryPrefix": "Alert",
+    "RegistryVersion": "1.0.0",
+    "OwningEntity": "Insyde",
+    "Messages": {
+        "DriveInserted": {
+            "Description": "Indicates Redfish has detected a Drive was inserted.",
+            "Message": "Drive %1 has been inserted.",
+            "Severity": "OK",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        },
+        "DriveRemoved": {
+            "Description": "Indicates Redfish has detected a Drive was removed.",
+            "Message": "Drive %1 has been removed.",
+            "Severity": "OK",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        },
+        "SystemPowerOff": {
+            "Description": "Power has been removed from the system.",
+            "Message": "System Power Turned Off.",
+            "Severity": "OK",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "SystemPowerOn": {
+            "Description": "Power to the system has been turned on.",
+            "Message": "System Power Turned On.",
+            "Severity": "OK",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "240VAPowerOffAssert": {
+            "Description": "240 VA power has been removed.",
+            "Message": "240VA Power is Off.",
+            "Severity": "Critical",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "240VAPowerOffDeassert": {
+            "Description": "240 VA power is off.",
+            "Message": "240VA Power is restored.",
+            "Severity": "OK",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "SoftPowerControlFailureAssert": {
+            "Description": "Soft power control failure asserted.",
+            "Message": "Soft Power Control Failed.",
+            "Severity": "Critical",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "SoftPowerControlFailureDeassert": {
+            "Description": "Soft power control failure desasserted.",
+            "Message": "Soft Power Control Recovered from Failure.",
+            "Severity": "OK",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "PowerUnitFailureAssert": {
+            "Description": "Power unit failure asserted.",
+            "Message": "Power Unit Failed.",
+            "Severity": "Critical",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "PowerUnitFailureDeassert": {
+            "Description": "Power unit failure deasserted.",
+            "Message": "Power Unit Recovered from Failure.",
+            "Severity": "OK",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "PowerUnitInsufficientResourceAssert": {
+            "Description": "Power unit predictive failure asserted.",
+            "Message": "Power Unit Has Insufficient Resource.",
+            "Severity": "Critical",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "PowerUnitInsufficientResourceDeassert": {
+            "Description": "Power unit predictive failure deasserted.",
+            "Message": "Power Unit Has Recovered from Insufficient Resource.",
+            "Severity": "OK",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "SMITimeoutAssert": {
+            "Description": "System Management Interface timeout asserted.",
+            "Message": "SMI Handler Timeout.",
+            "Severity": "Critical",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "SMITimeoutDeassert": {
+            "Description": "System Management Interface timeout deasserted.",
+            "Message": "SMI Handler Recovered from Timeout.",
+            "Severity": "Critical",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "SSBThermTripAssert": {
+            "Description": "Server South Bridge thermal event asserted.",
+            "Message": "SSB Thermal Trip Occurred.",
+            "Severity": "Critical",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "SSBThermTripDeassert": {
+            "Description": "Server South Bridge thermal event deasserted.",
+            "Message": "Recovered from SSB Thermal Trip.",
+            "Severity": "OK",
+            "NumberOfArgs": 0,
+            "ParamTypes": [],
+            "Resolution": "None."
+        },
+        "CPUErrorAssert": {
+            "Description": "CPU error asserted.",
+            "Message": "CPU Error: %1.",
+            "Severity": "Critical",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        },
+        "CPUErrorDeassert": {
+            "Description": "CPU Error deasserted.",
+            "Message": "Recovered from CPU Error: %1.",
+            "Severity": "OK",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        },
+        "CPUIERRAssert": {
+            "Description": "CPU Internal Error asserted.",
+            "Message": "CPU %1 IERR Occurred.",
+            "Severity": "Critical",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        },
+        "CPUIERRDeassert": {
+            "Description": "CPU Internal Error deasserted.",
+            "Message": "Recovered CPU %1 IERR.",
+            "Severity": "OK",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        },
+        "CPUThermTripAssert": {
+            "Description": "CPU Thermal error asserted.",
+            "Message": "CPU %1 Thermal Trip Occurred.",
+            "Severity": "Critical",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        },
+        "CPUThermTripDeassert": {
+            "Description": "CPU Thermal error deasserted.",
+            "Message": "Recovered CPU %1 Thermal Trip.",
+            "Severity": "OK",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        },
+        "CPUConfigErrAssert": {
+            "Description": "CPU Configuration error asserted.",
+            "Message": "CPU %1 Configuration Error Occurred.",
+            "Severity": "Critical",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        },
+        "CPUConfigErrDeassert": {
+            "Description": "CPU Configuration error deasserted.",
+            "Message": "Recovered CPU %1 Configuration Error.",
+            "Severity": "OK",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None."
+        }
+    }
+}

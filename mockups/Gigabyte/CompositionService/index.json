@@ -1,0 +1,21 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#CompositionService.CompositionService",
+    "@odata.etag": "W/\"1616690146\"",
+    "@odata.id": "/redfish/v1/CompositionService",
+    "@odata.type": "#CompositionService.v1_1_1.CompositionService",
+    "Description": "Composition Service",
+    "Id": "CompositionService",
+    "Name": "Composition Service",
+    "ResourceBlocks": {
+        "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks"
+    },
+    "ResourceZones": {
+        "@odata.id": "/redfish/v1/CompositionService/ResourceZones"
+    },
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

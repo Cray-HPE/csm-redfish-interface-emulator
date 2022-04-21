@@ -1,0 +1,41 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+    "@odata.id": "/redfish/v1/Systems/QSBP74100021/Memory/Memory2",
+    "@odata.type": "#Memory.v1_4_0.Memory",
+    "Id": "Memory2",
+    "Name": "Memory 2",
+    "Description": "System Memory",
+    "MemoryType": "DRAM",
+    "MemoryDeviceType": "DDR4",
+    "BaseModuleType": "RDIMM",
+    "CapacityMiB": 8192,
+    "DataWidthBits": 64,
+    "BusWidthBits": 72,
+    "Manufacturer": "Hynix",
+    "SerialNumber": "102CE006",
+    "PartNumber": "HMA41GR7MFR8N-TFT1  ",
+    "AllowedSpeedsMHz": [
+        2133
+    ],
+    "MemoryMedia": [
+        "DRAM"
+    ],
+    "RankCount": 2,
+    "DeviceLocator": "CPU1_DIMM_B1",
+    "ErrorCorrection": "MultiBitECC",
+    "OperatingSpeedMhz": 2133,
+    "Metrics": {
+        "@odata.id": "/redfish/v1/Systems/QSBP74100021/Memory/Memory2/MemoryMetrics"
+    },
+    "Oem": {
+        "Intel_RackScale": {
+            "@odata.type": "#Intel.Oem.Memory",
+            "VoltageVolt": 1.2
+        }
+    },
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    }
+}

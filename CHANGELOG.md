@@ -24,6 +24,16 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [1.1.0] - 2022-04-21
+
+### Added
+
+- Dynamic resources for the CertificateService allowing for performing ReplaceCertificate actions.
+- Dynamic resources for Manager Network Protocol allowing for editing values.
+- Dynamic resources for the Managers allowing for performing Manager.Reset actions.
+- Dynamic resources for the Chassis allowing for performing Chassis.Reset actions.
+- Added mockups for CMM, Gigabyte compute, Intel compute, and Slingshot_Switch_Blade.
+
 ## [1.0.0] - 2022-04-15
 
 ### Added

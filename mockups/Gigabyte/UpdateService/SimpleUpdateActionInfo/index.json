@@ -1,0 +1,54 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+  "@odata.etag": "W/\"1650564782\"",
+  "@odata.id": "/redfish/v1/UpdateService/SimpleUpdateActionInfo",
+  "@odata.type": "#ActionInfo.v1_1_1.ActionInfo",
+  "Description": "This action is used to perform BMC Firmware update",
+  "Id": "SimpleUpdateActionInfo",
+  "Name": "SimpleUpdate",
+  "Parameters": [
+    {
+      "DataType": "String",
+      "Name": "ImageURI",
+      "Required": true
+    },
+    {
+      "AllowableValues": [
+        "HTTP",
+        "FTP"
+      ],
+      "DataType": "String",
+      "Name": "TransferProtocol",
+      "Required": true
+    },
+    {
+      "DataType": "String",
+      "Name": "User",
+      "Required": false
+    },
+    {
+      "DataType": "String",
+      "Name": "Password",
+      "Required": false
+    },
+    {
+      "AllowableValues": [
+        "BMC",
+        "BIOS",
+        "MB_CPLD",
+        "BPB_CPLD",
+        "HPM_BMC",
+        "HPM_BIOS",
+        "HPM_SCP"
+      ],
+      "DataType": "String",
+      "Name": "UpdateComponent",
+      "Required": false
+    },
+    {
+      "DataType": "Boolean",
+      "Name": "ResetBMC",
+      "Required": false
+    }
+  ]
+}

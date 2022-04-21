@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICTemperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICTemperature",
+    "Name": "Rosetta A0",
+    "PhysicalContext": "ASIC",
+    "Reading": 40,
+    "ReadingTime": "2022-04-20T15:35:49.049260845Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 75
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 85
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 125
+        }
+    }
+}

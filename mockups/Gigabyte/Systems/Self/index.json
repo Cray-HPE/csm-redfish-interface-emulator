@@ -1,0 +1,147 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystem.ComputerSystem",
+    "@odata.etag": "W/\"1649881751\"",
+    "@odata.id": "/redfish/v1/Systems/Self",
+    "@odata.type": "#ComputerSystem.v1_7_0.ComputerSystem",
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Self/ResetActionInfo",
+            "@Redfish.OperationApplyTimeSupport": {
+                "@odata.type": "#Settings.v1_2_1.Settings.OperationApplyTimeSupport",
+                "MaintenanceWindowDurationInSeconds": 600,
+                "MaintenanceWindowResource": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                },
+                "SupportedValues": [
+                    "Immediate",
+                    "AtMaintenanceWindowStart"
+                ]
+            },
+            "target": "/redfish/v1/Systems/Self/Actions/ComputerSystem.Reset"
+        }
+    },
+    "AssetTag": "Free form asset tag",
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/Self/Bios"
+    },
+    "BiosVersion": "C27",
+    "Boot": {
+        "BootNext": "",
+        "BootOptions": {
+            "@odata.id": "/redfish/v1/Systems/Self/BootOptions"
+        },
+        "BootOrder": [
+            "Boot0002",
+            "Boot0003",
+            "Boot0004",
+            "Boot0005",
+            "Boot0006",
+            "Boot0007",
+            "Boot0001"
+        ],
+        "BootSourceOverrideEnabled": "Disabled",
+        "BootSourceOverrideEnabled@Redfish.AllowableValues": [
+            "Disabled",
+            "Once",
+            "Continuous"
+        ],
+        "BootSourceOverrideMode": "Legacy",
+        "BootSourceOverrideMode@Redfish.AllowableValues": [
+            "Legacy",
+            "UEFI"
+        ],
+        "BootSourceOverrideTarget": "None",
+        "BootSourceOverrideTarget@Redfish.AllowableValues": [
+            "None",
+            "Pxe",
+            "Floppy",
+            "Cd",
+            "Usb",
+            "Hdd",
+            "BiosSetup",
+            "Utilities",
+            "UefiShell",
+            "UefiTarget",
+            "SDCard",
+            "UefiHttp",
+            "RemoteDrive",
+            "UefiBootNext"
+        ]
+    },
+    "Description": "System Self",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/Self/EthernetInterfaces"
+    },
+    "Id": "Self",
+    "IndicatorLED": "Off",
+    "IndicatorLED@Redfish.AllowableValues": [
+        "Lit",
+        "Blinking",
+        "Off"
+    ],
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Self"
+            }
+        ],
+        "Chassis@odata.count": 1,
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/Self"
+            }
+        ],
+        "ManagedBy@odata.count": 1
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Systems/Self/LogServices"
+    },
+    "Manufacturer": "GIGABYTE",
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/Self/Memory"
+    },
+    "MemoryDomains": {
+        "@odata.id": "/redfish/v1/Systems/Self/MemoryDomains"
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 244
+    },
+    "Model": "H262-Z63-00",
+    "Name": "System",
+    "NetworkInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/Self/NetworkInterfaces"
+    },
+    "PCIeDevices": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/1"
+        }
+    ],
+    "PCIeDevices@odata.count": 1,
+    "PartNumber": "000000000001",
+    "PowerState": "On",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "AMD EPYC 7702 64-Core Processor                "
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/Self/Processors"
+    },
+    "SKU": "01234567890123456789AB",
+    "SecureBoot": {
+        "@odata.id": "/redfish/v1/Systems/Self/SecureBoot"
+    },
+    "SerialNumber": "GJG9NF512A000302",
+    "SimpleStorage": {
+        "@odata.id": "/redfish/v1/Systems/Self/SimpleStorage"
+    },
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Storage": {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage"
+    },
+    "SystemType": "Physical",
+    "UUID": "e9184000-7983-11ec-8000-b42e99bade15"
+}

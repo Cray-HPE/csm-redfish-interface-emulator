@@ -1,0 +1,20 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ManagerAccount.ManagerAccount",
+    "@odata.etag": "W/\"1613499743\"",
+    "@odata.id": "/redfish/v1/AccountService/Accounts/4",
+    "@odata.type": "#ManagerAccount.v1_3_0.ManagerAccount",
+    "Description": "",
+    "Enabled": true,
+    "Id": "4",
+    "Links": {
+        "Role": {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Administrator"
+        }
+    },
+    "Locked": false,
+    "Name": "root",
+    "Password": "",
+    "PasswordChangeRequired": false,
+    "RoleId": "Administrator",
+    "UserName": "root"
+}

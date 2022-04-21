@@ -1,0 +1,44 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#GBTFanprofile.GBTFanprofile",
+    "@odata.etag": "W/\"1616690423\"",
+    "@odata.id": "/redfish/v1/Chassis/Self/Thermal/FanprofileService/Fanprofile",
+    "@odata.type": "#GBTFanprofile.v1_0_0.GBTFanprofile",
+    "Id": "Fanprofile",
+    "Name": "Fanprofile",
+    "arrProfile": [
+        {
+            "arrPolicy": [
+                {
+                    "arrDuty": [
+                        30,
+                        75,
+                        90,
+                        100
+                    ],
+                    "arrFanSensor": {},
+                    "arrRef": [
+                        43,
+                        30,
+                        20,
+                        7
+                    ],
+                    "arrSensor": [
+                        12,
+                        13
+                    ],
+                    "iAmbientSensor": 0,
+                    "iAmbientSensorTemp": 0,
+                    "iCpuTdp": 0,
+                    "iInSDR": 1,
+                    "iInitDuty": 30,
+                    "iPolicyType": 2,
+                    "iSensorCode": 1
+                }
+            ],
+            "strName": "default",
+            "strVersion": "1.00"
+        }
+    ],
+    "strMode": "default",
+    "strVersion": "1.00"
+}

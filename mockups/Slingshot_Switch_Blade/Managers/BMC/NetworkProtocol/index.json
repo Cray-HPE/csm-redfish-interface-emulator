@@ -1,0 +1,43 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol",
+    "@odata.type": "#ManagerNetworkProtocol.v1_2_0.ManagerNetworkProtocol",
+    "Description": "Network Protocol Details",
+    "Id": "NetworkProtocol",
+    "NTP": {
+        "NTPServers": [
+            "10.254.1.20"
+        ],
+        "Port": 123,
+        "ProtocolEnabled": true
+    },
+    "Name": "Manager Network Protocol",
+    "Oem": {
+        "Resolv": {
+            "NameServers": [],
+            "ProtocolEnabled": false,
+            "SearchList": []
+        },
+        "SSHAdmin": {
+            "AuthorizedKeys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCyVCgMWS0svr7+ImjSv/otY+/9DM1X/QLRqhWdM5ZOIreqO9T3zbOaAf11spU1icqVthomJmNIQfqpUhY68XcIKIDsmYzKZO+hzlw0VkaOJUujGkUwxdk0pNUrq/q16C5iZkiS+i72SjRg10+mlHaatUQx9q9nKH+Oj+9myh879eBvZB97c+HE1xKf0AZsmYljUrSZHsHTd6RfLcXqdNzAUgTwYVJSYa9EaTrlmNpd2m51Dw3thjMjnqv9Rb7mJ8GS1kJEgNCBw6v6orOerlWYK9khm0mJcTftd+vPcZsGSVgSvahc3lqr0InN80sHql7HyVLnHlPotSPcGWAMI3uY5S0WLrgehaNAhEGpUzjkP6VHFl+gfvcp8BRIkE+Q0/y2m3pTIkZBMtChUq6lt5GHAkMsmxB03JxF2VFEUjIQrHAiPZ+qkauBFcOQytSVp+oxw4w79l7PYQ6BbfZlHX9Z2pGER4N0PZrVPsvfxJt0350isO2VwwUh8xALWfZrORs= root@slingshot-fabric-manager-599979fd6c-br9sw\n"
+        },
+        "SSHConsole": {
+            "AuthorizedKeys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDAoBnAi3RRKqbEyFCyqetUvYVD3W84tKrfD+NeoS37LKDvMPVpBDuorQiAX7J/OilS0dq2OKbEfsJ9ssPs42klHaFli2IQrDNlfhTgWRGefjDUu4WN+JW9X0XzNjhMQZFQ7dEjj7kXKDNT4G9xcx1m8tkwLk4fmRfiEUQvZvTggAjIOs81A8TZAXiM5NYac4gt5sCVx0QZGN18AQRicMrx/FD78DasoEHJuR9ddDIlsEA7dIDZbKXnEss5VJSK/mii5xpA+uRkE1BSDnUHDH8QHLqDrRM4ZoODqP8KEySv+8fkD+IiZNqthiMnjkRX4jwbCsJqFfPINaxXS1WjgtCszQx3pMLzTRFyRcwXeUeqqEcyPP5NqCDVJlt0hYppkH7gQVzfS4lm+NTqVZiyvNb1jm8StvL1UiDXGnsMNa9yAsPZjxx86UH4RE4ocPPMrEImO44AWTi+jO2m2GLxSvpbNUQUs5OA/n//O2elar1HOPHzqWzPpWsFrG4sT2OWSJSplPLlktIAOXxX+GWp4vN2n8rd2fgh2t9p35SoOqwIR5e2DIsUH87M9aPMLYvx5zJgwBYLYIaXneg3t0g910xVHUkjHLEmBdJncG8VC0U+a8STG7IAWpDMs3ch3xgCEub10xm8QLMEam+Nd05Mr1sG+mdhxXnJ2p4Gd77chVx67w== "
+        },
+        "Syslog": {
+            "Port": 514,
+            "ProtocolEnabled": true,
+            "SyslogServers": [
+                "rsyslog-aggregator.hmnlb"
+            ],
+            "Transport": "udp"
+        }
+    },
+    "SSH": {
+        "Port": 22,
+        "ProtocolEnabled": true
+    },
+    "Status": {
+        "State": "Enabled"
+    }
+}

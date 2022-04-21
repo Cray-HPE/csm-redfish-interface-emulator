@@ -1,0 +1,20 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/BIOS",
+    "@odata.type": "#SoftwareInventory.v1_1_1.SoftwareInventory",
+    "Id": "BIOS",
+    "Name": "Software Inventory",
+    "Description": "Software Version and Inventory Information",
+    "Version": "SE5C620.86B.02.01.0008.C0001.031920191559",
+    "Status": {
+        "Oem": {}
+    },
+    "Actions": {
+        "Oem": {
+            "#Intel.Oem.UpdateBIOS": {
+                "target": "/redfish/v1/UpdateService/SoftwareInventory/BIOS/Actions/Oem/Intel.Oem.UpdateBIOS",
+                "target_backup": "/redfish/v1/UpdateService/SoftwareInventory/BIOS/Actions/Oem/Intel.Oem.UpdateBIOS/?imageflag=Backup"
+            }
+        }
+    }
+}

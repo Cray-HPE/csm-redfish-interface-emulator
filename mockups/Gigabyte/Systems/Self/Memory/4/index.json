@@ -1,0 +1,58 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+    "@odata.etag": "W/\"1613499757\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Memory/4",
+    "@odata.type": "#Memory.v1_7_1.Memory",
+    "Actions": {
+        "Oem": {
+            "#AmiBios.ChangeState": {
+                "State@Redfish.AllowableValues": [
+                    "Enabled",
+                    "Disabled"
+                ],
+                "target": "/redfish/v1/Systems/Self/Memory/4/Actions/AmiBios.ChangeState"
+            }
+        }
+    },
+    "AllowedSpeedsMHz": [
+        3200
+    ],
+    "BusWidthBits": 48,
+    "CapacityMiB": 15625,
+    "DataWidthBits": 40,
+    "Description": "Memory Instance 4",
+    "DeviceLocator": "DIMM_P0_D0",
+    "ErrorCorrection": "MultiBitECC",
+    "Id": "4",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        }
+    },
+    "Manufacturer": "Samsung",
+    "MemoryDeviceType": "DDR4",
+    "MemoryType": "DRAM",
+    "Name": "Memory 4",
+    "Oem": {
+        "GbtMemoryOemProperty": {
+            "@odata.type": "#GbtMemoryOemProperty.v1_0_0.GbtMemoryOemProperty",
+            "Configured Voltage": 1200,
+            "Maximum Voltage": 1200,
+            "Minimum Voltage": 1200
+        }
+    },
+    "OperatingSpeedMhz": 3200,
+    "PartNumber": "M393A2K43DB2-CWE    ",
+    "Regions": [
+        {
+            "OffsetMiB": 3906,
+            "RegionId": "5a",
+            "SizeMiB": 5859
+        }
+    ],
+    "SerialNumber": "12BBD412",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

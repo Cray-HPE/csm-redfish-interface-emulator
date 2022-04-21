@@ -134,7 +134,6 @@ mkdir $WORK_DIR
 # Copy over CSM bits
 echo "Applying CSM additions..."
 cp -r -f $BASE_DIR/src/* $WORK_DIR/
-cp -r -f $BASE_DIR/emulator-config* $WORK_DIR/
 cp -r -f $BASE_DIR/mockups/ $WORK_DIR/api_emulator/redfish/static/
 
 # Set up our virtual environment

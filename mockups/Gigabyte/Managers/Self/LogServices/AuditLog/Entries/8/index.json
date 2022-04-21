@@ -1,0 +1,25 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"1646166550\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/AuditLog/Entries/8",
+    "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+    "Created": "2022-03-01T20:29:10+00:00",
+    "Description": "Audit Log",
+    "EntryType": "Event",
+    "EventTimestamp": "2022-03-01T20:29:10+00:00",
+    "EventType": "Alert",
+    "Id": "8",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions"
+        }
+    },
+    "Message": "User: in-band-user, IP: 10.254.1.20, Protocol: http - While attempting to establish a connection to /redfish/v1/EventService/Subscriptions, the service was denied access.",
+    "MessageArgs": [
+        "/redfish/v1/EventService/Subscriptions",
+        "/redfish/v1/UpdateService/Actions/SimpleUpdate"
+    ],
+    "MessageId": "Security.1.0.AccessDenied",
+    "Name": "Audit Log Entry 8",
+    "Severity": "Critical"
+}

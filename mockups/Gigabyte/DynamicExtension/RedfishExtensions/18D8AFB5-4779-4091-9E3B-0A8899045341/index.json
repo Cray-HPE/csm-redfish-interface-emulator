@@ -1,0 +1,13 @@
+{
+    "@odata.context": "/redfish/v1/$metadata",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions/18D8AFB5-4779-4091-9E3B-0A8899045341",
+    "@odata.type": "#DynamicExtension.v1_0_0.DynamicExtension",
+    "Created": "2021-04-19T03:52:46+00:00",
+    "Description": "Dynamic 18D8AFB5-4779-4091-9E3B-0A8899045341 Extension",
+    "DirectoryName": "ami_bios",
+    "Id": "18D8AFB5-4779-4091-9E3B-0A8899045341",
+    "Md5Checksum": "9a7019283ba7556c4911fc7575a1034c",
+    "Name": "Dynamic 18D8AFB5-4779-4091-9E3B-0A8899045341 Extension",
+    "Running": true
+}

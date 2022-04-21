@@ -1,0 +1,8 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/HSBP1",
+    "@odata.type": "#SoftwareInventory.v1_1_1.SoftwareInventory",
+    "Name": "Software Inventory",
+    "Description": "Software Version and Inventory Information",
+    "Version": "01.21"
+}

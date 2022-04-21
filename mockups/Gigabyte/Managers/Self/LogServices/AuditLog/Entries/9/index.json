@@ -1,0 +1,19 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"1613501222\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/AuditLog/Entries/9",
+    "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+    "Created": "2021-02-16T18:47:02+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2021-02-16T18:47:02+00:00",
+    "EventType": "Alert",
+    "Id": "9",
+    "Message": "User: Anonymous, IP: ::ffff:10.254.1.26 - Device is downloading firmware image file from Remote Path - http://10.254.1.26/image.RBU for action /redfish/v1/UpdateService/Actions/SimpleUpdate.",
+    "MessageArgs": [
+        "http://10.254.1.26/image.RBU",
+        "/redfish/v1/UpdateService/Actions/SimpleUpdate"
+    ],
+    "MessageId": "AmiOem.1.0.DownloadFirmware",
+    "Name": "Audit Log Entry 9",
+    "Severity": "OK"
+}

@@ -1,0 +1,43 @@
+{
+    "@Redfish.CollectionCapabilities": {
+        "@odata.type": "#CollectionCapabilities.v1_1_0.CollectionCapabilities",
+        "Capabilities": [
+            {
+                "CapabilitiesObject": {
+                    "@odata.id": "/redfish/v1/Systems/Capabilities"
+                },
+                "Links": {
+                    "TargetCollection": {
+                        "@odata.id": "/redfish/v1/Systems"
+                    }
+                },
+                "UseCase": "ComputerSystemComposition"
+            }
+        ]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Zone.Zone",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/CompositionService/ResourceZones/1",
+    "@odata.type": "#Zone.v1_3_0.Zone",
+    "Description": "Resource Zone 1",
+    "Id": "1",
+    "Links": {
+        "ResourceBlocks": [
+            {
+                "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/ComputeBlock"
+            },
+            {
+                "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/DrivesBlock"
+            },
+            {
+                "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/NetworkBlock"
+            }
+        ]
+    },
+    "Name": "Resource Zone 1",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

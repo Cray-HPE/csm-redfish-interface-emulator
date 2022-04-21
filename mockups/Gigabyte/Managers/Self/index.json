@@ -1,0 +1,118 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Manager.Manager",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Managers/Self",
+    "@odata.type": "#Manager.v1_5_2.Manager",
+    "Actions": {
+        "#Manager.Reset": {
+            "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/ResetActionInfo",
+            "@Redfish.OperationApplyTimeSupport": {
+                "@odata.type": "#Settings.v1_2_1.Settings.OperationApplyTimeSupport",
+                "MaintenanceWindowDurationInSeconds": 600,
+                "MaintenanceWindowResource": {
+                    "@odata.id": "/redfish/v1/Managers/Self"
+                },
+                "SupportedValues": [
+                    "Immediate",
+                    "AtMaintenanceWindowStart"
+                ]
+            },
+            "target": "/redfish/v1/Managers/Self/Actions/Manager.Reset"
+        },
+        "Oem": {
+            "#RedfishDBReset": {
+                "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/RedfishDBResetActionInfo",
+                "target": "/redfish/v1/Managers/Self/Actions/RedfishDBReset"
+            },
+            "#RestoreDefault": {
+                "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/RestoreDefaultActionInfo",
+                "target": "/redfish/v1/Managers/Self/Actions/RestoreDefault"
+            },
+            "#VirtualMedia.ConfigureCDInstance": {
+                "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/Oem/Ami/VirtualMedia.ConfigureCDInstanceActionInfo",
+                "target": "/redfish/v1/Managers/Self/Actions/Oem/Ami/VirtualMedia.ConfigureCDInstance"
+            },
+            "#VirtualMedia.EnableRMedia": {
+                "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/Oem/Ami/VirtualMedia.EnableRMediaActionInfo",
+                "target": "/redfish/v1/Managers/Self/Actions/Oem/Ami/VirtualMedia.EnableRMedia"
+            }
+        }
+    },
+    "CommandShell": {
+        "ConnectTypesSupported": [
+            "SSH",
+            "IPMI"
+        ],
+        "MaxConcurrentSessions": 0,
+        "ServiceEnabled": true
+    },
+    "DateTime": "2022-04-20T18:39:58+00:00",
+    "DateTimeLocalOffset": "+00:00",
+    "Description": "BMC",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/Self/EthernetInterfaces"
+    },
+    "FirmwareVersion": "12.84.13",
+    "GraphicalConsole": {
+        "ConnectTypesSupported": [
+            "KVMIP"
+        ],
+        "MaxConcurrentSessions": 2,
+        "ServiceEnabled": true
+    },
+    "HostInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/Self/HostInterfaces"
+    },
+    "Id": "Self",
+    "Links": {
+        "ManagerForChassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Self"
+            }
+        ],
+        "ManagerForChassis@odata.count": 1,
+        "ManagerForServers": [
+            {
+                "@odata.id": "/redfish/v1/Systems/Self"
+            }
+        ],
+        "ManagerForServers@odata.count": 1,
+        "ManagerInChassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        }
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Managers/Self/LogServices"
+    },
+    "ManagerType": "BMC",
+    "Model": "410810600",
+    "Name": "Manager",
+    "NetworkProtocol": {
+        "@odata.id": "/redfish/v1/Managers/Self/NetworkProtocol"
+    },
+    "PowerState": "On",
+    "Redundancy@odata.count": 0,
+    "RemoteAccountService": {
+        "@odata.id": "/redfish/v1/AccountService"
+    },
+    "RemoteRedfishServiceUri": "/redfish/v1/",
+    "SerialConsole": {
+        "ConnectTypesSupported": [
+            "IPMI"
+        ],
+        "MaxConcurrentSessions": 1,
+        "ServiceEnabled": true
+    },
+    "SerialInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/Self/SerialInterfaces"
+    },
+    "ServiceEntryPointUUID": "009ea76e-debf-0010-e803-b42e99bade17",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "UUID": "009ea76e-debf-0010-e803-b42e99bade17",
+    "VirtualMedia": {
+        "@odata.id": "/redfish/v1/Managers/Self/VirtualMedia"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Chassis.Chassis",
+    "@odata.id": "/redfish/v1/Chassis/RackMount/PwrSupply2FRU",
+    "@odata.type": "#Chassis.v1_6_0.Chassis",
+    "Id": "PwrSupply2FRU",
+    "Name": "Computer System Card",
+    "ChassisType": "Card",
+    "Manufacturer": "SOLUM CO., LTD.                  ",
+    "Model": "PSSF222201A",
+    "SerialNumber": "CNS2221A4AH9R0616",
+    "PartNumber": "H66158-010",
+    "PowerState": "On",
+    "Links": {
+        "ComputerSystems": [
+            {
+                "@odata.id": "/redfish/v1/Systems/QSBP74100021"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC"
+            }
+        ],
+        "ContainedBy": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/RackMount"
+            }
+        ]
+    }
+}

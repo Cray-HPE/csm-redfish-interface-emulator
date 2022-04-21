@@ -1,0 +1,335 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal",
+    "@odata.type": "#Thermal.v1_3_1.Thermal",
+    "Description": "Thermal sensor readings",
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Temperatures": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/23",
+            "Name": "j1 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/22",
+            "Name": "NXP LS1043A Temperature",
+            "PhysicalContext": "SystemBoard",
+            "ReadingCelsius": 35,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 90,
+            "UpperThresholdFatal": 105,
+            "UpperThresholdNonCritical": 85
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/35",
+            "Name": "j20 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/30",
+            "Name": "j16 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/34",
+            "Name": "j2 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/49",
+            "Name": "AVDDH 1v1 S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 42,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 130,
+            "UpperThresholdFatal": 150,
+            "UpperThresholdNonCritical": 115
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/47",
+            "Name": "VDD 3v3 S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 34,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 130,
+            "UpperThresholdFatal": 150,
+            "UpperThresholdNonCritical": 115
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/42",
+            "Name": "j5 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/44",
+            "Name": "j7 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/41",
+            "Name": "j4 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/32",
+            "Name": "j18 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/36",
+            "Name": "j21 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/37",
+            "Name": "j22 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/21",
+            "Name": "Rosetta A0 Temperature",
+            "PhysicalContext": "ASIC",
+            "ReadingCelsius": 40,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 85,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 75
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/40",
+            "Name": "j3 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/43",
+            "Name": "j6 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/24",
+            "Name": "j10 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/29",
+            "Name": "j15 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/33",
+            "Name": "j19 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/38",
+            "Name": "j23 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/50",
+            "Name": "AVDD 0v90 S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 36,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 130,
+            "UpperThresholdFatal": 150,
+            "UpperThresholdNonCritical": 115
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/48",
+            "Name": "VDDH 2v5 S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 36,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 130,
+            "UpperThresholdFatal": 150,
+            "UpperThresholdNonCritical": 115
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/46",
+            "Name": "j9 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/45",
+            "Name": "j8 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/1",
+            "Name": "",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/27",
+            "Name": "j13 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/31",
+            "Name": "j17 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/25",
+            "Name": "j11 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/28",
+            "Name": "j14 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/26",
+            "Name": "j12 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/51",
+            "Name": "VDD 0v85 S0 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 34,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 130,
+            "UpperThresholdFatal": 150,
+            "UpperThresholdNonCritical": 115
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/39",
+            "Name": "j24 Temperature",
+            "PhysicalContext": "NetworkingDevice",
+            "ReadingCelsius": 60,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 70,
+            "UpperThresholdFatal": 80,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal#/Temperatures/52",
+            "Name": "IVOC12 Temperature",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingCelsius": 36,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 130,
+            "UpperThresholdFatal": 150,
+            "UpperThresholdNonCritical": 115
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "$ref": "#/definitions/Oem",
+    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema.v1_1_0.json",
+    "definitions": {
+        "GbtMemroyOemProperty": {
+            "additionalProperties": false,
+            "patternProperties": {
+                "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message|Privileges)\\.[a-zA-Z_][a-zA-Z0-9_.]+$": {
+                    "description": "This property shall specify a valid odata or Redfish property.",
+                    "type": [
+                        "array",
+                        "boolean",
+                        "number",
+                        "null",
+                        "object",
+                        "string"
+                    ]
+                }
+            },
+            "properties": {
+                "@odata.type": {
+                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata.4.0.0.json#/definitions/type"
+                },
+                "Configured Voltage": {
+                    "description": "This property shall specify memory configured voltage.",
+                    "type": "number"
+                },
+                "Maximum Voltage": {
+                    "description": "This property shall specify memory maximum voltage.",
+                    "type": "number"
+                },
+                "Minimum Voltage": {
+                    "description": "This property shall specify memory minimum voltage.",
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "Oem": {
+            "additionalProperties": false,
+            "patternProperties": {
+                "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message|Privileges)\\.[a-zA-Z_][a-zA-Z0-9_.]+$": {
+                    "description": "This property shall specify a valid odata or Redfish property.",
+                    "type": [
+                        "array",
+                        "boolean",
+                        "number",
+                        "null",
+                        "object",
+                        "string"
+                    ]
+                }
+            },
+            "properties": {
+                "GbtMemroyOemProperty": {
+                    "items": {
+                        "$ref": "#/definitions/GbtMemroyOemProperty"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "title": "#GbtMemroyOemProperty.v1_0_0.Oem"
+}

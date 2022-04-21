@@ -1,0 +1,19 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/JsonSchemas/DynamicExtensionRoot.v1_0_0",
+    "@odata.type": "#JsonSchemaFile.v1_1_3.JsonSchemaFile",
+    "Description": "DynamicExtensionRoot.v1_0_0 schema",
+    "Id": "DynamicExtensionRoot.v1_0_0",
+    "Languages": [
+        "en"
+    ],
+    "Location": [
+        {
+            "Language": "en",
+            "Uri": "/redfish/v1/JsonSchemas/DynamicExtensionRoot.v1_0_0.json"
+        }
+    ],
+    "Name": "DynamicExtensionRoot.v1_0_0 schema",
+    "Schema": "DynamicExtensionRoot.v1_0_0.DynamicExtensionRoot"
+}

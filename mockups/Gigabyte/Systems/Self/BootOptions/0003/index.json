@@ -1,0 +1,13 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#BootOption.BootOption",
+    "@odata.etag": "W/\"1616690423\"",
+    "@odata.id": "/redfish/v1/Systems/Self/BootOptions/0003",
+    "@odata.type": "#BootOption.v1_0_2.BootOption",
+    "BootOptionEnabled": true,
+    "BootOptionReference": "Boot0003",
+    "Description": "UEFI: PXE IP4 Intel(R) I350 Gigabit Network Connection",
+    "DisplayName": "UEFI: PXE IP4 Intel(R) I350 Gigabit Network Connection",
+    "Id": "0003",
+    "Name": "Boot0003",
+    "UefiDevicePath": "PciRoot(0x3)/Pci(0x3,0x3)/Pci(0x0,0x0)/MAC(B42E99BADE15,0x0)/IPv4(0.0.0.0,0x0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0)"
+}

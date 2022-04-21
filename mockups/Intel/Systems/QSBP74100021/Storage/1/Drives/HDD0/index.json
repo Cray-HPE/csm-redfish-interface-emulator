@@ -1,0 +1,18 @@
+{
+    "error": {
+        "code": "Base.1.1.0.GeneralError",
+        "message": "A general error has occurred. See ExtendedInfo for more information.",
+        "@Message.ExtendedInfo": [
+            {
+                "@odata.type": "#Message.v1_0_5.Message",
+                "MessageId": "Base.1.1.0.ResourceMissingAtURI",
+                "Message": "The resource at the URI /redfish/v1/Systems/QSBP74100021/Storage/1/Drives/HDD0 was not found.",
+                "MessageArgs": [
+                    "/redfish/v1/Systems/QSBP74100021/Storage/1/Drives/HDD0"
+                ],
+                "Severity": "Critical",
+                "Resolution": "Place a valid resource at the URI or correct the URI and resubmit the request."
+            }
+        ]
+    }
+}

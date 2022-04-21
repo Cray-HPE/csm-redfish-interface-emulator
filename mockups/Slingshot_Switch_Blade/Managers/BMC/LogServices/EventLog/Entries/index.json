@@ -1,0 +1,1007 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "Collection of entries for this log service",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/1",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:05:54+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:05:54+00:00",
+            "Id": "1",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Enclosure"
+                }
+            },
+            "Message": "The power state of resource /redfish/v1/Chassis/Enclosure has changed to type On.",
+            "MessageArgs": [
+                "On",
+                "/redfish/v1/Chassis/Enclosure"
+            ],
+            "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+            "Name": "Log entry 1",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/2",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:05:54+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:05:54+00:00",
+            "Id": "2",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Managers/BMC/Oem/CleanShutdown"
+                }
+            },
+            "Message": "Switch controller unclean shutdown.",
+            "MessageArgs": [],
+            "MessageId": "CrayAlerts.UncleanShutdownDetected",
+            "Name": "Log entry 2",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/3",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:43+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:43+00:00",
+            "Id": "3",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j24p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j24p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:43 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "j24p0",
+                "2022/04/19 20:06:43",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 3",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/4",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:43+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:43+00:00",
+            "Id": "4",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j2p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j2p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:43 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:43",
+                "j2p1",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 4",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/5",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:43+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:43+00:00",
+            "Id": "5",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j14p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j14p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:43 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:43",
+                "j14p0",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 5",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/6",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:43+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:43+00:00",
+            "Id": "6",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j8p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j8p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:43 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:43",
+                "j8p0",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 6",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/7",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:43+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:43+00:00",
+            "Id": "7",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j2p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j2p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:43 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "j2p0",
+                "2022/04/19 20:06:43",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 7",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/8",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:43+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:43+00:00",
+            "Id": "8",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j16p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j16p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:43 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:43",
+                "j16p0",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 8",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/9",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:43+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:43+00:00",
+            "Id": "9",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j14p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j14p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:43 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:43",
+                "PORT_DOWN",
+                "j14p1",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 9",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/10",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:43+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:43+00:00",
+            "Id": "10",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j22p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j22p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:43 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "j22p1",
+                "2022/04/19 20:06:43",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 10",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/11",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:44+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:44+00:00",
+            "Id": "11",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j20p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j20p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:44 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:44",
+                "2022/04/19 20:06:42",
+                "PORT_DOWN",
+                "j20p0",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 11",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/12",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:44+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:44+00:00",
+            "Id": "12",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j18p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j18p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:44 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:44",
+                "2022/04/19 20:06:42",
+                "j18p1",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 12",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/13",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:44+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:44+00:00",
+            "Id": "13",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j10p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j10p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:44 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:44",
+                "2022/04/19 20:06:42",
+                "j10p1",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 13",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/14",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:44+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:44+00:00",
+            "Id": "14",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j8p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j8p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:44 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:44",
+                "2022/04/19 20:06:42",
+                "PORT_DOWN",
+                "j8p1",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 14",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/15",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:44+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:44+00:00",
+            "Id": "15",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j10p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j10p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:44 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:44",
+                "2022/04/19 20:06:42",
+                "j10p0",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 15",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/16",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:44+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:44+00:00",
+            "Id": "16",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j18p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j18p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:44 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:44",
+                "2022/04/19 20:06:42",
+                "j18p0",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 16",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/17",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:45+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:45+00:00",
+            "Id": "17",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j103p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j103p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:45 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:45",
+                "2022/04/19 20:06:42",
+                "PORT_DOWN",
+                "j103p0",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 17",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/18",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:46+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:46+00:00",
+            "Id": "18",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j106p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j106p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:46 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "j106p1",
+                "2022/04/19 20:06:46",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 18",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/19",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:46+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:46+00:00",
+            "Id": "19",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j107p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j107p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:46 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "j107p0",
+                "2022/04/19 20:06:46",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 19",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/20",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:46+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:46+00:00",
+            "Id": "20",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j107p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j107p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:46 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:46",
+                "j107p1",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 20",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/21",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:46+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:46+00:00",
+            "Id": "21",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j106p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j106p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:46 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:46",
+                "PORT_DOWN",
+                "j106p0",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 21",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/22",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:47+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:47+00:00",
+            "Id": "22",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j102p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j102p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:47 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:47",
+                "j102p1",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 22",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/23",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:47+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:47+00:00",
+            "Id": "23",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j104p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j104p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:47 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "j104p1",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 23",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/24",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:47+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:47+00:00",
+            "Id": "24",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j105p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j105p1 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:47 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "j105p1",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 24",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/25",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:47+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:47+00:00",
+            "Id": "25",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j104p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j104p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:47 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "j104p0",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 25",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/26",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:47+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:47+00:00",
+            "Id": "26",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j101p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j101p0 has experienced a link flap event between 2022/04/19 20:06:42 and 2022/04/19 20:06:47 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:42",
+                "2022/04/19 20:06:47",
+                "j101p0",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 26",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/27",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:47+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:47+00:00",
+            "Id": "27",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j4p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j4p0 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:47 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "0",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "j4p0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 27",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/28",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:47+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:47+00:00",
+            "Id": "28",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j101p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j101p1 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:47 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "0",
+                "j101p1",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 28",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/29",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:48+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:48+00:00",
+            "Id": "29",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j24p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j24p1 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:48 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:48",
+                "2022/04/19 20:06:47",
+                "j24p1",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 29",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/30",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:48+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:48+00:00",
+            "Id": "30",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j102p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j102p0 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:48 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:48",
+                "2022/04/19 20:06:47",
+                "j102p0",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 30",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/31",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:48+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:48+00:00",
+            "Id": "31",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j22p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j22p0 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:48 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:48",
+                "j22p0",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 31",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/32",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:48+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:48+00:00",
+            "Id": "32",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j6p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j6p0 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:48 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:48",
+                "j6p0",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 32",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/33",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:48+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:48+00:00",
+            "Id": "33",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j103p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j103p1 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:48 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:48",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "j103p1",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 33",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/34",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:48+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:48+00:00",
+            "Id": "34",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j105p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j105p0 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:48 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:48",
+                "2022/04/19 20:06:47",
+                "j105p0",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 34",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/35",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:49+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:49+00:00",
+            "Id": "35",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j16p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j16p1 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:49 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "j16p1",
+                "2022/04/19 20:06:49",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 35",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/36",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:49+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:49+00:00",
+            "Id": "36",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j6p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j6p1 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:49 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "j6p1",
+                "2022/04/19 20:06:49",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 36",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/37",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:49+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:49+00:00",
+            "Id": "37",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j12p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j12p0 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:49 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "j12p0",
+                "2022/04/19 20:06:49",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 37",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/38",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:49+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:49+00:00",
+            "Id": "38",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j100p0/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j100p0 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:49 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "j100p0",
+                "2022/04/19 20:06:49",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 38",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/39",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:49+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:49+00:00",
+            "Id": "39",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j4p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j4p1 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:49 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "j4p1",
+                "2022/04/19 20:06:49",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 39",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/40",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:49+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:49+00:00",
+            "Id": "40",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j20p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j20p1 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:49 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:49",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "j20p1",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 40",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/41",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:49+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:49+00:00",
+            "Id": "41",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j12p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j12p1 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:49 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:49",
+                "2022/04/19 20:06:47",
+                "j12p1",
+                "PORT_DOWN",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 41",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/42",
+            "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+            "Created": "2022-04-19T20:06:50+00:00",
+            "EntryType": "Event",
+            "EventTimestamp": "2022-04-19T20:06:50+00:00",
+            "Id": "42",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/NetworkAdapters/Rosetta/NetworkPorts/j100p1/Oem/Cray/LinkFlaps"
+                }
+            },
+            "Message": "The link j100p1 has experienced a link flap event between 2022/04/19 20:06:47 and 2022/04/19 20:06:50 due to a PORT_DOWN. The headshell temperature was 0.",
+            "MessageArgs": [
+                "2022/04/19 20:06:50",
+                "2022/04/19 20:06:47",
+                "PORT_DOWN",
+                "j100p1",
+                "0"
+            ],
+            "MessageId": "CrayAlerts.HsnLinkFlapDetected",
+            "Name": "Log entry 42",
+            "Severity": "Warning"
+        }
+    ],
+    "Members@odata.count": 42,
+    "Name": "Log Service Entries Collection"
+}

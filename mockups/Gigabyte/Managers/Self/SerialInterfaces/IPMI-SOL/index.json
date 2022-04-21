@@ -1,0 +1,15 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SerialInterface.SerialInterface",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Managers/Self/SerialInterfaces/IPMI-SOL",
+    "@odata.type": "#SerialInterface.v1_1_4.SerialInterface",
+    "BitRate": "115200",
+    "DataBits": "8",
+    "Description": "IPMI Serial over LAN",
+    "FlowControl": "Hardware",
+    "Id": "IPMI-SOL",
+    "InterfaceEnabled": true,
+    "Name": "IPMI-SOL",
+    "Parity": "None",
+    "StopBits": "1"
+}

@@ -1,0 +1,11 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Oem/Alarms/CabinetLeakConfirmed",
+    "@odata.type": "#Alarm.v0_9_0.Alarm",
+    "AlarmState": "Armed",
+    "AutomaticReArm": true,
+    "Description": "Indicates that multiple leak sensors, in a reductant sensor cluster, have detected a wet state or are both disconnected. This results in a cabinet self-protection shutdown. This will succeed a 'CabinetLeakDetected' event.",
+    "Id": "CabinetLeakConfirmed",
+    "Name": "Enclosure CabinetLeakConfirmed Alarm",
+    "Severity": "Critical"
+}

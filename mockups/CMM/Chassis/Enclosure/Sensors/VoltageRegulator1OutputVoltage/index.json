@@ -1,0 +1,43 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator1OutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "VoltageRegulator1OutputVoltage",
+    "Name": "STBY 1.0V",
+    "Oem": {
+        "Index": 1,
+        "ReferenceDesignator": "U13"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 1.023,
+    "ReadingTime": "2022-04-20T15:28:36.067063307Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 0.98
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 0.97
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 0.96
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 1.071
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 1.081
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 1.092
+        }
+    }
+}

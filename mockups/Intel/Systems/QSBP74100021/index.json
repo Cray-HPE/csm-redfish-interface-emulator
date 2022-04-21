@@ -1,0 +1,122 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystem.ComputerSystem",
+    "@odata.id": "/redfish/v1/Systems/QSBP74100021",
+    "@odata.type": "#ComputerSystem.v1_5_0.ComputerSystem",
+    "Id": "QSBP74100021",
+    "SerialNumber": "QSBP74100021",
+    "Name": "S2600BPB",
+    "Model": "S2600BPB",
+    "Manufacturer": "Cray Inc.",
+    "PartNumber": "102002300",
+    "AssetTag": "....................",
+    "SKU": "....................",
+    "SystemType": "Physical",
+    "Description": "Computer system providing compute resources",
+    "UUID": "3504bf7d-ae5b-11e7-ab21-a4bf012890a8",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "IndicatorLED": "Off",
+    "PowerState": "On",
+    "Boot": {
+        "BootSourceOverrideEnabled": "Disabled",
+        "BootSourceOverrideTarget": "None",
+        "BootSourceOverrideMode": "Legacy",
+        "BootSourceOverrideTarget@Redfish.AllowableValues": [
+            "None",
+            "Pxe",
+            "Hdd",
+            "Cd",
+            "BiosSetup",
+            "UefiShell",
+            "Usb"
+        ]
+    },
+    "BiosVersion": "SE5C620.86B.02.01.0008.C0001.031920191559",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "Central Processor",
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK",
+            "HealthRollup": "OK"
+        }
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 48,
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK",
+            "HealthRollup": "OK"
+        }
+    },
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/QSBP74100021/Bios"
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/QSBP74100021/Processors"
+    },
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/QSBP74100021/EthernetInterfaces"
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Systems/QSBP74100021/LogServices"
+    },
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/QSBP74100021/Memory"
+    },
+    "Storage": {
+        "@odata.id": "/redfish/v1/Systems/QSBP74100021/Storage"
+    },
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/RackMount"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC"
+            }
+        ]
+    },
+    "Oem": {
+        "Intel_RackScale": {
+            "@odata.type": "#Intel.Oem.ComputerSystem",
+            "ProcessorSockets": 0,
+            "MemorySockets": 0,
+            "UserModeEnabled": false,
+            "TrustedExecutionTechnologyEnabled": false,
+            "PciDevices": [],
+            "PCIeConnectionId": [],
+            "Metrics": {
+                "@odata.id": "/redfish/v1/Systems/QSBP74100021/Metrics"
+            }
+        }
+    },
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "target": "/redfish/v1/Systems/QSBP74100021/Actions/ComputerSystem.Reset",
+            "ResetType@Redfish.AllowableValues": [
+                "PushPowerButton",
+                "On",
+                "GracefulShutdown",
+                "ForceRestart",
+                "Nmi",
+                "ForceOn",
+                "ForceOff"
+            ]
+        },
+        "Oem": {
+            "#Intel.Oem.ChangeTPMState": {
+                "target": "/redfish/v1/Systems/QSBP74100021/Actions/Oem/Intel.Oem.ChangeTPMState",
+                "InterfaceType@Redfish.AllowableValues": [
+                    "TPM_1_2",
+                    "TPM_2_0"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#MemoryMetrics.MemoryMetrics",
+    "@odata.id": "/redfish/v1/Systems/QSBP74100021/Memory/Memory3/MemoryMetrics",
+    "@odata.type": "#MemoryMetrics.v1_1_3.MemoryMetrics",
+    "Id": "MemoryMetrics",
+    "Name": "MemoryMetrics of Memory3",
+    "Description": "System Memory Metrics",
+    "HealthData": {
+        "AlarmTrips": {
+            "Temperature": false
+        }
+    },
+    "Oem": {
+        "Intel_RackScale": {
+            "TemperatureCelcius": "25",
+            "Health": [
+                "OK"
+            ]
+        }
+    }
+}

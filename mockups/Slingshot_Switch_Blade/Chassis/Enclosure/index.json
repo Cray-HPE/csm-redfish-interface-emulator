@@ -1,0 +1,56 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "Actions": {
+        "#Chassis.Reset": {
+            "ResetType@Redfish.AllowableValues": [
+                "Off",
+                "ForceRestart",
+                "GracefulShutdown",
+                "ForceOff",
+                "ForceOn",
+                "On",
+                "PowerCycle",
+                "GracefulRestart"
+            ],
+            "target": "/redfish/v1/Chassis/Enclosure/Actions/Chassis.Reset"
+        }
+    },
+    "AssetTag": "",
+    "ChassisType": "Enclosure",
+    "Description": "HPE_Slingshot_1_Switch_Blade",
+    "Id": "Enclosure",
+    "IndicatorLED": "Off",
+    "IndicatorLED@Redfish.AllowableValues": [
+        "Blinking",
+        "Off"
+    ],
+    "Manufacturer": "HPE",
+    "Model": "HPE_Slingshot_1_Switch_Blade",
+    "Name": "Enclosure",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters"
+    },
+    "Oem": {
+        "CrayVoltageMargins": {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Oem/CrayVoltageMargins"
+        }
+    },
+    "PartNumber": "102000002.A",
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Power"
+    },
+    "PowerState": "On",
+    "Sensors": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors"
+    },
+    "SerialNumber": "HB19220057",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Thermal": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal"
+    }
+}

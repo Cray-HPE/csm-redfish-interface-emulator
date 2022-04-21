@@ -1,0 +1,20 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#MessageRegistryFile.MessageRegistryFile",
+    "@odata.id": "/redfish/v1/Registries/EventingMessages",
+    "@odata.type": "#MessageRegistryFile.v1_1_0.MessageRegistryFile",
+    "Name": "Eventing Message Registry File",
+    "Description": "Eventing Message Registry File locations",
+    "Id": "EventingMessages",
+    "Languages@odata.count": 1,
+    "Languages": [
+        "en"
+    ],
+    "Location@odata.count": 1,
+    "Location": [
+        {
+            "Language": "en",
+            "Uri": "/redfish/v1/Registries/EventingMessages/Alert.1.0.0.json"
+        }
+    ],
+    "Registry": "Alert.1.0.0"
+}

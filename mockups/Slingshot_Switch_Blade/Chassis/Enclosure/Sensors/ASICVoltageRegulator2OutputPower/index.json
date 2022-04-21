@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator2OutputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator2OutputPower",
+    "Name": "VDDH 2v5 S0",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "U5003"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 0.625,
+    "ReadingTime": "2022-04-20T15:35:54.022367711Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

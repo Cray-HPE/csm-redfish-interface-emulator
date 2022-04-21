@@ -1,0 +1,202 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts",
+    "@odata.type": "#NetworkPortCollection.NetworkPortCollection",
+    "Description": "The Collection Network Ports",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j9p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j3p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j5p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j11p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j10p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j6p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j24p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j103p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j100p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j18p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j1p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j4p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j20p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j14p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j7p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j106p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j6p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j103p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j16p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j12p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j14p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j23p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j100p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j24p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j105p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j5p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j13p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j101p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j21p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j13p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j8p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j20p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j9p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j19p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j102p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j21p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j12p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j104p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j107p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j17p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j106p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j8p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j16p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j23p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j104p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j2p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j101p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j18p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j4p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j3p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j17p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j22p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j102p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j15p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j11p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j15p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j22p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j7p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j107p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j2p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j1p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j105p0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j10p1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j19p1"
+        }
+    ],
+    "Members@odata.count": 64,
+    "Name": "NetworkPort Collection"
+}

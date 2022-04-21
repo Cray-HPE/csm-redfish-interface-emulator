@@ -1,0 +1,10 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#NetworkDeviceFunctionCollection.NetworkDeviceFunctionCollection",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Systems/Self/NetworkInterfaces/1/NetworkDeviceFunctions",
+    "@odata.type": "#NetworkDeviceFunctionCollection.NetworkDeviceFunctionCollection",
+    "Description": "The Collection of the Network Device Functions",
+    "Members": [],
+    "Members@odata.count": 0,
+    "Name": "NetworkDeviceFunction Collection"
+}

@@ -1,0 +1,230 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#MessageRegistryFile.MessageRegistryFile",
+    "@odata.etag": "W/\"1650480133\"",
+    "@odata.id": "/redfish/v1/Registries/DynamicExtension.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_3_0.MessageRegistry",
+    "Description": "This registry defines messages for representing DynamicExtension errors in Redfish",
+    "Id": "DynamicExtension.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "AttemptToInstallMultipleExtensions": {
+            "Description": "Indicates that there was an an attempt to modify or add more than one dynamic extension.",
+            "Message": "There was an attempt to modify or add more than one dynamic extension for the %1 file.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Revise installation script or extension data to only contain a single extension.",
+            "Severity": "Critical"
+        },
+        "DelayedServiceRestartExtensionApplyed": {
+            "Description": "Indicates that an extension with a delayed service restart was applied and is now running.",
+            "Message": "%1 extension with a delayed service restart was applied and is now running.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "DelayedServiceRestartExtensionDeleted": {
+            "Description": "Indicates that an extension with a delayed service restart was deleted.",
+            "Message": "%1 extension with a delayed service restart was deleted.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "DelayedServiceRestartExtensionMarkedForDeletion": {
+            "Description": "Indicates that an extension has been marked for deletion, but there was a request to delay service restart, so extension will be deleted on next service restart.",
+            "Message": "%1 extension has been marked for deletion, but there was a request to delay service restart, so extension will be deleted on next service restart.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "DelayedServiceRestartExtensionValidated": {
+            "Description": "Indicates that an extension was validated successfully, but there was a request to delay service restart, so extension will be applied on next service restart.",
+            "Message": "%1 extension was validated successfully, but there was a request to delay service restart, so extension will be applied on next service restart.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "DrePartitionMissing": {
+            "Description": "Indicates that the partition where the extensions are stored is missing.",
+            "Message": "The %1 extension could not be installed because the partition where the extensions are stored is missing.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Check that partition is present.",
+            "Severity": "Critical"
+        },
+        "DrePartitionNotWritable": {
+            "Description": "Indicates that the partition where the extensions are stored is not writable.",
+            "Message": "The %1 extension could not be installed because the partition where the extensions are stored is not writable.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Check that partition is writable.",
+            "Severity": "Critical"
+        },
+        "ExtensionDeleted": {
+            "Description": "Indicates that an extension was deleted successfully and the service was restarted to remove extension.",
+            "Message": "%1 extension was deleted successfully and the service was restarted to remove extension.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "ExtensionExistsForDifferentInstance": {
+            "Description": "Indicates that the installation directory of the extension is associated with a different extension instance.",
+            "Message": "The %1 file tried to install to a location that is already associated with a different extension instance.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Change installation script to install to different directory.",
+            "Severity": "Critical"
+        },
+        "ExtensionInstalled": {
+            "Description": "Indicates that an extension was installed successfully and the service was restarted to apply new extension.",
+            "Message": "%1 extension was installed successfully and the service was restarted to apply new extension.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "ExtensionRuntimeError": {
+            "Description": "Indicates that there was an error while starting the extension or while the extension was running.",
+            "Message": "There was an error while starting the extension or while the %1 extension was runnning: '%2'. Extension has been deleted. Service is being restarted, so it will be unreachable for a few seconds.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Wait a few seconds before sending additional requests and then fix error and reinstall extension.",
+            "Severity": "Critical"
+        },
+        "ForbiddenCommandFoundInInstallationScript": {
+            "Description": "Indicates that a forbidden command was found in the installation script. Extension has been deleted.",
+            "Message": "There is a forbidden command in the installation script: '%1'",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Remove string from installation script and attempt installation again.",
+            "Severity": "Critical"
+        },
+        "ForbiddenStringFoundInExtension": {
+            "Description": "Indicates that a forbidden string was found in the extension code. Extension has been deleted.",
+            "Message": "There is a forbidden string in the installed extension: '%1'",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Remove string from extension and attempt installation again.",
+            "Severity": "Critical"
+        },
+        "IdenticalExtensionExists": {
+            "Description": "Indicates that the data in this extension already exists on the file system.",
+            "Message": "The %1 file tried to install an extension that already exists on filesystem.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "Critical"
+        },
+        "InstallationScriptFailure": {
+            "Description": "Indicates that there is a failure while executing the dynamic extension's installation script",
+            "Message": "The installation script for the %1 file exited with a nonzero return value and error message: '%2'. Extension has been deleted.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Correct error in installation script and attempt installation again.",
+            "Severity": "Critical"
+        },
+        "InsufficientSpaceForInstallation": {
+            "Description": "Indicates that there is not enough space for this extension to be installed.",
+            "Message": "The %1 extension could not be installed because there is not enough free space.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Remove some existing extensions and retry installation.",
+            "Severity": "Critical"
+        },
+        "InvalidCompressedExtensionFile": {
+            "Description": "Indicates that the compressed extension data was successfully parsed from request, but was not valid tar.gz data",
+            "Message": "The compressed extension data in the %1 file was not in tar.gz format and received error: '%2'.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Recreate compressed extension data in the correct format and send request again.",
+            "Severity": "Critical"
+        },
+        "InvalidCompressedExtensionRequest": {
+            "Description": "Indicates that the compressed extension data could not be parsed from request",
+            "Message": "The compressed extension data in the %1 file could not be parsed from the request: '%2'",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Send a correct multipart/form-data request",
+            "Severity": "Critical"
+        },
+        "NoExtensionInstalled": {
+            "Description": "Indicates that an extension was sent to the service, but after installing, the data for the extension cannot be retrieved.",
+            "Message": "An extension was sent to the service, but after installing, the data for the extension cannot be retrieved.",
+            "NumberOfArgs": 0,
+            "Resolution": "Verify installation script and extension data is present in sent tar.gz file.",
+            "Severity": "Critical"
+        },
+        "UnknownInstallationError": {
+            "Description": "Indicates that there was an unrecognized error while installing",
+            "Message": "There was an unrecognized error occurred while installing %1. Extension has been deleted.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Attempt installation again.",
+            "Severity": "Critical"
+        },
+        "ValidatingAndInstallingNewExtension": {
+            "Description": "Indicates that the new extension is being validated and installed. The service may need to restart to apply the new extension",
+            "Message": "The process of validating and installing the extension has been started. The service may restart to apply the new extension.",
+            "NumberOfArgs": 0,
+            "Resolution": "Wait a few seconds before sending additional requests.",
+            "Severity": "OK"
+        },
+        "WebServerRestarting": {
+            "Description": "Indicates that the web server is restarting, so it will be unreachable for a few seconds.",
+            "Message": "Web server is being restarted. It will be unreachable for a few seconds.",
+            "NumberOfArgs": 0,
+            "Resolution": "Wait a few seconds before sending additional requests.",
+            "Severity": "OK"
+        }
+    },
+    "Name": "DynamicExtension Message Registry",
+    "OwningEntity": "AMI",
+    "RegistryPrefix": "DynamicExtension",
+    "RegistryVersion": "1.0.0"
+}

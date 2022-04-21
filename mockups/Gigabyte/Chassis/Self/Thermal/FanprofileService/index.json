@@ -1,0 +1,14 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#GBTFanprofileService.GBTFanprofileService",
+    "@odata.etag": "W/\"1616690423\"",
+    "@odata.id": "/redfish/v1/Chassis/Self/Thermal/FanprofileService",
+    "@odata.type": "#GBTFanprofileService.v1_0_0.GBTFanprofileService",
+    "Fanprofile": {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal/FanprofileService/Fanprofile"
+    },
+    "Id": "FanprofileService",
+    "Name": "FanprofileService",
+    "SupportPCIEDevice": {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal/FanprofileService/SupportPCIEDevice"
+    }
+}

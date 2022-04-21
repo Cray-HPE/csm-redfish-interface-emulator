@@ -1,0 +1,117 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Chassis.Chassis",
+    "@odata.etag": "W/\"1649357921\"",
+    "@odata.id": "/redfish/v1/Chassis/Self",
+    "@odata.type": "#Chassis.v1_9_1.Chassis",
+    "Actions": {
+        "#Chassis.Reset": {
+            "@Redfish.ActionInfo": "/redfish/v1/Chassis/Self/ResetActionInfo",
+            "@Redfish.OperationApplyTimeSupport": {
+                "@odata.type": "#Settings.v1_2_1.Settings.OperationApplyTimeSupport",
+                "MaintenanceWindowDurationInSeconds": 600,
+                "MaintenanceWindowResource": {
+                    "@odata.id": "/redfish/v1/Chassis/Self"
+                },
+                "SupportedValues": [
+                    "Immediate",
+                    "AtMaintenanceWindowStart"
+                ]
+            },
+            "target": "/redfish/v1/Chassis/Self/Actions/Chassis.Reset"
+        }
+    },
+    "AssetTag": "01234567890123456789AB",
+    "ChassisType": "RackMount",
+    "Description": "Chassis Self",
+    "Id": "Self",
+    "IndicatorLED": "Off",
+    "IndicatorLED@Redfish.AllowableValues": [
+        "Lit",
+        "Blinking",
+        "Off"
+    ],
+    "Links": {
+        "ComputerSystems": [
+            {
+                "@odata.id": "/redfish/v1/Systems/Self"
+            }
+        ],
+        "ComputerSystems@odata.count": 1,
+        "Drives": [
+            {
+                "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/1"
+            }
+        ],
+        "Drives@odata.count": 1,
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/Self"
+            }
+        ],
+        "ManagedBy@odata.count": 1,
+        "ManagersInChassis": [
+            {
+                "@odata.id": "/redfish/v1/Managers/Self"
+            }
+        ],
+        "ManagersInChassis@odata.count": 1,
+        "PCIeDevices": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/1"
+            }
+        ],
+        "PCIeDevices@odata.count": 1,
+        "ResourceBlocks": [
+            {
+                "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/NetworkBlock"
+            },
+            {
+                "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/DrivesBlock"
+            },
+            {
+                "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/ComputeBlock"
+            }
+        ],
+        "ResourceBlocks@odata.count": 3,
+        "Storage": [
+            {
+                "@odata.id": "/redfish/v1/Systems/Self/Storage/1"
+            }
+        ],
+        "Storage@odata.count": 1
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Chassis/Self/LogServices"
+    },
+    "Manufacturer": "GIGABYTE",
+    "Model": "H262-Z63-00",
+    "Name": "Computer System Chassis",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Self/NetworkAdapters"
+    },
+    "Oem": {
+        "GBTChassisOemProperty": {
+            "@odata.type": "#GBTChassisOemProperty.v1_0_0.GBTChassisOemProperty",
+            "Board Serial Number": "JG8NG900142"
+        }
+    },
+    "PartNumber": "01234567",
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Self/Power"
+    },
+    "PowerState": "On",
+    "SKU": "01234567890123456789AB",
+    "Sensors": {
+        "@odata.id": "/redfish/v1/Chassis/Self/Sensors"
+    },
+    "SerialNumber": "01234567890123456789AB",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Thermal": {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal"
+    },
+    "UUID": "009ea76e-debf-0010-e803-b42e99bade17"
+}

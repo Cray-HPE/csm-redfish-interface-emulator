@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator1Temperature",
+    "Name": "VDD 3v3 S0",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "U39"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 34,
+    "ReadingTime": "2022-04-20T15:35:51.029478248Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 115
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 130
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 150
+        }
+    }
+}

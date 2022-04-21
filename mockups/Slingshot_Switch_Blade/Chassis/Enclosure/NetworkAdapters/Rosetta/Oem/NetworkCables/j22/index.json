@@ -1,0 +1,24 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/Oem/NetworkCables/j22",
+    "@odata.type": "#NetworkCable.v1_0_0.NetworkCable",
+    "DataPathPortMappings": {
+        "p0": 54,
+        "p1": 55
+    },
+    "HeadshellID": "B",
+    "Id": "j22",
+    "LengthMeters": 1.2,
+    "MediaType": "Electrical",
+    "OEMCompany": "CRAY",
+    "OEMPartNumber": "102234302A",
+    "PartNumber": "2333532-2",
+    "ProductionDate": "201027",
+    "SerialNumber": "1026206997",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Vendor": "TE Connectivity",
+    "Version": "A"
+}

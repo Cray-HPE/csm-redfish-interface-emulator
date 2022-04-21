@@ -1,0 +1,18 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#DynamicExtensionRoot.DynamicExtensionRoot(*)",
+    "@odata.etag": "W/\"1616690192\"",
+    "@odata.id": "/redfish/v1/DynamicExtension",
+    "@odata.type": "#DynamicExtensionRoot.v1_0_0.DynamicExtensionRoot",
+    "Description": "Dynamic Extension",
+    "GamiExtensions": {
+        "@odata.id": "/redfish/v1/DynamicExtension/GamiExtensions"
+    },
+    "Id": "DynamicExtension",
+    "LogServices": {
+        "@odata.id": "/redfish/v1/DynamicExtension/LogServices"
+    },
+    "Name": "Dynamic Extension",
+    "RedfishExtensions": {
+        "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions"
+    }
+}

@@ -1,0 +1,231 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection",
+    "@odata.etag": "W/\"1649882010\"",
+    "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "Collection of entries for this log service",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/319",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:03+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T15:09:40+00:00",
+            "EventType": "Alert",
+            "Id": "319",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x0500FF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 319",
+            "SensorNumber": 0,
+            "SensorType": "System Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/320",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:03+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T15:09:40+00:00",
+            "EventType": "Alert",
+            "Id": "320",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x0580FF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 320",
+            "SensorNumber": 0,
+            "SensorType": "System Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/321",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:03+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T15:12:06+00:00",
+            "EventType": "Alert",
+            "Id": "321",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x06FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 321",
+            "SensorNumber": 34,
+            "SensorType": "BaseOSBoot/InstallationStatus",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/322",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:03+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T15:49:10+00:00",
+            "EventType": "Alert",
+            "Id": "322",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Self/Power"
+                }
+            },
+            "Message": "0x000000",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 322",
+            "SensorNumber": 255,
+            "SensorType": "PowerUnit",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/323",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:03+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T15:50:35+00:00",
+            "EventType": "Alert",
+            "Id": "323",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x01FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 323",
+            "SensorNumber": 0,
+            "SensorType": "System Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/324",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:03+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T15:50:50+00:00",
+            "EventType": "Alert",
+            "Id": "324",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x0500FF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 324",
+            "SensorNumber": 0,
+            "SensorType": "System Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/325",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:04+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T15:50:50+00:00",
+            "EventType": "Alert",
+            "Id": "325",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x0580FF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 325",
+            "SensorNumber": 0,
+            "SensorType": "System Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/326",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:04+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T15:53:16+00:00",
+            "EventType": "Alert",
+            "Id": "326",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x06FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 326",
+            "SensorNumber": 34,
+            "SensorType": "BaseOSBoot/InstallationStatus",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/327",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:04+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T17:26:50+00:00",
+            "EventType": "Alert",
+            "Id": "327",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/Self/Power"
+                }
+            },
+            "Message": "0x000000",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 327",
+            "SensorNumber": 255,
+            "SensorType": "PowerUnit",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/328",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:03:04+00:00",
+            "Description": "BIOS SEL Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-12-13T17:28:11+00:00",
+            "EventType": "Alert",
+            "Id": "328",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x01FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "BIOS 328",
+            "SensorNumber": 0,
+            "SensorType": "System Event",
+            "Severity": "OK"
+        }
+    ],
+    "Members@odata.count": 10,
+    "Name": "Log Service Entries Collection"
+}

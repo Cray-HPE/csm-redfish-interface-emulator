@@ -1,0 +1,27 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice21Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "NetworkingDevice21Temperature",
+    "Name": "j21",
+    "Oem": {
+        "Index": 21
+    },
+    "PhysicalContext": "NetworkingDevice",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 60
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 70
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 80
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator3OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator3OutputCurrent",
+    "Name": "AVDDH 1v1 S0",
+    "Oem": {
+        "Index": 3,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "U5002"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 15.562,
+    "ReadingTime": "2022-04-20T15:35:49.014919597Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 27
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 28.5
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 40
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/SDR",
+    "@odata.type": "#SoftwareInventory.v1_1_1.SoftwareInventory",
+    "Id": "SDR",
+    "Name": "Software Inventory",
+    "Description": "Software Version and Inventory Information",
+    "Version": "1.39 (585433 bytes)",
+    "Status": {
+        "Oem": {
+            "Status": "SDR is uploaded"
+        }
+    },
+    "Actions": {
+        "Oem": {
+            "#Intel.Oem.UpdateSDR": {
+                "target": "/redfish/v1/UpdateService/SoftwareInventory/SDR/Actions/Oem/Intel.Oem.UpdateSDR"
+            }
+        }
+    }
+}

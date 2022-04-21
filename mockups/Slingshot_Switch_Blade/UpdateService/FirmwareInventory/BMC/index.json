@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/BMC",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "Baseboard Management Controller",
+    "Id": "BMC",
+    "Name": "BMC",
+    "SoftwareId": "sc:*:*:*",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": true,
+    "Version": "sc.1.7.2-118-slingshot-release.arm64.2022-04-11T09:19:12+00:00.735ee40"
+}

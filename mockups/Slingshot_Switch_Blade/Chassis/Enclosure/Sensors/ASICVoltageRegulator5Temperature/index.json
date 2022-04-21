@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator5Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator5Temperature",
+    "Name": "VDD 0v85 S0",
+    "Oem": {
+        "Index": 5,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "U5004"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 34,
+    "ReadingTime": "2022-04-20T15:35:46.013890426Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 115
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 130
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 150
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"1616012560\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/AuditLog/Entries/6",
+    "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+    "Created": "2021-03-17T20:22:40+00:00",
+    "Description": "Audit Log",
+    "EntryType": "Event",
+    "EventTimestamp": "2021-03-17T20:22:40+00:00",
+    "EventType": "Alert",
+    "Id": "6",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions"
+        }
+    },
+    "Message": "User: root, IP: 10.254.1.10, Protocol: http - The resource at /redfish/v1/EventService/Subscriptions has been successfully created.",
+    "MessageArgs": [
+        "/redfish/v1/EventService/Subscriptions",
+        "/redfish/v1/UpdateService/Actions/SimpleUpdate"
+    ],
+    "MessageId": "Security.1.0.ResourceCreated",
+    "Name": "Audit Log Entry 6",
+    "Severity": "OK"
+}

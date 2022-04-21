@@ -1,0 +1,29 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive",
+    "@odata.etag": "W/\"1649881767\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/1",
+    "@odata.type": "#Drive.v1_6_0.Drive",
+    "CapacityBytes": 2013667524608,
+    "Description": "This resource shall be used to represent a disk drive or other physical storage medium for a Redfish implementation.",
+    "FailurePredicted": false,
+    "Id": "1",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        }
+    },
+    "Model": "SAMSUNG MZ7LH1T9HMLT-00005",
+    "Name": "SAMSUNG MZ7LH1T9HMLT-00005",
+    "Oem": {
+        "GBT": {
+            "@odata.type": "#GbtOemDrives.v1_0_0.GbtOemDrives",
+            "SlotNumber": "ff"
+        }
+    },
+    "SerialNumber": "S455NY0M831393      ",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

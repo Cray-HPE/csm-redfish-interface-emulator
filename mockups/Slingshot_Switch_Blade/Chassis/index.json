@@ -1,0 +1,13 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis",
+    "@odata.type": "#ChassisCollection.ChassisCollection",
+    "Description": "The Collection for Chassis",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis Collection"
+}

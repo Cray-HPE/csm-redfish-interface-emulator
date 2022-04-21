@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---->
+<!--################################################################################       -->
+<!--# Redfish Schema:  AMIXMLSchemaLocation  v1.0.0-->
+<!--# Made from: Sean 2019/03/26: for some Oem.Ami prop not define                                                                                     -->
+<!--# For a detailed change log, see the README file contained in the DSP8010 bundle,      -->
+<!--# available at http://www.dmtf.org/standards/redfish                                   -->
+<!--# Copyright 2014-2017 Distributed Management Task Force, Inc. (DMTF).                  -->
+<!--# For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright -->
+<!--################################################################################       -->
+<!---->
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+
+  <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/csd01/complete/vocabularies/Org.OData.Core.V1.xml">
+    <edmx:Include Namespace="Org.OData.Core.V1" Alias="OData"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/csd01/complete/vocabularies/Org.OData.Capabilities.V1.xml">
+    <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="http://redfish.dmtf.org/schemas/v1/Resource_v1.xml">
+    <edmx:Include Namespace="Resource"/>
+    <edmx:Include Namespace="Resource.v1_0_0"/>
+  </edmx:Reference>
+  
+<edmx:DataServices>
+ 
+<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="AMIXMLSchemaLocation.v1_0_0">
+  <Annotation Term="Redfish.OwningEntity" String="DMTF"/>
+  
+  <ComplexType Name="Oem">
+    <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+    <Annotation Term="OData.Description" String="This allows additional configuring of the Redfish service."/>
+    <Annotation Term="OData.LongDescription" String="This allows additional configuring of the Redfish service."/>
+    <Property Name="Ami" Type="Collection(AMIXMLSchemaLocation.v1_0_0.Ami)" Nullable="false">
+      <Annotation Term="OData.Description" String="This allows additional configuring of the Redfish service."/>
+      <Annotation Term="OData.LongDescription" String="This allows additional configuring of the Redfish service."/>
+      <Annotation Term="Redfish.Required"/>
+    </Property>
+  </ComplexType>
+  
+  <ComplexType Name="Ami">
+      <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+
+      <Property Name="XMLSchemaLocation" Type="Edm.String" Nullable="false">
+        <Annotation Term="OData.Permissions" EnumMember="OData.Permission/Read"/>
+        <Annotation Term="OData.Description" String="The XMLSchemaLocation for record schema location."/>
+        <Annotation Term="OData.LongDescription" String="The XMLSchemaLocation for record schema location."/>
+      </Property>
+  </ComplexType>
+
+</Schema>
+    
+</edmx:DataServices>
+</edmx:Edmx>

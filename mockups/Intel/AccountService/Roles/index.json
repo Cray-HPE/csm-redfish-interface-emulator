@@ -1,0 +1,25 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#RoleCollection.RoleCollection",
+    "@odata.id": "/redfish/v1/AccountService/Roles",
+    "@odata.type": "#RoleCollection.RoleCollection",
+    "Name": "Role Collection",
+    "Description": "BMC User Roles",
+    "Members@odata.count": 5,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Administrator"
+        },
+        {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Operator"
+        },
+        {
+            "@odata.id": "/redfish/v1/AccountService/Roles/User"
+        },
+        {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Callback"
+        },
+        {
+            "@odata.id": "/redfish/v1/AccountService/Roles/NoAccess"
+        }
+    ]
+}

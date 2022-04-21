@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/2",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2022-04-19T20:05:54+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2022-04-19T20:05:54+00:00",
+    "Id": "2",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/"
+        }
+    },
+    "Message": "Switch controller unclean shutdown.",
+    "MessageId": "CrayAlerts.UncleanShutdownDetected",
+    "Name": "Log entry 2",
+    "Severity": "Warning"
+}

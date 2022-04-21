@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator7Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator7Temperature",
+    "Name": "IVOC12",
+    "Oem": {
+        "Index": 7,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "J6"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 36,
+    "ReadingTime": "2022-04-20T15:35:54.007362736Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 115
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 130
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 150
+        }
+    }
+}

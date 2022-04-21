@@ -1,0 +1,21 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+  "@odata.etag": "W/\"1650564782\"",
+  "@odata.id": "/redfish/v1/Systems/Self/SecureBoot/ResetKeysActionInfo",
+  "@odata.type": "#ActionInfo.v1_1_1.ActionInfo",
+  "Description": "This action is used to reset the Secure Boot keys.",
+  "Id": "ResetKeysActionInfo",
+  "Name": "ResetKeysActionInfo",
+  "Parameters": [
+    {
+      "AllowableValues": [
+        "DeletePK",
+        "DeleteAllKeys",
+        "ResetAllKeysToDefault"
+      ],
+      "DataType": "String",
+      "Name": "ResetKeysType",
+      "Required": true
+    }
+  ]
+}

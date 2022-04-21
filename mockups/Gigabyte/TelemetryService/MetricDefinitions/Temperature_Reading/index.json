@@ -1,0 +1,33 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#MetricDefinition.MetricDefinitions",
+    "@odata.etag": "W/\"1648043183\"",
+    "@odata.id": "/redfish/v1/TelemetryService/MetricDefinitions/Temperature_Reading",
+    "@odata.type": "#MetricDefinition.v1_0_2.MetricDefinition",
+    "Accuracy": 5,
+    "Id": "Temperature_Reading",
+    "Implementation": "PhysicalSensor",
+    "IsLinear": true,
+    "MetricDataType": "Decimal",
+    "MetricProperties": [
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/6/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/9/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/7/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/1/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/3/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/12/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/2/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/5/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/8/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/14/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/4/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/0/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/13/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/16/ReadingCelsius",
+        "/redfish/v1/Chassis/Self/Thermal#/Temperatures/15/ReadingCelsius"
+    ],
+    "MetricType": "Numeric",
+    "Name": "Temperature Reading",
+    "Precision": 3,
+    "SensingInterval": "PT10S",
+    "Units": "Cel"
+}

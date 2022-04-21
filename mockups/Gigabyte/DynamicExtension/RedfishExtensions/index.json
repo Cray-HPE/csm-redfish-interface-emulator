@@ -1,0 +1,25 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#DynamicExtensionCollection.DynamicExtensionCollection",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions",
+    "@odata.type": "#DynamicExtensionCollection.DynamicExtensionCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions/4CAF7FF8-50E7-4703-BE1C-7A6C4BBB5134"
+        },
+        {
+            "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions/7F2CA6E3-55D5-4F37-A98C-CDD39B3CEAC4"
+        },
+        {
+            "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions/24C5E8D6-7D92-4E54-916E-FEE44013F13F"
+        },
+        {
+            "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions/18D8AFB5-4779-4091-9E3B-0A8899045341"
+        },
+        {
+            "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions/34E46539-1213-4208-9AB6-2D1C21A35523"
+        }
+    ],
+    "Members@odata.count": 5,
+    "Name": "Dynamic Extension Collection"
+}

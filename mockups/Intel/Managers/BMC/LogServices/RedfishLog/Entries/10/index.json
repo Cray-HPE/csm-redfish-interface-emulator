@@ -1,0 +1,10 @@
+{
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/RedfishLog/Entries/10",
+    "Id": "10",
+    "Name": "Redfish Log Entry 10",
+    "EntryType": "Oem",
+    "Created": "2020-10-19T20:46:22+00:00",
+    "Message": "Priority:6 login failed: root",
+    "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry"
+}

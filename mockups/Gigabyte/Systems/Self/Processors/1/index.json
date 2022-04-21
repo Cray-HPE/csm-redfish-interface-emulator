@@ -1,0 +1,41 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Processor.Processor",
+    "@odata.etag": "W/\"1613499757\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Processors/1",
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "AccelerationFunctions": {
+        "@odata.id": "/redfish/v1/Systems/Self/Processors/1/AccelerationFunctions"
+    },
+    "Description": "Processor Instance 1",
+    "Id": "1",
+    "InstructionSet": "x86-64",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        }
+    },
+    "Manufacturer": "Advanced Micro Devices, Inc.",
+    "MaxSpeedMHz": 3350,
+    "Model": "AMD EPYC 7702 64-Core Processor                ",
+    "Name": "Processor 1",
+    "ProcessorArchitecture": "x86",
+    "ProcessorId": {
+        "EffectiveFamily": "AMD Zen Processor Family",
+        "EffectiveModel": "0x31",
+        "IdentificationRegisters": "178bfbff00830f10",
+        "Step": "0x0",
+        "VendorId": "AuthenticAMD"
+    },
+    "ProcessorType": "CPU",
+    "SerialNumber": "2B48C8D56F3C076",
+    "Socket": "P0",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "SubProcessors": {
+        "@odata.id": "/redfish/v1/Systems/Self/Processors/1/SubProcessors"
+    },
+    "TotalCores": 64,
+    "TotalThreads": 128
+}

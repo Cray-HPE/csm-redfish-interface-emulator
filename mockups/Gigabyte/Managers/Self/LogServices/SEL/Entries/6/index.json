@@ -1,0 +1,18 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/6",
+    "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+    "Created": "2022-03-09T20:02:25+00:00",
+    "Description": "Log Entry",
+    "EntryCode": "Assert",
+    "EntryType": "SEL",
+    "EventTimestamp": "2021-02-16T21:39:08+00:00",
+    "EventType": "Alert",
+    "Id": "24",
+    "Message": "0x010000",
+    "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+    "Name": "SEL 24",
+    "SensorNumber": 0,
+    "Severity": "OK"
+}

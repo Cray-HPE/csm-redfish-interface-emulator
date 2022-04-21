@@ -1,0 +1,13 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters",
+    "@odata.type": "#NetworkAdapterCollection.NetworkAdapterCollection",
+    "Description": "The Collection of Network Adapters",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "NetworkAdapter Collection"
+}

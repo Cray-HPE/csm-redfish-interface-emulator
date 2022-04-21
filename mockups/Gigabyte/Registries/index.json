@@ -1,0 +1,56 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#MessageRegistryFileCollection.MessageRegistryFileCollection",
+    "@odata.etag": "W/\"1616690192\"",
+    "@odata.id": "/redfish/v1/Registries",
+    "@odata.type": "#MessageRegistryFileCollection.MessageRegistryFileCollection",
+    "Description": "Registry Repository",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Registries/GBTOem.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/Redfish_1.0.3_PrivilegeRegistry"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/UpdateService.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/Base.1.5.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/AmiOem.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/BiosAttributeRegistry"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/DynamicExtension.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/Task.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/Ami.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/SyncAgent.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/Security.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/EventLog.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/HttpStatus.1.0.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/TaskEvent.1.0.1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Registries/IPMI.1.0.0"
+        }
+    ],
+    "Members@odata.count": 15,
+    "Name": "Registry Repository"
+}

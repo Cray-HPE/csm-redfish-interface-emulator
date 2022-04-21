@@ -1,0 +1,19 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"1613499512\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/AuditLog/Entries/1",
+    "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+    "Created": "2021-02-16T18:18:32+00:00",
+    "Description": "Audit Log",
+    "EntryType": "Event",
+    "EventTimestamp": "2021-02-16T18:18:32+00:00",
+    "EventType": "Alert",
+    "Id": "1",
+    "Message": "User: in-band-user, IP: 10.254.1.18, Protocol: http - While attempting to establish a connection to /redfish/v1/EventService, the service was denied access.",
+    "MessageArgs": [
+        "/redfish/v1/EventService"
+    ],
+    "MessageId": "Security.1.0.AccessDenied",
+    "Name": "Audit Log Entry 1",
+    "Severity": "Critical"
+}

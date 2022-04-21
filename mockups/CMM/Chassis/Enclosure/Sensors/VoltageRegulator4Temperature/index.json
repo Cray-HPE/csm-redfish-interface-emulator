@@ -1,0 +1,28 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator4Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "VoltageRegulator4Temperature",
+    "Name": "IVOC12_1",
+    "Oem": {
+        "Index": 4,
+        "ReferenceDesignator": "J10"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 85
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 90.9
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 101
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ChassisCollection.ChassisCollection",
+    "@odata.id": "/redfish/v1/Chassis",
+    "@odata.type": "#ChassisCollection.ChassisCollection",
+    "Name": "Chassis Collection",
+    "Members@odata.count": 7,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/HSBackplane"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/PCIeRiser1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/PCIeRiser2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/PwrSupply1FRU"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/PwrSupply2FRU"
+        }
+    ]
+}

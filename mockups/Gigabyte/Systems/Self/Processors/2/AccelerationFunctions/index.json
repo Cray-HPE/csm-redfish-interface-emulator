@@ -1,0 +1,10 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#AccelerationFunctionCollection.AccelerationFunctionCollection",
+    "@odata.etag": "W/\"1616690423\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Processors/2/AccelerationFunctions",
+    "@odata.type": "#AccelerationFunctionCollection.AccelerationFunctionCollection",
+    "Description": "Collection of AccelerationFunctions",
+    "Members": [],
+    "Members@odata.count": 0,
+    "Name": "AccelerationFunction Collection"
+}

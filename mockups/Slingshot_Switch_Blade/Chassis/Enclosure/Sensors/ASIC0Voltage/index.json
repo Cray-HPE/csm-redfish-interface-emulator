@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC0Voltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASIC0Voltage",
+    "Name": "asic0",
+    "Oem": {
+        "Index": 0
+    },
+    "PhysicalContext": "ASIC",
+    "Reading": 0.8,
+    "ReadingTime": "2022-04-20T15:35:47.316280346Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V"
+}

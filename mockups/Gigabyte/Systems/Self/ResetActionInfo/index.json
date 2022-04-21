@@ -1,0 +1,22 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+  "@odata.etag": "W/\"1613499757\"",
+  "@odata.id": "/redfish/v1/Systems/Self/ResetActionInfo",
+  "@odata.type": "#ActionInfo.v1_1_1.ActionInfo",
+  "Description": "This action is used to reset the Systems",
+  "Id": "ResetAction",
+  "Name": "ResetAction",
+  "Parameters": [
+    {
+      "AllowableValues": [
+        "GracefulShutdown",
+        "ForceRestart",
+        "ForceOff",
+        "On"
+      ],
+      "DataType": "String",
+      "Name": "ResetType",
+      "Required": true
+    }
+  ]
+}

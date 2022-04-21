@@ -1,0 +1,101 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#JsonSchemaFileCollection.JsonSchemaFileCollection",
+    "@odata.etag": "W/\"1616690192\"",
+    "@odata.id": "/redfish/v1/JsonSchemas",
+    "@odata.type": "#JsonSchemaFileCollection.JsonSchemaFileCollection",
+    "Description": "List of JSON Oem schemas and Extensions.",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AMIAccountServiceConfigurations.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AMIConfigureCDInstance.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AMIDynamicExtension.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AMIEnableRMedia.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AMIServiceRoot.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AMITelemetryLogService.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AMIUpdateService.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AMIVirtualMedia.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AMIXMLSchemaLocation.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/AccountServiceConfigurations.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/BiosStaticFile.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/BiosStaticFileCollection"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/ChangePassword.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/Configurations.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/DynamicExtension.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/DynamicExtensionCollection"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/DynamicExtensionRoot.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GBTChassisOemProperty.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GBTFanprofile.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GBTFanprofileService.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GBTFanprofileSupportPCIEDevice.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GBTThermal.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GbtMemoryOemProperty.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GbtOemDrives.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GbtOemPCIE.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GbtPowerLimit.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/GbtSensorProperty.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/InventoryStatus.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/ResetBios.v1_0_0"
+        },
+        {
+            "@odata.id": "/redfish/v1/JsonSchemas/VendorServiceRoot.v1_0_0"
+        }
+    ],
+    "Members@odata.count": 30,
+    "Name": "Schema Repository"
+}

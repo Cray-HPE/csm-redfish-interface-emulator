@@ -1,0 +1,26 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+  "@odata.etag": "W/\"1650564782\"",
+  "@odata.id": "/redfish/v1/Systems/Self/Bios/ChangePasswordActionInfo",
+  "@odata.type": "#ActionInfo.v1_1_1.ActionInfo",
+  "Description": "This action is used to change the BIOS passwords.",
+  "Id": "ChangePasswordAction",
+  "Name": "ChangePasswordAction",
+  "Parameters": [
+    {
+      "DataType": "String",
+      "Name": "NewPassword",
+      "Required": true
+    },
+    {
+      "DataType": "String",
+      "Name": "OldPassword",
+      "Required": true
+    },
+    {
+      "DataType": "String",
+      "Name": "PasswordName",
+      "Required": true
+    }
+  ]
+}

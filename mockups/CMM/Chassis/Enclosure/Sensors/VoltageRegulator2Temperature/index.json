@@ -1,0 +1,30 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator2Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "VoltageRegulator2Temperature",
+    "Name": "VDDCORE 1.0V",
+    "Oem": {
+        "Index": 2,
+        "ReferenceDesignator": "U133"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 38,
+    "ReadingTime": "2022-04-20T15:28:35.003030524Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 85
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 105
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 125
+        }
+    }
+}

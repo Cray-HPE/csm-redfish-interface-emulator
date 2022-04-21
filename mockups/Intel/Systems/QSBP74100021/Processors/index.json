@@ -1,0 +1,15 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ProcessorCollection.ProcessorCollection",
+    "@odata.id": "/redfish/v1/Systems/QSBP74100021/Processors",
+    "@odata.type": "#ProcessorCollection.ProcessorCollection",
+    "Name": "Processor Collection",
+    "Members@odata.count": 2,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/QSBP74100021/Processors/CPU1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/QSBP74100021/Processors/CPU2"
+        }
+    ]
+}

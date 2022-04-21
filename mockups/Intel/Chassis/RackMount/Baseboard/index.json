@@ -1,0 +1,36 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Chassis.Chassis",
+    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard",
+    "@odata.type": "#Chassis.v1_6_0.Chassis",
+    "Id": "Baseboard",
+    "Name": "Computer System Card",
+    "ChassisType": "Card",
+    "Manufacturer": "Intel Corporation",
+    "Model": "S2600BPB",
+    "SerialNumber": "QSBP74100021",
+    "PartNumber": "H87926-550",
+    "PowerState": "On",
+    "Thermal": {
+        "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal"
+    },
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power"
+    },
+    "Links": {
+        "ComputerSystems": [
+            {
+                "@odata.id": "/redfish/v1/Systems/QSBP74100021"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC"
+            }
+        ],
+        "ContainedBy": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/RackMount"
+            }
+        ]
+    }
+}

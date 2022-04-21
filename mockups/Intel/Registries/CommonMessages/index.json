@@ -1,0 +1,20 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#MessageRegistryFile.MessageRegistryFile",
+    "@odata.id": "/redfish/v1/Registries/CommonMessages",
+    "@odata.type": "#MessageRegistryFile.v1_1_0.MessageRegistryFile",
+    "Name": "Common Message Registry File",
+    "Description": "Common Message Registry File locations",
+    "Id": "CommonMessages",
+    "Languages@odata.count": 1,
+    "Languages": [
+        "en"
+    ],
+    "Location@odata.count": 1,
+    "Location": [
+        {
+            "Language": "en",
+            "Uri": "/redfish/v1/Registries/CommonMessages/Common.1.0.0.json"
+        }
+    ],
+    "Registry": "Common.1.0.0"
+}

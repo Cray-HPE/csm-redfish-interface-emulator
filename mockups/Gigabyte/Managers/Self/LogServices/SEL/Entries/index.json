@@ -1,0 +1,230 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection",
+    "@odata.etag": "W/\"1646856206\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "Collection of entries for this log service",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/1",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:22+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-02-16T18:14:21+00:00",
+            "EventType": "Alert",
+            "Id": "1",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x07FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 1",
+            "SensorNumber": 228,
+            "SensorType": "Processor",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/2",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:23+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-02-16T18:14:21+00:00",
+            "EventType": "Alert",
+            "Id": "2",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x07FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 2",
+            "SensorNumber": 229,
+            "SensorType": "Processor",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/3",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:23+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-02-16T18:38:29+00:00",
+            "EventType": "Alert",
+            "Id": "3",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Managers"
+                }
+            },
+            "Message": "0x010C54",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 3",
+            "SensorNumber": 0,
+            "SensorType": "Version Change",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/4",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:23+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-02-16T18:41:04+00:00",
+            "EventType": "Alert",
+            "Id": "4",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x07FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 4",
+            "SensorNumber": 228,
+            "SensorType": "Processor",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/5",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:23+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-02-16T18:41:04+00:00",
+            "EventType": "Alert",
+            "Id": "5",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x07FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 5",
+            "SensorNumber": 229,
+            "SensorType": "Processor",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/6",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:25+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-02-16T21:39:08+00:00",
+            "EventType": "Alert",
+            "Id": "24",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/"
+                }
+            },
+            "Message": "0x010000",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 24",
+            "SensorNumber": 0,
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/7",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:26+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-02-16T21:41:11+00:00",
+            "EventType": "Alert",
+            "Id": "25",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x07FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 25",
+            "SensorNumber": 228,
+            "SensorType": "Processor",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/8",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:26+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-02-16T21:41:11+00:00",
+            "EventType": "Alert",
+            "Id": "26",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                }
+            },
+            "Message": "0x07FFFF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 26",
+            "SensorNumber": 229,
+            "SensorType": "Processor",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/9",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:35+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-06-04T14:11:30+00:00",
+            "EventType": "Alert",
+            "Id": "150",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems"
+                }
+            },
+            "Message": "0x0500FF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 150",
+            "SensorNumber": 255,
+            "SensorType": "System Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/10",
+            "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+            "Created": "2022-03-09T20:02:35+00:00",
+            "Description": "Log Entry",
+            "EntryCode": "Assert",
+            "EntryType": "SEL",
+            "EventTimestamp": "2021-06-04T14:12:55+00:00",
+            "EventType": "Alert",
+            "Id": "151",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems"
+                }
+            },
+            "Message": "0x0580FF",
+            "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+            "Name": "SEL 151",
+            "SensorNumber": 255,
+            "SensorType": "System Event",
+            "Severity": "OK"
+        }
+    ],
+    "Members@odata.count": 10,
+    "Name": "Log Service Entries Collection"
+}

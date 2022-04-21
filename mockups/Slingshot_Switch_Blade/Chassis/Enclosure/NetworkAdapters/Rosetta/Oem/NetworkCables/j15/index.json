@@ -1,0 +1,23 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/Oem/NetworkCables/j15",
+    "@odata.type": "#NetworkCable.v1_0_0.NetworkCable",
+    "DataPathPortMappings": {
+        "p0": 44,
+        "p1": 45
+    },
+    "HeadshellID": "",
+    "Id": "j15",
+    "MediaType": "Unknown",
+    "OEMCompany": "",
+    "OEMPartNumber": "",
+    "PartNumber": "",
+    "ProductionDate": "",
+    "SerialNumber": "",
+    "Status": {
+        "Health": "OK",
+        "State": "Absent"
+    },
+    "Vendor": "",
+    "Version": ""
+}

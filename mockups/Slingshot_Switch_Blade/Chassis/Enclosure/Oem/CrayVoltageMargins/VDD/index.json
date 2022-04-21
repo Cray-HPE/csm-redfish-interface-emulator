@@ -1,0 +1,11 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Oem/CrayVoltageMargins/VDD",
+    "@odata.type": "#CrayVoltageMargins.VoltageRailsCollection",
+    "Name": "Voltage Margins",
+    "NominalValue": "0.930",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "Volts",
+    "SetValue": "0.930",
+    "VDD 0v85 S0 Voltage Output": "0.886"
+}

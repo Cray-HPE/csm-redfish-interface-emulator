@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/EventService/Subscriptions",
+    "@odata.type": "#EventDestinationCollection.EventDestinationCollection",
+    "Description": "Collection for Event Subscriptions",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions/4"
+        },
+        {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/EventService/Subscriptions/3"
+        }
+    ],
+    "Members@odata.count": 3,
+    "Name": "Event Subscriptions Collection"
+}

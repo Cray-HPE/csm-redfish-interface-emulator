@@ -1,0 +1,28 @@
+{
+    "@odata.etag": "W/\"1647478280\"",
+    "@odata.id": "/redfish/v1/Chassis/Perif4",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "Actions": {
+        "#Chassis.Reset": {
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "Off"
+            ],
+            "target": "/redfish/v1/Chassis/Perif4/Actions/Chassis.Reset"
+        }
+    },
+    "AssetTag": "",
+    "ChassisType": "Blade",
+    "Id": "Perif4",
+    "Manufacturer": "HPE",
+    "Name": "Perif4",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Perif4/NetworkAdapters"
+    },
+    "PowerState": "Off",
+    "Status": {
+        "Health": "OK",
+        "State": "Absent"
+    }
+}

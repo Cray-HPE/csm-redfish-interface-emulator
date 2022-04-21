@@ -1,0 +1,22 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#ActionInfo.ActionInfo",
+  "@odata.etag": "W/\"1650562971\"",
+  "@odata.id": "/redfish/v1/Managers/Self/Oem/Ami/VirtualMedia.ConfigureCDInstanceActionInfo",
+  "@odata.type": "#ActionInfo.v1_1_1.ActionInfo",
+  "Description": "This action is used to configure the number of CD/DVD devices that are to be supported for Virtual Media redirection.",
+  "Name": "ConfigureCDInstanceAction",
+  "Parameters": [
+    {
+      "AllowableValues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "DataType": "Number",
+      "Name": "CDInstance",
+      "Required": true
+    }
+  ]
+}

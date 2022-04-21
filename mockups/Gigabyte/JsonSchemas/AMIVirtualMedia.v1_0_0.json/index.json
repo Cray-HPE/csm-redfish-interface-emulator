@@ -1,0 +1,70 @@
+{
+    "$ref": "#/definitions/AMIVirtualMedia",
+    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1_1_0.json",
+    "definitions": {
+        "AMIVirtualMedia": {
+            "additionalProperties": false,
+            "patternProperties": {
+                "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                    "description": "This property shall specify a valid odata or Redfish property.",
+                    "type": [
+                        "array",
+                        "boolean",
+                        "integer",
+                        "number",
+                        "null",
+                        "object",
+                        "string"
+                    ]
+                }
+            },
+            "properties": {
+                "RedirectionStatus": {
+                    "description": "This property shall specify redirection status of the virtualmedia instance.",
+                    "enum": [
+                        "None",
+                        "Redirection Started",
+                        "Stopped - Connection Denied",
+                        "Stopped - MAX Session Reached",
+                        "Stopped - Permission Denied",
+                        "Stopped - Unknown Error",
+                        "Media Detach Stage",
+                        "Stopped - All device instances are occupied",
+                        "Stopped - Unable to Connect",
+                        "Stopped - Invalid Image",
+                        "Stopped - Mount Error",
+                        "Stopped - Unable to Open",
+                        "Stopped - Media License Expired",
+                        "Stopped - Connection Lost",
+                        "Stopped - Mount Cancelled By User",
+                        "Stopped - Device Ejected",
+                        "Stopped - Session Terminated",
+                        "Initiating Redirection"
+                    ],
+                    "enumDescriptions": {
+                        "Initiating Redirection": "Initiating the Redirection",
+                        "Media Detach Stage": "Media Detach Stage",
+                        "None": "No Redirection",
+                        "Redirection Started": "Redirection Started",
+                        "Stopped - All device instances are occupied": "Redirection Stopped - All device instances are occupied",
+                        "Stopped - Connection Denied": "Redirection Stopped - Connection Denied",
+                        "Stopped - Connection Lost": "Redirection Stopped - Connection Lost",
+                        "Stopped - Device Ejected": "Redirection Stopped - Device Ejected",
+                        "Stopped - Invalid Image": "Redirection Stopped - Invalid Image",
+                        "Stopped - MAX Session Reached": "Redirection Stopped - MAX Session Reached",
+                        "Stopped - Media License Expired": "Redirection Stopped -Media License Expired",
+                        "Stopped - Mount Cancelled By User": "Redirection Stopped -Mount Cancelled By User",
+                        "Stopped - Mount Error": "Redirection Stopped - Mount Error",
+                        "Stopped - Permission Denied": "Redirection Stopped - Permission Denied",
+                        "Stopped - Session Terminated": "",
+                        "Stopped - Unable to Connect": "Redirection Stopped - Unable to Connect",
+                        "Stopped - Unable to Open": "Redirection Stopped - Unable to Open",
+                        "Stopped - Unknown Error": "Redirection Stopped - Unknown Error"
+                    },
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "title": "#AMIVirtualMedia.v1_0_0.AMIVirtualMedia"
+}

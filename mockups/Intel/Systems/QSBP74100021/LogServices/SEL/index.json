@@ -1,0 +1,23 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+    "@odata.id": "/redfish/v1/Systems/QSBP74100021/LogServices/SEL",
+    "@odata.type": "#LogService.v1_1_0.LogService",
+    "Id": "SEL",
+    "Name": "SEL Log Service",
+    "MaxNumberOfRecords": 4000,
+    "OverWritePolicy": "WrapsWhenFull",
+    "DateTime": "2022-04-20T18:59:01+00:00",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "Actions": {
+        "#LogService.ClearLog": {
+            "target": "/redfish/v1/Systems/QSBP74100021/LogServices/SEL/Actions/LogService.ClearLog"
+        }
+    },
+    "Entries": {
+        "@odata.id": "/redfish/v1/Systems/QSBP74100021/LogServices/SEL/Entries"
+    }
+}

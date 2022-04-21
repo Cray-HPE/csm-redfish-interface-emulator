@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---->
+<!--################################################################################       -->
+<!--# Redfish Schema:  AMIDynamicExtension  v1.0.0                                         -->
+<!--#                                                                                      -->
+<!--# Copyright American Megatrends, Inc. (AMI).                                           -->
+<!--################################################################################       -->
+<!---->
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+
+    <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/csd01/complete/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Namespace="Org.OData.Core.V1" Alias="OData"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/csd01/complete/vocabularies/Org.OData.Capabilities.V1.xml">
+        <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
+    </edmx:Reference>
+  
+<edmx:DataServices>
+    
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="AMIDynamicExtension.v1_0_0">
+        <Annotation Term="Redfish.OwningEntity" String="DMTF"/>
+
+        <ComplexType Name="Oem">
+            <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+            <Annotation Term="OData.Description" String="This allows additional configuring of the Redfish service."/>
+            <Annotation Term="OData.LongDescription" String="This allows additional configuring of the Redfish service."/>
+            <Property Name="Dre" Type="Collection(AMIDynamicExtension.v1_0_0.AMIDynamicExtension)" Nullable="false">
+                <Annotation Term="OData.Description" String="This allows additional configuring of the Redfish service."/>
+                <Annotation Term="OData.LongDescription" String="This allows additional configuring of the Redfish service."/>
+                <Annotation Term="Redfish.Required"/>
+            </Property>
+        </ComplexType>
+  
+        <ComplexType Name="AMIDynamicExtension">
+            <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+            <Annotation Term="OData.Description" String="This property shall specify a valid odata or Redfish property."/>
+            <Annotation Term="OData.LongDescription" String="This property shall specify a valid odata or Redfish property."/>
+            <Property Name="DynamicExtension" Type="AMIDynamicExtension.v1_0_0.DynamicExtension" Nullable="false">
+                <Annotation Term="OData.Description" String="This is the root for dynamic extensions information."/>
+            </Property>
+        </ComplexType>
+
+        <ComplexType Name="DynamicExtension">
+            <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+            <Annotation Term="OData.Description" String="This is the root for dynamic extensions information."/>
+            <Annotation Term="OData.LongDescription" String="This is the root for dynamic extensions information."/>
+        </ComplexType>
+      
+    </Schema>
+    
+</edmx:DataServices>
+
+</edmx:Edmx>

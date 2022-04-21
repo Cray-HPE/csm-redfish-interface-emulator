@@ -1,0 +1,28 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#PCIeFunction.PCIeFunction",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/1/PCIeFunctions/1",
+    "@odata.type": "#PCIeFunction.v1_2_2.PCIeFunction",
+    "ClassCode": "0x020000",
+    "Description": "MT27800 Family [ConnectX-5]",
+    "DeviceClass": "NetworkController",
+    "Id": "1",
+    "Links": {
+        "EthernetInterfaces": [
+            {
+                "@odata.id": "/redfish/v1/Systems/Self/EthernetInterfaces/1"
+            }
+        ],
+        "EthernetInterfaces@odata.count": 1,
+        "PCIeDevice": {
+            "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/1"
+        }
+    },
+    "Name": "MT27800 Family [ConnectX-5]",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "VendorId": "0x15b3"
+}

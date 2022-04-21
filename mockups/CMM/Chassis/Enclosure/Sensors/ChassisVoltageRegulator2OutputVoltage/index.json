@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator2OutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator2OutputVoltage",
+    "Name": "cec_5v0",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "Chassis"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 5.2,
+    "ReadingTime": "2022-04-20T15:28:37.978883813Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V"
+}

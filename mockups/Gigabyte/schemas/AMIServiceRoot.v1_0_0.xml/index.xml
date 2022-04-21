@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---->
+<!--################################################################################       -->
+<!--# Redfish Schema:  AMIServiceRoot  v1.0.0                                              -->
+<!--#                                                                                      -->
+<!--# Copyright American Megatrends, Inc. (AMI).                                           -->
+<!--################################################################################       -->
+<!---->
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+
+    <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/csd01/complete/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Namespace="Org.OData.Core.V1" Alias="OData"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/csd01/complete/vocabularies/Org.OData.Capabilities.V1.xml">
+        <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
+    </edmx:Reference>
+      
+<edmx:DataServices>
+
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="AMIServiceRoot.v1_0_0">
+        <Annotation Term="Redfish.OwningEntity" String="DMTF"/>
+
+        <ComplexType Name="Oem">
+            <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+            <Annotation Term="OData.Description" String="This allows additional configuring of the Redfish service."/>
+            <Annotation Term="OData.LongDescription" String="This allows additional configuring of the Redfish service."/>
+            <Property Name="Ami" Type="Collection(AMIServiceRoot.v1_0_0.AMIServiceRoot)" Nullable="false">
+                <Annotation Term="OData.Description" String="This allows additional configuring of the Redfish service."/>
+                <Annotation Term="OData.LongDescription" String="This allows additional configuring of the Redfish service."/>
+                <Annotation Term="Redfish.Required"/>
+            </Property>
+        </ComplexType>
+      
+        <ComplexType Name="AMIServiceRoot">
+            <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+            <Annotation Term="OData.Description" String="This property shall specify a valid odata or Redfish property."/>
+            <Annotation Term="OData.LongDescription" String="This property shall specify a valid odata or Redfish property."/>
+            <Property Name="RtpVersion" Type="Edm.String" Nullable="false">
+                <Annotation Term="OData.Permissions" EnumMember="OData.Permission/Read"/>
+                <Annotation Term="OData.Description" String="This property shall specify Rtp version."/>
+            </Property>
+            <Property Name="Configurations" Type="AMIServiceRoot.v1_0_0.Configurations" Nullable="false">
+                <Annotation Term="OData.Description" String="This allows additional configuring of the Redfish service."/>
+            </Property>
+        </ComplexType>
+
+        <ComplexType Name="Configurations">
+            <Annotation Term="OData.AdditionalProperties" Bool="false"/>
+            <Annotation Term="OData.Description" String="This allows additional configuring of the Redfish service."/>
+            <Annotation Term="OData.LongDescription" String="This allows additional configuring of the Redfish service."/>
+        </ComplexType>
+
+    </Schema>
+	
+</edmx:DataServices>
+
+</edmx:Edmx>

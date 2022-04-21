@@ -1,0 +1,13 @@
+{
+    "@odata.context": "/redfish/v1/$metadata",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions/4CAF7FF8-50E7-4703-BE1C-7A6C4BBB5134",
+    "@odata.type": "#DynamicExtension.v1_0_0.DynamicExtension",
+    "Created": "2021-04-19T03:52:46+00:00",
+    "Description": "Dynamic 4CAF7FF8-50E7-4703-BE1C-7A6C4BBB5134 Extension",
+    "DirectoryName": "ami_util",
+    "Id": "4CAF7FF8-50E7-4703-BE1C-7A6C4BBB5134",
+    "Md5Checksum": "15088bf7cac23985ee946ecb95422c31",
+    "Name": "Dynamic 4CAF7FF8-50E7-4703-BE1C-7A6C4BBB5134 Extension",
+    "Running": true
+}

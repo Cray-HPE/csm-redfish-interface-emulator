@@ -57,9 +57,11 @@ members = {}
 members_actions = {}
 members_reset_thread = {}
 
-reboot_actions = {'GracefulRestart', 'ForceRestart', 'PushPowerButton'}
-off_actions = {'Off', 'ForceOff', 'GracefulShutdown', 'Nmi'}
-on_actions = {'On', 'ForceOn'}
+reboot_actions = ['GracefulRestart', 'ForceRestart', 'PushPowerButton']
+off_actions = ['Off', 'ForceOff', 'GracefulShutdown', 'Nmi']
+on_actions = ['On', 'ForceOn']
+
+default_actions = ['ForceOff', 'On', 'Off']
 
 # ResetWorker
 #
@@ -195,20 +197,20 @@ class ComputerSystemAPI(Resource):
 # resources are affected by ResetAction_API()
 #
 def CreateComputerSystem(ident, config, rst_actions):
-    logging.info('CreateComputerSystem put called')
+    logging.info('CreateComputerSystem called')
     try:
-        # global config
-        global wildcards
         logging.debug('added config for Systems/%s' % ident)
         members[ident] = config
-        members_actions[ident] = rst_actions
+        if len(rst_actions) == 0:
+            members_actions[ident] = default_actions
+        else:
+            members_actions[ident] = rst_actions
         members_reset_thread[ident] = None
 
         resp = config, 200
     except Exception:
         traceback.print_exc()
         resp = INTERNAL_ERROR
-    logging.info('CreateComputerSystem init exit')
     return resp
 
 # ResetAction_API

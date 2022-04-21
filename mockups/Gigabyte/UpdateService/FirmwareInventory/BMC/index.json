@@ -1,0 +1,11 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.etag": "W/\"1613499932\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/BMC",
+    "@odata.type": "#SoftwareInventory.v1_2_1.SoftwareInventory",
+    "Description": "BMC Firmware Inventory",
+    "Id": "BMC",
+    "Name": "BMC",
+    "Updateable": true,
+    "Version": "12.84.13"
+}

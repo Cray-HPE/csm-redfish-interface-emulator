@@ -1,0 +1,9 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j13p1/Oem/Cray/LinkFlaps",
+    "@odata.type": "#LinkFlaps.v1_0_0.LinkFlaps",
+    "Id": "LinkFlaps",
+    "LinkFlaps": [],
+    "Name": "Network-port-related link flap data",
+    "TotalFlaps": "0"
+}

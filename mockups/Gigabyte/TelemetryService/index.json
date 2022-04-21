@@ -1,0 +1,53 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#TelemetryService.TelemetryService",
+    "@odata.etag": "W/\"1616690192\"",
+    "@odata.id": "/redfish/v1/TelemetryService",
+    "@odata.type": "#TelemetryService.v1_1_1.TelemetryService",
+    "Actions": {
+        "#TelemetryService.SubmitTestMetricReport": {
+            "@Redfish.ActionInfo": "/redfish/v1/TelemetryService/SubmitTestMetricReportActionInfo",
+            "target": "/redfish/v1/TelemetryService/Actions/TelemetryService.SubmitTestMetricReport"
+        }
+    },
+    "Description": "TelemetryService",
+    "Id": "TelemetryService",
+    "MaxReports": 25,
+    "MetricDefinitions": {
+        "@odata.id": "/redfish/v1/TelemetryService/MetricDefinitions"
+    },
+    "MetricReportDefinitions": {
+        "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions"
+    },
+    "MetricReports": {
+        "@odata.id": "/redfish/v1/TelemetryService/MetricReports"
+    },
+    "MinCollectionInterval": "PT5S",
+    "Name": "TelemetryService",
+    "Oem": {
+        "Ami": {
+            "@odata.type": "#AMITelemetryLogService.v1_0_0.AMITelemetryLogService",
+            "LogServices": {
+                "@odata.id": "/redfish/v1/TelemetryService/LogServices"
+            }
+        }
+    },
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "SupportedCollectionFunctions": [
+        "Average",
+        "Minimum",
+        "Summation",
+        "Maximum"
+    ],
+    "SupportedCollectionFunctions@Redfish.AllowableValues": [
+        "Average",
+        "Maximum",
+        "Summation",
+        "Minimum"
+    ],
+    "Triggers": {
+        "@odata.id": "/redfish/v1/TelemetryService/Triggers"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SimpleStorage.SimpleStorage",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Systems/Self/SimpleStorage/1",
+    "@odata.type": "#SimpleStorage.v1_2_2.SimpleStorage",
+    "Description": "This resource shall be used to represent a storage controller and its directly-attached devices.",
+    "Devices": [
+        {
+            "CapacityBytes": 2013667524608,
+            "Model": "SAMSUNG MZ7LH1T9HMLT-00005",
+            "Name": "SAMSUNG MZ7LH1T9HMLT-00005"
+        }
+    ],
+    "Id": "1",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        }
+    },
+    "Name": "Simple Storage"
+}

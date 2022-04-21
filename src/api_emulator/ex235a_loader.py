@@ -47,6 +47,8 @@ from .redfish.event_generator import EventGenerator
 from .redfish.event_service_api import CreateEventService
 from .redfish.account_service_api import CreateAccountService, CreateAccount, AccountCollectionAPI, AccountAPI
 from .redfish.session_service_api import CreateSessionService, SessionCollectionAPI, SessionAPI
+from .redfish.hpe_cray_ex_certificate_service_api import ReplaceCertificateAPI, CreateCert
+from .redfish.manager_network_protocol_api import ManagerNetworkProtocolAPI, CreateNetworkProtocol
 
 # EX235a
 #
@@ -63,6 +65,9 @@ from .redfish.session_service_api import CreateSessionService, SessionCollection
 # - System Power Actions
 #     GET      /redfish/v1/Systems/{sys_id}
 #     GET/POST /redfish/v1/Systems/{sys_id}/Actions/ComputerSystem.Reset
+# - Manager Power Actions
+#     GET      /redfish/v1/Managers/{manager_id}
+#     GET/POST /redfish/v1/Managers/{manager_id}/Actions/Manager.Reset
 # - Firmware Update
 #     GET       /redfish/v1/UpdateService/FirmwareInventory/{target_id}
 #     POST      /redfish/v1/UpdateService/SimpleUpdate
@@ -77,6 +82,10 @@ from .redfish.session_service_api import CreateSessionService, SessionCollection
 # - Session Service
 #     GET/POST   /redfish/v1/SessionService/Sessions
 #     GET/DELETE /redfish/v1/AccountService/Sessions/{id}
+# - Certificate Service
+#     POST /redfish/v1/CertificateService/Actions/CertificateService.ReplaceCertificate
+# - Manager Network Protocol
+#     GET/PATCH /redfish/v1/Managers/{manager_id}/NetworkProtocol
 class EX235a(Loader):
 
     def __init__(self, resource_dictionary, config_data):
@@ -100,6 +109,17 @@ class EX235a(Loader):
                     control_id = pwrControl['@odata.id'].replace('/redfish/v1/Chassis/%s/Controls/' % ch_id, '')
                     config = self.resource_dictionary.get_resource('Chassis/%s/Controls/%s' % (ch_id, control_id))
                     CreatePower(ch_id, control_id, config)
+
+    def init_cert_service(self):
+        #
+        # Certificate Service
+        #
+        g.api.add_resource(ReplaceCertificateAPI, '/redfish/v1/CertificateService/Actions/CertificateService.ReplaceCertificate')
+        certCollection = self.resource_dictionary.get_resource('Managers/BMC/NetworkProtocol/HTTPS/Certificates')
+        for member in certCollection['Members']['Certificates']:
+            cert_id = member['@odata.id'].replace('/redfish/v1/Managers/BMC/NetworkProtocol/HTTPS/Certificates/', '')
+            cert_config = self.resource_dictionary.get_resource('Managers/BMC/NetworkProtocol/HTTPS/Certificates/%s' % cert_id)
+            CreateCert(cert_id, cert_config)
 
     # Randomize serial numbers and MAC addresses just in case multiple instances are created
     def randomize(self):

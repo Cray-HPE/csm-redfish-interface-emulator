@@ -1,0 +1,69 @@
+{
+    "@odata.type": "#EthernetInterface.v1_4_0.EthernetInterface",
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterface.EthernetInterface",
+    "@odata.id": "/redfish/v1/Managers/BMC/EthernetInterfaces/1",
+    "Id": "1",
+    "Name": "BMC Ethernet Interface",
+    "Description": "Network Interface on the Baseboard Management Controller",
+    "Status": {
+        "State": "Disabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "MACAddress": "a4-bf-01-28-90-aa",
+    "HostName": "BMCA4BF012890AA",
+    "NameServers": [
+        "10.94.100.225",
+        ""
+    ],
+    "IPv4Addresses": [
+        {
+            "Address": "0.0.0.0",
+            "SubnetMask": "0.0.0.0",
+            "Gateway": "0.0.0.0",
+            "AddressOrigin": "Static"
+        }
+    ],
+    "IPv4StaticAddresses": [
+        {
+            "Address": "0.0.0.0",
+            "SubnetMask": "0.0.0.0",
+            "Gateway": "0.0.0.0"
+        }
+    ],
+    "DHCPv4": {
+        "DHCPEnabled": false
+    },
+    "MTUSize": 1500,
+    "MaxIPv6StaticAddresses": 1,
+    "IPv6Addresses": [
+        {
+            "Address": "::",
+            "PrefixLength": 64,
+            "AddressOrigin": "Static"
+        }
+    ],
+    "IPv6StaticAddresses": [
+        {
+            "Address": "::",
+            "PrefixLength": 64
+        }
+    ],
+    "IPv6DefaultGateway": "::",
+    "IPv6StaticDefaultGateways": [
+        {
+            "Address": "::"
+        }
+    ],
+    "DHCPv6": {
+        "OperatingMode": "Disabled"
+    },
+    "LinkStatus": "LinkUp",
+    "InterfaceEnabled": false,
+    "SpeedMbps": 100,
+    "FQDN": null,
+    "VLAN": {
+        "VLANEnable": false,
+        "VLANId": 0
+    }
+}

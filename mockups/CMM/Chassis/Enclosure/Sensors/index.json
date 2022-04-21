@@ -1,0 +1,253 @@
+{
+    "@odata.etag": "W/\"1650317056\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors",
+    "@odata.type": "#SensorCollection.SensorCollection",
+    "Description": "Sensor Collection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0Line2ToLine3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisLiquidOutlet0OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1Line3ToLine1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Chassis2Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator6OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0Line3ToLine1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1Line2ToLine3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3Line2ToLine3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator5InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2Line1InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisLiquidOutlet0OutputPressure"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0Line1ToLine2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Chassis1Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator2Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator6InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator3Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3Line1InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/SystemBoard0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator5OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1Line1ToLine2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisLiquidInlet0InputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0Line2InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator4Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3Line1ToLine2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Chassis0Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator2OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2Line3InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator5InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator4OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2Line3ToLine1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3Line3InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1Line3InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3Line3ToLine1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator4OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3Line2InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0Line3InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2Line1ToLine2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator6InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisLiquidInlet0InputPressure"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator4InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2Line2InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier2Line2ToLine3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1Line2InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier3Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1Line1InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Rectifier0Line1InputCurrent"
+        }
+    ],
+    "Members@odata.count": 81,
+    "Name": "Sensor Collection"
+}

@@ -1,0 +1,15 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#AccountServiceConfigurations.Configurations",
+    "@odata.etag": "W/\"1616690192\"",
+    "@odata.id": "/redfish/v1/AccountService/Configurations",
+    "@odata.type": "#AccountServiceConfigurations.v1_0_0.Configurations",
+    "Id": "Configurations",
+    "Name": "AccountService Configurations",
+    "PAMEnabled": false,
+    "PAMOrder": [
+        "IPMI",
+        "LDAP",
+        "ACTIVE DIRECTORY",
+        "RADIUS"
+    ]
+}

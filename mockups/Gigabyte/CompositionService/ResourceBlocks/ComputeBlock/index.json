@@ -1,0 +1,81 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ResourceBlock.ResourceBlock",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/ComputeBlock",
+    "@odata.type": "#ResourceBlock.v1_3_1.ResourceBlock",
+    "CompositionStatus": {
+        "CompositionState": "Unused",
+        "Reserved": false
+    },
+    "Description": "ComputeBlock",
+    "Id": "ComputeBlock",
+    "Memory": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/12"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/13"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/15"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/11"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/9"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/14"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/8"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/7"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/16"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Memory/10"
+        }
+    ],
+    "Memory@odata.count": 16,
+    "Name": "ComputeBlock",
+    "Processors": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Processors/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Processors/2"
+        }
+    ],
+    "Processors@odata.count": 2,
+    "ResourceBlockType": [
+        "Compute"
+    ],
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "@odata.context": "/redfish/v1/$metadata",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/DynamicExtension/RedfishExtensions/24C5E8D6-7D92-4E54-916E-FEE44013F13F",
+    "@odata.type": "#DynamicExtension.v1_0_0.DynamicExtension",
+    "Created": "2021-04-19T03:52:46+00:00",
+    "Description": "Dynamic 24C5E8D6-7D92-4E54-916E-FEE44013F13F Extension",
+    "DirectoryName": "FwConfig_LoadDef_dynextn",
+    "Id": "24C5E8D6-7D92-4E54-916E-FEE44013F13F",
+    "Md5Checksum": "f33b77b217dd5fc1deae86d64c5b1e28",
+    "Name": "Dynamic 24C5E8D6-7D92-4E54-916E-FEE44013F13F Extension",
+    "Running": true
+}

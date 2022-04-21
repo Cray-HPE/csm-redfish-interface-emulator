@@ -1,0 +1,35 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice9Voltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "NetworkingDevice9Voltage",
+    "Name": "j9",
+    "Oem": {
+        "Index": 9
+    },
+    "PhysicalContext": "NetworkingDevice",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 3.135
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 2.97
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 3.465
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 3.63
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 3.874
+        }
+    }
+}

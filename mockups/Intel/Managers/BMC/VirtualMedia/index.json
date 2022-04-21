@@ -1,0 +1,9 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#VirtualMediaCollection.VirtualMediaCollection",
+    "@odata.id": "/redfish/v1/Managers/BMC/VirtualMedia",
+    "@odata.type": "#VirtualMediaCollection.VirtualMediaCollection",
+    "Name": "Virtual Media Services",
+    "Description": "Redfish-BMC Virtual Media Service Settings",
+    "Members@odata.count": 0,
+    "Members": []
+}

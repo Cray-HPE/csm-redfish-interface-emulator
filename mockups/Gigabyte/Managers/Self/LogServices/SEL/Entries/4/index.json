@@ -1,0 +1,24 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/SEL/Entries/4",
+    "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+    "Created": "2022-03-09T20:02:23+00:00",
+    "Description": "Log Entry",
+    "EntryCode": "Assert",
+    "EntryType": "SEL",
+    "EventTimestamp": "2021-02-16T18:41:04+00:00",
+    "EventType": "Alert",
+    "Id": "4",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Systems/Self/Processors"
+        }
+    },
+    "Message": "0x07FFFF",
+    "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+    "Name": "SEL 4",
+    "SensorNumber": 228,
+    "SensorType": "Processor",
+    "Severity": "OK"
+}

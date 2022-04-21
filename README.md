@@ -191,6 +191,14 @@ The Loader class currently sets up dynamic resources for:
     - Generic
         - GET      /redfish/v1/Systems/{sys_id}
         - GET/POST /redfish/v1/Systems/{sys_id}/Actions/ComputerSystem.Reset
+- Chassis Power Actions (init_chassis_reset())
+    - Generic
+        - GET      /redfish/v1/Chassis/{chassis_id}
+        - GET/POST /redfish/v1/Chassis/{chassis_id}/Actions/Chassis.Reset
+- Manager Power Actions (init_manager_reset())
+    - Generic
+        - GET      /redfish/v1/Managers/{manager_id}
+        - GET/POST /redfish/v1/Managers/{manager_id}/Actions/Manager.Reset
 - Update Service (init_update_service())
     - Generic
         - GET       /redfish/v1/UpdateService/FirmwareInventory/{target_id}
@@ -204,6 +212,12 @@ The Loader class currently sets up dynamic resources for:
     - Generic
         - GET/POST   /redfish/v1/SessionService/Sessions
         - GET/DELETE /redfish/v1/AccountService/Sessions/{id}
+- Certificate Service (init_certificate_service())
+    - HPE Cray EX Schema
+        - POST /redfish/v1/CertificateService/Actions/CertificateService.ReplaceCertificate
+- Manager Network Protocol (init_manager_network_protocol())
+    - Generic
+        - GET/PATCH /redfish/v1/Managers/{manager_id}/NetworkProtocol
 - Event Service (init_event_service())
     - Generic
         - GET/PATCH        /redfish/v1/EventService
@@ -347,11 +361,15 @@ Some dynamic resources such as the EventService generate responses (i.e. Redfish
 
 ## Existing static mockup files:
 - Generic [public-rackmount1](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/public-rackmount1)
+- [CMM](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/CMM) (Mountain Chassis BMC)
+- [DL325](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/DL325) (ProLiant DL325 Gen10 Plus)
 - [EX235a](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX235a) (Bard Peak)
 - [EX235n](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX235n) (Grizzly Peak)
 - [EX420](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX420) (Castle)
 - [EX425](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX425) (Windom)
-- [DL325](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/DL325) (ProLiant DL325 Gen10 Plus)
+- [Gigabyte](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/Gigabyte) (Gigabyte Compute)
+- [Intel](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/Intel) (Intel Compute)
+- [Slingshot_Switch_Blade](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/Slingshot_Switch_Blade) (Slingshot Router Module)
 - [XL675d_A40](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/XL675d_A40) (Apollo 6500 A40)
 
 <a name="existing-dynamic-resources"></a>
@@ -359,16 +377,22 @@ Some dynamic resources such as the EventService generate responses (i.e. Redfish
 ## Existing dynamic resources:
 - Power Control
     - Generic -  [power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/power_control_api.py)
-        - GET/PATCH /redfish/v1/Chassis/{sys_id}/Power
+        - GET/PATCH /redfish/v1/Chassis/<system_id>/Power
     - HPE Cray EX - [hpe_cray_ex_power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/hpe_cray_ex_power_control_api.py)
         - GET/PATCH /redfish/v1/Chassis/<system_id>/Controls/<control_id>
         - PATCH     /redfish/v1/Chassis/<system_id>/Controls.Deep
     - Proliant iLO - [proliant_ilo_power_control_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/proliant_ilo_power_control_api.py)
-        - GET  /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit
-        - POST /redfish/v1/Chassis/{sys_id}/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit
+        - GET  /redfish/v1/Chassis/<system_id>/Power/AccPowerService/PowerLimit
+        - POST /redfish/v1/Chassis/<system_id>/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit
 - Computer System Power Actions - [computer_systems_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/computer_systems_api.py)
     - GET /redfish/v1/Systems/<system_id>
     - POST /redfish/v1/Systems/<system_id>/Actions/ComputerSystem.Reset
+- Chassis Power Actions - [chassis_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/chassis_api.py)
+    - GET      /redfish/v1/Chassis/<chassis_id>
+    - GET/POST /redfish/v1/Chassis/<chassis_id>/Actions/Chassis.Reset
+- Manager Power Actions - [manager_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/manager_api.py)
+    - GET      /redfish/v1/Managers/<manager_id>
+    - GET/POST /redfish/v1/Managers/<manager_id>/Actions/Manager.Reset
 - Firmware Update - [update_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py)
     - GET /redfish/v1/UpdateService/FirmwareInventory/<target_id>
     - POST /redfish/v1/UpdateService/SimpleUpdate
@@ -385,19 +409,27 @@ Some dynamic resources such as the EventService generate responses (i.e. Redfish
     - Proliant iLO - [proliant_ilo_events.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/templates/proliant_ilo_events.py)
 - Account Service - [account_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/account_service_api.py)
     - GET/POST         /redfish/v1/AccountService/Accounts
-    - GET/PATCH/DELETE /redfish/v1/AccountService/Accounts/{id}
+    - GET/PATCH/DELETE /redfish/v1/AccountService/Accounts/<id>
 - Session Service - [session_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/session_service_api.py)
     - GET/POST   /redfish/v1/SessionService/Sessions
-    - GET/DELETE /redfish/v1/AccountService/Sessions/{id}
+    - GET/DELETE /redfish/v1/AccountService/Sessions/<id>
+- Certificate Service - [hpe_cray_ex_certificate_service_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/hpe_cray_ex_certificate_service_api.py)
+    - POST /redfish/v1/CertificateService/Actions/CertificateService.ReplaceCertificate
+- Manager Network Protocol - [manager_network_protocol_api.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/manager_network_protocol_api.py)
+    - GET/PATCH /redfish/v1/Managers/<manager_id>/NetworkProtocol
 
 <a name="emulator-loader-map"></a>
 
 ## Emulator to Loader Map
 
 - public-rackmount1 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- CMM - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- DL325 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
 - EX235a - [ex235a_loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/ex235a_loader.py)
 - EX235n - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
 - EX420 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
 - EX425 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
-- DL325 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- Gigabyte - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- Intel - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
+- Slingshot_Switch_Blade - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)
 - XL675d_A40 - [loader.py](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/src/api_emulator/loader.py)

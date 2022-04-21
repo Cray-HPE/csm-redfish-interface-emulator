@@ -1,0 +1,22 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Task.Task",
+    "@odata.etag": "W/\"1649357813\"",
+    "@odata.id": "/redfish/v1/TaskService/Tasks/608",
+    "@odata.type": "#Task.v1_4_1.Task",
+    "Description": "Task to POST Event Notification to http://10.94.100.71",
+    "EndTime": "2022-04-07T18:56:57+00:00",
+    "Id": "608",
+    "Messages": [
+        {
+            "@odata.type": "#Message.v1_0_7.Message",
+            "Message": "Successfully Completed Request",
+            "MessageId": "Base.1.0.Success",
+            "Resolution": "None",
+            "Severity": "OK"
+        }
+    ],
+    "Name": "EventService - POST Event Notification Task - Subscription 2",
+    "StartTime": "2022-04-07T18:56:57+00:00",
+    "TaskState": "Completed",
+    "TaskStatus": "OK"
+}

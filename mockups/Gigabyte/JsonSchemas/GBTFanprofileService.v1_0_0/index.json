@@ -1,0 +1,25 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/JsonSchemas/GBTFanprofileService.v1_0_0",
+    "@odata.type": "#JsonSchemaFile.v1_1_3.JsonSchemaFile",
+    "Description": "GBTFanprofileService.v1_0_0 schema",
+    "Id": "GBTFanprofileService.v1_0_0",
+    "Languages": [
+        "en"
+    ],
+    "Location": [
+        {
+            "Language": "en",
+            "Uri": "/redfish/v1/JsonSchemas/GBTFanprofileService.v1_0_0.json"
+        }
+    ],
+    "Name": "GBTFanprofileService.v1_0_0 schema",
+    "Oem": {
+        "Ami": {
+            "@odata.type": "#AMIXMLSchemaLocation.v1_0_0.Ami",
+            "XMLSchemaLocation": "/redfish/v1/JsonSchemas/GBTFanprofileService.v1_0_0.xml"
+        }
+    },
+    "Schema": "GBTFanprofileService.v1_0_0.GBTFanprofileService"
+}

@@ -1,0 +1,32 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator7OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ASICVoltageRegulator7OutputCurrent",
+    "Name": "IVOC12",
+    "Oem": {
+        "Index": 7,
+        "ParentalContext": "ASIC",
+        "ReferenceDesignator": "J6"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 14.625,
+    "ReadingTime": "2022-04-20T15:35:48.005924428Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 58
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 62.5
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 72
+        }
+    }
+}

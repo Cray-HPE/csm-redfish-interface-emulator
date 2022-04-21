@@ -1,0 +1,46 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#EventService.EventService",
+    "@odata.etag": "W/\"1627588488\"",
+    "@odata.id": "/redfish/v1/EventService",
+    "@odata.type": "#EventService.v1_3_0.EventService",
+    "Actions": {
+        "#EventService.SubmitTestEvent": {
+            "@Redfish.ActionInfo": "/redfish/v1/EventService/SubmitTestEventActionInfo",
+            "target": "/redfish/v1/EventService/Actions/EventService.SubmitTestEvent"
+        }
+    },
+    "DeliveryRetryAttempts": 3,
+    "DeliveryRetryIntervalSeconds": 60,
+    "Description": "Event Service",
+    "EventFormatTypes": [
+        "MetricReport",
+        "Event"
+    ],
+    "Id": "EventService",
+    "Name": "Event Service",
+    "RegistryPrefixes": [
+        "EventLog.1.0.0",
+        "HttpStatus.1.0.0",
+        "Base.1.5.0",
+        "SyncAgent.1.0.0",
+        "IPMI.1.0.0",
+        "Security.1.0.0"
+    ],
+    "ResourceTypes": [
+        "Chassis",
+        "Systems",
+        "AccountService",
+        "EventService",
+        "Managers",
+        "TelemetryService"
+    ],
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "SubordinateResourcesSupported": false,
+    "Subscriptions": {
+        "@odata.id": "/redfish/v1/EventService/Subscriptions"
+    }
+}

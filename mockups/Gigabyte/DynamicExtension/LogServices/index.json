@@ -1,0 +1,17 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogServiceCollection.LogServiceCollection",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/DynamicExtension/LogServices",
+    "@odata.type": "#LogServiceCollection.LogServiceCollection",
+    "Description": "Collection of Log Services for this System",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/DynamicExtension/LogServices/ErrorLog"
+        },
+        {
+            "@odata.id": "/redfish/v1/DynamicExtension/LogServices/AuditLog"
+        }
+    ],
+    "Members@odata.count": 2,
+    "Name": "Log Service Collection"
+}

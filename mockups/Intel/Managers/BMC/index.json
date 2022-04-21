@@ -1,0 +1,69 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Manager.Manager",
+    "@odata.id": "/redfish/v1/Managers/BMC",
+    "@odata.type": "#Manager.v1_3_3.Manager",
+    "Id": "BMC",
+    "Name": "Manager",
+    "ManagerType": "BMC",
+    "Description": "Baseboard Management Controller",
+    "ServiceEntryPointUUID": "f4e0c73a-e66e-4acf-a109-bec76c47700d",
+    "UUID": "ed5fe40a-657e-d2ca-bfec-08779f748d45",
+    "Model": "S2600BPB",
+    "DateTime": "2022-04-21T18:55:30+00:00",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "GraphicalConsole": {
+        "ServiceEnabled": true,
+        "MaxConcurrentSessions": 4,
+        "ConnectTypesSupported": [
+            "KVMIP"
+        ]
+    },
+    "SerialConsole": {
+        "ServiceEnabled": false,
+        "MaxConcurrentSessions": 1,
+        "ConnectTypesSupported": [
+            "SSH",
+            "IPMI"
+        ]
+    },
+    "FirmwareVersion": "1.93.870cf4f0",
+    "PowerState": "On",
+    "NetworkProtocol": {
+        "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol"
+    },
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/BMC/EthernetInterfaces"
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Managers/BMC/LogServices"
+    },
+    "VirtualMedia": {
+        "@odata.id": "/redfish/v1/Managers/BMC/VirtualMedia"
+    },
+    "Links": {
+        "ManagerForServers@odata.count": 1,
+        "ManagerForServers": [
+            {
+                "@odata.id": "/redfish/v1/Systems/QSBP74100021"
+            }
+        ],
+        "ManagerForChassis@odata.count": 1,
+        "ManagerForChassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/RackMount"
+            }
+        ]
+    },
+    "Actions": {
+        "#Manager.Reset": {
+            "target": "/redfish/v1/Managers/BMC/Actions/Manager.Reset",
+            "ResetType@Redfish.AllowableValues": [
+                "ForceRestart"
+            ]
+        }
+    }
+}

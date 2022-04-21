@@ -1,0 +1,41 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/VoltageRegulator3InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "VoltageRegulator3InputVoltage",
+    "Name": "IVOC12_0",
+    "Oem": {
+        "Index": 3,
+        "ReferenceDesignator": "J9"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 365
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 355
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 290
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 395
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 410
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 420
+        }
+    }
+}

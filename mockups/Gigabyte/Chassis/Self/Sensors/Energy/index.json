@@ -1,0 +1,16 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Sensor.Sensor",
+    "@odata.etag": "W/\"1616690423\"",
+    "@odata.id": "/redfish/v1/Chassis/Self/Sensors/Energy",
+    "@odata.type": "#Sensor.v1_0_0.Sensor",
+    "Id": "Power Energy Monitor",
+    "Name": "Power Energy Monitor",
+    "Oem": {
+        "Vendor": {
+            "@odata.type": "#GbtSensorProperty.v1_0_0.Vendor",
+            "ReadingTime": "2022-03-09T19:58:03+00:00"
+        }
+    },
+    "Reading": 468,
+    "ReadingType": "EnergyJoules"
+}

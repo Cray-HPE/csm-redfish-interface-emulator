@@ -1,0 +1,13 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#BootOption.BootOption",
+    "@odata.etag": "W/\"1616690423\"",
+    "@odata.id": "/redfish/v1/Systems/Self/BootOptions/0006",
+    "@odata.type": "#BootOption.v1_0_2.BootOption",
+    "BootOptionEnabled": true,
+    "BootOptionReference": "Boot0006",
+    "Description": "UEFI: PXE IP6 Intel(R) I350 Gigabit Network Connection",
+    "DisplayName": "UEFI: PXE IP6 Intel(R) I350 Gigabit Network Connection",
+    "Id": "0006",
+    "Name": "Boot0006",
+    "UefiDevicePath": "PciRoot(0x3)/Pci(0x3,0x3)/Pci(0x0,0x0)/MAC(B42E99BADE15,0x0)/IPv6(0000:0000:0000:0000:0000:0000:0000:0000,0x0,Static,0000:0000:0000:0000:0000:0000:0000:0000,0x40,0000:0000:0000:0000:0000:0000:0000:0000)"
+}

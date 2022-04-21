@@ -1,0 +1,19 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile",
+    "@odata.etag": "W/\"1616690218\"",
+    "@odata.id": "/redfish/v1/JsonSchemas/DynamicExtensionCollection",
+    "@odata.type": "#JsonSchemaFile.v1_1_3.JsonSchemaFile",
+    "Description": "DynamicExtensionCollection schema",
+    "Id": "DynamicExtensionCollection",
+    "Languages": [
+        "en"
+    ],
+    "Location": [
+        {
+            "Language": "en",
+            "Uri": "/redfish/v1/JsonSchemas/DynamicExtensionCollection.json"
+        }
+    ],
+    "Name": "DynamicExtensionCollection schema",
+    "Schema": "DynamicExtensionCollection.DynamicExtensionCollection"
+}

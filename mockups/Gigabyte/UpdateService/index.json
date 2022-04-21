@@ -1,0 +1,33 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#UpdateService.UpdateService",
+    "@odata.etag": "W/\"1646855499\"",
+    "@odata.id": "/redfish/v1/UpdateService",
+    "@odata.type": "#UpdateService.v1_5_0.UpdateService",
+    "Actions": {
+        "#UpdateService.SimpleUpdate": {
+            "@Redfish.ActionInfo": "/redfish/v1/UpdateService/SimpleUpdateActionInfo",
+            "target": "/redfish/v1/UpdateService/Actions/SimpleUpdate"
+        }
+    },
+    "Description": "Redfish Update Service",
+    "FirmwareInventory": {
+        "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory"
+    },
+    "Id": "UpdateService",
+    "Name": "Update Service",
+    "Oem": {
+        "AMIUpdateService": {
+            "@odata.type": "#AMIUpdateService.v1_0_0.AMIUpdateService",
+            "UpdateInformation": {
+                "FlashPercentage": "",
+                "UpdateStatus": "",
+                "UpdateTarget": ""
+            }
+        }
+    },
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

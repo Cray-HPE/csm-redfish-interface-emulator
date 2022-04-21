@@ -1,0 +1,22 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/94",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2022-04-03T04:04:31+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2022-04-03T04:04:31+00:00",
+    "Id": "94",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/"
+        }
+    },
+    "Message": "Sensor 'A' of the redundant leak sensors in the 'Front' cabinet zone has detected a leak.",
+    "MessageArgs": [
+        "A",
+        "Front"
+    ],
+    "MessageId": "CrayAlerts.CabinetLeakDetected",
+    "Name": "Log entry 94",
+    "Severity": "Warning"
+}

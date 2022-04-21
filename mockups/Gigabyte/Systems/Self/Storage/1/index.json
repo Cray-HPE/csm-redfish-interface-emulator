@@ -1,0 +1,27 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Storage.Storage",
+    "@odata.etag": "W/\"1649881767\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Storage/1",
+    "@odata.type": "#Storage.v1_7_0.Storage",
+    "Actions": {
+        "Oem": {
+            "#CreateLogicDevice": {
+                "@Redfish.ActionInfo": "/redfish/v1/Systems/Self/Storage/RaidConfig/CreateLogicDeviceInfo",
+                "target": "/redfish/v1/Systems/Self/Storage/RaidConfig/Actions/CreateLogicDevice"
+            },
+            "#DeleteLogicDevice": {
+                "@Redfish.ActionInfo": "/redfish/v1/Systems/Self/Storage/RaidConfig/DeleteLogicDeviceInfo",
+                "target": "/redfish/v1/Systems/Self/Storage/RaidConfig/Actions/DeleteLogicDevice"
+            }
+        }
+    },
+    "Description": "This resource shall be used to represent resources that represent a storage subsystem in the Redfish specification.",
+    "Drives": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/1"
+        }
+    ],
+    "Drives@odata.count": 1,
+    "Id": "1",
+    "Name": "Storage"
+}

@@ -1,0 +1,24 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Systems/Self/LogServices/BIOS/Entries/325",
+    "@odata.type": "#LogEntry.v1_4_2.LogEntry",
+    "Created": "2022-03-09T20:03:04+00:00",
+    "Description": "BIOS SEL Log Entry",
+    "EntryCode": "Assert",
+    "EntryType": "SEL",
+    "EventTimestamp": "2021-12-13T15:50:50+00:00",
+    "EventType": "Alert",
+    "Id": "325",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Systems/Self"
+        }
+    },
+    "Message": "0x0580FF",
+    "MessageId": "AmiIpmiOem.1.0.GeneralEventData",
+    "Name": "BIOS 325",
+    "SensorNumber": 0,
+    "SensorType": "System Event",
+    "Severity": "OK"
+}

@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1650406340\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/Chassis0Voltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Chassis0Voltage",
+    "Name": "cabinet_rear_leak_detect",
+    "Oem": {
+        "Index": 0
+    },
+    "PhysicalContext": "Chassis",
+    "Reading": 0,
+    "ReadingTime": "2022-04-20T15:28:37.239849193Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V"
+}

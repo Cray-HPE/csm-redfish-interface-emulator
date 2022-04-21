@@ -1,0 +1,32 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j104p1",
+    "@odata.type": "#NetworkPort.v1_1_0.NetworkPort",
+    "ActiveLinkTechnology": "Ethernet",
+    "ActiveLinkTechnology@Redfish.AllowableValues": [
+        "Ethernet",
+        "InfiniBand",
+        "FibreChannel"
+    ],
+    "CurrentLinkSpeedMbps": 200000,
+    "FlowControlConfiguration@Redfish.AllowableValues": [
+        "None",
+        "TX",
+        "RX",
+        "TX_RX"
+    ],
+    "Id": "j104p1",
+    "LinkStatus": "Up",
+    "Oem": {
+        "Cray": {
+            "LinkFlaps": {
+                "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/NetworkPorts/j104p1/Oem/Cray/LinkFlaps"
+            }
+        }
+    },
+    "PhysicalPortNumber": "16",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystem.ComputerSystem",
+    "@odata.etag": "W/\"1525957699\"",
+    "@odata.id": "/redfish/v1/Systems/Capabilities",
+    "@odata.type": "#ComputerSystem.v1_7_0.ComputerSystem",
+    "Boot": {
+        "BootSourceOverrideEnabled@Redfish.AllowableValues": [
+            "Disabled",
+            "Once",
+            "Continuous"
+        ],
+        "BootSourceOverrideEnabled@Redfish.OptionalOnCreate": true,
+        "BootSourceOverrideEnabled@Redfish.UpdatableAfterCreate": true,
+        "BootSourceOverrideTarget@Redfish.AllowableValues": [
+            "None",
+            "Pxe",
+            "Floppy",
+            "Cd",
+            "Usb",
+            "Hdd",
+            "BiosSetup",
+            "Utilities",
+            "UefiShell",
+            "UefiTarget",
+            "SDCard",
+            "UefiHttp",
+            "RemoteDrive",
+            "UefiBootNext"
+        ],
+        "BootSourceOverrideTarget@Redfish.OptionalOnCreate": true,
+        "BootSourceOverrideTarget@Redfish.UpdatableAfterCreate": true
+    },
+    "Boot@Redfish.OptionalOnCreate": true,
+    "Description": "Zone Capabilities",
+    "Description@Redfish.OptionalOnCreate": true,
+    "Description@Redfish.SetOnlyOnCreate": true,
+    "HostName@Redfish.OptionalOnCreate": true,
+    "HostName@Redfish.UpdatableAfterCreate": true,
+    "Id": "Capabilities",
+    "Links": {
+        "ResourceBlocks@Redfish.RequiredOnCreate": true,
+        "ResourceBlocks@Redfish.UpdatableAfterCreate": true
+    },
+    "Links@Redfish.RequiredOnCreate": true,
+    "Name": "Capabilities for the Zone",
+    "Name@Redfish.RequiredOnCreate": true,
+    "Name@Redfish.SetOnlyOnCreate": true
+}

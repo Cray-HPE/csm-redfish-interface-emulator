@@ -1,0 +1,31 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Chassis.Chassis",
+    "@odata.id": "/redfish/v1/Chassis/RackMount/HSBackplane",
+    "@odata.type": "#Chassis.v1_6_0.Chassis",
+    "Id": "HSBackplane",
+    "Name": "Computer System Card",
+    "ChassisType": "Card",
+    "Manufacturer": "Intel Corporation",
+    "Model": "FHW12X35HSBP12G",
+    "SerialNumber": "BQKP73800948",
+    "PartNumber": "G92718-271",
+    "PowerState": "On",
+    "Links": {
+        "ComputerSystems": [
+            {
+                "@odata.id": "/redfish/v1/Systems/QSBP74100021"
+            }
+        ],
+        "Drives": [],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC"
+            }
+        ],
+        "ContainedBy": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/StandAlone"
+            }
+        ]
+    }
+}

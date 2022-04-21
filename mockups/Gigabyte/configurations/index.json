@@ -1,0 +1,9 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Configurations.Configurations",
+    "@odata.etag": "W/\"1616690192\"",
+    "@odata.id": "/redfish/v1/configurations",
+    "@odata.type": "#Configurations.v1_0_0.Configurations",
+    "CertificateAuthorityUrl": "",
+    "Id": "configurations",
+    "Name": "configurations"
+}

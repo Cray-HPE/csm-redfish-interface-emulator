@@ -1,0 +1,23 @@
+{
+    "@odata.etag": "W/\"1650398758\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/NetworkAdapters/Rosetta/Oem/NetworkCables/j103",
+    "@odata.type": "#NetworkCable.v1_0_0.NetworkCable",
+    "DataPathPortMappings": {
+        "p0": 33,
+        "p1": 32
+    },
+    "HeadshellID": "",
+    "Id": "j103",
+    "MediaType": "Electrical",
+    "OEMCompany": "",
+    "OEMPartNumber": "",
+    "PartNumber": "",
+    "ProductionDate": "",
+    "SerialNumber": "",
+    "Status": {
+        "Health": "OK",
+        "State": "Absent"
+    },
+    "Vendor": "",
+    "Version": ""
+}

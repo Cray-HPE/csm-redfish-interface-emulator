@@ -1,0 +1,20 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ResourceBlockCollection.ResourceBlockCollection",
+    "@odata.etag": "W/\"1616690192\"",
+    "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks",
+    "@odata.type": "#ResourceBlockCollection.ResourceBlockCollection",
+    "Description": "Collection of ResourceBlocks",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/ComputeBlock"
+        },
+        {
+            "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/DrivesBlock"
+        },
+        {
+            "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks/NetworkBlock"
+        }
+    ],
+    "Members@odata.count": 3,
+    "Name": "ResourceBlock Collection"
+}

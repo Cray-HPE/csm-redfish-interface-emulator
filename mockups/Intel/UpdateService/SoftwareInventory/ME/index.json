@@ -1,0 +1,19 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/ME",
+    "@odata.type": "#SoftwareInventory.v1_1_1.SoftwareInventory",
+    "Id": "ME",
+    "Name": "Software Inventory",
+    "Description": "Software Version and Inventory Information",
+    "Version": "04.01.04.251",
+    "Status": {
+        "Oem": {}
+    },
+    "Actions": {
+        "Oem": {
+            "#Intel.Oem.UpdateME": {
+                "target": "/redfish/v1/UpdateService/SoftwareInventory/ME/Actions/Oem/Intel.Oem.UpdateME"
+            }
+        }
+    }
+}

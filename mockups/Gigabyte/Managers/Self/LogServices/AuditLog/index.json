@@ -1,0 +1,39 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+    "@odata.etag": "W/\"1649357921\"",
+    "@odata.id": "/redfish/v1/Managers/Self/LogServices/AuditLog",
+    "@odata.type": "#LogService.v1_1_2.LogService",
+    "Actions": {
+        "#LogService.ClearLog": {
+            "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/LogServices/AuditLog/ClearlogActionInfo",
+            "@Redfish.OperationApplyTimeSupport": {
+                "@odata.type": "#Settings.v1_2_1.Settings.OperationApplyTimeSupport",
+                "MaintenanceWindowDurationInSeconds": 600,
+                "MaintenanceWindowResource": {
+                    "@odata.id": "/redfish/v1/Managers/Self/LogServices/AuditLog"
+                },
+                "SupportedValues": [
+                    "Immediate",
+                    "AtMaintenanceWindowStart"
+                ]
+            },
+            "target": "/redfish/v1/Managers/Self/LogServices/AuditLog/Actions/LogService.ClearLog"
+        }
+    },
+    "DateTime": "2022-04-20T18:40:08+00:00",
+    "DateTimeLocalOffset": "+00:00",
+    "Description": "Audit log for this manager",
+    "Entries": {
+        "@odata.id": "/redfish/v1/Managers/Self/LogServices/AuditLog/Entries"
+    },
+    "Id": "AuditLog",
+    "LogEntryType": "Event",
+    "MaxNumberOfRecords": 150,
+    "Name": "Audit Log",
+    "OverWritePolicy": "WrapsWhenFull",
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

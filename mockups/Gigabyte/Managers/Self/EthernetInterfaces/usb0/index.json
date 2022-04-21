@@ -1,0 +1,55 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterface.EthernetInterface",
+    "@odata.etag": "W/\"1650479788\"",
+    "@odata.id": "/redfish/v1/Managers/Self/EthernetInterfaces/usb0",
+    "@odata.type": "#EthernetInterface.v1_5_0.EthernetInterface",
+    "DHCPv4": {
+        "DHCPEnabled": false
+    },
+    "Description": "Ethernet Interface usb0",
+    "FQDN": "AMIB42E99BADE17.hmn",
+    "HostName": "AMIB42E99BADE17",
+    "IPv4Addresses": [
+        {
+            "Address": "169.254.0.17",
+            "AddressOrigin": "Static",
+            "Gateway": "0.0.0.0",
+            "SubnetMask": "255.255.0.0"
+        }
+    ],
+    "IPv4StaticAddresses": [
+        {
+            "Address": "169.254.0.17",
+            "AddressOrigin": "Static",
+            "Gateway": "0.0.0.0",
+            "SubnetMask": "255.255.0.0"
+        }
+    ],
+    "IPv6Addresses": [
+        {
+            "Address": "fe80::44d5:faff:fe9a:bf1a",
+            "AddressOrigin": "LinkLocal",
+            "PrefixLength": 64
+        }
+    ],
+    "Id": "usb0",
+    "InterfaceEnabled": true,
+    "LinkStatus": "LinkUp",
+    "MACAddress": "46:D5:FA:9A:BF:1A",
+    "MTUSize": 1500,
+    "MaxIPv6StaticAddresses": 16,
+    "Name": "usb0",
+    "NameServers": [
+        "10.94.100.225",
+        "::"
+    ],
+    "PermanentMACAddress": "46:D5:FA:9A:BF:1A",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "VLAN": {
+        "VLANEnable": false,
+        "VLANId": 0
+    }
+}

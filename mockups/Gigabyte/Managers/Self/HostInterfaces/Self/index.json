@@ -1,0 +1,47 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HostInterface.HostInterface",
+    "@odata.etag": "W/\"1650479789\"",
+    "@odata.id": "/redfish/v1/Managers/Self/HostInterfaces/Self",
+    "@odata.type": "#HostInterface.v1_2_1.HostInterface",
+    "AuthenticationModes": [
+        "BasicAuth",
+        "RedfishSessionAuth"
+    ],
+    "Description": "Host Interface",
+    "ExternallyAccessible": false,
+    "FirmwareAuthEnabled": true,
+    "FirmwareAuthRoleId": "Administrator",
+    "HostEthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/Self/HostInterfaces/Self/HostEthernetInterfaces"
+    },
+    "HostInterfaceType": "NetworkHostInterface",
+    "Id": "self",
+    "InterfaceEnabled": true,
+    "KernelAuthEnabled": true,
+    "KernelAuthRoleId": "Administrator",
+    "Links": {
+        "ComputerSystems": [
+            {
+                "@odata.id": "/redfish/v1/Systems/Self"
+            }
+        ],
+        "ComputerSystems@odata.count": 1,
+        "FirmwareAuthRole": {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Administrator"
+        },
+        "KernelAuthRole": {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Administrator"
+        }
+    },
+    "ManagerEthernetInterface": {
+        "@odata.id": "/redfish/v1/Managers/Self/EthernetInterfaces/usb0"
+    },
+    "Name": "Host Interface",
+    "NetworkProtocol": {
+        "@odata.id": "/redfish/v1/Managers/Self/NetworkProtocol"
+    },
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

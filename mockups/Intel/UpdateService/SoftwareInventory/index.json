@@ -1,0 +1,25 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventoryCollection.SoftwareInventoryCollection",
+    "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory",
+    "@odata.type": "#SoftwareInventoryCollection.SoftwareInventoryCollection",
+    "Name": "SoftwareInventory Collection",
+    "Description": "Collection of entities with updatable software or firmware on this system",
+    "Members@odata.count": 5,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/BMC"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/BIOS"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/ME"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/SDR"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/HSBP1"
+        }
+    ]
+}

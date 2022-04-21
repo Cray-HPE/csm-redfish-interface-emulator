@@ -1,0 +1,241 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#MessageRegistryFile.MessageRegistryFile",
+    "@odata.etag": "W/\"1650480133\"",
+    "@odata.id": "/redfish/v1/Registries/UpdateService.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_3_0.MessageRegistry",
+    "Description": "This registry defines the Update Service messages for Redfish",
+    "Id": "UpdateService.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "DownloadFirmware": {
+            "Description": "Indicates that device is downloading firmware image file from Remote Server.",
+            "Message": "Device is downloading firmware image file from Remote Path - %1 for action %2.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "DownloadFirmwareFailed": {
+            "Description": "Indicates that device download firmware image file from Remote Server failed.",
+            "Message": "Devcie download firmware image file from Remote Path - %1 for action %2 failed.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "Warning"
+        },
+        "DownloadFirmwareSuccessful": {
+            "Description": "Indicates that device download firmware image file from Remote Server successfully.",
+            "Message": "Device download firmware image file from Remote Path - %1 for action %2 successfully.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "FirmwareUpdateCompleted": {
+            "Description": "Indicates that device firmware update is completed.",
+            "Message": "Action %1 firmware update is completed.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "FirmwareUpdateFailed": {
+            "Description": "Indicates that device firmware update is failed.",
+            "Message": "Action %1 firmware update is failed.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "Warning"
+        },
+        "FlashFirmware": {
+            "Description": "Indicates that device is flashing firmware.",
+            "Message": "Device is flashing firmware for action %1.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "FlashFirmwareFailed": {
+            "Description": "Indicates that device flash firmware update failed.",
+            "Message": "Device flash firmware update for action %1 failed.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "Warning"
+        },
+        "InvalidFirmwareImageFormat": {
+            "Description": "Indicates that uploaded firmware image is not a valid one.",
+            "Message": "The uploaded %1 is not a valid firmware image. Acceptable firmware image formats are .ima or .ima_enc",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Resubmit the request with the valid firmware image.",
+            "Severity": "Warning"
+        },
+        "InvalidSignKeyFormat": {
+            "Description": "Indicates that uploaded signed key is not a valid one.",
+            "Message": "The uploaded %1 is not a valid signed key. Acceptable signed key extension is .pem",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Resubmit the request with the valid signed key.",
+            "Severity": "Warning"
+        },
+        "PrepareFlashArea": {
+            "Description": "Indicates that device is prepareing flash area for firmware update.",
+            "Message": "Device is prepareing flash area for action %1.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "PrepareFlashAreaFailed": {
+            "Description": "Indicates that device prepare flash area failed.",
+            "Message": "Device prepare flash area for action %1 failed.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "PrepareFlashAreaSuccessful": {
+            "Description": "Indicates that device prepare flash area successfully.",
+            "Message": "Device prepare flash area for action %1 successfully.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "PrepareUpdate": {
+            "Description": "Indicates that device is prepareing firmware update.",
+            "Message": "Device is prepareing flash firmware for action %1.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "Running": {
+            "Description": "",
+            "Message": "Updating...",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "StartFirmwareUpdate": {
+            "Description": "Indicates that action was submitted to do firmware update.",
+            "Message": "The action %1 was submitted to do firmware update.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "Starting": {
+            "Description": "The operation is starting.",
+            "Message": "Task %1 is starting.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "VerifyFirmware": {
+            "Description": "Indicates that device is verifying firmware image file.",
+            "Message": "Device is verifying firmware image file which from Remote Path - %1 for action %2.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "VerifyFirmwareFailed": {
+            "Description": "Indicates that device verify firmware image file failed.",
+            "Message": "Device verify firmware image file which from Remote Path - %1 for action %2 failed.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "Warning"
+        },
+        "VerifyFirmwareSuccessful": {
+            "Description": "Indicates that device verify firmware image file successfully.",
+            "Message": "Device verify firmware image file which from Remote Path - %1 for action %2 successfully.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "VerifySignKey": {
+            "Description": "Indicates that device is verifying sign key file.",
+            "Message": "Device is verifying sign key file which from Remote Path - %1 for action %2.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "VerifySignKeyFailed": {
+            "Description": "Indicates that device verify sign key file failed.",
+            "Message": "Device verify sign key file which from Remote Path - %1 for action %2 failed.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "Warning"
+        },
+        "VerifySignKeySuccessful": {
+            "Description": "Indicates that device verify sign key file successfully.",
+            "Message": "Device verify sign key file which from Remote Path - %1 for action %2 successfully.",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        }
+    },
+    "Name": "Update Service Message Registry",
+    "OwningEntity": "AMI",
+    "RegistryPrefix": "UpdateService",
+    "RegistryVersion": "1.0.0"
+}

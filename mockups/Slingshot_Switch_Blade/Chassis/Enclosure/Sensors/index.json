@@ -1,0 +1,307 @@
+{
+    "@odata.etag": "W/\"1650468944\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors",
+    "@odata.type": "#SensorCollection.SensorCollection",
+    "Description": "Sensor Collection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice3Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC7Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice2Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC2Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator5Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice5Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice9Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice13Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice23Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator2Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice19Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice8Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC0Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice10Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator5InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC5Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator7OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice7Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice19Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator5InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice12Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator4OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator4OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice21Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice17Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator7OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC3Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator7InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator3OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice7Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/PowerSupplySubsystemVoltageRegulator0InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/PowerSupplySubsystemVoltageRegulator0InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice12Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice8Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice10Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator5OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator2OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator5InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator4InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice11Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice5Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice24Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice13Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC8Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator4InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice14Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice21Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice15Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice18Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice6Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice22Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/PowerSupplySubsystemVoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator4Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice14Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice16Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC4Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator5OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice15Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice6Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice9Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice4Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator5OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice4Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator3Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice22Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice20Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice17Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice2Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/SystemBoardTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice16Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice3Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator4InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator7Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice23Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice11Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator2OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator4OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/PowerSupplySubsystemVoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice1Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice20Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice24Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC6Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/NetworkingDevice18Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator1InputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASIC1Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ASICVoltageRegulator7OutputPower"
+        }
+    ],
+    "Members@odata.count": 99,
+    "Name": "Sensor Collection"
+}

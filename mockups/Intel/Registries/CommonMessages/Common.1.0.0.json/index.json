@@ -1,0 +1,52 @@
+{
+    "@Redfish.Copyright": "Copyright \u00a9 2015-2017 Insyde Software Corp. All rights reserved.",
+    "@odata.type": "#MessageRegistry.v1_0_3.MessageRegistry",
+    "Id": "Common.1.0.0",
+    "Name": "Common Message Registry",
+    "Language": "en",
+    "Description": "This registry defines the Common messages for Redfish",
+    "RegistryPrefix": "Common",
+    "RegistryVersion": "1.0.0",
+    "OwningEntity": "Insyde",
+    "Messages": {
+        "IgnorePowerControlRequest": {
+            "Description": "Indicates system power state has been switched off",
+            "Message": "Ignore power control request because of power has been switched off",
+            "Severity": "OK",
+            "NumberOfArgs": 0,
+            "Resolution": "None."
+        },
+        "PropertyInvalidCondition": {
+            "Description": "Indicates that the property in a PATCH or POST is not valid in the current state",
+            "Message": "Property %1 is not valid in the current state: %2",
+            "Severity": "Warning",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Correct the value for the property in the request body and resubmit the request if the operation failed."
+        },
+        "PropertyValueTypeMismatch": {
+            "Description": "Indicates that the data type for the property is unexpected.",
+            "Message": "Invalid data type for property %1; Expected a value of type %2.",
+            "Severity": "Warning",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "Correct the value for the property in the request body and resubmit the request if the operation failed."
+        },
+        "PropertyUpdateFailed": {
+            "Description": "Indicates that the property failed to update. The values may be invalid or an internal error may have occurred.",
+            "Message": "Property %1 update failed.",
+            "Severity": "Warning",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Verify that the value for the property is valid and resubmit the request. Other properties may have updated."
+        }
+    }
+}

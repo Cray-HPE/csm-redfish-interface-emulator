@@ -1,0 +1,15 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#JobService.JobService",
+    "@odata.etag": "W/\"1650480132\"",
+    "@odata.id": "/redfish/v1/JobService",
+    "@odata.type": "#JobService.v1_0_0.JobService",
+    "Description": "Job Service",
+    "Id": "JobService",
+    "Jobs": {
+        "@odata.id": "/redfish/v1/JobService/Jobs"
+    },
+    "Name": "Job Service",
+    "Status": {
+        "State": "Disabled"
+    }
+}
