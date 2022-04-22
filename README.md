@@ -150,7 +150,7 @@ The Redfish Mockup Creator can be run locally. For example, to create the EX325a
 
 - In another window, run the Redfish Mockup Creator
 ```
-Redfish-Mockup-Creator> python ./redfishMockupCreator.py --u root --p initial0 --A basic --r localhost:7443 -S -D ./EX325a
+Redfish-Mockup-Creator> python ./redfishMockupCreator.py --u <username> --p <password> --A basic --r localhost:7443 -S -D ./EX325a
 ```
 
 **NOTE:** DMTF's Redfish Mockup Creator only follows "@odata.id", "Uri", or "Members@odata.nextLink" links to go deeper. Because of this "@Redfish.ActionInfo" URIs such as '/redfish/v1/Systems/Node0/ResetActionInfo' do not get automatically captured. To complete the mockup, they either need to be manually copied or you need to checkout the [Redfish Mockup Creator](https://github.com/DMTF/Redfish-Mockup-Creator) and add 'or item == "@Redfish.ActionInfo"' [here](https://github.com/DMTF/Redfish-Mockup-Creator/blob/master/redfishMockupCreate.py#L284) and [here](https://github.com/DMTF/Redfish-Mockup-Creator/blob/master/redfishMockupCreate.py#L338) before running it.
