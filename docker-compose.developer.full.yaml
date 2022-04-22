@@ -211,18 +211,24 @@ services:
   # Emulator
   #
   emulator-loader:
-    image: artifactory.algol60.net/csm-docker/stable/cray-sls:1.16.0
+    image: artifactory.algol60.net/docker.io/library/golang:1.16-alpine
     command: >
-      sh -c "sleep 10 &&
+      sh -c "apk add curl && sleep 10 &&
       curl -X POST -d '{\"RedfishEndpoints\":[{
-        \"ID\":\"x0c0s0b0\",
-        \"FQDN\":\"x0c0s0b0\",
+        \"ID\":\"x0c0b0\",
+        \"FQDN\":\"x0c0b0\",
         \"RediscoverOnUpdate\":true,
         \"User\":\"root\",
         \"Password\":\"root_password\"
       },{
         \"ID\":\"x0c0s1b0\",
         \"FQDN\":\"x0c0s1b0\",
+        \"RediscoverOnUpdate\":true,
+        \"User\":\"root\",
+        \"Password\":\"root_password\"
+      },{
+        \"ID\":\"x0c0r2b0\",
+        \"FQDN\":\"x0c0r2b0\",
         \"RediscoverOnUpdate\":true,
         \"User\":\"root\",
         \"Password\":\"root_password\"}]}' http://cray-smd:27779/hsm/v2/Inventory/RedfishEndpoints"
@@ -232,13 +238,13 @@ services:
       - hms
 
   rfemulator0:
-    hostname: x0c0s0b0
+    hostname: x0c0b0
     build:
       context: .
       dockerfile: ./Dockerfile
     environment:
-      - MOCKUPFOLDER=public-rackmount1
-      - XNAME=x0c0s0b0
+      - MOCKUPFOLDER=CMM
+      - XNAME=x0c0b0
       # - "AUTH_CONFIG=root:root_password:Administrator"
       - PORT=443
     ports:
@@ -246,13 +252,10 @@ services:
     networks:
       hms:
         aliases:
-          - x0c0s0b0
+          - x0c0b0
 
   rfemulator1:
     hostname: x0c0s1b0
-    # build:
-      # context: .
-      # dockerfile: ./mockups/EX235a/Dockerfile
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -269,31 +272,25 @@ services:
         aliases:
           - x0c0s1b0
 
-  # rfemulator2:
-    # hostname: x0c0s2b0
-    # # build:
-      # # context: .
-      # # dockerfile: ./mockups/DL325/Dockerfile
-    # build:
-      # context: .
-      # dockerfile: ./Dockerfile
-    # environment:
-      # - MOCKUPFOLDER=DL325
-      # - XNAME=x0c0s2b0
-      # # - "AUTH_CONFIG=root:root_password:Administrator"
-      # - PORT=443
-    # ports:
-      # - "5002:443"
-    # networks:
-      # hms:
-        # aliases:
-          # - x0c0s2b0
+  rfemulator2:
+    hostname: x0c0r2b0
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - MOCKUPFOLDER=Slingshot_Switch_Blade
+      - XNAME=x0c0r2b0
+      # - "AUTH_CONFIG=root:root_password:Administrator"
+      - PORT=443
+    ports:
+      - "5002:443"
+    networks:
+      hms:
+        aliases:
+          - x0c0r2b0
 
   # rfemulator3:
     # hostname: x0c0s3b0
-    # # build:
-      # # context: .
-      # # dockerfile: ./mockups/EX235n/Dockerfile
     # build:
       # context: .
       # dockerfile: ./Dockerfile
@@ -312,9 +309,6 @@ services:
 
   # rfemulator4:
     # hostname: x0c0s4b0
-    # # build:
-      # # context: .
-      # # dockerfile: ./mockups/EX420/Dockerfile
     # build:
       # context: .
       # dockerfile: ./Dockerfile
@@ -333,9 +327,6 @@ services:
 
   # rfemulator5:
     # hostname: x0c0s5b0
-    # # build:
-      # # context: .
-      # # dockerfile: ./mockups/EX425/Dockerfile
     # build:
       # context: .
       # dockerfile: ./Dockerfile
@@ -354,9 +345,6 @@ services:
 
   # rfemulator6:
     # hostname: x0c0s6b0
-    # # build:
-      # # context: .
-      # # dockerfile: ./mockups/XL675d_A40/Dockerfile
     # build:
       # context: .
       # dockerfile: ./Dockerfile
