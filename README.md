@@ -4,7 +4,7 @@ The CSM Redfish Interface Emulator is based off DMTF's [Redfish Interface Emulat
 
 Although this project is based on DMTF's Redfish Interface Emulator project, it deviates a bit from DMTF's project's functionality. DMTF's project's dynamic resources are meant to be fully generated and generic. The CSM Redfish Interface Emulator project takes this an uses it to create dynamic resources that sit under a static mockup to emulate specific BMCs.
 
-Static resources are emulated by simply copying a redfish mockup into the ./mockups/<BMC_type> directory and specifying the <BMC_type> in the MOCKUPFOLDERS field in the [emulator-config.json](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/emulator-config.json) file. The emulator will automatically make these resources answer to GET only. For more see the [Creating a Static Mockup](#creating-static-mockup) section.
+Static resources are emulated by simply copying a redfish mockup into the ./mockups/<BMC_type> directory and specifying the <BMC_type> in the MOCKUPFOLDER environment variable. The emulator will automatically try to apply known dynamic resources to the mockup such as the AccountService using the [default loader](#default-loader). All other URIs will answer to GET only. For more on static resources see the [Creating a Static Mockup](#creating-static-mockup) section.
 
 Dynamic emulation is accomplished by creating custom python files for each dynamic resource. You can use the [Update Service API](https://github.com/Cray-HPE/csm-redfish-interface-emulator/blob/master/src/api_emulator/redfish/update_service_api.py) as an example when creating a new dynamic resources.
 
@@ -153,9 +153,7 @@ The Redfish Mockup Creator can be run locally. For example, to create the EX325a
 Redfish-Mockup-Creator> python ./redfishMockupCreator.py --u root --p initial0 --A basic --r localhost:7443 -S -D ./EX325a
 ```
 
-**NOTE:** DMTF's Redfish Mockup Creator only follows "@odata.id", "Uri", or "Members@odata.nextLink" links to go deeper. Because of this "@Redfish.ActionInfo" URIs need to be manually copied to complete the static mockup if you expect these to be queried. For the EX325a mockup, the following URIs had to be manually copied:
-- /redfish/v1/Systems/Node0/ResetActionInfo
-- /redfish/v1/UpdateService/SimpleUpdateActionInfo
+**NOTE:** DMTF's Redfish Mockup Creator only follows "@odata.id", "Uri", or "Members@odata.nextLink" links to go deeper. Because of this "@Redfish.ActionInfo" URIs such as '/redfish/v1/Systems/Node0/ResetActionInfo' do not get automatically captured. To complete the mockup, they either need to be manually copied or you need to checkout the [Redfish Mockup Creator](https://github.com/DMTF/Redfish-Mockup-Creator) and add 'or item == "@Redfish.ActionInfo"' [here](https://github.com/DMTF/Redfish-Mockup-Creator/blob/master/redfishMockupCreate.py#L284) and [here](https://github.com/DMTF/Redfish-Mockup-Creator/blob/master/redfishMockupCreate.py#L338) before running it.
 
 The static resource tree for a BMC type needs to be placed in csm-redfish-interface-emulator/mockups/<BMC_type> such that the index.json file in ./<BMC_type> is for the resource base, /redfish/v1.
 
