@@ -24,6 +24,16 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [1.2.0] - 2022-06-17
+
+### Added
+
+- Added mockup for XL675d with A100 GPUs
+
+### Fixed
+
+- Static resource path handling now normalizes paths
+
 ## [1.1.0] - 2022-04-21
 
 ### Added
