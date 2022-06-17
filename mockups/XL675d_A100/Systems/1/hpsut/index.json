@@ -1,0 +1,19 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#sut.sut/",
+    "@odata.id": "/redfish/v1/Systems/1/hpsut/",
+    "@odata.type": "#SUT.v2_9_0.SUT",
+    "HPSUMPID": 0,
+    "ID": "HPSUT",
+    "IsSelfUpdate": false,
+    "LastBootUptime": "none",
+    "LastOperationTime": "2022-03-29T14:21:27Z",
+    "Mode": "AutoStage",
+    "OperationRequestor": "OS Administrator",
+    "PollingIntervalInMinutes": 5,
+    "SUTCompName": "",
+    "SelfUpdateStatus": "none",
+    "ServiceState": "Disabled",
+    "ServiceVersion": "2.9.0.0",
+    "StagingDirectory": "/var/tmp/sut/stagingdirectory",
+    "Verify": "autoVerify"
+}

@@ -1,0 +1,50 @@
+{
+    "@odata.id": "/redfish/v1/Systems/1/Storage/DE07A000/Drives/0",
+    "@odata.type": "#Drive.v1_12_1.Drive",
+    "Id": "0",
+    "Name": "960GB 6G SATA SSD",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "LocationIndicatorActive": false,
+    "Model": "VK000960GXAWL",
+    "Revision": "HPG1",
+    "Protocol": "SATA",
+    "MediaType": "SSD",
+    "CapacityBytes": 960197124096,
+    "BlockSizeBytes": 512,
+    "SerialNumber": "21122DE9C12C",
+    "FailurePredicted": false,
+    "PredictedMediaLifeLeftPercent": 100.0,
+    "StatusIndicator": "OK",
+    "Identifiers": [
+        {
+            "DurableName": "31402EC014CD7DB0",
+            "DurableNameFormat": "NAA"
+        }
+    ],
+    "PhysicalLocation": {
+        "PartLocation": {
+            "LocationType": "Bay",
+            "ServiceLabel": "Slot=25:Port=1I:Box=3:Bay=4",
+            "LocationOrdinalValue": 4
+        }
+    },
+    "HotspareType": "None",
+    "EncryptionAbility": "None",
+    "WriteCacheEnabled": false,
+    "CapableSpeedGbs": 6.0,
+    "NegotiatedSpeedGbs": 6.0,
+    "Operations": [],
+    "Multipath": false,
+    "Links": {
+        "Volumes@odata.count": 1,
+        "Volumes": [
+            {
+                "@odata.id": "/redfish/v1/Systems/1/Storage/DE07A000/Volumes/1"
+            }
+        ]
+    },
+    "@odata.etag": "\"7FB903A9\""
+}

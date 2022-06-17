@@ -1,0 +1,41 @@
+{
+    "@odata.id": "/redfish/v1/Systems/1/Storage/DE07A000/Drives/3",
+    "@odata.type": "#Drive.v1_12_1.Drive",
+    "Id": "3",
+    "Name": "",
+    "Status": {
+        "State": "UnavailableOffline",
+        "Health": "Critical"
+    },
+    "LocationIndicatorActive": false,
+    "Manufacturer": null,
+    "Model": null,
+    "Revision": null,
+    "Protocol": null,
+    "MediaType": null,
+    "CapacityBytes": null,
+    "BlockSizeBytes": null,
+    "SerialNumber": null,
+    "FailurePredicted": null,
+    "StatusIndicator": "Fail",
+    "Identifiers": null,
+    "PhysicalLocation": {
+        "PartLocation": {
+            "LocationType": "Bay",
+            "ServiceLabel": "Slot=25:Port=Unknown:Box=Unknown:Bay=Unknown",
+            "LocationOrdinalValue": 1
+        }
+    },
+    "HotspareType": null,
+    "EncryptionAbility": "None",
+    "WriteCacheEnabled": null,
+    "CapableSpeedGbs": null,
+    "NegotiatedSpeedGbs": null,
+    "Operations": [],
+    "Multipath": null,
+    "Links": {
+        "Volumes@odata.count": 0,
+        "Volumes": []
+    },
+    "@odata.etag": "\"778A9125\""
+}

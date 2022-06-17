@@ -1,0 +1,231 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection",
+    "@odata.etag": "W/\"1766AACC\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "Event View",
+    "Name": "Event View",
+    "Members": [
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/1/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "1",
+            "Created": "2022-06-13T20:19:42Z",
+            "EntryType": "Oem",
+            "EventId": "2eb3c084-e7f6-8fec-e26b-a582fb13d740",
+            "EventTimestamp": "2022-06-13T20:19:42Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1//"
+                }
+            },
+            "MessageArgs": [
+                "NoAMS",
+                "Busy",
+                "Complete"
+            ],
+            "MessageId": "iLOEvents.3.2.DeviceDiscoveryStatusV2",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/2/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "2",
+            "Created": "2022-06-13T20:19:54Z",
+            "EntryType": "Oem",
+            "EventId": "84267265-e317-f972-8c43-99b65dac952c",
+            "EventTimestamp": "2022-06-13T20:19:54Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1//"
+                }
+            },
+            "MessageArgs": [
+                "NoAMS",
+                "Busy",
+                "Cached"
+            ],
+            "MessageId": "iLOEvents.3.2.DeviceDiscoveryStatusV2",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/3/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "3",
+            "Created": "2022-06-13T20:19:55Z",
+            "EntryType": "Oem",
+            "EventId": "56d3fedc-5c5c-347e-8b24-716e00350676",
+            "EventTimestamp": "2022-06-13T20:19:55Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1//"
+                }
+            },
+            "MessageArgs": [
+                "NoAMS",
+                "vAuxDeviceDiscoveryComplete",
+                "Cached"
+            ],
+            "MessageId": "iLOEvents.3.2.DeviceDiscoveryStatusV2",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/4/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "4",
+            "Created": "2022-06-13T20:19:56Z",
+            "EntryType": "Oem",
+            "EventId": "413fcef4-d858-7826-9794-46a680196a3e",
+            "EventTimestamp": "2022-06-13T20:19:56Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1/"
+                }
+            },
+            "MessageId": "iLOEvents.3.2.ServerPoweredOff",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/5/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "5",
+            "Created": "2022-06-13T20:19:59Z",
+            "EntryType": "Oem",
+            "EventId": "10f184ba-8bfc-18d9-282b-dc240e94d5a6",
+            "EventTimestamp": "2022-06-13T20:19:59Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1/"
+                }
+            },
+            "MessageId": "iLOEvents.3.2.ServerResetDetected",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/6/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "6",
+            "Created": "2022-06-13T20:20:04Z",
+            "EntryType": "Oem",
+            "EventId": "6e2e7d72-0f45-2aa4-dd96-0b2bd4262cc6",
+            "EventTimestamp": "2022-06-13T20:20:04Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1/"
+                }
+            },
+            "MessageId": "iLOEvents.3.2.ServerPoweredOn",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/7/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "7",
+            "Created": "2022-06-13T20:20:25Z",
+            "EntryType": "Oem",
+            "EventId": "00370473-9a60-b6b1-71ae-99367636cdd7",
+            "EventTimestamp": "2022-06-13T20:20:25Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1//"
+                }
+            },
+            "MessageArgs": [
+                "NoAMS",
+                "Busy",
+                "Cached"
+            ],
+            "MessageId": "iLOEvents.3.2.DeviceDiscoveryStatusV2",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/8/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "8",
+            "Created": "2022-06-13T20:23:40Z",
+            "EntryType": "Oem",
+            "EventId": "945ed9da-93d0-d462-b483-013103717f38",
+            "EventTimestamp": "2022-06-13T20:23:40Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/"
+                }
+            },
+            "MessageId": "iLOEvents.3.2.POSTErrorsOccurred",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/9/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "9",
+            "Created": "2022-06-13T20:24:09Z",
+            "EntryType": "Oem",
+            "EventId": "367249c0-e3ab-ff08-c00e-ff8bd3aa264b",
+            "EventTimestamp": "2022-06-13T20:24:09Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1//"
+                }
+            },
+            "MessageArgs": [
+                "NoAMS",
+                "Busy",
+                "Busy"
+            ],
+            "MessageId": "iLOEvents.3.2.DeviceDiscoveryStatusV2",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/10/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "10",
+            "Created": "2022-06-13T20:24:09Z",
+            "EntryType": "Oem",
+            "EventId": "b3c1467c-71e7-17d7-3c4a-0d624df73d22",
+            "EventTimestamp": "2022-06-13T20:24:09Z",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Systems/1//"
+                }
+            },
+            "MessageArgs": [
+                "NoAMS",
+                "Busy",
+                "Busy"
+            ],
+            "MessageId": "iLOEvents.3.2.DeviceDiscoveryStatusV2",
+            "Name": "Event",
+            "OemRecordFormat": "Hpe-Event",
+            "Severity": "OK"
+        }
+    ],
+    "Members@odata.count": 10
+}

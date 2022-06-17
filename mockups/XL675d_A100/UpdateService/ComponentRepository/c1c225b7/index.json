@@ -1,0 +1,26 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeComponent.HpeComponent",
+    "@odata.etag": "W/\"CD21D410\"",
+    "@odata.id": "/redfish/v1/UpdateService/ComponentRepository/c1c225b7/",
+    "@odata.type": "#HpeComponent.v1_0_1.HpeComponent",
+    "Id": "c1c225b7",
+    "Activates": "AfterReboot",
+    "ComponentUri": "/fwrepo/A47_2.58_05_19_2022.signed.full",
+    "Configuration": "",
+    "Created": "2022-06-13T20:08:58Z",
+    "Criticality": "Optional",
+    "DeviceClass": "aa148d2e-6e09-453e-bc6f-63baa5f5ccc4",
+    "ExecutionParameters": "",
+    "Filename": "A47_2.58_05_19_2022.signed.full",
+    "Filepath": "A47_2.58_05_19_2022.signed.full",
+    "Locked": false,
+    "Name": "System BIOS - A47",
+    "SizeBytes": 33564509,
+    "Targets": [
+        "00000000-0000-0000-0000-00000000022d"
+    ],
+    "UpdatableBy": [
+        "Bmc"
+    ],
+    "Version": "v2.58 (05/19/2022)"
+}

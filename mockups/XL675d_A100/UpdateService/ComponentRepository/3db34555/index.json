@@ -1,0 +1,29 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeComponent.HpeComponent",
+    "@odata.etag": "W/\"CD21D410\"",
+    "@odata.id": "/redfish/v1/UpdateService/ComponentRepository/3db34555/",
+    "@odata.type": "#HpeComponent.v1_0_1.HpeComponent",
+    "Id": "3db34555",
+    "Activates": "AfterReboot",
+    "ComponentUri": "/fwrepo/NVIDIA_HGX_A100_x8_SXM4_40GB-80GB_Air-Cooled_FPGA-3.03-1.fwpkg",
+    "Configuration": "",
+    "Created": "2022-03-16T20:47:19Z",
+    "Criticality": "Optional",
+    "DeviceClass": "0850b8c7-bee6-497c-9860-3f1403ec5035",
+    "ExecutionParameters": "",
+    "Filename": "NVIDIA_HGX_A100_x8_SXM4_40GB-80GB_Air-Cooled_FPGA-3.03-1.fwpkg",
+    "Filepath": "NVIDIA_HGX_A100_x8_SXM4_40GB-80GB_Air-Cooled_FPGA-3.03-1.fwpkg",
+    "Locked": false,
+    "Name": "NVIDIA_HGX_A100_x8_SXM4_40GB-80GB_Air-Cooled_FPGA Firmware P...",
+    "SizeBytes": 16607637,
+    "Targets": [
+        "a6b1a447-382a-5a4f-10de-20b210de147f",
+        "a6b1a447-382a-5a4f-10de-20b010de144e",
+        "a6b1a447-382a-5a4f-10de-20b210de1463",
+        "a6b1a447-382a-5a4f-10de-20b010de134f"
+    ],
+    "UpdatableBy": [
+        "Bmc"
+    ],
+    "Version": "3.03"
+}

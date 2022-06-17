@@ -1,0 +1,12 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#BootOption.BootOption",
+    "@odata.etag": "W/\"A3A6BF43\"",
+    "@odata.id": "/redfish/v1/Systems/1/BootOptions/1/",
+    "@odata.type": "#BootOption.v1_0_1.BootOption",
+    "Id": "1",
+    "Alias": "None",
+    "BootOptionReference": "Boot0014",
+    "DisplayName": "sle_hpc-secureboot",
+    "Name": "Boot Option",
+    "UefiDevicePath": "HD(1,GPT,030764A9-EC84-4466-ACAF-DF2FC7C44D42,0x800,0x100000)/\\EFI\\sle_hpc\\shim.efi"
+}

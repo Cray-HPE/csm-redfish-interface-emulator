@@ -1,0 +1,26 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeComponent.HpeComponent",
+    "@odata.etag": "W/\"CD21D410\"",
+    "@odata.id": "/redfish/v1/UpdateService/ComponentRepository/a67df764/",
+    "@odata.type": "#HpeComponent.v1_0_1.HpeComponent",
+    "Id": "a67df764",
+    "Activates": "AfterReboot",
+    "ComponentUri": "/fwrepo/delta-cecv3.5-ota.bin.hpepkg.signed.ilo-3.5-1.fwpkg",
+    "Configuration": "",
+    "Created": "2022-05-05T00:37:46Z",
+    "Criticality": "Optional",
+    "DeviceClass": "0850b8c7-bee6-497c-9860-3f1403ec5035",
+    "ExecutionParameters": "",
+    "Filename": "delta-cecv3.5-ota.bin.hpepkg.signed.ilo-3.5-1.fwpkg",
+    "Filepath": "delta-cecv3.5-ota.bin.hpepkg.signed.ilo-3.5-1.fwpkg",
+    "Locked": false,
+    "Name": "NVIDIA Delta Liquid Cooled - 40GB- CEC component",
+    "SizeBytes": 146786,
+    "Targets": [
+        "a6b1a447-382a-5a4f-10de-20b010de134f"
+    ],
+    "UpdatableBy": [
+        "Bmc"
+    ],
+    "Version": "3.5"
+}

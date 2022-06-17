@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerDevice.HpeServerDevice",
+    "@odata.etag": "W/\"8582B715\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Devices/15/",
+    "@odata.type": "#HpeServerDevice.v2_0_0.HpeServerDevice",
+    "Id": "15",
+    "DeviceInstances": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/PCIDevices/18/"
+        }
+    ],
+    "DeviceType": "GPU",
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "92.00.19.00.10"
+        }
+    },
+    "Links": {
+        "PCISlot": {
+            "@odata.id": "/redfish/v1/Systems/1/PCISlots/7/"
+        }
+    },
+    "Location": "PCI-E Slot 7",
+    "MCTPProtocolDisabled": false,
+    "Manufacturer": "NVIDIA",
+    "Name": "NVIDIA A100-SXM4-40GB",
+    "PartNumber": "20B0-884-A1",
+    "ProductPartNumber": "692-2G506-0200-002",
+    "ProductVersion": "\u0003",
+    "SerialNumber": "1323620024311",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

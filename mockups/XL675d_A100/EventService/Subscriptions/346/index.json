@@ -1,0 +1,31 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#EventDestination.EventDestination",
+    "@odata.etag": "W/\"C3E3CB87\"",
+    "@odata.id": "/redfish/v1/EventService/Subscriptions/346/",
+    "@odata.type": "#EventDestination.v1_0_0.EventDestination",
+    "Id": "346",
+    "Context": "x3000c0s36b0",
+    "Description": "iLO Event Subscription",
+    "Destination": "https://10.94.100.71/x3000c0s36b0",
+    "EventTypes": [
+        "StatusChange",
+        "ResourceUpdated",
+        "ResourceAdded",
+        "ResourceRemoved",
+        "Alert"
+    ],
+    "HttpHeaders": [],
+    "Name": "Event Subscription",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeEventDestination.HpeEventDestination",
+            "@odata.type": "#HpeEventDestination.v2_1_0.HpeEventDestination",
+            "DeliveryRetryAttempts": 3,
+            "DeliveryRetryIntervalInSeconds": 30,
+            "MutualAuthenticationEnabled": false,
+            "RequestedMaxEventsToQueue": 3,
+            "RetireOldEventInMinutes": 10
+        }
+    },
+    "Protocol": "Redfish"
+}

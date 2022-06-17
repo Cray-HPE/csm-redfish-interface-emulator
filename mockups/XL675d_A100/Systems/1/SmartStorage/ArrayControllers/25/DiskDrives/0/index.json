@@ -1,0 +1,43 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeSmartStorageDiskDrive.HpeSmartStorageDiskDrive",
+    "@odata.etag": "W/\"DAA39533\"",
+    "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/25/DiskDrives/0/",
+    "@odata.type": "#HpeSmartStorageDiskDrive.v2_1_0.HpeSmartStorageDiskDrive",
+    "Id": "0",
+    "BlockSizeBytes": 512,
+    "CapacityGB": 960,
+    "CapacityLogicalBlocks": 1875385008,
+    "CapacityMiB": 915715,
+    "CarrierApplicationVersion": "0",
+    "CarrierAuthenticationStatus": "Fail",
+    "CurrentTemperatureCelsius": 18,
+    "Description": "HPE Smart Storage Disk Drive View",
+    "DiskDriveStatusReasons": [
+        "NonAuthenticDrive"
+    ],
+    "DiskDriveUse": "Data",
+    "EncryptedDrive": false,
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "HPG1"
+        }
+    },
+    "InterfaceSpeedMbps": 6000,
+    "InterfaceType": "SATA",
+    "LegacyBootPriority": "None",
+    "Location": "1I:3:4",
+    "LocationFormat": "ControllerPort:Box:Bay",
+    "MaximumTemperatureCelsius": 31,
+    "MediaType": "SSD",
+    "Model": "VK000960GXAWL",
+    "Name": "HpeSmartStorageDiskDrive",
+    "PowerOnHours": 1819,
+    "SSDEnduranceUtilizationPercentage": 0,
+    "SerialNumber": "21122DE9C12C",
+    "Status": {
+        "Health": "Warning",
+        "State": "Enabled"
+    },
+    "UncorrectedReadErrors": 0,
+    "UncorrectedWriteErrors": 0
+}

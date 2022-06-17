@@ -1,0 +1,32 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.etag": "W/\"542C1060\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/26/",
+    "@odata.type": "#SoftwareInventory.v1_2_0.SoftwareInventory",
+    "Id": "26",
+    "Description": "VK000960GXAWL",
+    "Name": "960GB 6G SATA SSD",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeiLOSoftwareInventory.HpeiLOSoftwareInventory",
+            "@odata.type": "#HpeiLOSoftwareInventory.v2_0_0.HpeiLOSoftwareInventory",
+            "DeviceClass": "f6de0320-2e0f-489a-b238-6dd8ae7c3811",
+            "DeviceContext": "Slot=25:Port=1I:Box=3:Bay=4",
+            "Targets": [
+                "562340a5-304b-3030-3936-30475841574c"
+            ]
+        }
+    },
+    "RelatedItem": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/Storage/DE07A000/Drives/0"
+        }
+    ],
+    "SoftwareId": "f6de0320-2e0f-489a-b238-6dd8ae7c3811:562340a5-304b-3030-3936-30475841574c",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": false,
+    "Version": "HPG1"
+}

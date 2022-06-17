@@ -1,0 +1,28 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeComponent.HpeComponent",
+    "@odata.etag": "W/\"CD21D410\"",
+    "@odata.id": "/redfish/v1/UpdateService/ComponentRepository/a8bc36fe/",
+    "@odata.type": "#HpeComponent.v1_0_1.HpeComponent",
+    "Id": "a8bc36fe",
+    "Activates": "AfterHardPowerCycle",
+    "ComponentUri": "/fwrepo/CPLD_XL675d_Gen10p_v0F0F_full_signed.vme",
+    "Configuration": "",
+    "Created": "2022-06-06T18:14:33Z",
+    "Criticality": "Optional",
+    "DeviceClass": "b1ad439a-9dd1-41c1-a496-2da9313f1f07",
+    "ExecutionParameters": "",
+    "Filename": "CPLD_XL675d_Gen10p_v0F0F_full_signed.vme",
+    "Filepath": "CPLD_XL675d_Gen10p_v0F0F_full_signed.vme",
+    "Locked": false,
+    "Name": "System Programmable Logic Device",
+    "SizeBytes": 1138279,
+    "Targets": [
+        "00000000-0000-0000-0000-00000000022d",
+        "00000000-0000-0000-0000-00000000021d",
+        "00000000-0000-0000-0000-000000000230"
+    ],
+    "UpdatableBy": [
+        "Bmc"
+    ],
+    "Version": "0F"
+}

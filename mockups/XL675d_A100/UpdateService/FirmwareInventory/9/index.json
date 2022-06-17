@@ -1,0 +1,22 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.etag": "W/\"0539D502\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/9/",
+    "@odata.type": "#SoftwareInventory.v1_2_0.SoftwareInventory",
+    "Id": "9",
+    "Description": "Chassis",
+    "Name": "Chassis Firmware",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeiLOSoftwareInventory.HpeiLOSoftwareInventory",
+            "@odata.type": "#HpeiLOSoftwareInventory.v2_0_0.HpeiLOSoftwareInventory",
+            "DeviceClass": "42fc70be-bb87-4bdb-8e7c-db1c9af52957",
+            "DeviceContext": "Chassis",
+            "Targets": [
+                "00000000-0000-0000-0000-00000000022d"
+            ]
+        }
+    },
+    "Updateable": true,
+    "Version": "1.6.10"
+}

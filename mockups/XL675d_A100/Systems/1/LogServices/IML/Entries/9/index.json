@@ -1,0 +1,29 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"B4EE35CF\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/9/",
+    "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+    "Id": "9",
+    "Created": "2022-06-06T22:39:36Z",
+    "EntryType": "Oem",
+    "Message": "1709-Slot 25 Drive Array  - One or more drives could not be authenticated as genuine drives. Smart Array will not control the LEDs to these drives. Action: Please run a configuration utility to discern genuine drive(s). \n",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+            "Categories": [
+                "Administration"
+            ],
+            "Class": 10,
+            "ClassDescription": "UEFI",
+            "Code": 5897,
+            "Count": 1,
+            "EventNumber": 1230,
+            "Severity": "Informational",
+            "Updated": "2022-06-06T22:39:36Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "OK"
+}

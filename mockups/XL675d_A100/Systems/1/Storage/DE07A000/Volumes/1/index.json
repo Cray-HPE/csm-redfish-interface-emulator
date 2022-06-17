@@ -1,0 +1,41 @@
+{
+    "@odata.id": "/redfish/v1/Systems/1/Storage/DE07A000/Volumes/1",
+    "@odata.type": "#Volume.v1_6_2.Volume",
+    "Id": "1",
+    "Name": "SR Volume 1",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Identifiers": [
+        {
+            "DurableName": "600508B1001C9F462DF9151C6F566A7A",
+            "DurableNameFormat": "UUID"
+        }
+    ],
+    "Encrypted": false,
+    "EncryptionTypes": [],
+    "CapacityBytes": 960163569664,
+    "BlockSizeBytes": 512,
+    "OptimumIOSizeBytes": 262144,
+    "StripSizeBytes": 262144,
+    "DisplayName": "Logical Drive 1",
+    "IOPerfModeEnabled": true,
+    "ReadCachePolicy": "Off",
+    "RAIDType": "RAID0",
+    "VolumeUsage": "Data",
+    "Operations": [],
+    "LogicalUnitNumber": 1,
+    "WriteCachePolicy": "Off",
+    "Links": {
+        "Drives@odata.count": 1,
+        "Drives": [
+            {
+                "@odata.id": "/redfish/v1/Systems/1/Storage/DE07A000/Drives/0"
+            }
+        ],
+        "DedicatedSpareDrives@odata.count": 0,
+        "DedicatedSpareDrives": []
+    },
+    "@odata.etag": "\"CC8EE6B2\""
+}

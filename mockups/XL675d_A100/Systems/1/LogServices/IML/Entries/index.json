@@ -1,0 +1,316 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection",
+    "@odata.etag": "W/\"9800064C\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "Integrated Management Logs view",
+    "Name": "Integrated Management Logs view",
+    "Members": [
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/1/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "1",
+            "Created": "2022-06-06T20:48:38Z",
+            "EntryType": "Oem",
+            "Message": "1784-Slot 25 Drive Array - Drive Failure. The following disk drive(s) should be replaced:\nPort: 1I, box:3, bay: 1 (Unknown)\n Action:  Reseat cables and drive. Replace defective cables, drives, or both.\n",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Hardware"
+                    ],
+                    "Class": 10,
+                    "ClassDescription": "UEFI",
+                    "Code": 6020,
+                    "Count": 2,
+                    "EventNumber": 1222,
+                    "LearnMoreLink": "http://www.hpe.com/support/class0x000acode0x1784-gen10",
+                    "Repaired": false,
+                    "Severity": "Caution",
+                    "Updated": "2022-06-06T20:59:43Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/2/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "2",
+            "Created": "2022-06-06T20:49:28Z",
+            "EntryType": "Oem",
+            "Message": "Network Controller Connectivity status changed to OK for adapter in slot 18, port 1",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Hardware"
+                    ],
+                    "Class": 17,
+                    "ClassDescription": "Network",
+                    "Code": 10,
+                    "Count": 1,
+                    "EventNumber": 1223,
+                    "LearnMoreLink": "http://www.hpe.com/support/class0x0011code0x000a-gen10",
+                    "RecommendedAction": "If the connection is lost, then check the physical connection from the server to its destination device such as interconnect ,blade, switch etc, including any cables. Refer to the NIC issues flowchart in the Troubleshooting Guide for more information.",
+                    "Repaired": true,
+                    "Severity": "Repaired",
+                    "Updated": "2022-06-06T20:49:28Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/3/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "3",
+            "Created": "2022-06-06T20:49:28Z",
+            "EntryType": "Oem",
+            "Message": "Network Controller Connectivity status changed to OK for adapter in slot 20, port 1",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Hardware"
+                    ],
+                    "Class": 17,
+                    "ClassDescription": "Network",
+                    "Code": 10,
+                    "Count": 1,
+                    "EventNumber": 1224,
+                    "LearnMoreLink": "http://www.hpe.com/support/class0x0011code0x000a-gen10",
+                    "RecommendedAction": "If the connection is lost, then check the physical connection from the server to its destination device such as interconnect ,blade, switch etc, including any cables. Refer to the NIC issues flowchart in the Troubleshooting Guide for more information.",
+                    "Repaired": true,
+                    "Severity": "Repaired",
+                    "Updated": "2022-06-06T20:49:28Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/4/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "4",
+            "Created": "2022-06-06T20:50:32Z",
+            "EntryType": "Oem",
+            "Message": "Slot 25 Smart Array - Drive could not be authenticated as genuine drive. Smart Array will not control the LEDs: Port 1I Box 3 Bay 4",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Hardware"
+                    ],
+                    "Class": 19,
+                    "ClassDescription": "Drive Array",
+                    "Code": 24,
+                    "Count": 1,
+                    "EventNumber": 1225,
+                    "LearnMoreLink": "http://www.hpe.com/support/class0x0013code0x0018-gen10",
+                    "RecommendedAction": "To determine which drives cannot be validated as genuine, run Smart Storage Administrator tool. For more information, see the Smart Storage Administrator User Guide.",
+                    "Repaired": false,
+                    "Severity": "Caution",
+                    "Updated": "2022-06-06T20:50:32Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/5/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "5",
+            "Created": "2022-06-06T21:00:28Z",
+            "EntryType": "Oem",
+            "Message": "Network Controller Connectivity status changed to OK for adapter in slot 18, port 1",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Hardware"
+                    ],
+                    "Class": 17,
+                    "ClassDescription": "Network",
+                    "Code": 10,
+                    "Count": 1,
+                    "EventNumber": 1226,
+                    "LearnMoreLink": "http://www.hpe.com/support/class0x0011code0x000a-gen10",
+                    "RecommendedAction": "If the connection is lost, then check the physical connection from the server to its destination device such as interconnect ,blade, switch etc, including any cables. Refer to the NIC issues flowchart in the Troubleshooting Guide for more information.",
+                    "Repaired": true,
+                    "Severity": "Repaired",
+                    "Updated": "2022-06-06T21:00:28Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/6/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "6",
+            "Created": "2022-06-06T21:00:28Z",
+            "EntryType": "Oem",
+            "Message": "Network Controller Connectivity status changed to OK for adapter in slot 20, port 1",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Hardware"
+                    ],
+                    "Class": 17,
+                    "ClassDescription": "Network",
+                    "Code": 10,
+                    "Count": 1,
+                    "EventNumber": 1227,
+                    "LearnMoreLink": "http://www.hpe.com/support/class0x0011code0x000a-gen10",
+                    "RecommendedAction": "If the connection is lost, then check the physical connection from the server to its destination device such as interconnect ,blade, switch etc, including any cables. Refer to the NIC issues flowchart in the Troubleshooting Guide for more information.",
+                    "Repaired": true,
+                    "Severity": "Repaired",
+                    "Updated": "2022-06-06T21:00:28Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/7/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "7",
+            "Created": "2022-06-06T21:01:33Z",
+            "EntryType": "Oem",
+            "Message": "Slot 25 Smart Array - Drive could not be authenticated as genuine drive. Smart Array will not control the LEDs: Port 1I Box 3 Bay 4",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Hardware"
+                    ],
+                    "Class": 19,
+                    "ClassDescription": "Drive Array",
+                    "Code": 24,
+                    "Count": 1,
+                    "EventNumber": 1228,
+                    "LearnMoreLink": "http://www.hpe.com/support/class0x0013code0x0018-gen10",
+                    "RecommendedAction": "To determine which drives cannot be validated as genuine, run Smart Storage Administrator tool. For more information, see the Smart Storage Administrator User Guide.",
+                    "Repaired": false,
+                    "Severity": "Caution",
+                    "Updated": "2022-06-06T21:01:33Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "Warning"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/8/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "8",
+            "Created": "0000-00-00T00:00:00Z",
+            "EntryType": "Oem",
+            "Message": "iLO Debug Certificate Detected",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Security",
+                        "Firmware",
+                        "Configuration"
+                    ],
+                    "Class": 10,
+                    "ClassDescription": "UEFI",
+                    "Code": 8992,
+                    "Count": 1,
+                    "EventNumber": 1229,
+                    "RecommendedAction": "Remove Debug Certificate from iLO.",
+                    "Severity": "Informational",
+                    "Updated": "0000-00-00T00:00:00Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/9/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "9",
+            "Created": "2022-06-06T22:39:36Z",
+            "EntryType": "Oem",
+            "Message": "1709-Slot 25 Drive Array  - One or more drives could not be authenticated as genuine drives. Smart Array will not control the LEDs to these drives. Action: Please run a configuration utility to discern genuine drive(s). \n",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Administration"
+                    ],
+                    "Class": 10,
+                    "ClassDescription": "UEFI",
+                    "Code": 5897,
+                    "Count": 1,
+                    "EventNumber": 1230,
+                    "Severity": "Informational",
+                    "Updated": "2022-06-06T22:39:36Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "OK"
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/10/",
+            "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+            "Id": "10",
+            "Created": "2022-06-06T22:39:36Z",
+            "EntryType": "Oem",
+            "Message": "1784-Slot 25 Drive Array - Drive Failure. The following disk drive(s) should be replaced:\nPort: 1I, box:3, bay: 1 (Unknown)\n Action:  Reseat cables and drive. Replace defective cables, drives, or both.\n",
+            "Name": "Integrated Management Log",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                    "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+                    "Categories": [
+                        "Hardware"
+                    ],
+                    "Class": 10,
+                    "ClassDescription": "UEFI",
+                    "Code": 6020,
+                    "Count": 1,
+                    "EventNumber": 1231,
+                    "LearnMoreLink": "http://www.hpe.com/support/class0x000acode0x1784-gen10",
+                    "Repaired": false,
+                    "Severity": "Caution",
+                    "Updated": "2022-06-06T22:39:36Z"
+                }
+            },
+            "OemRecordFormat": "Hpe-IML",
+            "Severity": "Warning"
+        }
+    ],
+    "Members@odata.count": 10
+}

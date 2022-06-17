@@ -1,0 +1,226 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Power.Power",
+    "@odata.etag": "W/\"9E69ADC6\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Power/",
+    "@odata.type": "#Power.v1_3_0.Power",
+    "Id": "Power",
+    "Name": "PowerMetrics",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpePowerMetricsExt.HpePowerMetricsExt",
+            "@odata.type": "#HpePowerMetricsExt.v2_3_0.HpePowerMetricsExt",
+            "BrownoutRecoveryEnabled": true,
+            "HasCpuPowerMetering": false,
+            "HasDimmPowerMetering": false,
+            "HasGpuPowerMetering": true,
+            "HasPowerMetering": true,
+            "HighEfficiencyMode": "Balanced",
+            "Links": {
+                "AccPowerService": {
+                    "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/"
+                },
+                "PowerMeter": {
+                    "@odata.id": "/redfish/v1/Chassis/1/Power/PowerMeter/"
+                },
+                "FastPowerMeter": {
+                    "@odata.id": "/redfish/v1/Chassis/1/Power/FastPowerMeter/"
+                },
+                "SlowPowerMeter": {
+                    "@odata.id": "/redfish/v1/Chassis/1/Power/SlowPowerMeter/"
+                },
+                "FederatedGroupCapping": {
+                    "@odata.id": "/redfish/v1/Chassis/1/Power/FederatedGroupCapping/"
+                }
+            },
+            "MinimumSafelyAchievableCap": null,
+            "MinimumSafelyAchievableCapValid": false,
+            "SNMPPowerThresholdAlert": {
+                "DurationInMin": 0,
+                "ThresholdWatts": 0,
+                "Trigger": "Disabled"
+            }
+        }
+    },
+    "PowerControl": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/#PowerControl/0",
+            "MemberId": "0",
+            "PowerCapacityWatts": 12000,
+            "PowerConsumedWatts": 894,
+            "PowerMetrics": {
+                "AverageConsumedWatts": 893,
+                "IntervalInMin": 20,
+                "MaxConsumedWatts": 1039,
+                "MinConsumedWatts": 892
+            }
+        }
+    ],
+    "PowerSupplies": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/#PowerSupplies/0",
+            "FirmwareVersion": "3.11",
+            "LastPowerOutputWatts": 894,
+            "LineInputVoltage": 204,
+            "LineInputVoltageType": "Unknown",
+            "Manufacturer": null,
+            "MemberId": "0",
+            "Model": "P25875-B21",
+            "Name": "HpeServerPowerSupply",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeServerPowerSupply.HpeServerPowerSupply",
+                    "@odata.type": "#HpeServerPowerSupply.v2_0_0.HpeServerPowerSupply",
+                    "AveragePowerOutputWatts": 894,
+                    "BayNumber": 1,
+                    "HotplugCapable": true,
+                    "MaxPowerOutputWatts": 991,
+                    "Mismatched": false,
+                    "PowerSupplyStatus": {
+                        "State": "Ok"
+                    },
+                    "iPDUCapable": false
+                }
+            },
+            "PowerCapacityWatts": 3000,
+            "PowerSupplyType": "AC",
+            "SerialNumber": "5XBMF0C5NF200E",
+            "SparePartNumber": "P28152-001",
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            }
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/#PowerSupplies/1",
+            "FirmwareVersion": "2.03",
+            "LastPowerOutputWatts": 894,
+            "LineInputVoltage": 208,
+            "LineInputVoltageType": "Unknown",
+            "Manufacturer": null,
+            "MemberId": "1",
+            "Model": "999999-B21",
+            "Name": "HpeServerPowerSupply",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeServerPowerSupply.HpeServerPowerSupply",
+                    "@odata.type": "#HpeServerPowerSupply.v2_0_0.HpeServerPowerSupply",
+                    "AveragePowerOutputWatts": 894,
+                    "BayNumber": 2,
+                    "HotplugCapable": true,
+                    "MaxPowerOutputWatts": 991,
+                    "Mismatched": false,
+                    "PowerSupplyStatus": {
+                        "State": "Ok"
+                    },
+                    "iPDUCapable": false
+                }
+            },
+            "PowerCapacityWatts": 3000,
+            "PowerSupplyType": "AC",
+            "SerialNumber": "5XBMFD25NCY00E",
+            "SparePartNumber": "999999-001",
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            }
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/#PowerSupplies/2",
+            "FirmwareVersion": "1.00",
+            "LastPowerOutputWatts": 894,
+            "LineInputVoltage": 206,
+            "LineInputVoltageType": "Unknown",
+            "Manufacturer": null,
+            "MemberId": "2",
+            "Model": "P24681-B21",
+            "Name": "HpeServerPowerSupply",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeServerPowerSupply.HpeServerPowerSupply",
+                    "@odata.type": "#HpeServerPowerSupply.v2_0_0.HpeServerPowerSupply",
+                    "AveragePowerOutputWatts": 894,
+                    "BayNumber": 3,
+                    "HotplugCapable": true,
+                    "MaxPowerOutputWatts": 991,
+                    "Mismatched": false,
+                    "PowerSupplyStatus": {
+                        "State": "Ok"
+                    },
+                    "iPDUCapable": false
+                }
+            },
+            "PowerCapacityWatts": 3000,
+            "PowerSupplyType": "AC",
+            "SerialNumber": "5WWQV0B5NE60ES",
+            "SparePartNumber": "P25430-001",
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            }
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/#PowerSupplies/3",
+            "FirmwareVersion": "238.00",
+            "LastPowerOutputWatts": 894,
+            "LineInputVoltage": 206,
+            "LineInputVoltageType": "Unknown",
+            "Manufacturer": null,
+            "MemberId": "3",
+            "Model": "999999-B21",
+            "Name": "HpeServerPowerSupply",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeServerPowerSupply.HpeServerPowerSupply",
+                    "@odata.type": "#HpeServerPowerSupply.v2_0_0.HpeServerPowerSupply",
+                    "AveragePowerOutputWatts": 894,
+                    "BayNumber": 4,
+                    "HotplugCapable": true,
+                    "MaxPowerOutputWatts": 991,
+                    "Mismatched": false,
+                    "PowerSupplyStatus": {
+                        "State": "Ok"
+                    },
+                    "iPDUCapable": false
+                }
+            },
+            "PowerCapacityWatts": 3000,
+            "PowerSupplyType": "AC",
+            "SerialNumber": "5WWQVV25NCV08H",
+            "SparePartNumber": "999999-001",
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            }
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/#PowerSupplies/4",
+            "MemberId": "4",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeServerPowerSupply.HpeServerPowerSupply",
+                    "@odata.type": "#HpeServerPowerSupply.v2_0_0.HpeServerPowerSupply",
+                    "BayNumber": 5
+                }
+            },
+            "Status": {
+                "Health": "Warning",
+                "State": "Absent"
+            }
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/#PowerSupplies/5",
+            "MemberId": "5",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeServerPowerSupply.HpeServerPowerSupply",
+                    "@odata.type": "#HpeServerPowerSupply.v2_0_0.HpeServerPowerSupply",
+                    "BayNumber": 6
+                }
+            },
+            "Status": {
+                "Health": "Warning",
+                "State": "Absent"
+            }
+        }
+    ]
+}

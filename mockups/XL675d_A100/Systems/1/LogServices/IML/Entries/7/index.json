@@ -1,0 +1,32 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"84806B0B\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/7/",
+    "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+    "Id": "7",
+    "Created": "2022-06-06T21:01:33Z",
+    "EntryType": "Oem",
+    "Message": "Slot 25 Smart Array - Drive could not be authenticated as genuine drive. Smart Array will not control the LEDs: Port 1I Box 3 Bay 4",
+    "Name": "Integrated Management Log",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+            "@odata.type": "#HpeLogEntry.v2_4_0.HpeLogEntry",
+            "Categories": [
+                "Hardware"
+            ],
+            "Class": 19,
+            "ClassDescription": "Drive Array",
+            "Code": 24,
+            "Count": 1,
+            "EventNumber": 1228,
+            "LearnMoreLink": "http://www.hpe.com/support/class0x0013code0x0018-gen10",
+            "RecommendedAction": "To determine which drives cannot be validated as genuine, run Smart Storage Administrator tool. For more information, see the Smart Storage Administrator User Guide.",
+            "Repaired": false,
+            "Severity": "Caution",
+            "Updated": "2022-06-06T21:01:33Z"
+        }
+    },
+    "OemRecordFormat": "Hpe-IML",
+    "Severity": "Warning"
+}

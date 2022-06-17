@@ -1,0 +1,60 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeSmartStorageArrayController.HpeSmartStorageArrayController",
+    "@odata.etag": "W/\"10CA4E92\"",
+    "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/25/",
+    "@odata.type": "#HpeSmartStorageArrayController.v2_2_0.HpeSmartStorageArrayController",
+    "Id": "25",
+    "AdapterType": "SmartArray",
+    "BackupPowerSourceStatus": "NotPresent",
+    "ControllerBoard": {
+        "Status": {
+            "Health": "OK"
+        }
+    },
+    "ControllerPartNumber": "836260-002",
+    "CurrentOperatingMode": "Mixed",
+    "Description": "HPE Smart Storage Array Controller View",
+    "DriveWriteCache": "Disabled",
+    "DualModeControllerSupported": true,
+    "EncryptionCryptoOfficerPasswordSet": false,
+    "EncryptionCspTestPassed": true,
+    "EncryptionEnabled": false,
+    "EncryptionFwLocked": false,
+    "EncryptionHasLockedVolumesMissingBootPassword": false,
+    "EncryptionMixedVolumesEnabled": false,
+    "EncryptionSelfTestPassed": true,
+    "EncryptionStandaloneModeEnabled": false,
+    "ExternalPortCount": 0,
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "5.00"
+        }
+    },
+    "HardwareRevision": "B",
+    "InternalPortCount": 2,
+    "Links": {
+        "LogicalDrives": {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/25/LogicalDrives/"
+        },
+        "StorageEnclosures": {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/25/StorageEnclosures/"
+        },
+        "PhysicalDrives": {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/25/DiskDrives/"
+        },
+        "UnconfiguredDrives": {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/25/UnconfiguredDrives/"
+        }
+    },
+    "Location": "Slot 25",
+    "LocationFormat": "PCISlot",
+    "Model": "HPE Smart Array P408i-a SR Gen10",
+    "Name": "Hpe Smart Storage Array Controller",
+    "ReadCachePercent": 0,
+    "SerialNumber": "PWXKV0BRHDL5L4 ",
+    "Status": {
+        "Health": "Warning",
+        "State": "Enabled"
+    },
+    "WriteCacheWithoutBackupPowerEnabled": false
+}

@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerDevice.HpeServerDevice",
+    "@odata.etag": "W/\"7288587A\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Devices/2/",
+    "@odata.type": "#HpeServerDevice.v2_0_0.HpeServerDevice",
+    "Id": "2",
+    "DeviceInstances": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/PCIDevices/29/"
+        }
+    ],
+    "DeviceType": "LOM/NIC",
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "N/A"
+        }
+    },
+    "Links": {
+        "PCISlot": {
+            "@odata.id": "/redfish/v1/Systems/1/PCISlots/11/"
+        }
+    },
+    "Location": "PCI-E Slot 18",
+    "MCTPProtocolDisabled": false,
+    "Manufacturer": "",
+    "Name": "Network Controller",
+    "PartNumber": "",
+    "ProductPartNumber": "MCX515A-CCAT    ",
+    "ProductVersion": "",
+    "SerialNumber": "MT1845K05471          ",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

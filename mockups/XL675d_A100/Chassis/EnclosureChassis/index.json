@@ -1,0 +1,27 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Chassis.Chassis",
+    "@odata.etag": "W/\"641D1617\"",
+    "@odata.id": "/redfish/v1/Chassis/EnclosureChassis/",
+    "@odata.type": "#Chassis.v1_10_2.Chassis",
+    "Id": "EnclosureChassis",
+    "AssetTag": "",
+    "ChassisType": "Enclosure",
+    "Manufacturer": "HPE",
+    "Name": "HPE Apollo 6500 Gen10Plus 54V",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeServerChassis.HpeServerChassis",
+            "@odata.type": "#HpeServerChassis.v2_3_1.HpeServerChassis",
+            "ChassisPowerWatts": 988,
+            "EnclosureCPLD": "0a0a",
+            "IPv4Address": "",
+            "NodePowerWatts": 901,
+            "TrayID": "0x44"
+        }
+    },
+    "PCIeDevices": {},
+    "PCIeSlots": {},
+    "PartNumber": "P25872-B21",
+    "PowerState": "On",
+    "SerialNumber": "1234567890"
+}

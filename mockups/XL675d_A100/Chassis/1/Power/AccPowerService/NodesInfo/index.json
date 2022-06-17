@@ -1,0 +1,16 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerAccPowerNodesInfo.HpeServerAccPowerNodesInfo",
+    "@odata.etag": "W/\"3C522BE9\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/NodesInfo/",
+    "@odata.type": "#HpeServerAccPowerNodesInfo.v1_0_0.HpeServerAccPowerNodesInfo",
+    "Id": "NodesInfo",
+    "MaxSupportedNodes": 2,
+    "Name": "Nodes Information for AccPowerService",
+    "NodeInfoList": [
+        {
+            "NodeNumber": 1,
+            "Throttle": 0,
+            "WarningStatus": false
+        }
+    ]
+}

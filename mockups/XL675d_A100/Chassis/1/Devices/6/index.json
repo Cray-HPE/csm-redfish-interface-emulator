@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerDevice.HpeServerDevice",
+    "@odata.etag": "W/\"407012D2\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Devices/6/",
+    "@odata.type": "#HpeServerDevice.v2_0_0.HpeServerDevice",
+    "Id": "6",
+    "DeviceInstances": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/PCIDevices/31/"
+        }
+    ],
+    "DeviceType": "LOM/NIC",
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "1.3082.0"
+        }
+    },
+    "Links": {
+        "PCISlot": {
+            "@odata.id": "/redfish/v1/Systems/1/PCISlots/15/"
+        }
+    },
+    "Location": "PCI-E Slot 22",
+    "MCTPProtocolDisabled": false,
+    "Manufacturer": "",
+    "Name": "Intel(R) Ethernet Server Adapter I350-T4",
+    "PartNumber": "",
+    "ProductPartNumber": "K68277-002",
+    "ProductVersion": "",
+    "SerialNumber": "B4969167D8E8",
+    "Status": {
+        "Health": null,
+        "State": null
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.etag": "W/\"542C1060\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/27/",
+    "@odata.type": "#SoftwareInventory.v1_2_0.SoftwareInventory",
+    "Id": "27",
+    "Description": "0\u0014",
+    "Manufacturer": "0\u0014",
+    "Name": "",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeiLOSoftwareInventory.HpeiLOSoftwareInventory",
+            "@odata.type": "#HpeiLOSoftwareInventory.v2_0_0.HpeiLOSoftwareInventory",
+            "DeviceClass": "f6de0320-2e0f-489a-b238-6dd8ae7c3811",
+            "DeviceContext": "Slot=25:Port=Unknown:Box=Unknown:Bay=Unknown",
+            "Targets": [
+                "002340a5-0000-0000-0000-0000003014a5"
+            ]
+        }
+    },
+    "RelatedItem": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/Storage/DE07A000/Drives/3"
+        }
+    ],
+    "SoftwareId": "f6de0320-2e0f-489a-b238-6dd8ae7c3811:002340a5-0000-0000-0000-0000003014a5",
+    "Status": {
+        "Health": "Critical",
+        "State": "Enabled"
+    },
+    "Updateable": false,
+    "Version": "0\u0014"
+}

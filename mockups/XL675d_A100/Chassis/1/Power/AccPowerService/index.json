@@ -1,0 +1,25 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerAccPowerService.HpeServerAccPowerService",
+    "@odata.etag": "W/\"36B8BBB7\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/",
+    "@odata.type": "#HpeServerAccPowerService.v1_0_0.HpeServerAccPowerService",
+    "Id": "AccPowerService",
+    "EEPROMSaveEnabled": true,
+    "Links": {
+        "Calibration": {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/Calibration/"
+        },
+        "PowerLimit": {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/PowerLimit/"
+        },
+        "NodesInfo": {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/NodesInfo/"
+        },
+        "Zone": {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/Zone/"
+        }
+    },
+    "Name": "AccPowerService Resource",
+    "PowerRegulationEnabled": false,
+    "PowerRegulatorMode": "ACRedundancy"
+}

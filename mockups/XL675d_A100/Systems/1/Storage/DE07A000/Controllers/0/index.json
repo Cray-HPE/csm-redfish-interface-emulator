@@ -1,0 +1,71 @@
+{
+    "@odata.id": "/redfish/v1/Systems/1/Storage/DE07A000/Controllers/0",
+    "@odata.type": "#StorageController.v1_2_0.StorageController",
+    "Id": "0",
+    "Name": "HPE Smart Array P408i-a SR Gen10",
+    "FirmwareVersion": "5.00",
+    "Identifiers": [
+        {
+            "DurableName": "51402EC014CD7DB0",
+            "DurableNameFormat": "NAA"
+        }
+    ],
+    "Location": {
+        "PartLocation": {
+            "LocationType": "Slot",
+            "ServiceLabel": "Slot=25",
+            "LocationOrdinalValue": 25
+        }
+    },
+    "Manufacturer": "HPE",
+    "Model": "HPE Smart Array P408i-a SR Gen10",
+    "PartNumber": "804334-002",
+    "SerialNumber": "PWXKV0BRHDL5L4 ",
+    "SpeedGbps": 12.0,
+    "SKU": "836260-002",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "SupportedDeviceProtocols": [
+        "SAS",
+        "SATA"
+    ],
+    "SupportedControllerProtocols": [
+        "PCIe"
+    ],
+    "CacheSummary": {
+        "TotalCacheSizeMiB": 2048,
+        "PersistentCacheSizeMiB": 0,
+        "Status": {
+            "Health": "OK",
+            "State": "Disabled"
+        }
+    },
+    "PCIeInterface": {
+        "MaxPCIeType": "Gen3",
+        "PCIeType": "Gen3",
+        "MaxLanes": 8,
+        "LanesInUse": 8
+    },
+    "SupportedRAIDTypes": [
+        "RAID0",
+        "RAID1",
+        "RAID10",
+        "RAID5",
+        "RAID50",
+        "RAID6",
+        "RAID60",
+        "RAID1Triple",
+        "RAID10Triple"
+    ],
+    "ControllerRates": {
+        "ConsistencyCheckRatePercent": 89,
+        "RebuildRatePercent": 100,
+        "TransformationRatePercent": 54
+    },
+    "Ports": {
+        "@odata.id": "/redfish/v1/Systems/1/Storage/DE07A000/Controllers/0/Ports"
+    },
+    "@odata.etag": "\"D20BE4AF\""
+}

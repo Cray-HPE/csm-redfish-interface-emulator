@@ -1,0 +1,144 @@
+{
+    "@Redfish.Settings": {
+        "@odata.type": "#Settings.v1_0_0.Settings",
+        "ETag": "",
+        "Messages": [
+            {
+                "MessageId": "Base.1.0.Success"
+            }
+        ],
+        "SettingsObject": {
+            "@odata.id": "/redfish/v1/systems/1/bios/oem/hpe/boot/settings/"
+        },
+        "Time": null
+    },
+    "@odata.context": "/redfish/v1/$metadata#HpeServerBootSettings.HpeServerBootSettings",
+    "@odata.etag": "W/\"78C83DD5411CCDCDCD973644B371F86E\"",
+    "@odata.id": "/redfish/v1/systems/1/bios/oem/hpe/boot/",
+    "@odata.type": "#HpeServerBootSettings.v2_0_0.HpeServerBootSettings",
+    "BootSources": [
+        {
+            "BootOptionNumber": "0014",
+            "BootString": "sle_hpc-secureboot",
+            "CorrelatableID": "HD(1,GPT,030764A9-EC84-4466-ACAF-DF2FC7C44D42,0x800,0x100000)/\\EFI\\sle_hpc\\shim.efi",
+            "StructuredBootString": "HD.Slot.25.3",
+            "UEFIDevicePath": "HD(1,GPT,030764A9-EC84-4466-ACAF-DF2FC7C44D42,0x800,0x100000)/\\EFI\\sle_hpc\\shim.efi"
+        },
+        {
+            "BootOptionNumber": "000E",
+            "BootString": "Generic USB Boot",
+            "CorrelatableID": "UsbClass(0xFFFF,0xFFFF,0xFF,0xFF,0xFF)",
+            "StructuredBootString": "Generic.USB.1.1",
+            "UEFIDevicePath": "UsbClass(0xFFFF,0xFFFF,0xFF,0xFF,0xFF)"
+        },
+        {
+            "BootOptionNumber": "0011",
+            "BootString": "Slot 22 Port 1 : Intel(R) Ethernet Server Adapter I350-T4 (HTTP(S) IPv4)",
+            "CorrelatableID": "PciRoot(0x6)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.22.1.Httpv4",
+            "UEFIDevicePath": "PciRoot(0x6)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/MAC(B4969167D8E8,0x1)/IPv4(0.0.0.0)/Uri()"
+        },
+        {
+            "BootOptionNumber": "0012",
+            "BootString": "Slot 22 Port 1 : Intel(R) Ethernet Server Adapter I350-T4 (PXE IPv4)",
+            "CorrelatableID": "PciRoot(0x6)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.22.1.IPv4",
+            "UEFIDevicePath": "PciRoot(0x6)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/MAC(B4969167D8E8,0x1)/IPv4(0.0.0.0)"
+        },
+        {
+            "BootOptionNumber": "000F",
+            "BootString": "Slot 22 Port 1 : Intel(R) Ethernet Server Adapter I350-T4 (PXE IPv6)",
+            "CorrelatableID": "PciRoot(0x6)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.22.1.IPv6",
+            "UEFIDevicePath": "PciRoot(0x6)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/MAC(B4969167D8E8,0x1)/IPv6(0000:0000:0000:0000:0000:0000:0000:0000)"
+        },
+        {
+            "BootOptionNumber": "0010",
+            "BootString": "Slot 22 Port 1 : Intel(R) Ethernet Server Adapter I350-T4 (HTTP(S) IPv6)",
+            "CorrelatableID": "PciRoot(0x6)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)",
+            "StructuredBootString": "NIC.Slot.22.1.Httpv6",
+            "UEFIDevicePath": "PciRoot(0x6)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/MAC(B4969167D8E8,0x1)/IPv6(0000:0000:0000:0000:0000:0000:0000:0000)/Uri()"
+        },
+        {
+            "BootOptionNumber": "0013",
+            "BootString": "Storage Slot 25 : HPE Smart Array P408i-a SR Gen10 - 894.222 GiB, RAID0 Logical Drive 1(Target:0, Lun:0)",
+            "CorrelatableID": "PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)",
+            "StructuredBootString": "HD.Slot.25.2",
+            "UEFIDevicePath": "PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)/Scsi(0x0,0x0)"
+        },
+        {
+            "BootOptionNumber": "0016",
+            "BootString": "iLO Virtual USB 3 : iLO Virtual CD-ROM",
+            "CorrelatableID": "PciRoot(0x0)/Pci(0x5,0x2)/Pci(0x0,0x4)/USB(0x1,0x0)",
+            "StructuredBootString": "CD.Virtual.3.1",
+            "UEFIDevicePath": "PciRoot(0x0)/Pci(0x5,0x2)/Pci(0x0,0x4)/USB(0x1,0x0)"
+        }
+    ],
+    "DefaultBootOrder": [
+        "Cd",
+        "Usb",
+        "EmbeddedStorage",
+        "PcieSlotStorage",
+        "EmbeddedFlexLOM",
+        "PcieSlotNic",
+        "UefiShell",
+        "iPXE"
+    ],
+    "DesiredBootDevices": [
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        },
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        },
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        },
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        },
+        {
+            "CorrelatableID": "",
+            "Lun": "",
+            "Wwn": "",
+            "iScsiTargetName": ""
+        }
+    ],
+    "Id": "boot",
+    "Name": "Boot Order Current Settings",
+    "Oem": {
+        "Hpe": {
+            "@odata.type": "#HpeBiosExt.v2_0_0.HpeBiosExt",
+            "Links": {
+                "BaseConfigs": {
+                    "@odata.id": "/redfish/v1/systems/1/bios/oem/hpe/boot/baseconfigs/"
+                }
+            },
+            "SettingsObject": {
+                "UnmodifiedETag": "W/\"ED9B90EFF9C058585817869BEC636FFA\""
+            }
+        }
+    },
+    "PersistentBootConfigOrder": [
+        "HD.Slot.25.3",
+        "Generic.USB.1.1",
+        "NIC.Slot.22.1.Httpv4",
+        "NIC.Slot.22.1.IPv4",
+        "NIC.Slot.22.1.IPv6",
+        "NIC.Slot.22.1.Httpv6",
+        "HD.Slot.25.2",
+        "CD.Virtual.3.1"
+    ]
+}

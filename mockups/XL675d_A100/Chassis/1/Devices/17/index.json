@@ -1,0 +1,24 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerDevice.HpeServerDevice",
+    "@odata.etag": "W/\"1F5F482F\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Devices/17/",
+    "@odata.type": "#HpeServerDevice.v2_0_0.HpeServerDevice",
+    "Id": "17",
+    "DeviceType": "GPU",
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "3.00"
+        }
+    },
+    "Location": "GPU Baseboard",
+    "Manufacturer": "NVIDIA",
+    "Name": "NVIDIA HGX A100 8 GPU 40",
+    "PartNumber": "",
+    "ProductPartNumber": "935-23587-0300-000",
+    "ProductVersion": "B00",
+    "SerialNumber": "1573720520140",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+    "@odata.etag": "W/\"41AF29E5\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/Event/Entries/8/",
+    "@odata.type": "#LogEntry.v1_11_0.LogEntry",
+    "Id": "8",
+    "Created": "2022-06-13T20:23:40Z",
+    "EntryType": "Oem",
+    "EventId": "945ed9da-93d0-d462-b483-013103717f38",
+    "EventTimestamp": "2022-06-13T20:23:40Z",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/"
+        }
+    },
+    "MessageId": "iLOEvents.3.2.POSTErrorsOccurred",
+    "Name": "Event",
+    "OemRecordFormat": "Hpe-Event",
+    "Severity": "Warning"
+}

@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerDevice.HpeServerDevice",
+    "@odata.etag": "W/\"CFC733D8\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Devices/7/",
+    "@odata.type": "#HpeServerDevice.v2_0_0.HpeServerDevice",
+    "Id": "7",
+    "DeviceInstances": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/PCIDevices/32/"
+        }
+    ],
+    "DeviceType": "Smart Storage",
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "5.00"
+        }
+    },
+    "Links": {
+        "PCISlot": {
+            "@odata.id": "/redfish/v1/Systems/1/PCISlots/16/"
+        }
+    },
+    "Location": "Storage Slot 25",
+    "MCTPProtocolDisabled": false,
+    "Manufacturer": "",
+    "Name": "HPE Smart Array P408i-a SR Gen10",
+    "PartNumber": "836260-002",
+    "ProductPartNumber": "804334-002",
+    "ProductVersion": "B",
+    "SerialNumber": "PWXKV0BRHDL5L4 ",
+    "Status": {
+        "Health": "Critical",
+        "State": "Enabled"
+    }
+}

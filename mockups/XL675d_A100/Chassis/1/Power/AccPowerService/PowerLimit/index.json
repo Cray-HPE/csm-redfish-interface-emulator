@@ -1,0 +1,32 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeServerAccPowerLimit.HpeServerAccPowerLimit",
+    "@odata.etag": "W/\"12AC8C7A\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Power/AccPowerService/PowerLimit/",
+    "@odata.type": "#HpeServerAccPowerLimit.v1_0_0.HpeServerAccPowerLimit",
+    "Id": "PowerLimit",
+    "Actions": {
+        "#HpeServerAccPowerLimit.ConfigurePowerLimit": {
+            "target": "/redfish/v1/Chassis/1/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit/"
+        }
+    },
+    "ActualPowerLimits": [
+        {
+            "PowerLimitInWatts": 759,
+            "ZoneNumber": 0
+        }
+    ],
+    "Name": "PowerLimit Resource for AccPowerService",
+    "PowerLimitRanges": [
+        {
+            "MaximumPowerLimit": 0,
+            "MinimumPowerLimit": 0,
+            "ZoneNumber": 0
+        }
+    ],
+    "PowerLimits": [
+        {
+            "PowerLimitInWatts": 3000,
+            "ZoneNumber": 0
+        }
+    ]
+}
