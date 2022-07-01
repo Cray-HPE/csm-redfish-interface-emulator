@@ -24,6 +24,16 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [1.3.0] - 2022-07-01
+
+### Fixed
+
+- CASMHMS-5604: Fixed an issue where node MAC addresses where node being randomized.
+
+### Changed
+
+- Remove build dependencies at the end of the build step to create a leaner docker image. The image size is now 156MB, when in the pervious release is 1.42GB.
+
 ## [1.2.0] - 2022-06-17
 
 ### Added

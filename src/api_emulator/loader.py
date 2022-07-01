@@ -528,7 +528,7 @@ class Loader:
                                     foundSNs[sn] = rndSN
                                     page['SerialNumber'] = rndSN
                 if 'EthernetInterfaces' in system:
-                    url = system[collection]['@odata.id'].replace('/redfish/v1/', '')
+                    url = system['EthernetInterfaces']['@odata.id'].replace('/redfish/v1/', '')
                     collection_page = self.resource_dictionary.get_resource(url)
                     for memberUrl in collection_page['Members']:
                         url = memberUrl['@odata.id'].replace('/redfish/v1/', '')

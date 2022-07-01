@@ -28,7 +28,7 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-FROM artifactory.algol60.net/docker.io/library/golang:1.16-alpine AS build-base
+FROM artifactory.algol60.net/docker.io/library/alpine:3.16 AS base
 
 # Insert our emulator extentions
 COPY src /app
@@ -52,7 +52,16 @@ RUN set -ex \
         pip \
         setuptools \
     && pip3 install wheel \
-    && pip3 install -r /app/requirements.txt
+    && pip3 install -r /app/requirements.txt \
+    && apk del \
+        build-base \
+        gcc \
+        python3-dev \
+        openssl-dev \
+        libffi-dev \
+        musl-dev \
+        cargo
+
 
 EXPOSE 5000
 ENV MOCKUPFOLDER="public-rackmount1"
