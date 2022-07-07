@@ -30,9 +30,7 @@
 
 FROM artifactory.algol60.net/docker.io/library/alpine:3.16 AS base
 
-# Insert our emulator extentions
-COPY src /app
-COPY mockups /app/api_emulator/redfish/static
+COPY src/requirements.txt /app/requirements.txt
 
 RUN set -ex \
     && apk -U upgrade \
@@ -62,6 +60,9 @@ RUN set -ex \
         musl-dev \
         cargo
 
+# Insert our emulator extentions
+COPY src /app
+COPY mockups /app/api_emulator/redfish/static
 
 EXPOSE 5000
 ENV MOCKUPFOLDER="public-rackmount1"
