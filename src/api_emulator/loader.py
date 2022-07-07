@@ -496,7 +496,17 @@ class Loader:
                                     rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
                                     foundSNs[sn] = rndSN
                                     page['SerialNumber'] = rndSN
-
+                if 'Power' in chassis:
+                    url = chassis['Power']['@odata.id'].replace('/redfish/v1/', '')
+                    power = self.resource_dictionary.get_resource(url)
+                    if 'PowerSupplies' in power:
+                        for power_supply in power["PowerSupplies"]:
+                            if "SerialNumber" in power_supply:
+                                sn = power_supply["SerialNumber"]
+                                if sn not in foundSNs:
+                                    rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                                    foundSNs[sn] = rndSN
+                                power_supply['SerialNumber'] = foundSNs[sn]
         if 'Systems' in base:
             systems = self.resource_dictionary.get_resource('Systems')
             for i in range(len(systems['Members'])):
