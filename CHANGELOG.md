@@ -24,6 +24,12 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [1.3.1] - 2022-07-07
+
+### Fixed
+
+- Randomize power supply serial numbers if present.
+
 ## [1.3.0] - 2022-07-01
 
 ### Fixed
