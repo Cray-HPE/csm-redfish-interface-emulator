@@ -24,6 +24,17 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [1.4.0] - 2022-09-27
+
+### Added
+- CASMHMS-5722: A new manual test was added that can help find duplicated FRU data (such as unrandomized serial numbers) between two instances of the same mockup with RIE.
+
+### Changed
+- CASMHMS-5765: The Event Service now allows event subscriptions with no event types specified. This is needed for Gigabyte BMCs Event Subscriptions as there are no event subscriptions to specify.
+
+### Fixed
+- CASMHMS-5722: Randomize GPU serial numbers.
+
 ## [1.3.1] - 2022-07-07
 
 ### Fixed
