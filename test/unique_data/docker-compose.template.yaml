@@ -1,0 +1,82 @@
+---
+version: '3.7'
+
+networks:
+  hms:
+
+services:
+  #
+  # HSM
+  #
+  cray-smd-postgres:
+    hostname: cray-smd-postgres
+    image: arti.dev.cray.com/third-party-docker-stable-local/postgres:11-alpine
+    environment:
+      - POSTGRES_PASSWORD=hmsdsuser
+      - POSTGRES_USER=hmsdsuser
+      - POSTGRES_DB=hmsds
+    # Uncomment for debugging
+    # ports:
+    #   - "5432:5432"
+    networks:
+      - hms
+  cray-smd-init:
+    image: artifactory.algol60.net/csm-docker/stable/cray-smd:1.58.0
+    environment:
+      - SMD_DBHOST=cray-smd-postgres
+      - SMD_DBPORT=5432
+    depends_on:
+      - cray-smd-postgres
+    networks:
+      - hms
+    command: /entrypoint.sh smd-init
+  cray-smd:
+    image: artifactory.algol60.net/csm-docker/stable/cray-smd:1.58.0
+    environment:
+      - POSTGRES_HOST=cray-smd-postgres
+      - SMD_DBHOST=cray-smd-postgres
+      - POSTGRES_PORT=5432
+      - SMD_WVAULT=false
+      - SMD_RVAULT=false
+    hostname: cray-smd
+    depends_on:
+      - cray-smd-init
+    # Uncomment for debugging
+    # ports:
+    #   - "27779:27779"
+    networks:
+      - hms
+
+  rfemulator0:
+    hostname: ~~FIXME~~
+    build:
+      context: ../../
+      dockerfile: ./Dockerfile
+    environment:
+      MOCKUPFOLDER: ~~FIXME~~
+      XNAME: ~~FIXME~~
+      PORT: 443
+    # Uncomment for debugging
+    # ports:
+    #   - "5000:443"
+    networks:
+      hms:
+        aliases:
+          - ~~FIXME~~
+
+  rfemulator1:
+    hostname: ~~FIXME~~
+    build:
+      context: ../../
+      dockerfile: ./Dockerfile
+    environment:
+      MOCKUPFOLDER: ~~FIXME~~
+      XNAME: ~~FIXME~~
+      PORT: 443
+    # Uncomment for debugging
+    # ports:
+    #   - "5001:443"
+    networks:
+      hms:
+        aliases:
+          - ~~FIXME~~

@@ -1,2 +1,14 @@
 .idea
 **__pycache__**
+
+# Temporary test data
+test/unique_data/
+test/unique_data/output
+
+# Prevent certificates from getting checked in
+*.ca
+*.cer
+*.crt
+*.csr
+*.key
+*.pem
