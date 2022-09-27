@@ -507,6 +507,25 @@ class Loader:
                                     rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
                                     foundSNs[sn] = rndSN
                                 power_supply['SerialNumber'] = foundSNs[sn]
+                if 'Oem' in chassis:
+                    if 'Hpe' in chassis['Oem']:
+                        if 'Links' in chassis['Oem']['Hpe']:
+                            if 'Devices' in chassis['Oem']['Hpe']['Links']:
+                                url = chassis['Oem']['Hpe']['Links']['Devices']['@odata.id'].replace('/redfish/v1/', '')
+                                collection_page = self.resource_dictionary.get_resource(url)
+                                if 'Members' in collection_page:
+                                    for memberUrl in collection_page['Members']:
+                                        url = memberUrl['@odata.id'].replace('/redfish/v1/', '')
+                                        page = self.resource_dictionary.get_resource(url)
+                                        if 'SerialNumber' in page:
+                                            print("Fixing Serial number for ", url)
+                                            sn = page['SerialNumber']
+                                            if sn in foundSNs:
+                                                page['SerialNumber'] = foundSNs[sn]
+                                            else:
+                                                rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                                                foundSNs[sn] = rndSN
+                                                page['SerialNumber'] = rndSN
         if 'Systems' in base:
             systems = self.resource_dictionary.get_resource('Systems')
             for i in range(len(systems['Members'])):
