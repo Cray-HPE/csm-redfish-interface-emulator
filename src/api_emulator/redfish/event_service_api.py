@@ -59,7 +59,7 @@ e_config = {}
 s_config = {}
 s_generator = None
 members = {}
-required = {'Destination', 'EventTypes'}
+required = {'Destination'}
 eventTemplates = {}
 id = 1
 
@@ -214,10 +214,12 @@ class SubscriptionCollectionAPI(Resource):
         ident = '%d' % id
         
         destination = raw_dict['Destination']
-        event_types = raw_dict['EventTypes']
-        for evType in event_types:
-            if evType not in e_config['EventTypesForSubscription']:
-                return 'Invalid EventType %s' % evType, 400
+        event_types = []
+        if 'EventTypes' in raw_dict:  
+            event_types = raw_dict['EventTypes']
+            for evType in event_types:
+                if evType not in e_config['EventTypesForSubscription']:
+                    return 'Invalid EventType %s' % evType, 400
         if 'Context' in raw_dict:
             context = raw_dict['Context']
         else:
