@@ -10,7 +10,7 @@ services:
   #
   cray-smd-postgres:
     hostname: cray-smd-postgres
-    image: arti.dev.cray.com/third-party-docker-stable-local/postgres:11-alpine
+    image: artifactory.algol60.net/docker.io/library/postgres:11-alpine
     environment:
       - POSTGRES_PASSWORD=hmsdsuser
       - POSTGRES_USER=hmsdsuser
@@ -21,7 +21,7 @@ services:
     networks:
       - hms
   cray-smd-init:
-    image: artifactory.algol60.net/csm-docker/stable/cray-smd:1.58.0
+    image: artifactory.algol60.net/csm-docker/stable/cray-smd:1.58.1
     environment:
       - SMD_DBHOST=cray-smd-postgres
       - SMD_DBPORT=5432
@@ -31,7 +31,7 @@ services:
       - hms
     command: /entrypoint.sh smd-init
   cray-smd:
-    image: artifactory.algol60.net/csm-docker/stable/cray-smd:1.58.0
+    image: artifactory.algol60.net/csm-docker/stable/cray-smd:1.58.1
     environment:
       - POSTGRES_HOST=cray-smd-postgres
       - SMD_DBHOST=cray-smd-postgres
