@@ -11,3 +11,4 @@ StringGenerator
 flask_restful
 urllib3
 pyOpenSSL
+hvac

@@ -518,7 +518,6 @@ class Loader:
                                         url = memberUrl['@odata.id'].replace('/redfish/v1/', '')
                                         page = self.resource_dictionary.get_resource(url)
                                         if 'SerialNumber' in page:
-                                            print("Fixing Serial number for ", url)
                                             sn = page['SerialNumber']
                                             if sn in foundSNs:
                                                 page['SerialNumber'] = foundSNs[sn]
@@ -561,8 +560,11 @@ class Loader:
                     collection_page = self.resource_dictionary.get_resource(url)
                     for memberUrl in collection_page['Members']:
                         url = memberUrl['@odata.id'].replace('/redfish/v1/', '')
+                        print(url)
                         page = self.resource_dictionary.get_resource(url)
-                        if self.mac_schema == 'Mountain':
+                        if self.mac_schema == 'Mountain' and url.startswith("Managers/"):
+                            # Only mountain BMCs have algorithmic MACs
+                            # TODO ensure mountain BMCs are getting the correct alg MACs, as I don't think it is here
                             fields = [int(s) for s in re.findall(r'-?\d+\.?\d*', self.xname)]
                             charFields = [s for s in re.findall(r'-?\D+\.?\D*', self.xname)]
                             # x3000c0s0b0
