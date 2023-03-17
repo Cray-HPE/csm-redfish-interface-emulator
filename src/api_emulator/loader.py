@@ -112,9 +112,11 @@ class Loader:
 
         if 'xname' in config_data:
             self.xname = config_data['xname']
+            self.fru_random_seed = self.xname
         else:
             self.xname = 'x0c0s0b0'
-            
+            self.fru_random_seed = None
+
         if 'mac_schema' in config_data:
             self.mac_schema = config_data['mac_schema']
         else:
@@ -453,6 +455,10 @@ class Loader:
         return templates
 
     def randomize(self):
+        # By seeding the random number generated based off the BMC's xname (if set) will allow the
+        # RIE instance to return build up the same data if the BMC is restarted.
+        fru_random = random.Random(self.fru_random_seed)
+
         # List of all of the paths with serial numbers we want to randomize
         foundSNs = {}
         base = self.resource_dictionary.get_resource('')
@@ -466,7 +472,7 @@ class Loader:
                     if sn in foundSNs:
                         chassis['SerialNumber'] = foundSNs[sn]
                     else:
-                        rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                        rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}', randomizer=fru_random).render()
                         foundSNs[sn] = rndSN
                         chassis['SerialNumber'] = rndSN
                 if 'Assembly' in chassis:
@@ -478,7 +484,7 @@ class Loader:
                             if sn in foundSNs:
                                 assembly['SerialNumber'] = foundSNs[sn]
                             else:
-                                rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                                rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}', randomizer=fru_random).render()
                                 foundSNs[sn] = rndSN
                                 assembly['SerialNumber'] = rndSN
                 if 'NetworkAdapters' in chassis:
@@ -493,7 +499,7 @@ class Loader:
                                 if sn in foundSNs:
                                     page['SerialNumber'] = foundSNs[sn]
                                 else:
-                                    rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                                    rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}', randomizer=fru_random).render()
                                     foundSNs[sn] = rndSN
                                     page['SerialNumber'] = rndSN
                 if 'Power' in chassis:
@@ -504,7 +510,7 @@ class Loader:
                             if "SerialNumber" in power_supply:
                                 sn = power_supply["SerialNumber"]
                                 if sn not in foundSNs:
-                                    rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                                    rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}', randomizer=fru_random).render()
                                     foundSNs[sn] = rndSN
                                 power_supply['SerialNumber'] = foundSNs[sn]
                 if 'Oem' in chassis:
@@ -522,7 +528,7 @@ class Loader:
                                             if sn in foundSNs:
                                                 page['SerialNumber'] = foundSNs[sn]
                                             else:
-                                                rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                                                rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}', randomizer=fru_random).render()
                                                 foundSNs[sn] = rndSN
                                                 page['SerialNumber'] = rndSN
         if 'Systems' in base:
@@ -537,7 +543,7 @@ class Loader:
                     if sn in foundSNs:
                         system['SerialNumber'] = foundSNs[sn]
                     else:
-                        rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                        rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}', randomizer=fru_random).render()
                         foundSNs[sn] = rndSN
                         system['SerialNumber'] = rndSN
                 for collection in ['Memory', 'Processors']:
@@ -552,7 +558,7 @@ class Loader:
                                 if sn in foundSNs:
                                     page['SerialNumber'] = foundSNs[sn]
                                 else:
-                                    rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}').render()
+                                    rndSN = strgen.StringGenerator('[A-Z]{3}[0-9]{10}', randomizer=fru_random).render()
                                     foundSNs[sn] = rndSN
                                     page['SerialNumber'] = rndSN
                 if 'EthernetInterfaces' in system:
@@ -560,11 +566,9 @@ class Loader:
                     collection_page = self.resource_dictionary.get_resource(url)
                     for memberUrl in collection_page['Members']:
                         url = memberUrl['@odata.id'].replace('/redfish/v1/', '')
-                        print(url)
                         page = self.resource_dictionary.get_resource(url)
                         if self.mac_schema == 'Mountain' and url.startswith("Managers/"):
                             # Only mountain BMCs have algorithmic MACs
-                            # TODO ensure mountain BMCs are getting the correct alg MACs, as I don't think it is here
                             fields = [int(s) for s in re.findall(r'-?\d+\.?\d*', self.xname)]
                             charFields = [s for s in re.findall(r'-?\D+\.?\D*', self.xname)]
                             # x3000c0s0b0
@@ -585,9 +589,9 @@ class Loader:
                                 (fields[3]<<4)&0xff]
                         else:
                             rndMAC = [ 0x00, 0x40, 0xa6,
-                                random.randint(0x00, 0x7f),
-                                random.randint(0x00, 0xff),
-                                random.randint(0x00, 0xff)]
+                                fru_random.randint(0x00, 0x7f),
+                                fru_random.randint(0x00, 0xff),
+                                fru_random.randint(0x00, 0xff)]
                         newMAC = ':'.join(map(lambda x: "%02x" % x, rndMAC))
                         if 'MACAddress' in page and re.match("[0-9a-f]{2}([-:]?)[0-9a-f]{2}(\\1[0-9a-f]{2}){4}$", page['MACAddress'].lower()):
                             page['MACAddress'] = newMAC
