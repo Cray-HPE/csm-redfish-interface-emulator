@@ -34,6 +34,7 @@ import argparse
 import requests
 import http
 import json
+import sys
 
 
 def upsert_sls_hardware(sls_url: str, xname: str, hardware: dict):
@@ -47,6 +48,9 @@ def upsert_sls_hardware(sls_url: str, xname: str, hardware: dict):
     # 201 Created is returned when the object is created
     if r.status_code not in (http.HTTPStatus.OK, http.HTTPStatus.CREATED):
         print(f'Error failed to create {hardware["Xname"]}, unexpected status code {r.status_code}')
+        return False
+
+    return True
 
 
 if __name__ == "__main__":
@@ -58,11 +62,21 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # Load metadata file
+    # Load metadata file containing the SLS hardware objects for the emulated hardware
     print(f"Loading metadata from {args.metadata}")
     metadata = None
     with open(args.metadata, 'r') as f:
         metadata = json.load(f)
 
+    # Push the SLS hardware objects into SLS for the emulated hardware
+    error_encountered = False
     for xname, hardware in metadata.items():
-        upsert_sls_hardware(args.url_sls, xname, hardware)
+        if not upsert_sls_hardware(args.url_sls, xname, hardware):
+            error_encountered = True
+
+    if error_encountered:
+        print("There was an error encountered creating or updating a SLS hardware object")
+        sys.exit(1)
+    else:
+        print("Successfully updated SLS with RIE emulated hardware")
+
