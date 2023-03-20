@@ -60,7 +60,8 @@ from flask_restful import reqparse, Api, Resource
 from api_emulator.version import __version__
 from api_emulator.resource_manager import ResourceManager
 from api_emulator.redfish.response import simple_error_response
-from api_emulator.redfish.redfish_auth import auth
+from api_emulator.redfish.redfish_auth import auth, User, ADMIN_USER
+from api_emulator import vault_adapter
 
 SPEC = 'Redfish'
 MODE = 'Local'
@@ -183,22 +184,30 @@ def main():
 
     port = int(os.getenv('PORT', 5000))
 
-    # Setup initial set of authorization accounts. The format is <username>:<password>:<role>.
-    # The default accounts are defined in ./api_emulator/redfish/redfish_auth.py and are the
-    # equivalent to specifying:
-    #   'root:root_password:Administrator;operator:operator_password:Operator;guest:guest_password:ReadOnly'
-    auth_config = os.getenv('AUTH_CONFIG', '')
-    logging.info('AUTH_CONFIG=%s' % auth_config)
-    try:
-        if len(auth_config) > 0:
-            auth.set_auth_from_env(auth_config)
-            logging.debug('Using accounts from env')
-    except:
-        traceback.print_exc()
-        logging.debug('Using default accounts')
-
     CONFIG_DATA['xname'] = os.getenv('XNAME')
     CONFIG_DATA['mac_schema'] = os.getenv('MAC_SCHEMA')
+
+    auth_config = os.getenv('AUTH_CONFIG', '')
+    if auth_config == "from_vault":
+        vault_client = vault_adapter.create_adapter()
+        username, password = vault_client.retrieve_credentials(CONFIG_DATA['xname'])
+
+        auth.set_users({
+            username: User(username, password, ADMIN_USER.role, ADMIN_USER.privileges)
+        })
+    else:
+        try:
+            # Setup initial set of authorization accounts. The format is <username>:<password>:<role>.
+            # The default accounts are defined in ./api_emulator/redfish/redfish_auth.py and are the
+            # equivalent to specifying:
+            #   'root:root_password:Administrator;operator:operator_password:Operator;guest:guest_password:ReadOnly'
+            logging.info('AUTH_CONFIG=%s' % auth_config)
+            if len(auth_config) > 0:
+                auth.set_auth_from_env(auth_config)
+                logging.debug('Using accounts from env')
+        except:
+            traceback.print_exc()
+            logging.debug('Using default accounts')
 
     argparser = argparse.ArgumentParser(description='CSM Redfish Interface Emulator - Version: ' + __version__)
 

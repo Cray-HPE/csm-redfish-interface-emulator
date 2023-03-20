@@ -1,2 +1,12 @@
 .idea
 **__pycache__**
+*.tar
+*.tar.gz
+
+# Prevent certificates from getting checked in
+*.ca
+*.cer
+*.crt
+*.csr
+*.key
+*.pem

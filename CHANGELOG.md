@@ -24,6 +24,25 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [1.4.0] - 2023-03-20
+
+### Added
+- Add support retrieving credentials from Vault when running within as a pod in CSM. When `AUTH_CONFIG` is set to
+  `from_vault`. 
+
+    When RIE starts up it will check Vault at `secret/hms-creds/${BMC_XNAME}`, and if no value exists there then will 
+    fallback to the default  password source. On CSM systems there are two sources of default BMC credentials one for 
+    Mountain `secrets/meds-cred/global/ipmi` and one for River `secrets/reds-creds/global/default`.
+- Add a SLS loader script that to load SLS hardware objects into SLS.
+
+### Changed
+- Seed the random number generator based off the BMC's xname. This allows for RIE to generate the same serial numbers,
+  and MAC addresses if it restarts. 
+
+### Fixed
+- Properly randomize GPU serial numbers
+- Only apply the Mountain MAC schema to the BMC/Manager BMC MAC addresses. The NMN node MAC addresses are not algorithmic.
+
 ## [1.3.1] - 2022-07-07
 
 ### Fixed
