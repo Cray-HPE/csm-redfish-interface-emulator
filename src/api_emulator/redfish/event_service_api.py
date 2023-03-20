@@ -111,7 +111,7 @@ def send_event(event, type):
         for er in e['Events']:
             # Adds Context but only if our event template allows us to
             er['Context'] = er['Context'].format(Context = ctx)
-        if type in event_types or (len(event_types) == 0):
+        if type in event_types:
             EventWorker(dest_uri, e).start()
 
 # EventServiceAPI
