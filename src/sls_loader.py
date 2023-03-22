@@ -37,9 +37,12 @@ import json
 import sys
 
 
-def upsert_sls_hardware(sls_url: str, xname: str, hardware: dict):
+def upsert_sls_hardware(sls_url: str, hardware: dict):
+    if 'Xname' not in hardware:
+        print(f'Error hardware object is missing its Xname: {hardware}')
+        return False
+    xname = hardware["Xname"]
     url = f'{sls_url}/hardware/{xname}'
-    hardware["Xname"] = xname
 
     print(f'Performing PUT {url} with: {json.dumps(hardware)}')
     r = requests.put(url, json=hardware)
@@ -70,8 +73,8 @@ if __name__ == "__main__":
 
     # Push the SLS hardware objects into SLS for the emulated hardware
     error_encountered = False
-    for xname, hardware in metadata.items():
-        if not upsert_sls_hardware(args.url_sls, xname, hardware):
+    for hardware in metadata["Hardware"]:
+        if not upsert_sls_hardware(args.url_sls, hardware):
             error_encountered = True
 
     if error_encountered:
