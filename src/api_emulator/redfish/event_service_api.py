@@ -1,6 +1,6 @@
 # BSD 3-Clause License
 #
-# Copyright 2022 Hewlett Packard Enterprise Development LP
+# Copyright 2022-2023 Hewlett Packard Enterprise Development LP
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -259,7 +259,7 @@ class SubscriptionAPI(Resource):
 
     # HTTP GET
     def get(self, ident):
-        logging.info('SubscriptionAPI GET called')
+        logging.info(f'SubscriptionAPI GET called: {ident}')
         try:
             resp = error_404_response(request.path)
             if ident in members:
@@ -271,7 +271,7 @@ class SubscriptionAPI(Resource):
 
     # HTTP PUT
     def put(self, ident):
-        logging.info('SubscriptionAPI PUT called')
+        logging.info(f'SubscriptionAPI PUT called: {ident}')
         try:
             resp = error_404_response(request.path)
             if ident in members:
@@ -283,7 +283,7 @@ class SubscriptionAPI(Resource):
 
     # HTTP POST
     def post(self, ident):
-        logging.info('SubscriptionAPI POST called')
+        logging.info(f'SubscriptionAPI POST called: {ident}')
         try:
             resp = error_404_response(request.path)
             if ident in members:
@@ -295,7 +295,7 @@ class SubscriptionAPI(Resource):
 
     # HTTP PATCH
     def patch(self, ident):
-        logging.info('SubscriptionAPI PATCH called')
+        logging.info(f'SubscriptionAPI PATCH called: {ident}')
         raw_dict = request.get_json(force=True)
         try:
             resp = error_404_response(request.path)
@@ -317,14 +317,22 @@ class SubscriptionAPI(Resource):
 
     # HTTP DELETE
     def delete(self, ident):
-        logging.info('SubscriptionAPI DELETE called')
+        logging.info(f'SubscriptionAPI DELETE called: {ident}')
         try:
             resp = error_404_response(request.path)
             if ident in members:
-                s_config['Members'].remove(members[ident]['@odata.id'])
-                del members[ident]
-                s_config['Members@odata.count'] -= 1
-                resp = success_response('Resource deleted', 200)
+                data_id = members[ident]['@odata.id']
+                # s_config['Members'] are of the form
+                # "Members": [
+                #   { "@odata.id": "/redfish/v1/EventService/Subscriptions/1" },
+                #   { "@odata.id": "/redfish/v1/EventService/Subscriptions/2" } ]
+                for i in range(len(s_config['Members'])):
+                    if data_id == s_config['Members'][i]['@odata.id']:
+                        del s_config['Members'][i]
+                        del members[ident]
+                        s_config['Members@odata.count'] -= 1
+                        resp = success_response('Resource deleted', 200)
+                        break
         except Exception:
             traceback.print_exc()
             resp = simple_error_response('Server encountered an unexpected Error', 500)
