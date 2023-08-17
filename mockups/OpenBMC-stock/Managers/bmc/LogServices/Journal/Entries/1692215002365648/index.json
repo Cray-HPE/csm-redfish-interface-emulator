@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215002365648",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:22.365648+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215002365648",
+    "Message": "systemd: modprobe@efi_pstore.service: Deactivated successfully.",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

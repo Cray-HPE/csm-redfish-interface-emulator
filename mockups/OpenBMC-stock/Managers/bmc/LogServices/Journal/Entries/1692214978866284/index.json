@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214978866284",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:42:58.866284+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214978866284",
+    "Message": "kernel: ipmi-bt-host 1e789140.ibt: Found bt bmc device",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

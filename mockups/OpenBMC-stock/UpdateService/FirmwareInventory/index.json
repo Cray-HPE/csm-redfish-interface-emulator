@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory",
+    "@odata.type": "#SoftwareInventoryCollection.SoftwareInventoryCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/5d0869c4"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Software Inventory Collection"
+}

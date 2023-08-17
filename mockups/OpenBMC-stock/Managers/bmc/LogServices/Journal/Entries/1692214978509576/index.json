@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214978509576",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:42:58.509576+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214978509576",
+    "Message": "kernel: clocksource: Switched to clocksource FTTMR010-TIMER2",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

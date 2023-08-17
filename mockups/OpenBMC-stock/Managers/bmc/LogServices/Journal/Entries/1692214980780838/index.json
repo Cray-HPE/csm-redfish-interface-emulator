@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214980780838",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:00.780838+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214980780838",
+    "Message": "systemd: Starting Create Static Device Nodes in /dev...",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

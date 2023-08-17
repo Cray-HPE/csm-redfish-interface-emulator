@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215005326884",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:25.326884+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215005326884",
+    "Message": "systemd: Migrate dropbear keys from /var/lib to /etc was skipped because of an unmet condition check (ConditionPathExists=/var/lib/dropbear/dropbear_rsa_host_key).",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

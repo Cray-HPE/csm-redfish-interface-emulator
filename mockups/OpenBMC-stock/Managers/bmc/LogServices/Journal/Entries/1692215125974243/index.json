@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215125974243",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:45:25.974243+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215125974243",
+    "Message": "dropbear: Exit (root) from <::ffff:10.0.2.2:37812>: Disconnect received",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

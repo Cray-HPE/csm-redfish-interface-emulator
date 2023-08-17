@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215002505191",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:22.505191+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215002505191",
+    "Message": "systemd: Kernel Configuration File System was skipped because of an unmet condition check (ConditionPathExists=/sys/kernel/config).",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

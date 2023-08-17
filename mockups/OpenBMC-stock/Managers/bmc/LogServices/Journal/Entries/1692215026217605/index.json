@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215026217605",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:46.217605+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215026217605",
+    "Message": "avahi-daemon: Service \"obmc_console on palmetto\" (/services/obmc_console.service) successfully established.",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

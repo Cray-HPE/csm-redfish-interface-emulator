@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692292913313740",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-17T17:21:53.313740+00:00",
+    "EntryType": "Oem",
+    "Id": "1692292913313740",
+    "Message": "health-monitor: DEASSERT: sensor CPU is under the upper threshold critical high",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

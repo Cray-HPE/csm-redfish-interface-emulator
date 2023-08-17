@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214978796299",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:42:58.796299+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214978796299",
+    "Message": "kernel: gpio-861 (BMC_RTCRST_N): hogged as input",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

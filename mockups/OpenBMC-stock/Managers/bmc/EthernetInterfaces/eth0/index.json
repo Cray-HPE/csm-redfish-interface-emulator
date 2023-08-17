@@ -1,0 +1,61 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/EthernetInterfaces/eth0",
+    "@odata.type": "#EthernetInterface.v1_9_0.EthernetInterface",
+    "DHCPv4": {
+        "DHCPEnabled": true,
+        "UseDNSServers": true,
+        "UseDomainName": true,
+        "UseNTPServers": true
+    },
+    "DHCPv6": {
+        "OperatingMode": "Enabled",
+        "UseDNSServers": true,
+        "UseDomainName": true,
+        "UseNTPServers": true
+    },
+    "Description": "Management Network Interface",
+    "EthernetInterfaceType": "Physical",
+    "FQDN": "palmetto",
+    "HostName": "palmetto",
+    "IPv4Addresses": [
+        {
+            "Address": "10.0.2.15",
+            "AddressOrigin": "DHCP",
+            "Gateway": "10.0.2.2",
+            "SubnetMask": "255.255.255.0"
+        }
+    ],
+    "IPv4StaticAddresses": [],
+    "IPv6AddressPolicyTable": [],
+    "IPv6Addresses": [
+        {
+            "Address": "fe80::ac0d:e8ff:fe39:69bb",
+            "AddressOrigin": "LinkLocal",
+            "PrefixLength": 64
+        },
+        {
+            "Address": "fec0::ac0d:e8ff:fe39:69bb",
+            "AddressOrigin": "DHCPv6",
+            "PrefixLength": 64
+        }
+    ],
+    "IPv6DefaultGateway": "fe80::2",
+    "IPv6StaticAddresses": [],
+    "Id": "eth0",
+    "InterfaceEnabled": true,
+    "LinkStatus": "LinkUp",
+    "MACAddress": "ae:0d:e8:39:69:bb",
+    "MTUSize": 1500,
+    "Name": "Manager Ethernet Interface",
+    "NameServers": [
+        "10.0.2.3"
+    ],
+    "SpeedMbps": 0,
+    "StatelessAddressAutoConfig": {
+        "IPv6AutoConfigEnabled": true
+    },
+    "StaticNameServers": [],
+    "Status": {
+        "State": "Enabled"
+    }
+}

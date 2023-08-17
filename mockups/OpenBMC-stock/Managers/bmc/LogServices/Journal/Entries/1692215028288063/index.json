@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215028288063",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:48.288063+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215028288063",
+    "Message": "systemd: Starting Wait for /xyz/openbmc_project/state/bmc0...",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

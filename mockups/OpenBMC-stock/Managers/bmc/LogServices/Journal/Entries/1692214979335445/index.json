@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214979335445",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:42:59.335445+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214979335445",
+    "Message": "kernel: ftgmac100 1e660000.ethernet: Read MAC address ae:0d:e8:39:69:bb from chip",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

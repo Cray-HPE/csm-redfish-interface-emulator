@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215040714694",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:44:00.714694+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215040714694",
+    "Message": "phosphor-discover-system-state: Chassis power was not on prior to BMC reboot so do not run any further power policy",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

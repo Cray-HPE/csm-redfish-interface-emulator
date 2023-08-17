@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214980078082",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:00.078082+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214980078082",
+    "Message": "kernel: jffs2: notice: (66) jffs2_build_xattr_subsystem: complete building xattr subsystem, 26 of xdatum (18 unchecked, 8 orphan) and 31 of xref (7 dead, 1 orphan) found.",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

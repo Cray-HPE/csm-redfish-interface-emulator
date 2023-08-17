@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214995847172",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:15.847172+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214995847172",
+    "Message": "kernel: ftgmac100 1e660000.ethernet eth0: NCSI: Handler for packet type 0x82 returned -19",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "Warning"
+}
