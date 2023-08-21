@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215016288902_4",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:36.288902+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215016288902_4",
+    "Message": "power_control.exe: Power GPIO reset[0] = USB_RESET active LOW",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

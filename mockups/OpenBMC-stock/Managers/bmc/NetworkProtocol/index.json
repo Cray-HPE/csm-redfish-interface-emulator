@@ -1,0 +1,37 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/NetworkProtocol",
+    "@odata.type": "#ManagerNetworkProtocol.v1_5_0.ManagerNetworkProtocol",
+    "Description": "Manager Network Service",
+    "FQDN": "palmetto",
+    "HTTP": {
+        "Port": null,
+        "ProtocolEnabled": false
+    },
+    "HTTPS": {
+        "Certificates": {
+            "@odata.id": "/redfish/v1/Managers/bmc/NetworkProtocol/HTTPS/Certificates"
+        },
+        "Port": 443,
+        "ProtocolEnabled": true
+    },
+    "HostName": "palmetto",
+    "IPMI": {
+        "Port": 623,
+        "ProtocolEnabled": true
+    },
+    "Id": "NetworkProtocol",
+    "NTP": {
+        "NTPServers": [],
+        "ProtocolEnabled": true
+    },
+    "Name": "Manager Network Protocol",
+    "SSH": {
+        "Port": 22,
+        "ProtocolEnabled": true
+    },
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

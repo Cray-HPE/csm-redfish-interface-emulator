@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215032146637",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:52.146637+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215032146637",
+    "Message": "nslcd: [8b4567] <group(all)> no available LDAP server found: Can't contact LDAP server: Transport endpoint is not connected",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "Warning"
+}

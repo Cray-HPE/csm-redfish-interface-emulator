@@ -1,0 +1,96 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc",
+    "@odata.type": "#Manager.v1_14_0.Manager",
+    "Actions": {
+        "#Manager.Reset": {
+            "@Redfish.ActionInfo": "/redfish/v1/Managers/bmc/ResetActionInfo",
+            "target": "/redfish/v1/Managers/bmc/Actions/Manager.Reset"
+        },
+        "#Manager.ResetToDefaults": {
+            "ResetType@Redfish.AllowableValues": [
+                "ResetAll"
+            ],
+            "target": "/redfish/v1/Managers/bmc/Actions/Manager.ResetToDefaults"
+        }
+    },
+    "DateTime": "2023-08-17T17:24:45+00:00",
+    "DateTimeLocalOffset": "+00:00",
+    "Description": "Baseboard Management Controller",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/bmc/EthernetInterfaces"
+    },
+    "FirmwareVersion": "2.15.0-dev-686-g100c36de90",
+    "GraphicalConsole": {
+        "ConnectTypesSupported": [
+            "KVMIP"
+        ],
+        "MaxConcurrentSessions": 4,
+        "ServiceEnabled": true
+    },
+    "Id": "bmc",
+    "LastResetTime": "2023-08-17T11:35:35+00:00",
+    "Links": {
+        "ActiveSoftwareImage": {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/5d0869c4"
+        },
+        "ManagerForChassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/chassis"
+            }
+        ],
+        "ManagerForChassis@odata.count": 1,
+        "ManagerForServers": [
+            {
+                "@odata.id": "/redfish/v1/Systems/system"
+            }
+        ],
+        "ManagerForServers@odata.count": 1,
+        "ManagerInChassis": {
+            "@odata.id": "/redfish/v1/Chassis/chassis"
+        },
+        "SoftwareImages": [
+            {
+                "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/5d0869c4"
+            }
+        ],
+        "SoftwareImages@odata.count": 1
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Managers/bmc/LogServices"
+    },
+    "ManagerDiagnosticData": {
+        "@odata.id": "/redfish/v1/Managers/bmc/ManagerDiagnosticData"
+    },
+    "ManagerType": "BMC",
+    "Model": "OpenBmc",
+    "Name": "OpenBmc Manager",
+    "NetworkProtocol": {
+        "@odata.id": "/redfish/v1/Managers/bmc/NetworkProtocol"
+    },
+    "Oem": {
+        "@odata.id": "/redfish/v1/Managers/bmc#/Oem",
+        "@odata.type": "#OemManager.Oem",
+        "OpenBmc": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc",
+            "@odata.type": "#OemManager.OpenBmc",
+            "Certificates": {
+                "@odata.id": "/redfish/v1/Managers/bmc/Truststore/Certificates"
+            }
+        }
+    },
+    "PowerState": "On",
+    "SerialConsole": {
+        "ConnectTypesSupported": [
+            "IPMI",
+            "SSH"
+        ],
+        "MaxConcurrentSessions": 15,
+        "ServiceEnabled": true
+    },
+    "ServiceEntryPointUUID": "34a1c22d-3f42-4cf6-9830-1cfe1d0fdffd",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "UUID": "8e7365a4-ec9c-4e2d-be63-cf771c45267d"
+}

@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215034678171",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:54.678171+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215034678171",
+    "Message": "openpower-occ-control: Unable to read Altitude: sd_bus_call: xyz.openbmc_project.Common.Error.ResourceNotFound: The resource is not found.",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

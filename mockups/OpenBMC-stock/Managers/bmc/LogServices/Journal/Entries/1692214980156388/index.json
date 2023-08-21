@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214980156388",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:00.156388+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214980156388",
+    "Message": "systemd: Using hardware watchdog 'aspeed_wdt', version 0, device /dev/watchdog0",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

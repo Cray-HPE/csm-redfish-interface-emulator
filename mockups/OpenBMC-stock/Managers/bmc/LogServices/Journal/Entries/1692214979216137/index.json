@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214979216137",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:42:59.216137+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214979216137",
+    "Message": "kernel: spi-nor spi1.0: mx25l25635e (32768 Kbytes)",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

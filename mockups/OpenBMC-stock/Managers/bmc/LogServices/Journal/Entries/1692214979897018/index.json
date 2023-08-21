@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214979897018",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:42:59.897018+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214979897018",
+    "Message": "kernel: SPI driver bmp280 has no spi_device_id for bosch,bmp085",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "Warning"
+}

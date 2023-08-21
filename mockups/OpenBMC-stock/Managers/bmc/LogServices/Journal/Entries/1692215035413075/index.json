@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215035413075",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:55.413075+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215035413075",
+    "Message": "systemd: phosphor-reset-chassis-running@0.service: Deactivated successfully.",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}

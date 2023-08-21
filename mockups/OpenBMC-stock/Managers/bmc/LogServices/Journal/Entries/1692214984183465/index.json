@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692214984183465",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:43:04.183465+00:00",
+    "EntryType": "Oem",
+    "Id": "1692214984183465",
+    "Message": "systemd-tmpfiles: \"/var/log\" already exists and is not a directory.",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "Warning"
+}

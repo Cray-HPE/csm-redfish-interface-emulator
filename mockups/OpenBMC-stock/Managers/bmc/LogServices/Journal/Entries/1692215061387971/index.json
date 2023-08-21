@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1692215061387971",
+    "@odata.type": "#LogEntry.v1_9_0.LogEntry",
+    "Created": "2023-08-16T19:44:21.387971+00:00",
+    "EntryType": "Oem",
+    "Id": "1692215061387971",
+    "Message": "systemd: systemd-hostnamed.service: Consumed 1.040s CPU time.",
+    "Name": "BMC Journal Entry",
+    "OemRecordFormat": "BMC Journal Entry",
+    "Severity": "OK"
+}
