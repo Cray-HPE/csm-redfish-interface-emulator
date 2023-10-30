@@ -1,0 +1,34 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/EthernetInterfaces/HPCNet0/Oem/Hpe/CassiniMetrics/SetMetricAddressActionInfo",
+    "@odata.type": "#ActionInfo.v1_0_3.ActionInfo",
+    "Description": "This action is used to change a Metric's address",
+    "Id": "SetMetricAddressAction",
+    "Name": "SetMetricAddressAction",
+    "Parameters": [
+        {
+            "AllowableValues": [
+                "Metric0",
+                "Metric1",
+                "Metric2",
+                "Metric3",
+                "Metric4",
+                "Metric5",
+                "Metric6",
+                "Metric7",
+                "Metric8",
+                "Metric9",
+                "Metric10",
+                "Metric11"
+            ],
+            "DataType": "String",
+            "Name": "Metric",
+            "Required": true
+        },
+        {
+            "DataType": "String",
+            "Name": "Address",
+            "Required": true
+        }
+    ]
+}

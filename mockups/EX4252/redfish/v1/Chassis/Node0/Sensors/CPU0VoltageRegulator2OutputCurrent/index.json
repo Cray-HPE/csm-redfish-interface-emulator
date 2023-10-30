@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1698703336\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator2OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU0VoltageRegulator2OutputCurrent",
+    "Name": "CPU0 VDDCR_VDDIO",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U1002"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 42.1875,
+    "ReadingTime": "2023-10-30T22:02:38.470008801Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A"
+}

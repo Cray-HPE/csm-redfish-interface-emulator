@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Chassis/Node2/Sensors/CPU1VoltageRegulator6InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU1VoltageRegulator6InputVoltage",
+    "Name": "CPU1 VDD_1V1_S3",
+    "Oem": {
+        "Index": 6,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U2016"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 11.890625,
+    "ReadingTime": "2023-10-30T22:07:46.387242018Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V"
+}

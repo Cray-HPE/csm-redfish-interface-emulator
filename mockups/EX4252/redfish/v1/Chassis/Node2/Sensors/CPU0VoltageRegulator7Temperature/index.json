@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Chassis/Node2/Sensors/CPU0VoltageRegulator7Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU0VoltageRegulator7Temperature",
+    "Name": "CPU0 VDD_12V0_N2C0",
+    "Oem": {
+        "Index": 7,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U4"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 37,
+    "ReadingTime": "2023-10-30T22:07:25.658739175Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

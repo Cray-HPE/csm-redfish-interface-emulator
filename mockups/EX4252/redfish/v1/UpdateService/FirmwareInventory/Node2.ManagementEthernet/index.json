@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node2.ManagementEthernet",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "i210 1GbE",
+    "Id": "Node2.ManagementEthernet",
+    "Name": "Node2.ManagementEthernet",
+    "SoftwareId": "Ethernet:i210:*:*",
+    "Status": {
+        "Health": "Warning",
+        "State": "UnavailableOffline"
+    },
+    "Updateable": true,
+    "Version": "undefined"
+}

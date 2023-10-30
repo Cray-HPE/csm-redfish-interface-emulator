@@ -1,0 +1,146 @@
+{
+    "@Redfish.Copyright": "Copyright 2021 HPE Inc. All rights reserved.",
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Registries/HPECMMAlarms.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_0_0.MessageRegistry",
+    "Description": "HPE CMM alarm messages",
+    "Id": "HPECMMAlarms.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "CDUSignalDeassertedEPOAlarm": {
+            "Description": "The CDU_OK signal from the CEC to the CMM wasn't detected for several consecutive checks and so cabinet power was removed and the EPO bits were set.",
+            "Message": "The CDU_OK signal from the CEC to the CMM was deasserted so an EPO was initated.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check the connection to the CEC, then check the CEC for any abnormal conditions that may result in an EPO. After the underying issue is fixed, issue a redfish ForceOff to this and all cabinets in the cooling group to clear the EPO.",
+            "Severity": "Critical"
+        },
+        "EPOAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CDUSignalDeassertedEPOAlarm",
+                    "ManualEPOAlarm"
+                ]
+            },
+            "Description": "The EPO has been cleared by issuing a ForceOff request to all of the CMMs in the cooling group. If the underlying issue has not been resolved, the system will revert back into an EPO state.",
+            "Message": "The EPO condition has been cleared via Redfish.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "ManualEPOAlarm": {
+            "Description": "The CEC initiated an EPO via a connected CMM using redfish.",
+            "Message": "An EPO was manually triggered by a user.",
+            "NumberOfArgs": 0,
+            "Resolution": "Issue a redfish ForceOff to this and all cabinets in the cooling group to clear the EPO, then send a power request.",
+            "Severity": "Critical"
+        },
+        "RectifierCommunicationFailure": {
+            "Description": "The rectifier is not responding. This error implies that rectifier is experiencing communcation issues.",
+            "Message": "The rectifier is not communicating with chassis controller.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please examine, and if needed, replace the rectifier on this shelf.",
+            "Severity": "Warning"
+        },
+        "RectifierCommunicationFailureCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RectifierCommunicationFailure"
+                ]
+            },
+            "Description": "The rectifier is now communicating.",
+            "Message": "The rectifier is now able to communicate with chassis controller.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "RectifierFailure": {
+            "Description": "The rectifer has failed, but the shelf has N+1 rectifer redundancy to enable continuous operation.",
+            "Message": "A rectifier has failed and is reporting a status register value: %1",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Replace the failed rectifier.",
+            "Severity": "Warning"
+        },
+        "RectifierFailureCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RectifierFailure"
+                ]
+            },
+            "Description": "The rectifier is now operating normally.",
+            "Message": "The rectifier is now operating normally.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "RectifierPowerLimited": {
+            "Description": "The rectifier is power limited. This error implies that one of the other (redundant) power supply has failed.",
+            "Message": "The rectifier is not able to supply the amount of power being requested.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please examine and if needed replace the other rectifiers on this shelf.",
+            "Severity": "Warning"
+        },
+        "RectifierPowerLimitedCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RectifierPowerLimited"
+                ]
+            },
+            "Description": "The rectifier is now able to meet power requirements.",
+            "Message": "The rectifier is now able to meet power requirements.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "RectifierThermalShutdown": {
+            "Description": "The rectifier has exceeded the maximum safe operating temperature and was powered down.",
+            "Message": "The rectifier has exceeded the maximum safe operating temperature and was powered down.",
+            "NumberOfArgs": 0,
+            "Resolution": "Verify that the coolant hoses are properly seated.",
+            "Severity": "Warning"
+        },
+        "RectifierThermalShutdownCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RectifierThermalShutdown"
+                ]
+            },
+            "Description": "The rectifier is now within an allowable operating temperature and able to power on.",
+            "Message": "The rectifier is now within an allowable operating temperature and able to power on.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "RectifierVoltageOutputUnbalanced": {
+            "Description": "One of the 380v rectifier output lines is shorted to ground.",
+            "Message": "One of the 380v rectifier output lines is shorted to ground.",
+            "NumberOfArgs": 0,
+            "Resolution": "Power down the shelf and remove blades one at a time till the rectifier no longer shows an imbalance, then investigate the problematic blade.",
+            "Severity": "Warning"
+        },
+        "RectifierVoltageOutputUnbalancedCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "RectifierVoltageOutputUnbalanced"
+                ]
+            },
+            "Description": "The rectifier output voltage is now balanced. This indicates that both voltage output lines have similar voltage difference to ground.",
+            "Message": "The rectifier output voltage is now balanced.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        }
+    },
+    "Name": "HPE CMM Alarms Message Registry",
+    "OwningEntity": "HPE Inc.",
+    "RegistryPrefix": "HPE_CMMAlarms",
+    "RegistryVersion": "1.0.0"
+}
