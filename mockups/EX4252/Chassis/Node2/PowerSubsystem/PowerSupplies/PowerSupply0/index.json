@@ -1,0 +1,16 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Chassis/Node2/PowerSubsystem/PowerSupplies/PowerSupply0",
+    "@odata.type": "#PowerSupply.v1_4_0.PowerSupply",
+    "Name": "PowerSupply",
+    "Oem": {
+        "Hpe": {
+            "MfrDate": "2143"
+        }
+    },
+    "SerialNumber": "AP0273PUY21496",
+    "Status": {
+        "Health": "OK"
+    },
+    "Version": "1.19"
+}

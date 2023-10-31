@@ -1,0 +1,8 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Systems/Node3/SetDefaultBootOrderActionInfo",
+    "@odata.type": "#ActionInfo.v1_0_3.ActionInfo",
+    "Description": "This action is used to set boot order to the default boot order for Systems/Node3",
+    "Id": "SetDefaultBootOrderAction",
+    "Name": "SetDefaultBootOrderAction"
+}

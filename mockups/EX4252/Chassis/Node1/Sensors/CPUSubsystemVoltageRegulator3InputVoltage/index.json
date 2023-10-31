@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1698703525\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPUSubsystemVoltageRegulator3InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPUSubsystemVoltageRegulator3InputVoltage",
+    "Name": "CPUS 48V ECB",
+    "Oem": {
+        "Index": 3,
+        "ParentalContext": "CPUSubsystem",
+        "ReferenceDesignator": "U49"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 47.801218,
+    "ReadingTime": "2023-10-30T22:06:31.992908214Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V"
+}

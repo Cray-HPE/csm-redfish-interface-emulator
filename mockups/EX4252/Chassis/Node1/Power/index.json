@@ -1,0 +1,300 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Power",
+    "@odata.type": "#Power.v1_4_0.Power",
+    "Description": "Power sensor readings",
+    "Id": "Power",
+    "Name": "Power",
+    "Voltages": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/156",
+            "LowerThresholdCritical": 2.97,
+            "LowerThresholdFatal": 2.805,
+            "LowerThresholdNonCritical": 3.069,
+            "Name": "CPUS VDD_3V3_S5 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 3.332,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 3.63,
+            "UpperThresholdFatal": 3.795,
+            "UpperThresholdNonCritical": 3.531
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/141",
+            "Name": "CPU1 VDDCR_VDDIO Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.891,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/154",
+            "LowerThresholdCritical": 2.97,
+            "LowerThresholdFatal": 2.805,
+            "LowerThresholdNonCritical": 3.069,
+            "Name": "CPUS VDD_3V3_S0 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 3.34,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 3.63,
+            "UpperThresholdFatal": 3.795,
+            "UpperThresholdNonCritical": 3.531
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/152",
+            "Name": "CPU1 VDD_12V0_N1C1 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/125",
+            "Name": "CPU0 VDD_1V8_S5 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.75,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/158",
+            "LowerThresholdCritical": 4.32,
+            "LowerThresholdFatal": 4.08,
+            "LowerThresholdNonCritical": 4.56,
+            "Name": "CPUS VDD_5V0_S5 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 5.039,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 5.72,
+            "UpperThresholdFatal": 6.24,
+            "UpperThresholdNonCritical": 5.46
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/132",
+            "Name": "CPU0 VDDCR_SOC Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 0.941,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/144",
+            "Name": "CPU1 VDDCR_CPUA Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.078,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/149",
+            "Name": "CPU1 VDD_1V1_S3 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.875,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/140",
+            "Name": "CPU1 VDD_1V8_S5 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.84,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/155",
+            "LowerThresholdCritical": 10.2,
+            "LowerThresholdFatal": 10,
+            "LowerThresholdNonCritical": 10.8,
+            "Name": "CPUS VDD_3V3_S5 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.938,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/153",
+            "LowerThresholdCritical": 10.2,
+            "LowerThresholdFatal": 10,
+            "LowerThresholdNonCritical": 10.8,
+            "Name": "CPUS VDD_3V3_S0 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.875,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/127",
+            "Name": "CPU0 VDDCR_VDDIO Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.891,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/129",
+            "Name": "CPU0 VDDCR_CPUA Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.906,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/150",
+            "Name": "CPU1 VDD_1V1_S3 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.098,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/160",
+            "Name": "CPUS 48V ECB Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 0,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/133",
+            "Name": "CPU0 VDDCR_CPUB Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.891,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/134",
+            "Name": "CPU0 VDDCR_CPUB Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.082,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/148",
+            "Name": "CPU1 VDDCR_CPUB Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.082,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/137",
+            "Name": "CPU0 VDD_12V0_N1C0 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/130",
+            "Name": "CPU0 VDDCR_CPUA Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.078,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/139",
+            "Name": "CPU1 VDD_1V8_S5 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.781,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/138",
+            "Name": "CPU0 VDD_12V0_N1C0 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/151",
+            "Name": "CPU1 VDD_12V0_N1C1 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/146",
+            "Name": "CPU1 VDDCR_SOC Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 0.941,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/142",
+            "Name": "CPU1 VDDCR_VDDIO Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.098,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/136",
+            "Name": "CPU0 VDD_1V1_S3 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.098,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/147",
+            "Name": "CPU1 VDDCR_CPUB Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.875,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/145",
+            "Name": "CPU1 VDDCR_SOC Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.875,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/126",
+            "Name": "CPU0 VDD_1V8_S5 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.824,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/157",
+            "LowerThresholdCritical": 10.2,
+            "LowerThresholdFatal": 10,
+            "LowerThresholdNonCritical": 10.8,
+            "Name": "CPUS VDD_5V0_S5 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.844,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/135",
+            "Name": "CPU0 VDD_1V1_S3 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.891,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/128",
+            "Name": "CPU0 VDDCR_VDDIO Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 1.098,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/131",
+            "Name": "CPU0 VDDCR_SOC Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.906,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/143",
+            "Name": "CPU1 VDDCR_CPUA Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.875,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/159",
+            "Name": "CPUS 48V ECB Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 0,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node1/Power#/Voltages/1",
+            "Name": "",
+            "RelatedItem@odata.count": 0
+        }
+    ],
+    "Voltages@odata.count": 37
+}

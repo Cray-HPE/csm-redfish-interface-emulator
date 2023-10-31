@@ -1,0 +1,57 @@
+{
+    "@odata.etag": "W/\"1698703419\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Power",
+    "@odata.type": "#Power.v1_4_0.Power",
+    "Description": "Power sensor readings",
+    "Id": "Power",
+    "Name": "Power",
+    "Voltages": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Power#/Voltages/14",
+            "Name": "SIVOC CTLR0 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Power#/Voltages/12",
+            "LowerThresholdCritical": 10.2,
+            "LowerThresholdFatal": 10,
+            "LowerThresholdNonCritical": 10.8,
+            "Name": "12V_HSS ECB Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.781,
+            "RelatedItem@odata.count": 0,
+            "UpperThresholdCritical": 12.84,
+            "UpperThresholdFatal": 15.16,
+            "UpperThresholdNonCritical": 12.6
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Power#/Voltages/16",
+            "Name": "SIVOC CTLR2 Voltage Input",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 384.1,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Power#/Voltages/13",
+            "Name": "12V_HSS ECB Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 11.75,
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Power#/Voltages/15",
+            "Name": "SIVOC CTLR0 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "RelatedItem@odata.count": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Power#/Voltages/17",
+            "Name": "SIVOC CTLR2 Voltage Output",
+            "PhysicalContext": "VoltageRegulator",
+            "ReadingVolts": 47.82,
+            "RelatedItem@odata.count": 0
+        }
+    ],
+    "Voltages@odata.count": 6
+}

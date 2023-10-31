@@ -1,0 +1,13 @@
+{
+    "@odata.etag": "W/\"1698703336\"",
+    "@odata.id": "/redfish/v1/Chassis/Node3/Controls",
+    "@odata.type": "#ControlsCollection.ControlsCollection",
+    "Description": "All controls for Node3",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node3/Controls/NodePowerLimit"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Node3 Controls Collection"
+}

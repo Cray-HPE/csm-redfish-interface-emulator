@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Registries/HPENodeAlarms.1.0.0",
+    "@odata.type": "#MessageRegistryFile.v1_1_0.MessageRegistryFile",
+    "Description": "Registry for HPENodeAlarms.1.0.0",
+    "Id": "HPENodeAlarms.1.0.0",
+    "Languages": [
+        "en"
+    ],
+    "Location": [
+        {
+            "Language": "en",
+            "Uri": "/redfish/v1/Registries/HPENodeAlarms.1.0.0.json"
+        }
+    ],
+    "Name": "HPENodeAlarms.1.0.0 Registry",
+    "Registry": "HPENodeAlarms.1.0.0"
+}

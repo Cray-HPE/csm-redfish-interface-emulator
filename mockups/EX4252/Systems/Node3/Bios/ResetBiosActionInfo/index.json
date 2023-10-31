@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Systems/Node3/Bios/ResetBiosActionInfo",
+    "@odata.type": "#ActionInfo.v1_0_3.ActionInfo",
+    "Description": "This action is used to reset the BIOS attributes to default.",
+    "Id": "ResetBiosAction",
+    "Name": "ResetBiosAction",
+    "Parameters": [
+        {
+            "AllowableValues": [
+                "Reset"
+            ],
+            "DataType": "String",
+            "Name": "ResetBiosType",
+            "Required": true
+        }
+    ]
+}

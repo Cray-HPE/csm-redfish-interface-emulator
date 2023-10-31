@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Systems/Node3/BootOptions",
+    "@odata.type": "#BootOptionCollection.BootOptionCollection",
+    "Description": "Collection of BootOption for this system",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Node3/BootOptions/4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node3/BootOptions/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node3/BootOptions/6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node3/BootOptions/5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node3/BootOptions/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node3/BootOptions/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node3/BootOptions/0"
+        }
+    ],
+    "Members@odata.count": 7,
+    "Name": "BootOption Collection"
+}

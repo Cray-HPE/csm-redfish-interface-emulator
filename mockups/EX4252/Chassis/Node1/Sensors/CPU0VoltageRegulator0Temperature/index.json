@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1698703525\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPU0VoltageRegulator0Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU0VoltageRegulator0Temperature",
+    "Name": "CPU0 VDD_1V8_S5",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U3022"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 49,
+    "ReadingTime": "2023-10-30T22:05:41.559392439Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}

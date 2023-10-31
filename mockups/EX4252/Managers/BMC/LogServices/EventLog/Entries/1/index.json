@@ -1,0 +1,21 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/1",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2023-09-29T21:47:53+00:00",
+    "EntryType": "Event",
+    "Id": "1",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Manager/BMC"
+        }
+    },
+    "Message": "The power state of resource x9000c1s5b0 has changed to type On.",
+    "MessageArgs": [
+        "x9000c1s5b0",
+        "On"
+    ],
+    "MessageId": "CrayAlerts.ResourcePowerStateChanged",
+    "Name": "Log entry 1",
+    "Severity": "OK"
+}

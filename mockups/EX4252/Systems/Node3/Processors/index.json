@@ -1,0 +1,16 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/Systems/Node3/Processors",
+    "@odata.type": "#ProcessorCollection.ProcessorCollection",
+    "Description": "Collection of processors",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Node3/Processors/CPU1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node3/Processors/CPU0"
+        }
+    ],
+    "Members@odata.count": 2,
+    "Name": "Processors Collection"
+}

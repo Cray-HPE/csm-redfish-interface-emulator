@@ -1,0 +1,16 @@
+{
+    "@odata.etag": "W/\"1698703336\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU1Memory1Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU1Memory1Temperature",
+    "Name": "CPU1dimm1",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 1
+    },
+    "PhysicalContext": "Memory",
+    "ReadingTime": "2023-10-27T17:43:50.581732182Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel"
+}
