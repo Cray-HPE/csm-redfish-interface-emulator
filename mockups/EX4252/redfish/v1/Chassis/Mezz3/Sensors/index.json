@@ -1,0 +1,68 @@
+{
+    "@odata.etag": "W/\"1698703419\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors",
+    "@odata.type": "#SensorCollection.SensorCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3ASIC0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3ASIC1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3DCBus0Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3DCBus1Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3SystemBoard0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3SystemBoard1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3SystemBoard2Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3SystemBoard3Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3SystemBoard4Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3SystemBoard5Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3SystemBoard6Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3VoltageRegulator0Current"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3VoltageRegulator0Power"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3VoltageRegulator0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3VoltageRegulator0Voltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3VoltageRegulator1Current"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3VoltageRegulator1Power"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3VoltageRegulator1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3VoltageRegulator1Voltage"
+        }
+    ],
+    "Members@odata.count": 20
+}

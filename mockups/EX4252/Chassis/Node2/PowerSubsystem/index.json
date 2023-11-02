@@ -1,0 +1,9 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Chassis/Node2/PowerSubsystem",
+    "@odata.type": "#PowerSubsystem.v1_1_0.PowerSubsystem",
+    "Name": "Node Power Subsystem",
+    "PowerSupplies": {
+        "@odata.id": "/redfish/v1/Chassis/Node2/PowerSubsystem/PowerSupplies"
+    }
+}

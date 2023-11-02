@@ -1,0 +1,20 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/24",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2023-10-06T18:32:08+00:00",
+    "EntryType": "Event",
+    "Id": "24",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Systems/Node3"
+        }
+    },
+    "Message": "There were 6 VRM configuration mismatches.",
+    "MessageArgs": [
+        "6"
+    ],
+    "MessageId": "HPENodeAlarms.VRMMismatchFailure",
+    "Name": "Log entry 24",
+    "Severity": "Warning"
+}

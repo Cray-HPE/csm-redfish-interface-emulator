@@ -1,0 +1,21 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/11",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2023-09-29T21:50:11+00:00",
+    "EntryType": "Event",
+    "Id": "11",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU02ReportedPower"
+        }
+    },
+    "Message": "The resource property CPU0 Package Power has detected errors of type SensorReadError.",
+    "MessageArgs": [
+        "CPU0 Package Power",
+        "SensorReadError"
+    ],
+    "MessageId": "ResourceEvent.ResourceErrorsDetected",
+    "Name": "Log entry 11",
+    "Severity": "Warning"
+}

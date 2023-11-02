@@ -1,0 +1,14 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/FPGA0",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "Cray nFPGA-ANC0 Logic Device - Hardware Management",
+    "Id": "FPGA0",
+    "Name": "nFPGA0",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": false,
+    "Version": "4.0a"
+}

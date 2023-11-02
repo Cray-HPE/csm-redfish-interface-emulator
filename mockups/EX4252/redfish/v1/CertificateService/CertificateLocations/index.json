@@ -1,0 +1,13 @@
+{
+    "@odata.etag": "W/\"1697739578\"",
+    "@odata.id": "/redfish/v1/CertificateService/CertificateLocations",
+    "Id": "CertificateLocations",
+    "Links": {
+        "Certificates": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol/HTTPS/Certificates/1"
+            }
+        ]
+    },
+    "Name": "Certificate Locations"
+}

@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Memory/DIMM2",
+    "@odata.type": "#Memory.v1_5_0.Memory",
+    "BaseModuleType": "RDIMM",
+    "BusWidthBits": 80,
+    "CapacityMiB": 16384,
+    "DataWidthBits": 64,
+    "ErrorCorrection": "Multi-bit ECC",
+    "Id": "DIMM2",
+    "Manufacturer": "Samsung",
+    "MemoryDeviceType": "Other",
+    "MemoryLocation": {
+        "Slot": 2,
+        "Socket": 0
+    },
+    "MemoryType": "DRAM",
+    "Name": "DIMM 2",
+    "OperatingSpeedMhz": 4800,
+    "PartNumber": "M321R2GA3BB6-CQKVG",
+    "RankCount": 1,
+    "SerialNumber": "037C9580",
+    "Status": {
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/Systems/Node1/Processors/CPU1",
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "Id": "CPU1",
+    "Manufacturer": "Advanced Micro Devices, Inc.",
+    "MaxSpeedMHz": 3700,
+    "MaxTDPWatts": 400,
+    "Model": "AMD EPYC 9654 96-Core Processor",
+    "Name": "Processor",
+    "ProcessorId": {
+        "EffectiveFamily": "0x19",
+        "EffectiveModel": "0x11",
+        "Step": "0x1",
+        "VendorId": "AuthenticAMD"
+    },
+    "ProcessorType": "CPU",
+    "SerialNumber": "9KN0800S20052",
+    "Socket": "CPU 1",
+    "Status": {
+        "Health": "OK"
+    },
+    "TDPWatts": 400,
+    "TotalCores": 96,
+    "TotalThreads": 192
+}

@@ -1,0 +1,76 @@
+{
+    "@odata.etag": "W/\"1697739578\"",
+    "@odata.id": "/redfish/v1/Systems/Node3",
+    "@odata.type": "#ComputerSystem.v1_5_0.ComputerSystem",
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Node3/ResetActionInfo",
+            "target": "/redfish/v1/Systems/Node3/Actions/ComputerSystem.Reset"
+        },
+        "#ComputerSystem.SetDefaultBootOrder": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Node3/SetDefaultBootOrderActionInfo",
+            "target": "/redfish/v1/Systems/Node3/Actions/ComputerSystem.SetDefaultBootOrder"
+        }
+    },
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/Node3/Bios"
+    },
+    "BiosVersion": "ex4252.bios-1.3.0",
+    "Boot": {
+        "BootOptions": {
+            "@odata.id": "/redfish/v1/Systems/Node3/BootOptions"
+        },
+        "BootOrder": [
+            "ME0-PXE-IP4",
+            "ME0-PXE-IP6",
+            "HSN0-PXE-IP4",
+            "HSN0-PXE-IP6",
+            "HSN1-PXE-IP4",
+            "HSN1-PXE-IP6",
+            "Boot0007"
+        ]
+    },
+    "Description": "ANTERO",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/Node3/EthernetInterfaces"
+    },
+    "Id": "Node3",
+    "Manufacturer": "HPE",
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/Node3/Memory"
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 384
+    },
+    "Model": "HPE EX4252",
+    "Name": "Node3",
+    "PartNumber": "P46605-004.A",
+    "PowerState": "On",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "AMD EPYC 9654 96-Core Processor"
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/Node3/Processors"
+    },
+    "SerialNumber": "PR12378794",
+    "Status": {
+        "Conditions": [
+            {
+                "LogEntry": {
+                    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/68"
+                },
+                "Message": "There were 6 VRM configuration mismatches.",
+                "MessageArgs": [
+                    "6"
+                ],
+                "MessageId": "HPENodeAlarms.1.0.VRMMismatchFailure",
+                "Severity": "Warning",
+                "Timestamp": "2023-10-19T18:20:28+00:00"
+            }
+        ],
+        "Health": "Warning",
+        "State": "Enabled"
+    },
+    "SystemType": "Physical"
+}

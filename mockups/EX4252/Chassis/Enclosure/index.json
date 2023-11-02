@@ -1,0 +1,33 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "AssetTag": "",
+    "ChassisType": "Enclosure",
+    "Description": "HSSMEZZCARD",
+    "Id": "Enclosure",
+    "Manufacturer": "HPE",
+    "Model": "HSSMEZZCARD",
+    "Name": "Enclosure",
+    "Oem": {
+        "Alarms": {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Oem/Alarms"
+        },
+        "TriggeredAlarms": []
+    },
+    "PartNumber": "P47016-003.A",
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Power"
+    },
+    "Sensors": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors"
+    },
+    "SerialNumber": "PR12348213",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Thermal": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Thermal"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/BMC",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "Baseboard Management Controller",
+    "Id": "BMC",
+    "Name": "BMC",
+    "SoftwareId": "nc:*:*:*",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": true,
+    "Version": "nc.1.8.3-10-shasta-release.arm.2023-04-26T21:09:35+00:00.a8e719d"
+}

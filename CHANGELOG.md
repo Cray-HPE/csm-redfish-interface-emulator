@@ -24,6 +24,18 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [1.5.2] - 2023-10/30
+
+### Added
+
+- Added an Antero mockup
+
+## [1.5.1] - 2023-08-17
+
+### Added
+
+- Added an Open BMC mockup
+
 ## [1.5.0] - 2023-04-19
 ### Fixed
 - Fixed delete for redfish subscriptions

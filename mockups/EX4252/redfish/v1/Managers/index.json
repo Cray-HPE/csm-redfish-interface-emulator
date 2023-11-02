@@ -1,0 +1,25 @@
+{
+    "@odata.etag": "W/\"0\"",
+    "@odata.id": "/redfish/v1/Managers",
+    "@odata.type": "#ManagerCollection.ManagerCollection",
+    "Description": "The collection for Managers",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Managers/MCU3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/MCU0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/MCU1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/MCU2"
+        }
+    ],
+    "Members@odata.count": 5,
+    "Name": "Manager Collection"
+}

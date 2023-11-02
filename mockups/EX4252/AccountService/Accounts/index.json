@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1697739578\"",
+    "@odata.id": "/redfish/v1/AccountService/Accounts",
+    "@odata.type": "#ManagerAccountCollection.ManagerAccountCollection",
+    "Description": "Collection for Manager Accounts",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/AccountService/Accounts/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/AccountService/Accounts/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/AccountService/Accounts/1"
+        }
+    ],
+    "Members@odata.count": 3,
+    "Name": "Accounts Collection"
+}

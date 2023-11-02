@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/Systems/Node3/Memory/DIMM23",
+    "@odata.type": "#Memory.v1_5_0.Memory",
+    "BaseModuleType": "RDIMM",
+    "BusWidthBits": 80,
+    "CapacityMiB": 16384,
+    "DataWidthBits": 64,
+    "ErrorCorrection": "Multi-bit ECC",
+    "Id": "DIMM23",
+    "Manufacturer": "Samsung",
+    "MemoryDeviceType": "Other",
+    "MemoryLocation": {
+        "Slot": 11,
+        "Socket": 1
+    },
+    "MemoryType": "DRAM",
+    "Name": "DIMM 23",
+    "OperatingSpeedMhz": 4800,
+    "PartNumber": "M321R2GA3BB6-CQKVG",
+    "RankCount": 1,
+    "SerialNumber": "037C95B7",
+    "Status": {
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Chassis/Node2/Sensors/CPUSubsystemVoltageRegulator2OutputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPUSubsystemVoltageRegulator2OutputPower",
+    "Name": "CPUS VDD_5V0_S5",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "CPUSubsystem",
+        "ReferenceDesignator": "U16"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 10.140625,
+    "ReadingTime": "2023-10-30T22:08:01.253281800Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

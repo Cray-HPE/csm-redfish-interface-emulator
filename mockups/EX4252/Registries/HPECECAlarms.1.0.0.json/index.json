@@ -1,0 +1,715 @@
+{
+    "@Redfish.Copyright": "Copyright 2021 HPE Inc. All rights reserved.",
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Registries/HPECECAlarms.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_0_0.MessageRegistry",
+    "Description": "HPE CEC alarm messages",
+    "Id": "HPECECAlarms.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "CDUDetectedButFirmwareInvalidAlarm": {
+            "Description": "Cabinet CDU detected but the firmware is too old or invalid to allow operation of cabinet",
+            "Message": "Cabinet CDU detected but the firmware is too old or invalid to allow operation of cabinet",
+            "NumberOfArgs": 0,
+            "Resolution": "Verify the CDU firmware is up-to-date.",
+            "Severity": "Critical"
+        },
+        "CDUDetectedButFirmwareInvalidAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CDUDetectedButFirmwareInvalidAlarm"
+                ]
+            },
+            "Description": "",
+            "Message": "CDU detected but firmware invalid alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CDUFirmwareVersionUnreadableAlarm": {
+            "Description": "THe CDU appears present but unable to read firmware version register.",
+            "Message": "The CDU's Firmware version is unreadable via modbus.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check the CDU-CSBA cable and contact HPE if needed.",
+            "Severity": "Critical"
+        },
+        "CDUFirmwareVersionUnreadableAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CDUFirmwareVersionUnreadableAlarm"
+                ]
+            },
+            "Description": "",
+            "Message": "CDU firmware version unreadable alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CDUNotPresentAlarm": {
+            "Description": "The GPIO presence pin that a CDU sets is not active.",
+            "Message": "No CDU present signal asserted",
+            "NumberOfArgs": 0,
+            "Resolution": "Check CSBA to CDU cables.",
+            "Severity": "Critical"
+        },
+        "CDUNotPresentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CDUNotPresentAlarm"
+                ]
+            },
+            "Description": "The CDU has now been detected.",
+            "Message": "CDU not present alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CMM0NotPresentAlarm": {
+            "Description": "The GPIO presence pin that a CMM0 sets is not active.",
+            "Message": "CMM0 hardware present signal not asserted",
+            "NumberOfArgs": 0,
+            "Resolution": "Check CEC to CMM sideband cable.",
+            "Severity": "Critical"
+        },
+        "CMM0NotPresentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CMM0NotPresentAlarm"
+                ]
+            },
+            "Description": "CMM0 has now been detected.",
+            "Message": "CMM0 not present alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CMM0SidebandFailureAlarm": {
+            "Description": "The last communications attempt with CMM0 via SPI sideband failed.",
+            "Message": "Communications with the CMM0 via sideband failed.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check sideband cable and connection.",
+            "Severity": "Critical"
+        },
+        "CMM0SidebandFailureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CMM0SidebandFailureAlarm"
+                ]
+            },
+            "Description": "Communications with CMM0 has succeeded.",
+            "Message": "CMM0 Sideband communcation failure alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CMM1NotPresentAlarm": {
+            "Description": "The GPIO presence pin that a CMM1 sets is not active.",
+            "Message": "CMM1 hardware present signal not asserted",
+            "NumberOfArgs": 0,
+            "Resolution": "Check CEC to CMM sideband cable.",
+            "Severity": "Critical"
+        },
+        "CMM1NotPresentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CMM1NotPresentAlarm"
+                ]
+            },
+            "Description": "CMM1 has now been detected.",
+            "Message": "CMM1 not present alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CMM1SidebandFailureAlarm": {
+            "Description": "The last communications attempt with CMM1 via SPI sideband failed.",
+            "Message": "Communications with the CMM1 via sideband failed.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check sideband cable and connection.",
+            "Severity": "Critical"
+        },
+        "CMM1SidebandFailureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CMM1SidebandFailureAlarm"
+                ]
+            },
+            "Description": "Communications with CMM1 has succeeded.",
+            "Message": "CMM1 Sideband communcation failure alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CMM2NotPresentAlarm": {
+            "Description": "The GPIO presence pin that a CMM2 sets is not active.",
+            "Message": "CMM2 hardware present signal not asserted",
+            "NumberOfArgs": 0,
+            "Resolution": "Check CEC to CMM sideband cable.",
+            "Severity": "Critical"
+        },
+        "CMM2NotPresentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CMM2NotPresentAlarm"
+                ]
+            },
+            "Description": "CMM2 has now been detected.",
+            "Message": "CMM2 not present alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CMM2SidebandFailureAlarm": {
+            "Description": "The last communications attempt with CMM2 via SPI sideband failed.",
+            "Message": "Communications with the CMM2 via sideband failed.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check sideband cable and connection.",
+            "Severity": "Critical"
+        },
+        "CMM2SidebandFailureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CMM2SidebandFailureAlarm"
+                ]
+            },
+            "Description": "Communications with CMM2 has succeeded.",
+            "Message": "CMM2 Sideband communcation failure alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CMM3NotPresentAlarm": {
+            "Description": "The GPIO presence pin that a CMM3 sets is not active.",
+            "Message": "CMM3 hardware present signal not asserted",
+            "NumberOfArgs": 0,
+            "Resolution": "Check CEC to CMM sideband cable.",
+            "Severity": "Critical"
+        },
+        "CMM3NotPresentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CMM3NotPresentAlarm"
+                ]
+            },
+            "Description": "CMM3 has now been detected.",
+            "Message": "CMM3 not present alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CMM3SidebandFailureAlarm": {
+            "Description": "The last communications attempt with CMM3 via SPI sideband failed.",
+            "Message": "Communications with the CMM3 via sideband failed.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check sideband cable and connection.",
+            "Severity": "Critical"
+        },
+        "CMM3SidebandFailureAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CMM3SidebandFailureAlarm"
+                ]
+            },
+            "Description": "Communications with CMM3 has succeeded.",
+            "Message": "CMM3 Sideband communcation failure alarm cleared.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CSBANotPresentAlarm": {
+            "Description": "The GPIO CSBA (cabinet sensor breakout assembly) pin that a CMM sets is not active.",
+            "Message": "The sensor board (CSBA) presence signal is not asserted",
+            "NumberOfArgs": 0,
+            "Resolution": "Check CEC to CSBA cable.",
+            "Severity": "Critical"
+        },
+        "CSBANotPresentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CSBANotPresentAlarm"
+                ]
+            },
+            "Description": "The CSBA has now been detected.",
+            "Message": "CSBA not present alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CabinetFrontLeakEPOAlarm": {
+            "Description": "If multiple sensors in one zone detect coolant an emegency power off is initiated.",
+            "Message": "Multiple front leak cabinet sensors detected coolant and shut the cabinet down.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please check the front area of the cabinet for coolant, fix any breaks, then clear the EPO and then restart the system.",
+            "Severity": "Critical"
+        },
+        "CabinetFrontLeakEPOAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CabinetFrontLeakEPOAlarm"
+                ]
+            },
+            "Description": "The front leak is no longer detected.",
+            "Message": "Cabinet front leak EPO alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CabinetFrontLeakWarningAlarm": {
+            "Description": "One sensor of a dual sensor module detected moisture. As long as as the second sensor doesn't activate, normal operation may continue.",
+            "Message": "A front leak cabinet sensor detected coolant.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please check the front area of the cabinet for leaks or coolant and fix promptly to avoid downtime.",
+            "Severity": "Warning"
+        },
+        "CabinetFrontLeakWarningAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CabinetFrontLeakWarningAlarm"
+                ]
+            },
+            "Description": "The front leak is no longer detected.",
+            "Message": "Cabinet front leak warning alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CabinetLocalEPOAlarm": {
+            "Description": "This cabinet initiated an emergency power off that is specific to itself.",
+            "Message": "This cabinet detected a fatal condition and disabled its power.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please check for leaks, over-current conditions, disconnected devices. Then issue a force off to the specific cabinet CMMs to clear the EPO.",
+            "Severity": "Critical"
+        },
+        "CabinetLocalEPOAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CabinetLocalEPOAlarm"
+                ]
+            },
+            "Description": "The cabinet's local EPO has been cleared, and the cabinet has been powered back on. TODO: Check if clears after a power on.",
+            "Message": "Cabinet local EPO alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CabinetNotReadyAlarm": {
+            "Description": "The CEC timed out waiting for one or more required conditions. Potentially a sensor prerequisite.",
+            "Message": "Timeout waiting for cabinet ready",
+            "NumberOfArgs": 0,
+            "Resolution": "Check that all of the cabinet sensors and hardware are present and there are no leaks.",
+            "Severity": "Critical"
+        },
+        "CabinetNotReadyAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CabinetNotReadyAlarm"
+                ]
+            },
+            "Description": "The cabinet has transitioned to a ready state.",
+            "Message": "Cabinet not ready alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CabinetRearLeakEPOAlarm": {
+            "Description": "If multiple sensors in one zone detect coolant an emegency power off is initiated.",
+            "Message": "Multiple rear leak cabinet sensors detected coolant and shut the cabinet down.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please check the rear area of the cabinet for coolant, fix any breaks, then clear the EPO and then restart the system.",
+            "Severity": "Critical"
+        },
+        "CabinetRearLeakEPOAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CabinetRearLeakEPOAlarm"
+                ]
+            },
+            "Description": "The rear leak is no longer detected.",
+            "Message": "Cabinet rear leak EPO alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CabinetRearLeakWarningAlarm": {
+            "Description": "One sensor of a dual sensor module detected moisture. As long as as the second sensor doesn't activate, normal operation may continue.",
+            "Message": "A rear leak cabinet sensor detected coolant.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please check the rear area of the cabinet for leaks or coolant and fix promptly to avoid downtime.",
+            "Severity": "Warning"
+        },
+        "CabinetRearLeakWarningAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CabinetRearLeakWarningAlarm"
+                ]
+            },
+            "Description": "The rear leak is no longer detected.",
+            "Message": "Cabinet rear leak warning alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CabinetRemoteEPOAlarm": {
+            "Description": "This cabinet has been powered off due to an emergency in a neighboring cabinet.",
+            "Message": "A cabinet EPO occurred in one or more neighboring cabinets.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please check for leaks, over-current conditions, disconnected devices in all other cabinets in the cooling group.",
+            "Severity": "Critical"
+        },
+        "CabinetRemoteEPOAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CabinetRemoteEPOAlarm"
+                ]
+            },
+            "Description": "The cabinet that triggered the EPO has been cleared.",
+            "Message": "Cabinet remote EPO alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CabinetTopLeakEPOAlarm": {
+            "Description": "If multiple sensors in one zone detect coolant an emegency power off is initiated.",
+            "Message": "Multiple top leak cabinet sensors detected coolant and shut the cabinet down.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please check the top area of the cabinet for coolant, fix any breaks, then clear the EPO and then restart the system.",
+            "Severity": "Critical"
+        },
+        "CabinetTopLeakEPOAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CabinetTopLeakEPOAlarm"
+                ]
+            },
+            "Description": "The top leak is no longer detected.",
+            "Message": "Cabinet top leak EPO alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CabinetTopLeakWarningAlarm": {
+            "Description": "One sensor of a dual sensor module detected moisture. As long as as the second sensor doesn't activate, normal operation may continue.",
+            "Message": "A top leak cabinet sensor detected coolant.",
+            "NumberOfArgs": 0,
+            "Resolution": "Please check the top area of the cabinet for leaks or coolant and fix promptly to avoid downtime.",
+            "Severity": "Warning"
+        },
+        "CabinetTopLeakWarningAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CabinetTopLeakWarningAlarm"
+                ]
+            },
+            "Description": "The top leak is no longer detected.",
+            "Message": "Cabinet top leak warning alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CoolantPressureDeltaLowAlarm": {
+            "Description": "Cabinet sensors have detected a coolant pressure delta less than the minimum allowed LCD entered value, typically 4 PSI.",
+            "Message": "The difference between inlet and outlet pressure is too low and the cabinet has been shut down to protect itself.",
+            "NumberOfArgs": 0,
+            "Resolution": "Verify that the pressure setting is correct and there is enough coolant present in the system.",
+            "Severity": "Critical"
+        },
+        "CoolantPressureDeltaLowAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CoolantPressureDeltaLowAlarm"
+                ]
+            },
+            "Description": "The coolant pressure delta has increased to normal.",
+            "Message": "Coolant pressure delta low alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CoolantPressureDeltaLowWarningAlarm": {
+            "Description": "Cabinet sensors have detected a coolant pressure delta less than the alert pressure derived from the LCD-entered value plus a early-warning offset, typically +5 PSI.",
+            "Message": "The difference between inlet and outlet pressure is too low and should be addressed ASAP to avoid downtime.",
+            "NumberOfArgs": 0,
+            "Resolution": "Verify that the pressure setting is correct and there is enough coolant present in the system.",
+            "Severity": "Warning"
+        },
+        "CoolantPressureDeltaLowWarningAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CoolantPressureDeltaLowWarningAlarm"
+                ]
+            },
+            "Description": "The coolant pressure delta has increased to normal.",
+            "Message": "Coolant pressure delta low warning alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "CoolantPressureDropNotDetected": {
+            "Description": "Cabinet coolant pressure sensors report values that do not match the expected decreasing value from inlet to system secondary to outlet indicating a issue with the pressure sensors.",
+            "Message": "The pressure readings from inlet to system secondary to outlet are not decreasing in value through the coolant loop.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check the three individual cabinet coolant pressure sensor values. Check for fouled pressure sensors.",
+            "Severity": "Warning"
+        },
+        "CoolantPressureDropNotDetectedCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "CoolantPressureDropNotDetected"
+                ]
+            },
+            "Description": "Cabinet coolant pressure sensors report values that match the expected decreasing value through the coolant loop.",
+            "Message": "The pressure readings from inlet to system secondary to outlet are now in decreasing value.",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "Feed1OvercurrentAlarm": {
+            "Description": "Cabinet Feed1 over the 90% breaker current rating for a timeout period",
+            "Message": "Cabinet Feed1 near breaker current rating for sustained period of time",
+            "NumberOfArgs": 0,
+            "Resolution": "Check power dongle or cabinet power conditions.",
+            "Severity": "Critical"
+        },
+        "Feed1OvercurrentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "Feed1OvercurrentAlarm"
+                ]
+            },
+            "Description": "Feed1 current has returned to normal.",
+            "Message": "Feed1 Overcurrent alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "Feed2OvercurrentAlarm": {
+            "Description": "Cabinet Feed2 over the 90% breaker current rating for a timeout period",
+            "Message": "Cabinet Feed2 near breaker current rating for sustained period of time",
+            "NumberOfArgs": 0,
+            "Resolution": "Check power dongle or cabinet power conditions.",
+            "Severity": "Critical"
+        },
+        "Feed2OvercurrentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "Feed2OvercurrentAlarm"
+                ]
+            },
+            "Description": "Feed2 current has returned to normal.",
+            "Message": "Feed2 Overcurrent alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "Feed3OvercurrentAlarm": {
+            "Description": "Cabinet Feed3 over the 90% breaker current rating for a timeout period",
+            "Message": "Cabinet Feed3 near breaker current rating for sustained period of time",
+            "NumberOfArgs": 0,
+            "Resolution": "Check power dongle or cabinet power conditions.",
+            "Severity": "Critical"
+        },
+        "Feed3OvercurrentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "Feed3OvercurrentAlarm"
+                ]
+            },
+            "Description": "Feed3 current has returned to normal.",
+            "Message": "Feed3 Overcurrent alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "Feed4OvercurrentAlarm": {
+            "Description": "Cabinet Feed4 over the 90% breaker current rating for a timeout period",
+            "Message": "Cabinet Feed4 near breaker current rating for sustained period of time",
+            "NumberOfArgs": 0,
+            "Resolution": "Check power dongle or cabinet power conditions.",
+            "Severity": "Critical"
+        },
+        "Feed4OvercurrentAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "Feed4OvercurrentAlarm"
+                ]
+            },
+            "Description": "Feed4 current has returned to normal.",
+            "Message": "Feed4 Overcurrent alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LeakSensorInternalAlarm": {
+            "Description": "The leak sensor code returned an internal error",
+            "Message": "The leak sensor code returned an internal error",
+            "NumberOfArgs": 0,
+            "Resolution": "Contact HPE.",
+            "Severity": "Critical"
+        },
+        "LeakSensorInternalAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LeakSensorInternalAlarm"
+                ]
+            },
+            "Description": "The leak sensor is now functioning normally.",
+            "Message": "Leak sensor internal alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "LowMemoryAlarm": {
+            "Description": "The CEC's free memory (heap) has less than 512B remaining.",
+            "Message": "The CEC's free memory is low.",
+            "NumberOfArgs": 0,
+            "Resolution": "Contact HPE.",
+            "Severity": "Warning"
+        },
+        "LowMemoryAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "LowMemoryAlarm"
+                ]
+            },
+            "Description": "The CEC has re-gained the memory needed to operate normally.",
+            "Message": "Low memory alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "ReturnCoolantPressureSensorFault": {
+            "Description": "The cabinet return coolant pressure sensor is not detected or functioning correctly. Indicated by temperature reading less than 1 PSI.",
+            "Message": "Cabinet return coolant pressure sensor is not connected or functioning properly",
+            "NumberOfArgs": 0,
+            "Resolution": "Check the sensor's connection or replace if needed.",
+            "Severity": "Critical"
+        },
+        "ReturnCoolantPressureSensorFaultCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "ReturnCoolantPressureSensorFault"
+                ]
+            },
+            "Description": "The return coolant pressure sensor has started functioning normally.",
+            "Message": "Return coolant pressure sensor fault cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "ReturnCoolantTemperatureSensorFaultAlarm": {
+            "Description": "The cabinet return coolant temperature sensor is not detected or functioning correctly. Indicated by temperature reading greater than 90 degrees C.",
+            "Message": "Cabinet return coolant temperature sensor is not connected or functioning properly",
+            "NumberOfArgs": 0,
+            "Resolution": "Check the sensor's connection or replace if needed.",
+            "Severity": "Critical"
+        },
+        "ReturnCoolantTemperatureSensorFaultAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "ReturnCoolantTemperatureSensorFaultAlarm"
+                ]
+            },
+            "Description": "The return coolant temperature sensor has started functioning normally.",
+            "Message": "Return coolant temperature sensor fault alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "SecondaryCoolantPressureSensorDisconnectedAlarm": {
+            "Description": "Cabinet secondary coolant pressure sensor is not detected. Indicated by pressure reading less than 1 PSI.",
+            "Message": "Cabinet secondary coolant pressure sensor is not detected.",
+            "NumberOfArgs": 0,
+            "Resolution": "Check the sensor's connection or replace if needed.",
+            "Severity": "Critical"
+        },
+        "SecondaryCoolantPressureSensorDisconnectedAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "SecondaryCoolantPressureSensorDisconnectedAlarm"
+                ]
+            },
+            "Description": "The secondary coolant pressure sensor has been detected.",
+            "Message": "Secondary coolant pressure sensor disconnected alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "SupplyCoolantPressureSensorFault": {
+            "Description": "The cabinet supply coolant pressure sensor is not detected or functioning correctly. Indicated by temperature reading less than 1 PSI.",
+            "Message": "Cabinet supply coolant pressure sensor is not connected or functioning properly",
+            "NumberOfArgs": 0,
+            "Resolution": "Check the sensor's connection or replace if needed.",
+            "Severity": "Critical"
+        },
+        "SupplyCoolantPressureSensorFaultCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "SupplyCoolantPressureSensorFault"
+                ]
+            },
+            "Description": "The supply coolant pressure sensor has started functioning normally.",
+            "Message": "Supply coolant pressure sensor fault cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "SupplyCoolantTemperatureSensorFaultAlarm": {
+            "Description": "The cabinet supply coolant temperature sensor is not detected or functioning correctly. Indicated by temperature reading greater than 90 degrees C.",
+            "Message": "Cabinet supply coolant temperature sensor is not connected or functioning properly",
+            "NumberOfArgs": 0,
+            "Resolution": "Check the sensor's connection or replace if needed.",
+            "Severity": "Critical"
+        },
+        "SupplyCoolantTemperatureSensorFaultAlarmCleared": {
+            "ClearingLogic": {
+                "ClearsIf": "SameOriginOfCondition",
+                "ClearsMessage": [
+                    "SupplyCoolantTemperatureSensorFaultAlarm"
+                ]
+            },
+            "Description": "The supply coolant temperature sensor has started functioning normally.",
+            "Message": "Supply coolant temperature sensor fault alarm cleared",
+            "NumberOfArgs": 0,
+            "Resolution": "None",
+            "Severity": "OK"
+        }
+    },
+    "Name": "HPE CEC Alarms Message Registry",
+    "OwningEntity": "HPE Inc.",
+    "RegistryPrefix": "HPE_CECAlarms",
+    "RegistryVersion": "1.0.0"
+}

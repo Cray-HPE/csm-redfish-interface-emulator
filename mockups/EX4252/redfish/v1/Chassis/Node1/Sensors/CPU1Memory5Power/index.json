@@ -1,0 +1,16 @@
+{
+    "@odata.etag": "W/\"1698703525\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPU1Memory5Power",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU1Memory5Power",
+    "Name": "CPU1dimm5",
+    "Oem": {
+        "Index": 5,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 1
+    },
+    "PhysicalContext": "Memory",
+    "ReadingTime": "2023-10-20T07:05:26.262323804Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

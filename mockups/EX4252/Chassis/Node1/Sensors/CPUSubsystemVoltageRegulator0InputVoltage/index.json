@@ -1,0 +1,44 @@
+{
+    "@odata.etag": "W/\"1698703525\"",
+    "@odata.id": "/redfish/v1/Chassis/Node1/Sensors/CPUSubsystemVoltageRegulator0InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPUSubsystemVoltageRegulator0InputVoltage",
+    "Name": "CPUS VDD_3V3_S0",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "CPUSubsystem",
+        "ReferenceDesignator": "U13"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 11.875,
+    "ReadingTime": "2023-10-30T22:06:22.159902719Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 10.8
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 10.2
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 10
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 12.6
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 12.84
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 15.16
+        }
+    }
+}

@@ -1,0 +1,16 @@
+HTTP 500
+Content-Length: 1320
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 19 Jan 2038 03:14:07 GMT
+Server: Cray Embedded Software Redfish Service
+
+<pre style="font-size:12px; font-family:monospace; color:#8B0000;">[web.lua] Error in RequestHandler, thread: 0xb68f89b0 is dead.
+▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+.&#47;oem&#47;cray&#47;cray-alarm-instance-handler.lua:0: attempt to call global &#39;inc&#39; (a nil value)
+stack traceback:
+	&#47;usr&#47;share&#47;luajit-2.1.0-beta3&#47;turbo&#47;httpserver.lua:251: in function &lt;&#47;usr&#47;share&#47;luajit-2.1.0-beta3&#47;turbo&#47;httpserver.lua:212&gt;
+	[C]: in function &#39;xpcall&#39;
+	&#47;usr&#47;share&#47;luajit-2.1.0-beta3&#47;turbo&#47;iostream.lua:553: in function &lt;&#47;usr&#47;share&#47;luajit-2.1.0-beta3&#47;turbo&#47;iostream.lua:544&gt;
+	[C]: in function &#39;xpcall&#39;
+	&#47;usr&#47;share&#47;luajit-2.1.0-beta3&#47;turbo&#47;ioloop.lua:573: in function &lt;&#47;usr&#47;share&#47;luajit-2.1.0-beta3&#47;turbo&#47;ioloop.lua:572&gt;
+▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲</pre>

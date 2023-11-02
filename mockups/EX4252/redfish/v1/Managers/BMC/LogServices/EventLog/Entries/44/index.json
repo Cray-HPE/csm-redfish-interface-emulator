@@ -1,0 +1,21 @@
+{
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/44",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2023-10-09T19:45:36+00:00",
+    "EntryType": "Event",
+    "Id": "44",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0Temperature"
+        }
+    },
+    "Message": "The resource property CPU0 Temperature has corrected errors of type SensorReadError.",
+    "MessageArgs": [
+        "CPU0 Temperature",
+        "SensorReadError"
+    ],
+    "MessageId": "ResourceEvent.ResourceErrorsCorrected",
+    "Name": "Log entry 44",
+    "Severity": "OK"
+}

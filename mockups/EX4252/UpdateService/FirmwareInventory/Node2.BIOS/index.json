@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1696024122\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node2.BIOS",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "Node2.BIOS",
+    "Id": "Node2.BIOS",
+    "Name": "Node2.BIOS",
+    "SoftwareId": "bios.ex4252.*.*",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": true,
+    "Version": "ex4252.bios-1.3.0"
+}

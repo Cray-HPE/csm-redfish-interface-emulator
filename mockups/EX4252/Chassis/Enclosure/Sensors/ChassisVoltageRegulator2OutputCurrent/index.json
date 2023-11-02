@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1698703419\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors/ChassisVoltageRegulator2OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator2OutputCurrent",
+    "Name": "SIVOC CTLR2",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "Chassis",
+        "ReferenceDesignator": "P3"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 15.11,
+    "ReadingTime": "2023-10-30T22:04:59.964026189Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A"
+}

@@ -1,0 +1,25 @@
+{
+    "@Redfish.Copyright": "Copyright 2022 Hewlett Packard Enterprise Development LP",
+    "@odata.etag": "W/\"1698703618\"",
+    "@odata.id": "/redfish/v1/Registries/HPENodeAlarms.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_2_0.MessageRegistry",
+    "Description": "Node update alert messages",
+    "Id": "HPENodeAlarms.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "VRMMismatchFailure": {
+            "Description": "An error occured when trying to identify the config files to the vrm.",
+            "Message": "There were %1 VRM configuration mismatches.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Please contact HPE support for further assistance.",
+            "Severity": "Warning"
+        }
+    },
+    "Name": "HPE Node Update Message Registry",
+    "OwningEntity": "HPE",
+    "RegistryPrefix": "HPENodeAlarms",
+    "RegistryVersion": "1.0.0"
+}

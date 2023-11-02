@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1698703336\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/CPU0VoltageRegulator7OutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "CPU0VoltageRegulator7OutputVoltage",
+    "Name": "CPU0 VDD_12V0_N0C0",
+    "Oem": {
+        "Index": 7,
+        "ParentalContext": "CPU",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U4"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 11.863281,
+    "ReadingTime": "2023-10-30T22:02:50.447969227Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V"
+}
