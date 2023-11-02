@@ -23,6 +23,11 @@ Removed - for now removed features
 Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
+## [1.5.3] - 2023-11-02
+
+### Added
+
+- BootOrder key to Intel mockup
 
 ## [1.5.2] - 2023-10/30
 
