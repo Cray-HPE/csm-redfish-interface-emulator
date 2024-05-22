@@ -205,7 +205,7 @@ def CreateChassis(ident, config, rst_actions):
         resp = config, 200
     except Exception:
         traceback.print_exc()
-        resp = INTERNAL_ERROR
+        resp = simple_error_response('Server encountered an unexpected Error', 500)
     return resp
 
 # ChassisResetActionAPI
@@ -267,7 +267,7 @@ class ChassisResetActionAPI(Resource):
                     resp = simple_error_response('Invalid setting for POST', 400)
         except Exception:
             traceback.print_exc()
-            resp = INTERNAL_ERROR
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
         return resp
 
     # HTTP GET

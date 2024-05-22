@@ -28,7 +28,8 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-FROM arti.dev.cray.com/baseos-docker-master-local/alpine:3.13 AS base
+FROM alpine:3.13
+#FROM arti.dev.cray.com/baseos-docker-master-local/alpine:3.13 AS base
 
 # Insert our emulator extentions
 COPY src /app
@@ -54,10 +55,10 @@ RUN set -ex \
     && pip3 install wheel \
     && pip3 install -r /app/requirements.txt
 
-EXPOSE 5000
+EXPOSE 443
 ENV MOCKUPFOLDER="EX425"
-ENV AUTH_CONFIG=""
-ENV PORT=5000
+ENV AUTH_CONFIG="root:initial0:Administrator"
+ENV PORT=443
 ENV XNAME="x3000c0s0b0"
 ENV MAC_SCHEMA="Mountain"
 WORKDIR /app

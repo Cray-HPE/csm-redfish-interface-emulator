@@ -108,6 +108,7 @@ class Loader:
     def __init__(self, resource_dictionary, config_data, bmcType='Generic'):
         logging.info('Generic init called for type, %s' % bmcType)
         self.BMC_Type = bmcType
+        self.vendor = None
         self.resource_dictionary = resource_dictionary
 
         if 'xname' in config_data:
@@ -125,6 +126,7 @@ class Loader:
         self.randomize()
 
         # Add dynamic resources here. This will override any previously loaded static URL
+        self.init_vendor()
         self.init_power_limit()
         self.init_system_reset()
         self.init_chassis_reset()
@@ -135,6 +137,26 @@ class Loader:
         self.init_session_service()
         self.init_cert_service()
         self.init_manager_network_protocol()
+
+    def init_vendor(self):
+        # Intel
+        # Gigabyte
+        # HPE Cray EX
+        # Proliant iLO
+
+        """ Use the MockupFolder to determin a vendor and have a 
+            consistent means to generate resources
+        ResrouceManager().self.BMC = Loader(self.resource_dictionary, config_data, mockupfolder)
+        self.BMC_Type = mockupfolder
+        """
+        if 'HPECrayXD' in self.BMC_Type:
+            self.vendor = 'hpe_cray_xd'
+        elif 'Cray' in self.BMC_Type and 'EX' in self.BMC_Type:
+            self.vendor = 'cray_ex'
+        elif 'Proliant' in self.BMC_Type:
+            self.vendor = 'ilo'
+        else:
+            self.vendor = 'other'
 
     def init_power_limit(self):
         try:
@@ -186,6 +208,7 @@ class Loader:
             g.api.add_resource(ilo_power.ActionAPI, '/redfish/v1/Chassis/<string:ch_id>/Power/AccPowerService/PowerLimit/Actions/HpeServerAccPowerLimit.ConfigurePowerLimit')
 
     def init_system_reset(self):
+        print("INIT_SYSTEM_RESET", g.staticfolder)
         try:
             systems = self.resource_dictionary.get_resource('Systems')
             if len(systems['Members']) == 0:

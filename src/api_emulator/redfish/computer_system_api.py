@@ -210,7 +210,7 @@ def CreateComputerSystem(ident, config, rst_actions):
         resp = config, 200
     except Exception:
         traceback.print_exc()
-        resp = INTERNAL_ERROR
+        resp = simple_error_response('Server encountered an unexpected Error', 500)
     return resp
 
 # ResetAction_API
@@ -230,10 +230,10 @@ class ResetAction_API(Resource):
 
     def __init__(self, **kwargs):
         self.allow = 'POST'
-    
+
     # HTTP POST
     def post(self, ident):
-        logging.info('ResetAction_API POST called')
+        logging.info(f'ResetAction_API POST called {ident}')
         raw_dict = request.get_json(force=True)
         logging.info(raw_dict)
         try:
@@ -243,7 +243,7 @@ class ResetAction_API(Resource):
                     value = raw_dict['ResetType']
                     if value in members_actions[ident]:
                         state = members[ident]['PowerState']
-                        
+
                         if members_reset_thread[ident] is not None and members_reset_thread[ident].is_alive():
                             # Ignore other power actions if we have a pending thread.
                             logging.info('Thread is running. Ignoring request')
@@ -265,14 +265,16 @@ class ResetAction_API(Resource):
                             logging.info('Starting reset thread')
                             members_reset_thread[ident] = PowerOnWorker(ident)
                             members_reset_thread[ident].start()
-                        resp = members[ident], 200
+                        debug_resp = members[ident], 200
+                        logging.debug(debug_resp)
+                        resp = success_response("No Content", 204)
                     else:
                         resp = simple_error_response('Invalid ResetType', 400)
                 else:
                     resp = simple_error_response('Invalid setting for POST', 400)
         except Exception:
             traceback.print_exc()
-            resp = INTERNAL_ERROR
+            resp = simple_error_response('Server encountered an unexpected Error', 500)
         return resp
 
     # HTTP GET

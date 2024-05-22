@@ -64,7 +64,9 @@ def applyControlPatch(raw_dict, ch_id, ident):
        ('ControlMode' in raw_dict and raw_dict['ControlMode'] != 'Disabled'):
         newSetPoint = control['SetPoint']
         newControlMode = control['ControlMode']
-        resp = control, 200
+        debug_resp = control
+        logging.debug(debug_resp)
+        resp = success_response("No Content", 204)
         for field, value in raw_dict.items():
             if field == 'SetPoint':
                 min = control['SettingRangeMin']
@@ -88,7 +90,7 @@ def applyControlPatch(raw_dict, ch_id, ident):
             else:
                 resp = simple_error_response('Invalid setting %s for %s/Controls/%s' % (field, ch_id, ident), 400)
                 break
-        if resp[1] == 200:
+        if resp[1] == 204:
             control['SetPoint'] = newSetPoint
             control['ControlMode'] = newControlMode
     else:
@@ -262,7 +264,7 @@ class ControlsDeepAPI(Resource):
                     id = member['@odata.id'].replace('/redfish/v1/Chassis/%s/Controls/' % ch_id, '')
                     if id in members[ch_id]:
                         resp = applyControlPatch(member, ch_id, id)
-                        if resp[1] != 200:
+                        if resp[1] != 204:
                             break
                     else:
                         resp = simple_error_response('Invalid control for PATCH, %s' % member['@odata.id'], 400)

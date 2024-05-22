@@ -211,16 +211,25 @@ def main():
 
     argparser = argparse.ArgumentParser(description='CSM Redfish Interface Emulator - Version: ' + __version__)
 
-    argparser.add_argument('-port', type=int, default=port, help='Port to run the emulator on. Port defined by the PORT environment variable (5000 if unset)')
+    argparser.add_argument('-p', '--port', dest='port', type=int, default=port,
+                           help='Port to run the emulator on. Port defined by the PORT environment variable (5000 if unset)')
     if(MODE=='Local'):
         print (' * Redfish endpoint at localhost:{}'.format(port))
 
-    argparser.add_argument('-mockupfolder', type=str, default=mockupfolder, help='Mockup directory to use for the emulators static resources')
+    argparser.add_argument('-m','--mockupfolder', dest='mockupfolder', type=str, default=mockupfolder,
+                           help='Mockup directory to use for the emulators static resources')
 
-    argparser.add_argument('-debug', action='store_true', default=False,
+    argparser.add_argument('--https', dest='HTTPS', type=str, default=HTTPS,
+                           help='Enable|Disable Specifies whether the emulator supports "http" or "https"')
+
+    argparser.add_argument('-d', '--debug', dest='debug', action='store_true', default=False,
                            help='Run the emulator in debug mode. Note that if you'
                                 ' run in debug mode, then the emulator will only'
                                 'be ran locally.')
+    argparser.add_argument('-a','--authconfig', dest='auth_config', type=str, default=auth_config,
+                           help='Setup initial set of authorization accounts. The format is <username>:<password>:<role>. i.e. root:initial0:Administrator')
+
+
     args = argparser.parse_args()
 
     logging.info('Mockup folder')
