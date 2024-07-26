@@ -2,6 +2,7 @@
 **__pycache__**
 *.tar
 *.tar.gz
+*.swp
 
 # Prevent certificates from getting checked in
 *.ca
