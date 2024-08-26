@@ -1,6 +1,6 @@
 # BSD 3-Clause License
 #
-# Copyright 2022-2023 Hewlett Packard Enterprise Development LP
+# Copyright 2022-2024 Hewlett Packard Enterprise Development LP
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -59,7 +59,7 @@ e_config = {}
 s_config = {}
 s_generator = None
 members = {}
-required = {'Destination', 'EventTypes'}
+required = {'Destination'}  # Fields required for POST subscription
 eventTemplates = {}
 id = 1
 
@@ -213,11 +213,13 @@ class SubscriptionCollectionAPI(Resource):
                 return simple_error_response('%s is required' % (field) , 400)
         ident = '%d' % id
         
-        destination = raw_dict['Destination']
-        event_types = raw_dict['EventTypes']
-        for evType in event_types:
-            if evType not in e_config['EventTypesForSubscription']:
-                return 'Invalid EventType %s' % evType, 400
+        destination = raw_dict.get('Destination', '')
+        event_types = raw_dict.get('EventTypes', '')
+        if 'EventTypesForSubscription' in e_config:  # XD224 Paradise does not have this field
+            for evType in event_types:
+                if evType not in e_config['EventTypesForSubscription']:
+                    return 'Invalid EventType %s' % evType, 400
+
         if 'Context' in raw_dict:
             context = raw_dict['Context']
         else:
@@ -305,9 +307,10 @@ class SubscriptionAPI(Resource):
                         return 'Field %s is not patchable' % field, 400
                     else:
                         if field == 'RegistryPrefixes' and value != []:
-                            for evType in value:
-                                if evType not in e_config['EventTypesForSubscription']:
-                                    return 'Invalid EventType %s' % evType, 400
+                            if 'EventTypesForSubscription' in e_config:  # XD224 Paradise does not have this field
+                                for evType in value:
+                                    if evType not in e_config['EventTypesForSubscription']:
+                                        return 'Invalid EventType %s' % evType, 400
                         members[ident][field] = value
                 resp = success_response('PATCH request successful', 200)
         except Exception:

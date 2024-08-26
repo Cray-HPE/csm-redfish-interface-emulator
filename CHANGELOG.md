@@ -23,6 +23,12 @@ Removed - for now removed features
 Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
+## [1.6.0] - 2024-08-23
+
+### Added
+
+- Added support for XD224 Paradise. The mockup is not included.
+
 ## [1.5.3] - 2023-11-02
 
 ### Added
