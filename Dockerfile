@@ -46,12 +46,15 @@ RUN set -ex \
         musl-dev \
         cargo \
         curl \
+    && python3 -m venv /opt/venv \
+    && . /opt/venv/bin/activate \
     && pip3 install --upgrade \
         pip \
     && pip3 install \
         setuptools \
     && pip3 install wheel \
     && pip3 install -r /app/requirements.txt \
+    && deactivate \
     && apk del \
         build-base \
         gcc \
@@ -60,6 +63,9 @@ RUN set -ex \
         libffi-dev \
         musl-dev \
         cargo
+
+# Set the PATH to include the virtual environment
+ENV PATH="/opt/venv/bin:$PATH"
 
 # Insert our emulator extentions
 COPY src /app
