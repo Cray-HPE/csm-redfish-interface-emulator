@@ -23,6 +23,13 @@ Removed - for now removed features
 Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
+
+## [1.7.0] - 2025-03-12
+
+### Security
+
+- Updated image dependencies
+
 ## [1.6.0] - 2024-08-23
 
 ### Added
