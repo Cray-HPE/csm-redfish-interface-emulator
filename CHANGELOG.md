@@ -28,7 +28,8 @@ Security - in case of vulnerabilities
 
 ### Security
 
-- Updated image dependencies
+- Updated image dependencies for security updates
+- Updated Dockerfiles to install python packages via virtual environment due to image update
 
 ## [1.6.0] - 2024-08-23
 
