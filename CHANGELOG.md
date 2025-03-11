@@ -23,6 +23,14 @@ Removed - for now removed features
 Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
+
+## [1.7.0] - 2025-03-11
+
+### Security
+
+- Updated image dependencies for security updates
+- Updated Dockerfiles to install python packages via virtual environment due to image update
+
 ## [1.6.0] - 2024-08-23
 
 ### Added

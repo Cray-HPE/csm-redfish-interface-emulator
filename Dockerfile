@@ -1,6 +1,6 @@
 # BSD 3-Clause License
 #
-# Copyright [2022,2024] Hewlett Packard Enterprise Development LP
+# Copyright [2022,2024-2025] Hewlett Packard Enterprise Development LP
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -28,7 +28,7 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-FROM artifactory.algol60.net/docker.io/library/alpine:3.17 AS base
+FROM artifactory.algol60.net/docker.io/library/alpine:3.21 AS base
 
 COPY src/requirements.txt /app/requirements.txt
 
@@ -46,12 +46,15 @@ RUN set -ex \
         musl-dev \
         cargo \
         curl \
+    && python3 -m venv /opt/venv \
+    && . /opt/venv/bin/activate \
     && pip3 install --upgrade \
         pip \
     && pip3 install \
         setuptools \
     && pip3 install wheel \
     && pip3 install -r /app/requirements.txt \
+    && deactivate \
     && apk del \
         build-base \
         gcc \
@@ -60,6 +63,9 @@ RUN set -ex \
         libffi-dev \
         musl-dev \
         cargo
+
+# Set the PATH to include the virtual environment
+ENV PATH="/opt/venv/bin:$PATH"
 
 # Insert our emulator extentions
 COPY src /app

@@ -1,6 +1,4 @@
 ---
-version: '3.7'
-
 networks:
   hms:
 
@@ -10,7 +8,7 @@ services:
   # 
   vault:
     hostname: vault
-    image: arti.dev.cray.com/third-party-docker-stable-local/vault:1.5.5
+    image: arti.dev.cray.com/third-party-docker-stable-local/vault:1.6.1
     environment:
       - VAULT_DEV_ROOT_TOKEN_ID=hms
       - VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200
@@ -22,7 +20,7 @@ services:
     networks:
       - hms
   vault-kv-enabler:
-    image: artifactory.algol60.net/csm-docker/stable/vault-kv-enabler:1.13.4
+    image: artifactory.algol60.net/csm-docker/stable/vault-kv-enabler:1.25.0
     environment:
       - VAULT_ADDR=http://vault:8200
       - VAULT_TOKEN=hms
@@ -66,7 +64,7 @@ services:
   # hmcollector
   #
   cray-hms-hmcollector:
-    image: artifactory.algol60.net/csm-docker/stable/hms-hmcollector:2.12.4
+    image: artifactory.algol60.net/csm-docker/stable/hms-hmcollector:2.36.0
     command: sh -c "hmcollector -vault_keypath hms-creds -rest_url http://cray-hms-hmcollector"
     environment:
       - LOG_LEVEL=TRACE
@@ -103,7 +101,7 @@ services:
     networks:
       - hms
   cray-smd-init:
-    image: artifactory.algol60.net/csm-docker/stable/cray-smd:1.49.0
+    image: artifactory.algol60.net/csm-docker/stable/cray-smd:2.35.0
     environment:
       - SMD_DBHOST=cray-smd-postgres
       - SMD_DBPORT=5432
@@ -113,7 +111,7 @@ services:
       - hms
     command: /entrypoint.sh smd-init
   cray-smd:
-    image: artifactory.algol60.net/csm-docker/stable/cray-smd:1.49.0
+    image: artifactory.algol60.net/csm-docker/stable/cray-smd:2.35.0
     environment:
       - POSTGRES_HOST=cray-smd-postgres
       - SMD_DBHOST=cray-smd-postgres
@@ -140,7 +138,7 @@ services:
   # CAPMC
   #
   cray-capmc:
-    image: artifactory.algol60.net/csm-docker/stable/cray-capmc:2.1.0
+    image: artifactory.algol60.net/csm-docker/stable/cray-capmc:3.6.0
     environment:
       - HSM_URL=http://cray-smd:27779
       - VAULT_ADDR=http://vault:8200
@@ -162,7 +160,7 @@ services:
   # FAS
   #
   # s3:
-    # image: artifactory.algol60.net/docker.io/library/nginx:1.18.0
+    # image: artifactory.algol60.net/docker.io/library/nginx:1.21.6
     # hostname: s3
     # # volumes:
       # # - ./Images:/usr/share/nginx/html
@@ -171,7 +169,7 @@ services:
     # networks:
       # - hms
   # etcd:
-    # image: artifactory.algol60.net/quay.io/coreos/etcd:v3.4.7
+    # image: artifactory.algol60.net/quay.io/coreos/etcd:v3.5.7
     # environment:
       # - ALLOW_NONE_AUTHENTICATION=yes
       # - ETCD_ADVERTISE_CLIENT_URLS=http://etcd:2379
@@ -182,7 +180,7 @@ services:
     # networks:
       # - hms
   # cray-fas:
-    # image: artifactory.algol60.net/csm-docker/stable/cray-firmware-action:1.19.0
+    # image: artifactory.algol60.net/csm-docker/stable/cray-firmware-action:1.40.0
     # environment:
       # - SMS_SERVER=http://cray-smd:27779
       # - CRAY_VAULT_AUTH_PATH=auth/token/create
@@ -211,7 +209,7 @@ services:
   # Emulator
   #
   emulator-loader:
-    image: artifactory.algol60.net/docker.io/library/golang:1.16-alpine
+    image: artifactory.algol60.net/docker.io/library/golang:1.23-alpine
     command: >
       sh -c "apk add curl && sleep 10 &&
       curl -X POST -d '{\"RedfishEndpoints\":[{
