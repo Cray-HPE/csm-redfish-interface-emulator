@@ -363,6 +363,8 @@ Some dynamic resources such as the EventService generate responses (i.e. Redfish
 - [DL325](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/DL325) (ProLiant DL325 Gen10 Plus)
 - [EX235a](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX235a) (Bard Peak)
 - [EX235n](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX235n) (Grizzly Peak)
+- [EX255A](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX255A) (Parry Peak)
+- [EX254n](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX254n) (Blanca Peak)
 - [EX420](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX420) (Castle)
 - [EX425](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/EX425) (Windom)
 - [Gigabyte](https://github.com/Cray-HPE/csm-redfish-interface-emulator/tree/master/mockups/Gigabyte) (Gigabyte Compute)
