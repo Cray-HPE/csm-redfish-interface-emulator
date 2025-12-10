@@ -1,0 +1,80 @@
+{
+    "@odata.etag": "W/\"1765347231\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/LogServices/DiagnosticLog/Entries/2",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "CPER": {
+        "NotificationType": "09A9D5AC-5204-4214-96E594992E752BCD",
+        "Oem": {
+            "DecodedData": {
+                "Header": {
+                    "Section Count": 4
+                },
+                "Sections": [
+                    {
+                        "Section": {
+                            "IPSignature": "",
+                            "Severity": "Correctable",
+                            "Socket Number": 0
+                        },
+                        "Section Descriptor": {
+                            "FRU Id": "cc4f334a-c563-11eb-8f88-9f7ac76c6f0c",
+                            "Section Severity": "Fatal",
+                            "Section Type": "NVIDIA CPER Error Section"
+                        }
+                    },
+                    {
+                        "Section": {
+                            "IPSignature": "",
+                            "Severity": "Correctable",
+                            "Socket Number": 0
+                        },
+                        "Section Descriptor": {
+                            "FRU Id": "cc4f334a-c563-11eb-8f88-9f7ac76c6f0c",
+                            "Section Severity": "Fatal",
+                            "Section Type": "NVIDIA CPER Error Section"
+                        }
+                    },
+                    {
+                        "Section": {
+                            "IPSignature": "",
+                            "Severity": "Correctable",
+                            "Socket Number": 0
+                        },
+                        "Section Descriptor": {
+                            "FRU Id": "cc4f334a-c563-11eb-8f88-9f7ac76c6f0c",
+                            "Section Severity": "Fatal",
+                            "Section Type": "NVIDIA CPER Error Section"
+                        }
+                    },
+                    {
+                        "Section": {
+                            "IPSignature": "",
+                            "Severity": "Correctable",
+                            "Socket Number": 0
+                        },
+                        "Section Descriptor": {
+                            "FRU Id": "cc4f334a-0000-0000-4101-00008424adfb",
+                            "Section Severity": "Recoverable",
+                            "Section Type": "NVIDIA CPER Error Section"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "Created": "2025-11-18T14:29:10+00:00",
+    "DiagnosticData": "AQCgHkNQRVIBAf////8EAAEAAAACAAAAoB4AAEcTGAAJEiUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB45AGpcxHvEZaoX6a+9e6kZqRhPUCrmkCmmPNi1GSzjwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAEAAEAHAAAAAAEAAAAAAPJEUm0SJ+wRvqfLP9uVx4ZKM0/MY8XrEY+In3rHbG8MAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AgAAEAHAAAAAAEAAAAAAPJEUm0SJ+wRvqfLP9uVx4ZKM0/MY8XrEY+In3rHbG8MAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAAAEAHAAAAAAEAAAAAAPJEUm0SJ+wRvqfLP9uVx4ZKM0/MY8XrEY+In3rHbG8MAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYBcAAEAHAAAAAAEAAAAAAPJEUm0SJ+wRvqfLP9uVx4ZKM0/M",
+    "DiagnosticDataType": "CPER",
+    "EntryType": "Event",
+    "EventTimestamp": "2025-11-18T14:29:10+00:00",
+    "Id": "2",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Systems/Node0"
+        }
+    },
+    "Message": "A informational error was detected and a crashdump (CPER) file was created. For more details please see associated 'DiagnosticData'.",
+    "MessageId": "HPENodeAlarms.InformationalSystemErrorWithDumpFileDetected",
+    "Name": "Log entry 2",
+    "Severity": "OK"
+}

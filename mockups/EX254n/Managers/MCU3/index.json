@@ -1,0 +1,23 @@
+{
+    "@odata.etag": "W/\"1762969445\"",
+    "@odata.id": "/redfish/v1/Managers/MCU3",
+    "@odata.type": "#Manager.v1_3_2.Manager",
+    "Description": "Microcontroller Unit for Mezz3",
+    "Id": "MCU3",
+    "Links": {
+        "ManagerInChassis": {
+            "@odata.id": "/redfish/v1/Chassis/Mezz3"
+        }
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Managers/MCU3/LogServices"
+    },
+    "ManagerType": "AuxiliaryController",
+    "Name": "MCU3",
+    "NetworkProtocol": {
+        "@odata.id": "/redfish/v1/Managers/MCU3/NetworkProtocol"
+    },
+    "Status": {
+        "Health": "OK"
+    }
+}

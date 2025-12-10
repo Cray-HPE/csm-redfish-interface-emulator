@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1765347231\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz3/Sensors/Board3ASIC0Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Board3ASIC0Temperature",
+    "Name": "Cassini 0 Temperature",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Board",
+        "ParentalIndex": 3
+    },
+    "PhysicalContext": "ASIC",
+    "Reading": 44,
+    "ReadingTime": "2025-12-10T18:27:48.471417713Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 85
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 115
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 125
+        }
+    }
+}

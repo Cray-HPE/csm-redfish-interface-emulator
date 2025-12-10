@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1762969445\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Memory/Memory2",
+    "@odata.type": "#Memory.v1_5_0.Memory",
+    "BusWidthBits": 576,
+    "CapacityMiB": 122880,
+    "DataWidthBits": 512,
+    "Id": "Memory2",
+    "Manufacturer": "NVIDIA",
+    "MemoryDeviceType": "LPDDR5_SDRAM",
+    "MemoryType": "DRAM",
+    "Name": "LP5x_2",
+    "PartNumber": "N/A",
+    "SerialNumber": "9223381251080365203",
+    "Status": {
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1765347231\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator4Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator4Temperature",
+    "Name": "CG1 Module 3 ECB",
+    "Oem": {
+        "Index": 4,
+        "ParentalContext": "Chassis",
+        "ReferenceDesignator": "U84"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 42.7,
+    "ReadingTime": "2025-12-10T18:27:23.081666132Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 140
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 145
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 150
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "@odata.etag": "W/\"1765347231\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/BootOptions/3",
+    "@odata.type": "#BootOption.v1_0_0.BootOption",
+    "Alias": "None",
+    "BootOptionEnabled": true,
+    "BootOptionReference": "ME0-HTTP-IP4",
+    "DisplayName": "Management Ethernet0 HTTP IPv4",
+    "Id": "3",
+    "Name": "ME0-HTTP-IP4",
+    "UefiDevicePath": "VenHw(1E5A432C-0466-4D31-B009-D4D9239271D3)/MemoryMapped(0xB,0x14120000,0x14121FFF)/PciRoot(0x5)/Pci(0x0,0x0)/Pci(0x0,0x0)/MAC(0040A696D63A,0x1)/IPv4(0.0.0.0,0x0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0)/Uri()"
+}

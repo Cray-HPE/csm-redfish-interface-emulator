@@ -1,0 +1,28 @@
+{
+    "@odata.etag": "W/\"1762969445\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Processors/CPU2",
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "Id": "CPU2",
+    "InstructionSet": "ARM-A64",
+    "Manufacturer": "NVIDIA",
+    "MaxSpeedMHz": 0,
+    "MaxTDPWatts": 300,
+    "Model": "Grace A02",
+    "Name": "Processor",
+    "ProcessorArchitecture": "ARM",
+    "ProcessorId": {
+        "EffectiveFamily": "ARMv8",
+        "EffectiveModel": "0x00",
+        "Step": "0x0",
+        "VendorId": "NVIDIA"
+    },
+    "ProcessorType": "CPU",
+    "SerialNumber": "0x00000001780991C71400000001018180",
+    "Socket": "CPU2",
+    "Status": {
+        "Health": "OK"
+    },
+    "TDPWatts": 0,
+    "TotalCores": 72,
+    "TotalThreads": 72
+}

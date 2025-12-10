@@ -1,0 +1,27 @@
+{
+    "@odata.etag": "W/\"1762969445\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Controls/Accelerator1PowerLimit",
+    "@odata.type": "#Control.v1_0_0.Control",
+    "ControlDelaySeconds": 6,
+    "ControlMode": "Disabled",
+    "ControlType": "Power",
+    "Id": "Accelerator1PowerLimit",
+    "Name": "Accelerator1 Power Limit",
+    "Oem": {
+        "Hpe": {
+            "LimitException": "LogEventOnly",
+            "PowerLimitFactor": "1.000000"
+        }
+    },
+    "PhysicalContext": "Accelerator",
+    "Sensor": {
+        "DataSourceUri": "/redfish/v1/Chassis/Node0/Sensors/GPU1Power",
+        "Reading": 84
+    },
+    "SetPoint": 0,
+    "SettingRangeMax": 900,
+    "SettingRangeMin": 100,
+    "Status": {
+        "Health": "OK"
+    }
+}
