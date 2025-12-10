@@ -1,0 +1,20 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18TotalInputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "ElectricalContext": "Total",
+    "Id": "Accelerator2VoltageRegulator18TotalInputPower",
+    "Name": "VDDCR_VDD2",
+    "Oem": {
+        "Index": 18,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 2,
+        "ReferenceDesignator": "U10069"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 756,
+    "ReadingTime": "2025-12-10T06:11:44.275939079Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

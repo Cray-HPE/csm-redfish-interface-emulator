@@ -1,0 +1,28 @@
+{
+    "@odata.etag": "W/\"1762969329\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Processors/CPU1",
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "Id": "CPU1",
+    "InstructionSet": "x86_64",
+    "Manufacturer": "Advanced Micro Devices, Inc.",
+    "MaxSpeedMHz": 3700,
+    "MaxTDPWatts": 0,
+    "Model": "AMD Instinct MI300A Accelerator",
+    "Name": "Processor",
+    "ProcessorArchitecture": "x86",
+    "ProcessorId": {
+        "EffectiveFamily": "0x19",
+        "EffectiveModel": "0x90",
+        "Step": "0x1",
+        "VendorId": "AuthenticAMD"
+    },
+    "ProcessorType": "CPU",
+    "SerialNumber": "44@CF9YW50005",
+    "Socket": "CPU 1",
+    "Status": {
+        "Health": "OK"
+    },
+    "TDPWatts": 550,
+    "TotalCores": 24,
+    "TotalThreads": 48
+}

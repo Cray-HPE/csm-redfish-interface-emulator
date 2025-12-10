@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19MinimumOutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "ElectricalContext": "Minimum",
+    "Id": "Accelerator0VoltageRegulator19MinimumOutputVoltage",
+    "Name": "VDD_1V8_S5",
+    "Oem": {
+        "Index": 19,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U2069"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 1.7875,
+    "ReadingTime": "2025-12-10T06:11:44.281194040Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 0.55
+        }
+    }
+}

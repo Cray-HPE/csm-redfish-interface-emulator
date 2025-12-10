@@ -1,0 +1,32 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator8Temperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator1VoltageRegulator8Temperature",
+    "Name": "VDD_12V0_A1",
+    "Oem": {
+        "Index": 8,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U6000"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 33,
+    "ReadingTime": "2025-12-10T06:11:44.267665410Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 100
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 115
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 130
+        }
+    }
+}

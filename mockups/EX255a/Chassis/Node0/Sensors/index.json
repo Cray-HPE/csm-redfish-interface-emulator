@@ -1,0 +1,2444 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors",
+    "@odata.type": "#SensorCollection.SensorCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0MemoryTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0InputEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator10TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator11OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator12TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator13OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator14TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator15OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator16TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator17OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator18TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator19OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator2TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator4TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator5OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator6TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator7OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator8InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator8OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator8OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator8Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1MemoryTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0InputEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator0TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator10TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator11OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator12TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator13OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator14TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator15OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator16TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator17OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator18TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator19OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator2TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator6TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator7OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator8InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator8OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator8OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator8Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2MemoryTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0InputEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator0TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator10TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator11OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator12TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator13OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator14TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator15OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator16TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator17OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator18TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator4TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator5OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator6TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator7OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator8InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator8OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator8OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator8Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3MemoryTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3ReportedPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0InputEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator0TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator10TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator12TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator13OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator14TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator15OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator16TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator17OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator18TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator3OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator4TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator5OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator6TotalInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7MaximumOutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7OutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator7OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator8InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator8OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator8OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator8Temperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisInputEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0AverageOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0ExternalOutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0InputEnergy"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0InputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0InternalOutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0MaximumInputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0MaximumInputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0MaximumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0MaximumOutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0MaximumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0MinimumInputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0MinimumOutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0MinimumOutputTemperature"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0MinimumOutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator1InputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator1OutputCurrent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator1OutputPower"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator1OutputVoltage"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator1Temperature"
+        }
+    ],
+    "Members@odata.count": 812
+}

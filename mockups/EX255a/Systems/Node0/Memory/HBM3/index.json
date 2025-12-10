@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1762969329\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Memory/HBM3",
+    "@odata.type": "#Memory.v1_5_0.Memory",
+    "BaseModuleType": "Other",
+    "BusWidthBits": 1152,
+    "CapacityMiB": 131072,
+    "DataWidthBits": 1024,
+    "ErrorCorrection": "Multi-bit ECC",
+    "Id": "HBM3",
+    "Manufacturer": "Unknown",
+    "MemoryDeviceType": "HBM3",
+    "MemoryLocation": {
+        "Slot": 0,
+        "Socket": 3
+    },
+    "MemoryType": "DRAM",
+    "Name": "HBM 24",
+    "OperatingSpeedMhz": 2600,
+    "PartNumber": "1",
+    "RankCount": 1,
+    "SerialNumber": "60007CAC8000000",
+    "Status": {
+        "State": "Enabled"
+    }
+}

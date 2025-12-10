@@ -1,0 +1,22 @@
+{
+    "@odata.etag": "W/\"1762969329\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Processors",
+    "@odata.type": "#ProcessorCollection.ProcessorCollection",
+    "Description": "Collection of processors",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Processors/CPU2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Processors/CPU0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Processors/CPU3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Processors/CPU1"
+        }
+    ],
+    "Members@odata.count": 4,
+    "Name": "Processors Collection"
+}

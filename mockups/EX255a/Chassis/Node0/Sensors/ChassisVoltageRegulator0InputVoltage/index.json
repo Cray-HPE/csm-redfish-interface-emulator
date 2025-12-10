@@ -1,0 +1,36 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator0InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator0InputVoltage",
+    "Name": "48V ECB",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Chassis",
+        "ReferenceDesignator": "U112"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 47.7756,
+    "ReadingTime": "2025-12-10T06:11:44.240458396Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 38.38
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 33
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 57.59
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 64.34
+        }
+    }
+}

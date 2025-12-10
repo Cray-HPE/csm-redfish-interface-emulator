@@ -1,0 +1,20 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator4MaximumOutputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "ElectricalContext": "Maximum",
+    "Id": "Accelerator1VoltageRegulator4MaximumOutputPower",
+    "Name": "VDDCR_VDD3",
+    "Oem": {
+        "Index": 4,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U6070"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 2,
+    "ReadingTime": "2025-12-10T06:11:44.267665410Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

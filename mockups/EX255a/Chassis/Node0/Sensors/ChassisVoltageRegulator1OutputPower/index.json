@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator1OutputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator1OutputPower",
+    "Name": "SIVOC",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "Chassis"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 450.713,
+    "ReadingTime": "2025-12-10T06:11:44.240458396Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

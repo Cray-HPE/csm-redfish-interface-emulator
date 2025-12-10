@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator2InputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator2VoltageRegulator2InputPower",
+    "Name": "VDD_0V75_HBM_B",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 2,
+        "ReferenceDesignator": "U10075"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 754,
+    "ReadingTime": "2025-12-10T06:11:44.278632598Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

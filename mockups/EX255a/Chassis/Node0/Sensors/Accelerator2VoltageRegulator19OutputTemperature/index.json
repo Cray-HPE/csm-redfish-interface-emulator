@@ -1,0 +1,29 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator19OutputTemperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator2VoltageRegulator19OutputTemperature",
+    "Name": "VDD_1V8_S5",
+    "Oem": {
+        "Index": 19,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 2,
+        "ReferenceDesignator": "U10069"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 36,
+    "ReadingTime": "2025-12-10T06:11:44.275939079Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 110
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 130
+        }
+    }
+}

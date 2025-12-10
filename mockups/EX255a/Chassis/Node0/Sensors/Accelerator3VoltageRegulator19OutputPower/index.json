@@ -1,0 +1,19 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator19OutputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator3VoltageRegulator19OutputPower",
+    "Name": "VDD_1V8_S5",
+    "Oem": {
+        "Index": 19,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 3,
+        "ReferenceDesignator": "U14069"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 0,
+    "ReadingTime": "2025-12-10T06:11:44.278860751Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}
