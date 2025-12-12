@@ -1,0 +1,45 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator2VoltageRegulator8InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator2VoltageRegulator8InputVoltage",
+    "Name": "VDD_12V0_A2",
+    "Oem": {
+        "Index": 8,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 2,
+        "ReferenceDesignator": "U10000"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 47.75,
+    "ReadingTime": "2025-12-10T06:11:44.278632598Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 40
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 38
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 35
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 60
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 63
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 68
+        }
+    }
+}

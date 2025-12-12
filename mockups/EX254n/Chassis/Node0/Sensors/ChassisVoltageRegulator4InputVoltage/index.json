@@ -1,0 +1,44 @@
+{
+    "@odata.etag": "W/\"1765347231\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator4InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator4InputVoltage",
+    "Name": "CG1 Module 3 ECB",
+    "Oem": {
+        "Index": 4,
+        "ParentalContext": "Chassis",
+        "ReferenceDesignator": "U84"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 47.411,
+    "ReadingTime": "2025-12-10T18:27:23.088269112Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 42
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 40
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 38.5
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 56
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 58
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 59.5
+        }
+    }
+}

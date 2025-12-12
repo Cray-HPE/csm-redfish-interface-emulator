@@ -1,0 +1,45 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator8OutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator1VoltageRegulator8OutputVoltage",
+    "Name": "VDD_12V0_A1",
+    "Oem": {
+        "Index": 8,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U6000"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 11.8789,
+    "ReadingTime": "2025-12-10T06:11:44.267665410Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCaution": {
+            "Activation": "Decreasing",
+            "Reading": 9
+        },
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 8.5
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 8
+        },
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 14
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 15
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 17
+        }
+    }
+}

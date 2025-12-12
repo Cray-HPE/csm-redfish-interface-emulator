@@ -1,0 +1,22 @@
+{
+    "@odata.etag": "W/\"1762969445\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Memory",
+    "@odata.type": "#MemoryCollection.MemoryCollection",
+    "Description": "Collection of Memories for this system",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Memory/Memory2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Memory/Memory3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Memory/Memory0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/Node0/Memory/Memory1"
+        }
+    ],
+    "Members@odata.count": 4,
+    "Name": "Memory Collection"
+}

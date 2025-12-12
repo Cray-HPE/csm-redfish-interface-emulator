@@ -1,0 +1,53 @@
+{
+    "@Redfish.Copyright": "Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Registries/HPENodeAlarms.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_2_0.MessageRegistry",
+    "Description": "Node update alert messages",
+    "Id": "HPENodeAlarms.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "CorrectedSystemErrorWithDumpFileDetected": {
+            "Description": "This message indicates a node corrected error was detected on a given processing element and all available diagnostic data was encapsulated as CPER-formatted base64-encoded text in the 'DiagnosticData' field that is attached to the Event or LogEntry.",
+            "Message": "A corrected error was detected and a crashdump (CPER) file was created. For more details please see associated 'DiagnosticData'.",
+            "NumberOfArgs": 0,
+            "Resolution": "Decode, then analyze the provided crashdump file to determine a root cause",
+            "Severity": "OK"
+        },
+        "FatalSystemErrorWithDumpFileDetected": {
+            "Description": "This message indicates a node-fatal error was detected on a given processing element and all available diagnostic data was encapsulated as CPER-formatted base64-encoded text in the 'DiagnosticData' field that is attached to the Event or LogEntry.",
+            "Message": "A fatal error was detected and a crashdump (CPER) file was created. For more details please see associated 'DiagnosticData'.",
+            "NumberOfArgs": 0,
+            "Resolution": "Decode, then analyze the provided crashdump file to determine a root cause",
+            "Severity": "Critical"
+        },
+        "InformationalSystemErrorWithDumpFileDetected": {
+            "Description": "This message indicates a node informational error was detected on a given processing element and all available diagnostic data was encapsulated as CPER-formatted base64-encoded text in the 'DiagnosticData' field that is attached to the Event or LogEntry.",
+            "Message": "A informational error was detected and a crashdump (CPER) file was created. For more details please see associated 'DiagnosticData'.",
+            "NumberOfArgs": 0,
+            "Resolution": "Decode, then analyze the provided crashdump file to determine a root cause",
+            "Severity": "OK"
+        },
+        "NonFatalSystemErrorWithDumpFileDetected": {
+            "Description": "This message indicates a node non-fatal error was detected on a given processing element and all available diagnostic data was encapsulated as CPER-formatted base64-encoded text in the 'DiagnosticData' field that is attached to the Event or LogEntry.",
+            "Message": "A non-fatal error was detected and a crashdump (CPER) file was created. For more details please see associated 'DiagnosticData'.",
+            "NumberOfArgs": 0,
+            "Resolution": "Decode, then analyze the provided crashdump file to determine a root cause",
+            "Severity": "Warning"
+        },
+        "VRMMismatchFailure": {
+            "Description": "An error occured when trying to identify the config files to the vrm.",
+            "Message": "There were %1 VRM configuration mismatches.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "Please contact HPE support for further assistance.",
+            "Severity": "Warning"
+        }
+    },
+    "Name": "HPE Node Update Message Registry",
+    "OwningEntity": "HPE",
+    "RegistryPrefix": "HPENodeAlarms",
+    "RegistryVersion": "1.0.0"
+}

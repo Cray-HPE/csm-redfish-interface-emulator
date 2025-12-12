@@ -1,0 +1,46 @@
+{
+    "@odata.etag": "W/\"1762970193\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol",
+    "@odata.type": "#ManagerNetworkProtocol.v1_2_0.ManagerNetworkProtocol",
+    "Description": "Network Protocol Details",
+    "Id": "NetworkProtocol",
+    "NTP": {
+        "NTPServers": [
+            "10.254.1.6"
+        ],
+        "Port": 123,
+        "ProtocolEnabled": true
+    },
+    "Name": "Manager Network Protocol",
+    "Oem": {
+        "HTTPS": {
+            "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol/HTTPS"
+        },
+        "Resolv": {
+            "NameServers": [],
+            "ProtocolEnabled": false,
+            "SearchList": []
+        },
+        "SSHAdmin": {
+            "AuthorizedKeys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHinfkBtKbhGBv/PcZpbgZTS5Rvjy7Cz/S6Pj3M3AcPiuGc+BMzgNGBtCoq4f9CuVzG7k2OPeJwVpc0tolZxTQ05erG7T8l+/Cp0x5pxylCe62JE46HEG5Zc/8Bl5l1Fae1nvXQatHiu3hgMZPK78mXuasBimL7NEUEREjam0+O0pZ12xJx2khtQqNPijlgwDx1RFuAffolTagnPu26KxGOtnDIkaZksoOoRhMwpuxuqB+nDUDzlEPoRdc9dAxlNRomFdzOR+H1f1gGCEMMoiw78Qt0sNmQ5ic3m7un9hYlqJmxa13JyWXgpCPgKaZP51RlZhcc6WYg+Wdufd2ynFy/AflPOZFKHWs5KqHamALzqaFqiA3KNPCQtHHD3j4VFdzawZZCGUOzUMxVpq8h/B3tSQGtvnPne7mAgImarD96BzZYzqCLMj4DpPfgdzlFCok2wpz/MM2xnSmmuTZSgqqBEs1p2VbD8sxOXivlwT8QAWIbBL8IOdkQSnPBK0Zlec= root@tyr-pit"
+        },
+        "SSHConsole": {
+            "AuthorizedKeys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNu9hDVmbFigacHOw+A/nGrpsntfWHRxQxOKEX7JS7jvpHxjJrc8OodR2CraWof9qYXtCtCvEwSzMo5DaO7Fs5KyTPIuOkfOWEg5dOU+VvHD1rtK+OFWxfwPF8rb5hq7jHeXK7xRI3ygQw4GWgqxp9jhGVJtBI3uCq0G27L9dhDsrvqqTTCiGGX4An6tes8o9Z+GllQd5HNWg7p5lfyjIlv0+icfBktLnqoq9A6k/q2KZ1xyusXXhzXIUfH7n7S+Z/ARm0YOoOvLUgkS4PBHlA0idtoRNsOO1NH59ZkcZg8xksunYVQXzpTWe9UdnTKLg4r4aLQD0zaAOne6pdvgdJ\n"
+        },
+        "Syslog": {
+            "Port": 514,
+            "ProtocolEnabled": true,
+            "SyslogServers": [
+                "10.94.100.72"
+            ],
+            "Transport": "udp"
+        }
+    },
+    "SSH": {
+        "Port": 22,
+        "ProtocolEnabled": true
+    },
+    "Status": {
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "@odata.etag": "W/\"1762969329\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "ChassisType": "Blade",
+    "Controls": {
+        "@odata.id": "/redfish/v1/Chassis/Node0/Controls"
+    },
+    "Id": "Node0",
+    "Manufacturer": "HPE",
+    "Name": "Node0",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Node0/NetworkAdapters"
+    },
+    "PowerSubsystem": {
+        "@odata.id": "/redfish/v1/Chassis/Node0/PowerSubsystem"
+    },
+    "Sensors": {
+        "@odata.id": "/redfish/v1/Chassis/Node0/Sensors"
+    },
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

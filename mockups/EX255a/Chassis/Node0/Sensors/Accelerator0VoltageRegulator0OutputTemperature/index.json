@@ -1,0 +1,29 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator0VoltageRegulator0OutputTemperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator0VoltageRegulator0OutputTemperature",
+    "Name": "VDDCR_VDD0",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 0,
+        "ReferenceDesignator": "U2067"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 27,
+    "ReadingTime": "2025-12-10T06:11:44.281500431Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 110
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 130
+        }
+    }
+}

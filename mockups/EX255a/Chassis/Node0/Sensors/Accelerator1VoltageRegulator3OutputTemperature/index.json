@@ -1,0 +1,29 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator3OutputTemperature",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator1VoltageRegulator3OutputTemperature",
+    "Name": "VDDIO_0V4_HBM_B",
+    "Oem": {
+        "Index": 3,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U6075"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 32,
+    "ReadingTime": "2025-12-10T06:11:44.267665410Z",
+    "ReadingType": "Temperature",
+    "ReadingUnits": "Cel",
+    "Thresholds": {
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 110
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 140
+        }
+    }
+}

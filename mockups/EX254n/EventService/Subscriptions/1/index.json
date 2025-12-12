@@ -1,0 +1,9 @@
+{
+    "@odata.etag": "W/\"1762969445\"",
+    "@odata.id": "/redfish/v1/EventService/Subscriptions/1",
+    "@odata.type": "#EventDestination.v1_6_0.EventDestination",
+    "Context": "x9000c3s1b1",
+    "Destination": "http://10.94.100.71/x9000c3s1b1",
+    "Id": "1",
+    "Protocol": "Redfish"
+}

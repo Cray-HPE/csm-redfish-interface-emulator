@@ -1,0 +1,26 @@
+{
+    "@odata.etag": "W/\"1762969329\"",
+    "@odata.id": "/redfish/v1/Chassis/Enclosure",
+    "@odata.type": "#Chassis.v1_5_1.Chassis",
+    "ChassisType": "Enclosure",
+    "Description": "ParryPeakNC",
+    "Id": "Enclosure",
+    "Manufacturer": "HPE",
+    "Model": "ParryPeakNC",
+    "Name": "Enclosure",
+    "Oem": {
+        "Alarms": {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure/Oem/Alarms"
+        },
+        "TriggeredAlarms": []
+    },
+    "PartNumber": "P50350-006.A",
+    "Sensors": {
+        "@odata.id": "/redfish/v1/Chassis/Enclosure/Sensors"
+    },
+    "SerialNumber": "LV23350041",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

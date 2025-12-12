@@ -1,0 +1,29 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator11OutputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator3VoltageRegulator11OutputVoltage",
+    "Name": "VDD_1V8_S0",
+    "Oem": {
+        "Index": 11,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 3,
+        "ReferenceDesignator": "U14068"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 1.80469,
+    "ReadingTime": "2025-12-10T06:11:44.278860751Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 0.5
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 2.3
+        }
+    }
+}

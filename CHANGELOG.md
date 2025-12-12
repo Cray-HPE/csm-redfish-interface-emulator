@@ -24,6 +24,13 @@ Fixed - for any bug fixes
 Security - in case of vulnerabilities
 -->
 
+## [1.8.0] - 2025-12-11
+
+### Added
+
+- Added mockup for Parry Peak (EX255a)
+- Added mockup for Blanca Peak (EX254n)
+
 ## [1.7.0] - 2025-03-11
 
 ### Security

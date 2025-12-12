@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz2/Sensors/Board2VoltageRegulator0Current",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Board2VoltageRegulator0Current",
+    "Name": "0.85V S0 Current",
+    "Oem": {
+        "Index": 0,
+        "ParentalContext": "Board",
+        "ParentalIndex": 2
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "Reading": 15.6,
+    "ReadingTime": "2025-12-10T06:11:49.631597213Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 51
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 54
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 64
+        }
+    }
+}

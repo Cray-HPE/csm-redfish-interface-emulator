@@ -1,0 +1,192 @@
+{
+    "@Redfish.Copyright": "Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Registries/HPEStuckFlowMonitor.1.0.0.json",
+    "@odata.type": "#MessageRegistry.v1_2_0.MessageRegistry",
+    "Description": "Stuck Flow Monitor alert messages",
+    "Id": "HPEStuckFlowMonitor.1.0.0",
+    "Language": "en",
+    "Messages": {
+        "PointOfFailureBadVersion": {
+            "Description": "Indicates a stuck flow could not be traced further due to incompatible Stuck Flow Monitor versions on either ends of a specific link.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Output Flow Channel Table entry (id=%3), but could not follow further, because remote SFM service version is incompatible with local version.",
+            "NumberOfArgs": 3,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Verify all switches are running the same firmware version.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureCleared": {
+            "Description": "Indicates a stuck flow at a previously reported point of failure is no longer stuck.",
+            "Message": "(%1): Flow is no longer stuck.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "PointOfFailureDeviceError": {
+            "Description": "Indicates a stuck flow could not be traced further due to a device error when searching a specific flow channel table.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Flow Channel Table entry (id=%3), but could not follow further, because a device error occurred while searching the port %4 Flow Channel Table. Error message: %5",
+            "NumberOfArgs": 5,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "This may be a transient error. If it persists, restart the Stuck Flow Monitor service. If the problem returns, it may indicate a hardware failure.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureEgressEdge": {
+            "Description": "Indicates a stuck flow was traced to a specific egress edge port.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Input Flow Channel Table entry (id=%3) that points to edge port %4.",
+            "NumberOfArgs": 4,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Check the edge link and link partner logs for errors. Verify switch and link partner configuration is correct. Bring the link down and back up.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureFabricLink": {
+            "Description": "Indicates a stuck flow was traced to a specific fabric link or the ports on either end of the link.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Output Flow Channel Table entry (id=%3). No matching timed out entry was found in the link partner port %4 Input Flow Channel Table.",
+            "NumberOfArgs": 4,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Check for high link error rate. Check both link partner switch logs for errors. Verify configuration is correct for both link partner switches. Bring the link down and back up.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureFollowed": {
+            "Description": "Indicates a stuck flow at a previously reported point of failure has been traced further downstream.",
+            "Message": "(%1): Stuck flow has been followed further downstream from previously reported point of failure.",
+            "NumberOfArgs": 1,
+            "ParamTypes": [
+                "string"
+            ],
+            "Resolution": "None",
+            "Severity": "OK"
+        },
+        "PointOfFailureIngressEdge": {
+            "Description": "Indicates a stuck flow was traced to a specific ingress edge port.",
+            "Message": "(%1): Followed a stuck flow from a port %2 Edge Flow Channel Table entry (id=%3) to the Input Flow Channel Table, where no matching timed out entry was found.",
+            "NumberOfArgs": 3,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Check the switch log for errors. Verify switch configuration is correct. Attempt to bring the ingress link down and back up. If that fails, power cycle the switch ASIC.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureLPSendFail": {
+            "Description": "Indicates a stuck flow could not be traced further due to the Stuck Flow Monitor being unable to send a message to its peer over a specific link.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Output Flow Channel Table entry (id=%3), but could not follow further, because communication with remote SFM service failed or timed out.",
+            "NumberOfArgs": 3,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "If the link partner switch controller is rebooting, this is a transient error that can be ignored. Once rebooted, the service will try again to follow the flow. If the link partner switch controller is not rebooting, verify that the Stuck Flow Monitor service is running on the link partner. Check logs from both switches for Stuck Flow Monitor errors. If all else fails, restart the service on both switches.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureLinkDown": {
+            "Description": "Indicates a stuck flow could not be traced further due to aspecific link being down.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Output Flow Channel Table entry (id=%3), but could not follow further, because the link is down.",
+            "NumberOfArgs": 3,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "This may be a transient condition triggered by the link going down immediately after the Stuck Flow Monitor searched the Output Flow Channel Table, before it was able to communicate with the link partner. If this condition persists, check the switch log for errors.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureSearchDeviceError": {
+            "Description": "Indicates an intial stuck flow search failed, because a device error occurred while searching a specific flow channel table.",
+            "Message": "An initial search of port %1 Flow Channel Table failed, because a device error occurred. Error message: %2",
+            "NumberOfArgs": 2,
+            "ParamTypes": [
+                "string",
+                "string"
+            ],
+            "Resolution": "This may be a transient error. If it persists, restart the Stuck Flow Monitor service. If the problem returns, it may indicate a hardware failure.",
+            "Severity": "OK"
+        },
+        "PointOfFailureSwitchMultiOutPort": {
+            "Description": "Indicates a stuck flow was traced to an indeterminate number of out ports in a specific switch.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Input Flow Channel Table %3 entry (id=%4). All fabric port Output Flow Channel Tables were searched, and no matching timed out entries were found.",
+            "NumberOfArgs": 4,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Check the switch logs for errors. Verify switch configuration is correct. If the IFCT entry is unordered, check for errors and verify configuration of every edge port link partner. If no downstream problem can be found, attempt to bring the Input Flow Channel Table port\u2019s link down and back up. If that fails, power cycle the switch ASIC.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureSwitchSingleOutPort": {
+            "Description": "Indicates a stuck flow was traced to a specific switch out port.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Input Flow Channel Table entry (id=%3) that points to fabric port %4 Output Flow Channel Table, where no matching timed out entry was found.",
+            "NumberOfArgs": 4,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Check the switch logs for errors. Verify switch configuration is correct. Bring the Output Flow Channel Table port\u2019s link down and back up. If the problem persists, attempt to bring the Input Flow Channel Table port\u2019s link down and back up. If that fails, power cycle the switch ASIC.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureTrackingInterrupted": {
+            "Description": "Indicates that a Stuck Flow Monitor service restarted and lost its state of stuck flows tracked to its local switch.",
+            "Message": "All point of failure tracking for this switch lost due to SFM service restart.",
+            "NumberOfArgs": 0,
+            "Resolution": "Consider all of this switch\u2019s previously reported points of failure as having been cleared. Any that still exist will be rediscovered shortly, and new alerts will be generated to report them.",
+            "Severity": "Warning"
+        },
+        "PointOfFailureUnconfiguredPort": {
+            "Description": "Indicates a stuck flow was traced to a specific unconfigured port.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Input Flow Channel Table entry (id=%3) that points to unconfigured port %4.",
+            "NumberOfArgs": 4,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Check the switch log for errors. Verify switch configuration is correct. Attempt to bring the Input Flow Channel Table port\u2019s link down and back up.",
+            "Severity": "Critical"
+        },
+        "PointOfFailureUnconnected": {
+            "Description": "Indicates a stuck flow could not be traced further due to the Stuck Flow Monitor being unable to connect to its peer over a specific link.",
+            "Message": "(%1): Followed a stuck flow to a port %2 Output Flow Channel Table entry (id=%3), but could not follow further, because connection could not be established with remote SFM service.",
+            "NumberOfArgs": 3,
+            "ParamTypes": [
+                "string",
+                "string",
+                "string"
+            ],
+            "Resolution": "Verify that the Stuck Flow Monitor service is running on the link partner. Check logs from both switches for Stuck Flow Monitor errors. If all else fails, restart the service on both switches.",
+            "Severity": "Critical"
+        }
+    },
+    "Name": "HPE Stuck Flow Monitor Message Registry",
+    "OwningEntity": "HPE",
+    "RegistryPrefix": "HPEStuckFlowMonitor",
+    "RegistryVersion": "1.0.0"
+}

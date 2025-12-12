@@ -1,0 +1,17 @@
+{
+    "@odata.etag": "W/\"1762969329\"",
+    "@odata.id": "/redfish/v1/EventService",
+    "@odata.type": "#EventService.v1_2_0.EventService",
+    "DeliveryRetryAttempts": 3,
+    "DeliveryRetryIntervalSeconds": 60,
+    "Description": "Event Service",
+    "EventFormatTypes": [
+        "Event"
+    ],
+    "Id": "EventService",
+    "Name": "Event Service",
+    "ServiceEnabled": true,
+    "Subscriptions": {
+        "@odata.id": "/redfish/v1/EventService/Subscriptions"
+    }
+}

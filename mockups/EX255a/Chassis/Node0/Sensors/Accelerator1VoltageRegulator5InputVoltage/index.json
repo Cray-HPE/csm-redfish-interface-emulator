@@ -1,0 +1,37 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator1VoltageRegulator5InputVoltage",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "Accelerator1VoltageRegulator5InputVoltage",
+    "Name": "VDD_SOCIO_A",
+    "Oem": {
+        "Index": 5,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 1,
+        "ReferenceDesignator": "U6070"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Input",
+    "Reading": 11.8438,
+    "ReadingTime": "2025-12-10T06:11:44.267665410Z",
+    "ReadingType": "Voltage",
+    "ReadingUnits": "V",
+    "Thresholds": {
+        "LowerCritical": {
+            "Activation": "Decreasing",
+            "Reading": 8.5
+        },
+        "LowerFatal": {
+            "Activation": "Decreasing",
+            "Reading": 8
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 14.5
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 15
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Mezz2/Assembly",
+    "@odata.type": "#Assembly.v1_3_0.Assembly",
+    "Assemblies": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Mezz2/Assembly#/Assemblies/0",
+            "MemberId": "0",
+            "PartNumber": "P43012-004",
+            "ProductionDate": "2023-06-05",
+            "Status": {
+                "Health": "OK"
+            },
+            "Vendor": "BEI",
+            "Version": "A "
+        }
+    ],
+    "Id": "Assembly",
+    "Name": "System-related Assembly data"
+}

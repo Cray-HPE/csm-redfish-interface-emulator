@@ -1,0 +1,21 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/EventLog/Entries/6",
+    "@odata.type": "#LogEntry.v1_2_0.LogEntry",
+    "Created": "2025-11-12T18:01:49+00:00",
+    "EntryType": "Event",
+    "EventTimestamp": "2025-11-12T18:01:49+00:00",
+    "Id": "6",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Systems/Node0"
+        }
+    },
+    "Message": "Boot device UEFI: PXE IPv6 Intel(R) I210 Gigabit  Backplane Connection failed to boot an OS.",
+    "MessageArgs": [
+        "UEFI: PXE IPv6 Intel(R) I210 Gigabit  Backplane Connection"
+    ],
+    "MessageId": "CrayUefi.NonFatalUefiBootError",
+    "Name": "Log entry 6",
+    "Severity": "Critical"
+}

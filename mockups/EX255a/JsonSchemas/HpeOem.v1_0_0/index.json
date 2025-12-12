@@ -1,0 +1,18 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/JsonSchemas/HpeOem.v1_0_0",
+    "@odata.type": "#JsonSchemaFile.v1_1_0.JsonSchemaFile",
+    "Description": "HpeOem.v1_0_0 schema",
+    "Id": "HpeOem.v1_0_0",
+    "Languages": [
+        "en"
+    ],
+    "Location": [
+        {
+            "Language": "en",
+            "Uri": "/redfish/v1/JsonSchemas/HpeOem.v1_0_0.json"
+        }
+    ],
+    "Name": "HpeOem.v1_0_0 schema",
+    "Schema": "HpeOem.v1_0_0.HpeOem"
+}

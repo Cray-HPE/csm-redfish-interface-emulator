@@ -1,0 +1,85 @@
+{
+    "@odata.etag": "W/\"1762969445\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Assembly",
+    "@odata.type": "#Assembly.v1_3_0.Assembly",
+    "Assemblies": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Assembly#/Assemblies/0",
+            "MemberId": "0",
+            "Model": "GH200 120GB",
+            "Name": "CG1-Module0",
+            "Oem": {
+                "Links": {
+                    "Processors": [
+                        {
+                            "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU0"
+                        }
+                    ]
+                }
+            },
+            "PartNumber": "900-2G530-0300-000",
+            "PhysicalContext": "SystemBoard",
+            "SerialNumber": "1654023059296",
+            "Version": "B3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Assembly#/Assemblies/1",
+            "MemberId": "1",
+            "Model": "GH200 120GB",
+            "Name": "CG1-Module1",
+            "Oem": {
+                "Links": {
+                    "Processors": [
+                        {
+                            "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU1"
+                        }
+                    ]
+                }
+            },
+            "PartNumber": "900-2G530-0300-000",
+            "PhysicalContext": "SystemBoard",
+            "SerialNumber": "1654023060280",
+            "Version": "B3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Assembly#/Assemblies/2",
+            "MemberId": "2",
+            "Model": "GH200 120GB",
+            "Name": "CG1-Module2",
+            "Oem": {
+                "Links": {
+                    "Processors": [
+                        {
+                            "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU2"
+                        }
+                    ]
+                }
+            },
+            "PartNumber": "900-2G530-0300-000",
+            "PhysicalContext": "SystemBoard",
+            "SerialNumber": "1654023057579",
+            "Version": "B3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/Node0/Assembly#/Assemblies/3",
+            "MemberId": "3",
+            "Model": "GH200 120GB",
+            "Name": "CG1-Module3",
+            "Oem": {
+                "Links": {
+                    "Processors": [
+                        {
+                            "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU3"
+                        }
+                    ]
+                }
+            },
+            "PartNumber": "900-2G530-0300-000",
+            "PhysicalContext": "SystemBoard",
+            "SerialNumber": "1654023059498",
+            "Version": "B3"
+        }
+    ],
+    "Id": "Assembly",
+    "Name": "System-related Assembly data"
+}

@@ -1,0 +1,109 @@
+{
+    "@odata.etag": "W/\"1765347231\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Bios",
+    "@odata.type": "#Bios.v1_0_2.Bios",
+    "Actions": {
+        "#Bios.ResetBios": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Node0/Bios/ResetBiosActionInfo",
+            "target": "/redfish/v1/Systems/Node0/Bios/Actions/Bios.ResetBios"
+        }
+    },
+    "AttributeRegistry": "BiosAttributeRegistry_v1_0_0",
+    "Attributes": {
+        "Continue On Error": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Disabled",
+            "default_value": "Disabled",
+            "menu_type": "User",
+            "reset_type": "None"
+        },
+        "Error Injection": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Enabled",
+            "default_value": "Enabled",
+            "menu_type": "User",
+            "reset_type": "None"
+        },
+        "Mods Secure Partition": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Enabled",
+            "default_value": "Enabled",
+            "menu_type": "User",
+            "reset_type": "None"
+        },
+        "Post Output Level": {
+            "AllowableValues": [
+                "Minimal",
+                "Informational",
+                "Verbose"
+            ],
+            "DataType": "string",
+            "current_value": "Minimal",
+            "default_value": "Minimal",
+            "menu_type": "Debug",
+            "reset_type": "None"
+        },
+        "Report Runtime Errors": {
+            "AllowableValues": [
+                "Disabled",
+                "Correctable",
+                "Uncorrectable",
+                "All"
+            ],
+            "DataType": "string",
+            "current_value": "Disabled",
+            "default_value": "Disabled",
+            "menu_type": "Debug",
+            "reset_type": "None"
+        },
+        "TPM Clear": {
+            "AllowableValues": [
+                "None",
+                "Clear",
+                "Wipe"
+            ],
+            "DataType": "string",
+            "current_value": "None",
+            "default_value": "None",
+            "menu_type": "User",
+            "reset_type": "None"
+        },
+        "TPM Control": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Enabled",
+            "default_value": "Enabled",
+            "menu_type": "User",
+            "reset_type": "None"
+        },
+        "UPHY Spread Spectrum": {
+            "AllowableValues": [
+                "Disabled",
+                "Enabled"
+            ],
+            "DataType": "string",
+            "current_value": "Enabled",
+            "default_value": "Enabled",
+            "menu_type": "User",
+            "reset_type": "None"
+        }
+    },
+    "Description": "Current BIOS Settings",
+    "Id": "Bios",
+    "Name": "Current BIOS Settings"
+}

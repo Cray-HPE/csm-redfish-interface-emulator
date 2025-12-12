@@ -1,0 +1,31 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/ChassisVoltageRegulator1OutputCurrent",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "Id": "ChassisVoltageRegulator1OutputCurrent",
+    "Name": "SIVOC",
+    "Oem": {
+        "Index": 1,
+        "ParentalContext": "Chassis"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 7.40767,
+    "ReadingTime": "2025-12-10T06:11:44.240458396Z",
+    "ReadingType": "Current",
+    "ReadingUnits": "A",
+    "Thresholds": {
+        "UpperCaution": {
+            "Activation": "Increasing",
+            "Reading": 90
+        },
+        "UpperCritical": {
+            "Activation": "Increasing",
+            "Reading": 95
+        },
+        "UpperFatal": {
+            "Activation": "Increasing",
+            "Reading": 100
+        }
+    }
+}

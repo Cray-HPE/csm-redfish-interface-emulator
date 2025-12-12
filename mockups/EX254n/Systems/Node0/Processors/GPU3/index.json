@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1762969445\"",
+    "@odata.id": "/redfish/v1/Systems/Node0/Processors/GPU3",
+    "@odata.type": "#Processor.v1_7_0.Processor",
+    "Id": "GPU3",
+    "Manufacturer": "NVIDIA",
+    "Model": "GH200_120GB",
+    "Name": "GPU 3",
+    "PartNumber": "2342-888-A1",
+    "ProcessorType": "GPU",
+    "SerialNumber": "1654023059498",
+    "Status": {
+        "Health": "OK"
+    }
+}

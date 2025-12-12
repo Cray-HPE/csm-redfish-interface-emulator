@@ -1,0 +1,20 @@
+{
+    "@odata.etag": "W/\"1765347100\"",
+    "@odata.id": "/redfish/v1/Chassis/Node0/Sensors/Accelerator3VoltageRegulator2MaximumOutputPower",
+    "@odata.type": "#Sensor.v1_1_0.Sensor",
+    "ElectricalContext": "Maximum",
+    "Id": "Accelerator3VoltageRegulator2MaximumOutputPower",
+    "Name": "VDD_0V75_HBM_B",
+    "Oem": {
+        "Index": 2,
+        "ParentalContext": "Accelerator",
+        "ParentalIndex": 3,
+        "ReferenceDesignator": "U14075"
+    },
+    "PhysicalContext": "VoltageRegulator",
+    "PhysicalSubContext": "Output",
+    "Reading": 5,
+    "ReadingTime": "2025-12-10T06:11:44.273934580Z",
+    "ReadingType": "Power",
+    "ReadingUnits": "W"
+}

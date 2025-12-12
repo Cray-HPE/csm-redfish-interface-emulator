@@ -1,0 +1,391 @@
+{
+    "$id": "HpeOem.v1_0_0.json",
+    "$ref": "#/definitions/HpeOem",
+    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "@odata.context": "/redfish/v1/$metadata#HpeOem.HpeOem",
+    "@odata.etag": "W/\"1765347231\"",
+    "@odata.id": "/redfish/v1/JsonSchemas/HpeOem.v1_0_0.json",
+    "@odata.type": "#HpeOem.v1_0_0.HpeOem",
+    "copyright": "Copyright 2023 HPE",
+    "definitions": {
+        "HpeChassisAssembliesOem": {
+            "Links": {
+                "Processors": {
+                    "description": "URI link of processors present on this system",
+                    "type": "link"
+                },
+                "type": "array"
+            },
+            "PCBSerialNumber": {
+                "description": "PCB serial number",
+                "type": "sting"
+            },
+            "urls": [
+                "/redfish/v1/Chassis/Node[0-3]/Assembly#/Assemblies[0-9]"
+            ]
+        },
+        "HpeChassisAssemblyOem": {
+            "Links": {
+                "Processors": {
+                    "description": "URI link of processors present on this system",
+                    "type": "link"
+                },
+                "type": "array"
+            },
+            "PCBSerialNumber": {
+                "description": "PCB serial number",
+                "type": "sting"
+            },
+            "urls": [
+                "/redfish/v1/Chassis/Node[0-3]/Assembly"
+            ]
+        },
+        "HpeChassisControlsOem": {
+            "LimitException": {
+                "description": "Action taken if exception is encountered",
+                "type": "string",
+                "writeable": "true"
+            },
+            "PowerAllocatedWatts": {
+                "description": "Allocated power in watts",
+                "type": "integer"
+            },
+            "PowerIdleWatts": {
+                "description": "Idle power in watts",
+                "type": "integer"
+            },
+            "PowerLimitFactor": {
+                "description": "Power limit factor on allocated power",
+                "type": "number"
+            },
+            "PowerResetWatts": {
+                "description": "Power reset value in watts",
+                "type": "integer"
+            },
+            "urls": [
+                "/redfish/v1/Chassis/Node[0-3]/Controls/[A-Za-z]*"
+            ]
+        },
+        "HpeChassisEnclosureOem": {
+            "Actions": {
+                "#Chassis.EmergencyPower": {
+                    "ResetType@Redfish.AllowableValues": {
+                        "description": "List of allowed power commands",
+                        "type": "array"
+                    }
+                },
+                "target": {
+                    "description": "Link to URI target for power command",
+                    "type": "link"
+                }
+            },
+            "ActiveConditionsDeprecated": {
+                "description": "List of active system conditions [Deprecated]",
+                "type": "array"
+            },
+            "AlarmsDeprecated": {
+                "description": "Alarm collection link [Deprecated]",
+                "longDescription": "URI that points to collection of configurable system alarms",
+                "type": "link"
+            },
+            "SupportedConditionsDeprecated": {
+                "description": "List of supported conditions to track on this platform [Deprecated]",
+                "type": "array"
+            },
+            "TriggeredAlarmsDeprecated": {
+                "description": "Array of triggered alarms [Deprecated]",
+                "type": "array"
+            },
+            "urls": [
+                "/redfish/v1/Chassis/Enclosure"
+            ]
+        },
+        "HpeChassisNetworkAdaptersNetworkCablesOem": {
+            "DataPathPortMappings": {
+                "p[0-7]": {
+                    "description": "Port Mapping [Deprecated]",
+                    "type": "integer"
+                },
+                "type": "array"
+            },
+            "DataPathPortUriMappings": {
+                "p[0-7]": {
+                    "description": "URI to Port",
+                    "type": "link"
+                },
+                "type": "array"
+            },
+            "HeadshellID": {
+                "type": "string"
+            },
+            "Id": {
+                "description": "The device ID of the network adapter component",
+                "type": "string"
+            },
+            "MediaConnector": {
+                "description": "The media side connector type value (per SFF-8024 Connector Types)",
+                "type": "string"
+            },
+            "MediaType": {
+                "type": "string"
+            },
+            "OEMCompany": {
+                "type": "string"
+            },
+            "OEMPartNumber": {
+                "type": "string"
+            },
+            "PartNumber": {
+                "type": "string"
+            },
+            "PortTags": {
+                "p[0-1]": {
+                    "description": "Port Tags",
+                    "type": "string"
+                },
+                "type": "array"
+            },
+            "ProductionDate": {
+                "type": "string"
+            },
+            "SerialNumber": {
+                "type": "string"
+            },
+            "Status": {
+                "Health": {
+                    "type": "string"
+                },
+                "State": {
+                    "type": "string"
+                },
+                "type": "array"
+            },
+            "Vendor": {
+                "type": "string"
+            },
+            "Version": {
+                "type": "string"
+            },
+            "urls": [
+                "/redfish/v1/Chassis/Enclosure/NetworkAdapters/[A-Za-z0-9]*/Oem/NetworkCables/[A-Za-z0-9]*"
+            ]
+        },
+        "HpeChassisNetworkAdaptersOem": {
+            "Controllers": {
+                "Links": {
+                    "NetworkCables": {
+                        "description": "Collection of network adapter component links",
+                        "type": "array"
+                    },
+                    "NetworkCables@odata.count": {
+                        "description": "Total count of network adapter components",
+                        "type": "integer"
+                    }
+                }
+            },
+            "urls": [
+                "/redfish/v1/Chassis/Enclosure/NetworkAdapters/[A-Za-z0-9]*"
+            ]
+        },
+        "HpeChassisNodeOem": {
+            "CrayVoltageMarginsDeprecated": {
+                "description": "Link to collection of rails to voltage margin. [Deprecated]",
+                "type": "link"
+            },
+            "urls": [
+                "/redfish/v1/Chassis/Node[0-3]"
+            ]
+        },
+        "HpeChassisSensorsOem": {
+            "Index": {
+                "description": "The sensor instance within the parent device (ie: If this sensor is the 4th voltage regulator of 2nd CPU in the group, then the index value would show the zero based value '3')",
+                "type": "integer"
+            },
+            "ParentalContext": {
+                "description": "Associated device group that the sensor belongs to (ie: if the sensor is a voltage regulator from a CPU, then the parental context would show 'CPU')",
+                "type": "string"
+            },
+            "ParentalIndex": {
+                "description": "Specifies the instance of a device within a device group (ie: if the sensor is 4th voltage regulator of the 2nd CPU in the group, the parental index would be the zero based value of '1')",
+                "type": "string"
+            },
+            "ReferenceDesignator": {
+                "description": "The reference name of the component in the board schematic",
+                "type": "string"
+            },
+            "urls": [
+                "/redfish/v1/Chassis/Node[0-3]/Sensors/[A-Za-z0-9_]*",
+                "/redfish/v1/Chassis/Enclosure/Sensors/[A-Za-z0-9_]*",
+                "/redfish/v1/Chassis/CDU[0-1]/Sensors/[A-Za-z0-9_]*"
+            ]
+        },
+        "HpeEventServiceSubscriptionsOem": {
+            "EventTimestamp": {
+                "type": "string"
+            },
+            "MessageId": {
+                "type": "string"
+            },
+            "Sensors": {
+                "Index": {
+                    "description": "Reference to the instance number of a particular group of sensors (ie: the nth voltage regulator)",
+                    "type": "integer"
+                },
+                "Location": {
+                    "description": "Reference to target system",
+                    "type": "string"
+                },
+                "ParentalContext": {
+                    "description": "Reference to parent device group that sensor belongs to (ie: this voltage regulator belongs to a CPU)",
+                    "type": "string"
+                },
+                "PhysicalContext": {
+                    "description": "Describes the sensor type",
+                    "type": "string"
+                },
+                "PhysicalSubContext": {
+                    "description": "Describes power/current/voltage reading as input or output",
+                    "type": "string"
+                },
+                "Timestamp": {
+                    "type": "string"
+                },
+                "Value": {
+                    "type": "number"
+                },
+                "type": "array"
+            },
+            "TelemetrySource": {
+                "type": "string"
+            },
+            "urls": [
+                "/redfish/v1/EventService/Subscriptions/[0-9]*"
+            ]
+        },
+        "HpeManagerBmcNetworkProtocolOem": {
+            "HTTPS": {
+                "description": "Link to collection of certificates loaded onto the system",
+                "type": "link"
+            },
+            "Resolv": {
+                "NameServers": {
+                    "type": "array"
+                },
+                "ProtocolEnabled": {
+                    "type": "boolean"
+                },
+                "SearchList": {
+                    "type": "array"
+                }
+            },
+            "SSHAdmin": {
+                "AuthorizedKeys": {
+                    "description": "Authorized ssh-rsa keys",
+                    "type": "string"
+                }
+            },
+            "SSHConsole": {
+                "AuthorizedKeys": {
+                    "description": "Authorized ssh-rsa keys",
+                    "type": "string"
+                }
+            },
+            "Syslog": {
+                "Port": {
+                    "type": "integer"
+                },
+                "ProtocolEnabled": {
+                    "type": "boolean"
+                },
+                "SyslogServers": {
+                    "description": "List of syslog servers",
+                    "type": "array"
+                },
+                "Transport": {
+                    "type": "string"
+                }
+            },
+            "urls": [
+                "/redfish/v1/Manager/BMC/NetworkProtocol"
+            ]
+        },
+        "HpeManagerBmcOem": {
+            "#CrayProcess.Schedule": {
+                "Name@Redfish.AllowableValues": {
+                    "type": "array"
+                },
+                "target": {
+                    "description": "Action link to POST to with one of the allowable values as a parameter",
+                    "type": "link"
+                }
+            },
+            "urls": [
+                "/redfish/v1/Manager/BMC"
+            ]
+        },
+        "HpeSystemsEthernetInterfacesCassiniMetricsOem": {
+            "Actions": {
+                "#HpeCassiniMetrics.SetMetricAddress": {
+                    "@Redfish.ActionInfo": {
+                        "description": "Link to definitions and descriptions of modifiable metrics",
+                        "type": "link"
+                    },
+                    "target": {
+                        "description": "Action link to modify metrics",
+                        "type": "link"
+                    }
+                }
+            },
+            "Id": {
+                "type": "string"
+            },
+            "Metric[0-9]": {
+                "Description": {
+                    "type": "sting"
+                },
+                "MetricSizeBits": {
+                    "type": "integer"
+                },
+                "MetricState": {
+                    "type": "sting"
+                },
+                "MetricType": {
+                    "type": "sting"
+                },
+                "Name": {
+                    "type": "sting"
+                }
+            },
+            "Name": {
+                "type": "sting"
+            },
+            "urls": [
+                "/redfish/v1/Systems/Node[0-3]/EthernetInterfaces/HPCNet[0-3]/Oem/Hpe/CassiniMetrics"
+            ]
+        },
+        "HpeSystemsEthernetInterfacesOem": {
+            "Hpe": {
+                "CassiniMetrics": {
+                    "description": "Link to ethernet interface metrics",
+                    "type": "link"
+                }
+            },
+            "urls": [
+                "/redfish/v1/Systems/Node[0-3]/EthernetInterfaces/HPCNet[0-3]"
+            ]
+        },
+        "HpeSystemsOem": {
+            "Actions": {
+                "#CraySystemExt.EnableGPUWriteTemporarily": {
+                    "description": "Action link to enable temporarily wriing to the GPUs",
+                    "target": {
+                        "type": "link"
+                    }
+                }
+            },
+            "urls": [
+                "/redfish/v1/Systems/Node[0-3]"
+            ]
+        }
+    }
+}

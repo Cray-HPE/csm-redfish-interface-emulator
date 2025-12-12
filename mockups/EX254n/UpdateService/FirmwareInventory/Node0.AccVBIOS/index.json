@@ -1,0 +1,15 @@
+{
+    "@odata.etag": "W/\"1762970193\"",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Node0.AccVBIOS",
+    "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+    "Description": "NVIDIA GPUs vBIOS",
+    "Id": "Node0.AccVBIOS",
+    "Name": "Node0.AccVBIOS",
+    "SoftwareId": "NVIDIA:VBIOS:*:*",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Updateable": true,
+    "Version": "EX254n.vbios-96.00.AC.00.03"
+}
